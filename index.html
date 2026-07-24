@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Golf Odds Divergence Tracker</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Golf Odds Divergence Tracker</h1>
+        <p class="subtitle">Compare odds across sportsbooks to find value</p>
+    </header>
+
+    <main>
+        <section class="controls">
+            <label for="tournament-select">Tournament:</label>
+            <select id="tournament-select">
+                <option value="">Select a tournament...</option>
+                <option value="2024-week-1">Sample Tournament 2024</option>
+            </select>
+        </section>
+
+        <section class="odds-table-container">
+            <table id="odds-table">
+                <thead>
+                    <tr>
+                        <th>Player</th>
+                        <th>DraftKings</th>
+                        <th>FanDuel</th>
+                        <th>BetMGM</th>
+                        <th>Caesars</th>
+                        <th>Max Divergence</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Scottie Scheffler</td>
+                        <td>+650</td>
+                        <td>+700</td>
+                        <td>+625</td>
+                        <td>+675</td>
+                        <td class="divergence positive">+75</td>
+                    </tr>
+                    <tr>
+                        <td>Rory McIlroy</td>
+                        <td>+1000</td>
+                        <td>+950</td>
+                        <td>+1100</td>
+                        <td>+1000</td>
+                        <td class="divergence positive">+150</td>
+                    </tr>
+                    <tr>
+                        <td>Jon Rahm</td>
+                        <td>+1200</td>
+                        <td>+1200</td>
+                        <td>+1150</td>
+                        <td>+1250</td>
+                        <td class="divergence">+100</td>
+                    </tr>
+                    <tr class="placeholder">
+                        <td colspan="6">Select a tournament to load odds data...</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section class="legend">
+            <h3>Legend</h3>
+            <ul>
+                <li><span class="dot positive"></span> High divergence (potential value)</li>
+                <li><span class="dot neutral"></span> Normal divergence</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>Data updated manually from public sportsbook odds. For informational purposes only.</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

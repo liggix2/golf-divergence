@@ -1,0 +1,29 @@
+{
+  "tournament": "Sample Tournament 2024",
+  "week": "2024-W01",
+  "lastUpdated": "2024-01-15T12:00:00Z",
+  "sources": ["DraftKings", "FanDuel", "BetMGM", "Caesars"],
+  "odds": [
+    {
+      "player": "Scottie Scheffler",
+      "DraftKings": 650,
+      "FanDuel": 700,
+      "BetMGM": 625,
+      "Caesars": 675
+    },
+    {
+      "player": "Rory McIlroy",
+      "DraftKings": 1000,
+      "FanDuel": 950,
+      "BetMGM": 1100,
+      "Caesars": 1000
+    },
+    {
+      "player": "Jon Rahm",
+      "DraftKings": 1200,
+      "FanDuel": 1200,
+      "BetMGM": 1150,
+      "Caesars": 1250
+    }
+  ]
+}
