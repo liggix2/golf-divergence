@@ -23,11 +23,18 @@ const CONFIG = {
         // Above 6pt = strong highlight
     },
 
-    // Market sources to compare against for best available odds
-    marketSources: ['DraftKings', 'Kalshi', 'DataGolf'],
+    // Bettable market sources to compare against for edge calculation
+    // Does NOT include reference sources like DataGolf
+    marketSources: ['DraftKings', 'Kalshi'],
 
     // Fair odds source (used for edge calculation)
     fairOddsSource: 'MyFairOdds',
+
+    // Whether to devig market probabilities
+    // When false: display raw implied probability from American odds
+    // When true: devig each market's full field separately so probabilities sum to 100%
+    // NOTE: Devigging requires complete field data for accurate results
+    devigMarkets: false,
 };
 
 // ============================================================================
@@ -60,34 +67,40 @@ function getEdgeClass(edgePoints) {
 
 /**
  * Calculate edge for a player
- * Edge = my devigged fair probability - best available market implied probability
- * Positive edge means our fair odds show more value than the market
- * @param {number} fairProb - Devigged fair probability
+ * Edge = my implied probability - lowest implied probability among bettable markets
+ * Positive edge means we think the player has higher win probability than market implies
+ * @param {number} myImpliedProb - My fair implied probability (raw, not devigged)
  * @param {object} playerOdds - Player's odds from all sources
+ * @param {object} deviggedMarketProbs - Optional map of source -> devigged probability for this player
  * @returns {number} Edge in percentage points
  */
-function calculateEdge(fairProb, playerOdds) {
-    // Find the best (lowest) implied probability among market sources
-    // Lower implied prob = higher odds = better value if we think fair prob is higher
-    let bestMarketProb = Infinity;
+function calculateEdge(myImpliedProb, playerOdds, deviggedMarketProbs = null) {
+    // Find the lowest implied probability among bettable market sources
+    // Lower implied prob = higher odds = better value
+    let lowestMarketProb = Infinity;
 
     for (const source of CONFIG.marketSources) {
         if (playerOdds[source] !== undefined) {
-            const impliedProb = americanToImplied(playerOdds[source]);
-            if (impliedProb < bestMarketProb) {
-                bestMarketProb = impliedProb;
+            let prob;
+            if (CONFIG.devigMarkets && deviggedMarketProbs && deviggedMarketProbs[source] !== undefined) {
+                prob = deviggedMarketProbs[source];
+            } else {
+                prob = americanToImplied(playerOdds[source]);
+            }
+            if (prob < lowestMarketProb) {
+                lowestMarketProb = prob;
             }
         }
     }
 
-    if (bestMarketProb === Infinity) {
+    if (lowestMarketProb === Infinity) {
         return 0;
     }
 
-    // Edge = fair probability - best market probability
-    // If our fair prob is 20% and market is 15%, edge is +5 points (good bet)
-    // If our fair prob is 15% and market is 20%, edge is -5 points (bad bet)
-    return (fairProb - bestMarketProb) * 100;
+    // Edge = my probability - lowest market probability
+    // If my prob is 20% and market is 15%, edge is +5 points (I think player is undervalued)
+    // If my prob is 15% and market is 20%, edge is -5 points (I think player is overvalued)
+    return (myImpliedProb - lowestMarketProb) * 100;
 }
 
 /**
@@ -105,6 +118,17 @@ function formatOddsCell(americanOdds, impliedProb = null) {
 }
 
 /**
+ * Devig a specific market's probabilities across the full field
+ * @param {object[]} odds - Array of player odds objects
+ * @param {string} source - The market source to devig (e.g., 'DraftKings')
+ * @returns {number[]} Array of devigged probabilities, one per player
+ */
+function devigMarket(odds, source) {
+    const rawProbs = odds.map(p => americanToImplied(p[source]));
+    return devig(rawProbs);
+}
+
+/**
  * Render the odds table with data
  * @param {object} data - Tournament data object
  */
@@ -114,24 +138,56 @@ function renderTable(data) {
         return;
     }
 
-    // First, calculate devigged fair probabilities
-    const fairOddsRaw = data.odds.map(p => p[CONFIG.fairOddsSource]);
-    const fairProbsRaw = fairOddsRaw.map(americanToImplied);
-    const fairProbsDevigged = devig(fairProbsRaw);
+    // Calculate raw implied probabilities for My Fair Odds (no devigging)
+    const myFairProbs = data.odds.map(p => americanToImplied(p[CONFIG.fairOddsSource]));
+
+    // Optionally devig market probabilities
+    // NOTE: Devigging requires complete field data for accurate results
+    let deviggedMarkets = {};
+    if (CONFIG.devigMarkets) {
+        for (const source of CONFIG.marketSources) {
+            deviggedMarkets[source] = devigMarket(data.odds, source);
+        }
+        // Also devig DataGolf for display if present
+        if (data.odds[0].DataGolf !== undefined) {
+            deviggedMarkets['DataGolf'] = devigMarket(data.odds, 'DataGolf');
+        }
+    }
 
     // Build table rows
     const rows = data.odds.map((player, index) => {
-        const fairProbDevigged = fairProbsDevigged[index];
-        const edge = calculateEdge(fairProbDevigged, player);
+        const myFairProb = myFairProbs[index];
+
+        // Build devigged probs map for this player (if devigging enabled)
+        let playerDeviggedProbs = null;
+        if (CONFIG.devigMarkets) {
+            playerDeviggedProbs = {};
+            for (const source of Object.keys(deviggedMarkets)) {
+                playerDeviggedProbs[source] = deviggedMarkets[source][index];
+            }
+        }
+
+        const edge = calculateEdge(myFairProb, player, playerDeviggedProbs);
         const edgeClass = getEdgeClass(edge);
+
+        // Get display probabilities for each market
+        const dkProb = CONFIG.devigMarkets && playerDeviggedProbs
+            ? playerDeviggedProbs['DraftKings']
+            : null;
+        const kalshiProb = CONFIG.devigMarkets && playerDeviggedProbs
+            ? playerDeviggedProbs['Kalshi']
+            : null;
+        const dgProb = CONFIG.devigMarkets && playerDeviggedProbs
+            ? playerDeviggedProbs['DataGolf']
+            : null;
 
         return `
             <tr>
                 <td>${player.player}</td>
-                <td class="odds-cell">${formatOddsCell(player.MyFairOdds, fairProbDevigged)}</td>
-                <td class="odds-cell">${formatOddsCell(player.DraftKings)}</td>
-                <td class="odds-cell">${formatOddsCell(player.Kalshi)}</td>
-                <td class="odds-cell">${formatOddsCell(player.DataGolf)}</td>
+                <td class="odds-cell">${formatOddsCell(player.MyFairOdds, myFairProb)}</td>
+                <td class="odds-cell">${formatOddsCell(player.DraftKings, dkProb)}</td>
+                <td class="odds-cell">${formatOddsCell(player.Kalshi, kalshiProb)}</td>
+                <td class="odds-cell">${formatOddsCell(player.DataGolf, dgProb)}</td>
                 <td class="edge-cell ${edgeClass}">${edge >= 0 ? '+' : ''}${edge.toFixed(1)}%</td>
             </tr>
         `;
@@ -175,4 +231,5 @@ document.addEventListener('DOMContentLoaded', function() {
 
     console.log('Golf Odds Divergence Tracker initialized');
     console.log('Edge thresholds:', CONFIG.edgeThresholds);
+    console.log('Devig markets:', CONFIG.devigMarkets);
 });
