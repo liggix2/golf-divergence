@@ -72,3 +72,37 @@ export function formatProbability(prob, decimals = 1) {
 export function formatAmericanOdds(odds) {
     return odds >= 0 ? `+${odds}` : `${odds}`;
 }
+
+// ============================================================================
+// KALSHI FEE CALCULATIONS
+// ============================================================================
+
+/**
+ * Calculate Kalshi taker fee for a given price.
+ * Fee formula: 7% * price * (1 - price)
+ *
+ * This mirrors the "payout multiple" Kalshi shows in its app - the effective
+ * price you pay includes this fee, reducing your actual payout on a win.
+ *
+ * @param {number} price - Contract price as decimal (e.g., 0.31 for 31 cents)
+ * @returns {number} Fee amount as decimal (e.g., 0.015 for 1.5 cents)
+ */
+export function kalshiFee(price) {
+    if (price <= 0 || price >= 1) {
+        return 0;
+    }
+    return 0.07 * price * (1 - price);
+}
+
+/**
+ * Calculate effective price including Kalshi taker fee.
+ * Effective price = raw price + fee
+ *
+ * Use this for edge calculations to account for the true cost of a position.
+ *
+ * @param {number} price - Raw contract price as decimal (e.g., 0.31)
+ * @returns {number} Effective price including fee (e.g., 0.325)
+ */
+export function effectivePrice(price) {
+    return price + kalshiFee(price);
+}

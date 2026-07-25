@@ -6,7 +6,8 @@
 import {
     impliedToAmerican,
     formatProbability,
-    formatAmericanOdds
+    formatAmericanOdds,
+    effectivePrice
 } from './odds-utils.js';
 
 // ============================================================================
@@ -24,6 +25,11 @@ const CONFIG = {
 
     // Data source path
     kalshiDataPath: 'data/kalshi/KXPGATOUR-3MO26.json',
+
+    // Use fee-adjusted effective price for Kalshi edge calculations
+    // When true, adds the 7% taker fee to the raw ask price before calculating edge
+    // This mirrors the "payout multiple" shown in the Kalshi app
+    useEffectivePrice: true,
 };
 
 // ============================================================================
@@ -37,6 +43,24 @@ const CONFIG = {
  */
 function dollarToImpliedProb(dollars) {
     return parseFloat(dollars) || 0;
+}
+
+/**
+ * Get the Kalshi price to use for edge calculations.
+ * When CONFIG.useEffectivePrice is true, returns the fee-adjusted price.
+ * When false, returns the raw ask price.
+ *
+ * Display always shows raw ask; this only affects edge math.
+ *
+ * @param {string|number} askDollars - Raw ask price in dollars
+ * @returns {number} Price to use for edge calculation (raw or fee-adjusted)
+ */
+function getKalshiEdgePrice(askDollars) {
+    const rawPrice = dollarToImpliedProb(askDollars);
+    if (rawPrice <= 0 || rawPrice >= 1) {
+        return rawPrice;
+    }
+    return CONFIG.useEffectivePrice ? effectivePrice(rawPrice) : rawPrice;
 }
 
 /**
@@ -221,8 +245,14 @@ function renderTable(data) {
     const rows = activeMarkets.map(market => {
         const playerName = market.player_name || market.player_code || 'Unknown';
 
+        // Edge calculation: my fair probability - Kalshi effective price
+        // When CONFIG.useEffectivePrice is true, Kalshi price includes 7% taker fee
         // Edge is null when My Fair Odds is missing
-        const edge = null;
+        const myFairProb = null; // TODO: Load from My Fair Odds data
+        const kalshiEdgePrice = getKalshiEdgePrice(market.yes_ask_dollars);
+        const edge = myFairProb !== null
+            ? (myFairProb - kalshiEdgePrice) * 100
+            : null;
 
         return `
             <tr>
