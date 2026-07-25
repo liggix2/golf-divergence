@@ -2,28 +2,28 @@
   "tournament": "Sample Tournament 2024",
   "week": "2024-W01",
   "lastUpdated": "2024-01-15T12:00:00Z",
-  "sources": ["DataGolfFairOdds", "Kalshi", "Polymarket", "BookConsensus"],
+  "sources": ["MyFairOdds", "DraftKings", "Kalshi", "DataGolf"],
   "odds": [
     {
       "player": "Scottie Scheffler",
-      "DataGolfFairOdds": 550,
+      "MyFairOdds": 500,
+      "DraftKings": 650,
       "Kalshi": 600,
-      "Polymarket": 625,
-      "BookConsensus": 580
+      "DataGolf": 550
     },
     {
       "player": "Rory McIlroy",
-      "DataGolfFairOdds": 900,
-      "Kalshi": 1000,
-      "Polymarket": 950,
-      "BookConsensus": 920
+      "MyFairOdds": 850,
+      "DraftKings": 1000,
+      "Kalshi": 950,
+      "DataGolf": 900
     },
     {
       "player": "Jon Rahm",
-      "DataGolfFairOdds": 1100,
+      "MyFairOdds": 1000,
+      "DraftKings": 1200,
       "Kalshi": 1150,
-      "Polymarket": 1200,
-      "BookConsensus": 1125
+      "DataGolf": 1100
     }
   ]
 }
