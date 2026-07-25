@@ -1,49 +1,63 @@
 # Golf Odds Divergence Tracker
 
-A static site for comparing golf tournament odds across multiple sportsbooks to identify divergences and potential value.
+Compare your fair odds against prediction markets and sportsbooks to find edge in golf tournament winner markets.
 
-## Structure
+## Current State
 
-```
-golf-divergence/
-├── index.html          # Main page with odds comparison table
-├── css/
-│   └── styles.css      # Styling
-├── js/
-│   └── main.js         # JavaScript functionality
-├── data/
-│   └── *.json          # Weekly tournament odds data
-└── README.md
-```
+- **Kalshi**: Live data via public API, displays American odds + implied probability
+- **DraftKings**: Placeholder (not yet integrated)
+- **Data Golf**: Placeholder (not yet integrated)
+- **My Fair Odds**: Placeholder (manual entry not yet built)
+- **Edge calculation**: Infrastructure ready, waiting on My Fair Odds data
 
-## Data Format
+## Data Sources
 
-Weekly odds data is stored in JSON files in the `data/` directory:
+| Column | Source | Status |
+|--------|--------|--------|
+| My Fair Odds | Manual entry | Not built |
+| DraftKings | TBD | Not built |
+| Kalshi | Public API | Working |
+| Data Golf | TBD | Not built |
 
-```json
-{
-  "tournament": "Tournament Name",
-  "week": "2024-W01",
-  "lastUpdated": "2024-01-15T12:00:00Z",
-  "sources": ["DraftKings", "FanDuel", "BetMGM", "Caesars"],
-  "odds": [
-    {
-      "player": "Player Name",
-      "DraftKings": 650,
-      "FanDuel": 700,
-      "BetMGM": 625,
-      "Caesars": 675
-    }
-  ]
-}
+## Setup
+
+```bash
+python3 -m venv venv
+source venv/bin/activate
+pip install requests
 ```
 
-Odds are stored as positive integers (e.g., `650` represents `+650`).
+## Fetching Kalshi Data
+
+```bash
+# Fetch current tournament (default: 3M Open)
+./venv/bin/python scripts/kalshi_fetch.py
+
+# Fetch specific event
+./venv/bin/python scripts/kalshi_fetch.py KXPGATOUR-3MO26
+
+# Discover available golf events
+./venv/bin/python scripts/kalshi_discover.py
+```
+
+Data saves to `data/kalshi/{event_ticker}.json`.
+
+## Local Development
+
+No build step. Open `index.html` in a browser or use a local server:
+
+```bash
+python3 -m http.server 8000
+```
 
 ## Deployment
 
-This site is designed for GitHub Pages. Push to the `main` branch and enable GitHub Pages in repository settings.
+Push to `main` and enable GitHub Pages (Settings → Pages → Deploy from branch → main).
 
-## Development
+## Still To Build
 
-No build step required. Open `index.html` in a browser to preview locally.
+- My Fair Odds input/storage
+- DraftKings odds integration
+- Data Golf fair value integration
+- Edge calculations (formula ready, needs My Fair Odds)
+- Tournament selector dropdown
