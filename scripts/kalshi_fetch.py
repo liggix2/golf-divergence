@@ -137,6 +137,9 @@ def calculate_spread(bid_dollars: str, ask_dollars: str) -> Optional[float]:
 def parse_market(market: dict, event_ticker: str) -> dict:
     """
     Extract relevant fields from a market object.
+
+    Note: yes_ask and yes_bid (integer fields) are null in Kalshi data.
+    All price reads should use yes_ask_dollars and yes_bid_dollars.
     """
     ticker = market.get("ticker", "")
     title = market.get("title", "")
@@ -190,7 +193,9 @@ def save_to_json(event_ticker: str, markets: list) -> Path:
 
 def print_summary_table(markets: list, limit: int = 20) -> None:
     """
-    Print a summary table sorted by yes_ask descending (favorites first).
+    Print a summary table sorted by yes_ask_dollars descending (favorites first).
+
+    Note: yes_ask (integer) is null in Kalshi data; all price reads use yes_ask_dollars.
 
     Args:
         markets: List of parsed market dicts

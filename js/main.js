@@ -4,8 +4,9 @@
  */
 
 import {
-    americanToImplied,
-    formatProbability
+    impliedToAmerican,
+    formatProbability,
+    formatAmericanOdds
 } from './odds-utils.js';
 
 // ============================================================================
@@ -30,13 +31,26 @@ const CONFIG = {
 // ============================================================================
 
 /**
- * Format a dollar value as implied probability percentage
+ * Convert a dollar price to implied probability as decimal
  * @param {string|number} dollars - Price in dollars (e.g., "0.31" = 31%)
- * @returns {string} Formatted probability (e.g., "31.0%")
+ * @returns {number} Implied probability as decimal (e.g., 0.31)
  */
-function dollarToImpliedProbability(dollars) {
-    const price = parseFloat(dollars) || 0;
-    return (price * 100).toFixed(1) + '%';
+function dollarToImpliedProb(dollars) {
+    return parseFloat(dollars) || 0;
+}
+
+/**
+ * Convert a dollar price to American odds
+ * Note: yes_ask_dollars is the price field; yes_ask (integer) is null in Kalshi data
+ * @param {string|number} dollars - Price in dollars (e.g., "0.31" = 31% implied)
+ * @returns {number} American odds (e.g., +223 for 31% implied)
+ */
+function dollarToAmericanOdds(dollars) {
+    const impliedProb = dollarToImpliedProb(dollars);
+    if (impliedProb <= 0 || impliedProb >= 1) {
+        return 0;
+    }
+    return impliedToAmerican(impliedProb);
 }
 
 /**
@@ -141,20 +155,20 @@ function renderEmptyCell() {
 }
 
 /**
- * Render Kalshi odds cell with implied probability, spread, and volume
+ * Render Kalshi odds cell with American odds, implied probability, and volume
+ * Note: All price reads use yes_ask_dollars since yes_ask (integer) is null in Kalshi data
  * @param {object} market - Market data object
  * @returns {string} HTML for the cell
  */
 function renderKalshiCell(market) {
-    const askDollars = parseFloat(market.yes_ask_dollars) || 0;
-    const impliedProb = dollarToImpliedProbability(market.yes_ask_dollars);
-    const spread = formatSpread(market.spread);
+    const americanOdds = dollarToAmericanOdds(market.yes_ask_dollars);
+    const impliedProb = dollarToImpliedProb(market.yes_ask_dollars);
     const volume = formatVolume(market.volume_fp);
 
     return `
         <td class="odds-cell">
-            <span class="odds-implied">${impliedProb}</span>
-            <span class="odds-spread">Spread: ${spread}</span>
+            <span class="odds-american">${formatAmericanOdds(americanOdds)}</span>
+            <span class="odds-implied">${formatProbability(impliedProb, 2)}</span>
             <span class="odds-volume">Vol: ${volume}</span>
         </td>
     `;
