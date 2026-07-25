@@ -51,6 +51,25 @@ main {
     background-color: white;
 }
 
+.data-info {
+    margin-bottom: 1rem;
+    padding: 0.75rem 1rem;
+    background: #e8f5e9;
+    border-radius: 6px;
+    border-left: 4px solid #2d5a3d;
+}
+
+.data-info .event-ticker {
+    font-weight: 600;
+    color: #1a472a;
+}
+
+.data-info .fetched-at {
+    color: #666;
+    font-size: 0.9rem;
+    margin-left: 1rem;
+}
+
 .odds-table-container {
     overflow-x: auto;
     background: white;
@@ -99,6 +118,21 @@ main {
 .odds-implied {
     font-size: 0.85em;
     color: #666;
+}
+
+.odds-cell.empty {
+    color: #ccc;
+    text-align: center;
+}
+
+.odds-spread {
+    font-size: 0.85em;
+    color: #888;
+}
+
+.odds-volume {
+    font-size: 0.85em;
+    color: #888;
 }
 
 /* Edge cell styling with conditional formatting */

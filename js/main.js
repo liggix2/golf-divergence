@@ -5,9 +5,7 @@
 
 import {
     americanToImplied,
-    devig,
-    formatProbability,
-    formatAmericanOdds
+    formatProbability
 } from './odds-utils.js';
 
 // ============================================================================
@@ -23,30 +21,77 @@ const CONFIG = {
         // Above 6pt = strong highlight
     },
 
-    // Bettable market sources to compare against for edge calculation
-    // Does NOT include reference sources like DataGolf
-    marketSources: ['DraftKings', 'Kalshi'],
-
-    // Fair odds source (used for edge calculation)
-    fairOddsSource: 'MyFairOdds',
-
-    // Whether to devig market probabilities
-    // When false: display raw implied probability from American odds
-    // When true: devig each market's full field separately so probabilities sum to 100%
-    // NOTE: Devigging requires complete field data for accurate results
-    devigMarkets: false,
+    // Data source path
+    kalshiDataPath: 'data/kalshi/KXPGATOUR-3MO26.json',
 };
 
 // ============================================================================
-// EDGE FORMATTING
+// UTILITY FUNCTIONS
 // ============================================================================
 
 /**
+ * Format a dollar value as implied probability percentage
+ * @param {string|number} dollars - Price in dollars (e.g., "0.31" = 31%)
+ * @returns {string} Formatted probability (e.g., "31.0%")
+ */
+function dollarToImpliedProbability(dollars) {
+    const price = parseFloat(dollars) || 0;
+    return (price * 100).toFixed(1) + '%';
+}
+
+/**
+ * Format volume with K/M suffix
+ * @param {string|number} volume - Volume value
+ * @returns {string} Formatted volume (e.g., "1.3M", "450K")
+ */
+function formatVolume(volume) {
+    const vol = parseFloat(volume) || 0;
+    if (vol >= 1_000_000) {
+        return (vol / 1_000_000).toFixed(1) + 'M';
+    } else if (vol >= 1_000) {
+        return Math.round(vol / 1_000) + 'K';
+    }
+    return vol.toFixed(0);
+}
+
+/**
+ * Format spread value
+ * @param {number|null} spread - Spread value
+ * @returns {string} Formatted spread (e.g., "$0.010")
+ */
+function formatSpread(spread) {
+    if (spread === null || spread === undefined) {
+        return '—';
+    }
+    return '$' + spread.toFixed(3);
+}
+
+/**
+ * Format timestamp for display
+ * @param {string} isoTimestamp - ISO timestamp string
+ * @returns {string} Formatted timestamp
+ */
+function formatTimestamp(isoTimestamp) {
+    const date = new Date(isoTimestamp);
+    return date.toLocaleString('en-US', {
+        month: 'short',
+        day: 'numeric',
+        year: 'numeric',
+        hour: 'numeric',
+        minute: '2-digit',
+        timeZoneName: 'short'
+    });
+}
+
+/**
  * Get the CSS class for edge highlighting based on thresholds
- * @param {number} edgePoints - Edge in percentage points (e.g., 2.5)
+ * @param {number|null} edgePoints - Edge in percentage points (e.g., 2.5)
  * @returns {string} CSS class name
  */
 function getEdgeClass(edgePoints) {
+    if (edgePoints === null) {
+        return 'edge-none';
+    }
     const absEdge = Math.abs(edgePoints);
     const { none, light, medium } = CONFIG.edgeThresholds;
 
@@ -62,143 +107,120 @@ function getEdgeClass(edgePoints) {
 }
 
 // ============================================================================
+// DATA INFO RENDERING
+// ============================================================================
+
+/**
+ * Render the data info header showing event ticker and fetch timestamp
+ * @param {object} data - Kalshi data object
+ */
+function renderDataInfo(data) {
+    const dataInfo = document.getElementById('data-info');
+    if (!dataInfo) return;
+
+    const eventTicker = data.event_ticker || 'Unknown';
+    const fetchedAt = data.fetched_at ? formatTimestamp(data.fetched_at) : 'Unknown';
+    const marketCount = data.market_count || 0;
+
+    dataInfo.innerHTML = `
+        <span class="event-ticker">${eventTicker}</span>
+        <span class="fetched-at">Fetched: ${fetchedAt} · ${marketCount} markets</span>
+    `;
+}
+
+// ============================================================================
 // TABLE RENDERING
 // ============================================================================
 
 /**
- * Calculate edge for a player
- * Edge = my implied probability - lowest implied probability among bettable markets
- * Positive edge means we think the player has higher win probability than market implies
- * @param {number} myImpliedProb - My fair implied probability (raw, not devigged)
- * @param {object} playerOdds - Player's odds from all sources
- * @param {object} deviggedMarketProbs - Optional map of source -> devigged probability for this player
- * @returns {number} Edge in percentage points
+ * Render empty placeholder cell
+ * @returns {string} HTML for empty cell
  */
-function calculateEdge(myImpliedProb, playerOdds, deviggedMarketProbs = null) {
-    // Find the lowest implied probability among bettable market sources
-    // Lower implied prob = higher odds = better value
-    let lowestMarketProb = Infinity;
-
-    for (const source of CONFIG.marketSources) {
-        if (playerOdds[source] !== undefined) {
-            let prob;
-            if (CONFIG.devigMarkets && deviggedMarketProbs && deviggedMarketProbs[source] !== undefined) {
-                prob = deviggedMarketProbs[source];
-            } else {
-                prob = americanToImplied(playerOdds[source]);
-            }
-            if (prob < lowestMarketProb) {
-                lowestMarketProb = prob;
-            }
-        }
-    }
-
-    if (lowestMarketProb === Infinity) {
-        return 0;
-    }
-
-    // Edge = my probability - lowest market probability
-    // If my prob is 20% and market is 15%, edge is +5 points (I think player is undervalued)
-    // If my prob is 15% and market is 20%, edge is -5 points (I think player is overvalued)
-    return (myImpliedProb - lowestMarketProb) * 100;
+function renderEmptyCell() {
+    return '<td class="odds-cell empty">—</td>';
 }
 
 /**
- * Format a cell with both American odds and implied probability
- * @param {number} americanOdds - American odds value
- * @param {number} impliedProb - Implied probability (optional, will calculate if not provided)
- * @returns {string} HTML for the cell content
+ * Render Kalshi odds cell with implied probability, spread, and volume
+ * @param {object} market - Market data object
+ * @returns {string} HTML for the cell
  */
-function formatOddsCell(americanOdds, impliedProb = null) {
-    const prob = impliedProb !== null ? impliedProb : americanToImplied(americanOdds);
+function renderKalshiCell(market) {
+    const askDollars = parseFloat(market.yes_ask_dollars) || 0;
+    const impliedProb = dollarToImpliedProbability(market.yes_ask_dollars);
+    const spread = formatSpread(market.spread);
+    const volume = formatVolume(market.volume_fp);
+
     return `
-        <span class="odds-american">${formatAmericanOdds(americanOdds)}</span>
-        <span class="odds-implied">${formatProbability(prob)}</span>
+        <td class="odds-cell">
+            <span class="odds-implied">${impliedProb}</span>
+            <span class="odds-spread">Spread: ${spread}</span>
+            <span class="odds-volume">Vol: ${volume}</span>
+        </td>
     `;
 }
 
 /**
- * Devig a specific market's probabilities across the full field
- * @param {object[]} odds - Array of player odds objects
- * @param {string} source - The market source to devig (e.g., 'DraftKings')
- * @returns {number[]} Array of devigged probabilities, one per player
+ * Render edge cell
+ * @param {number|null} edge - Edge value in percentage points, or null if not calculable
+ * @returns {string} HTML for edge cell
  */
-function devigMarket(odds, source) {
-    const rawProbs = odds.map(p => americanToImplied(p[source]));
-    return devig(rawProbs);
+function renderEdgeCell(edge) {
+    if (edge === null) {
+        return '<td class="edge-cell edge-none">—</td>';
+    }
+    const edgeClass = getEdgeClass(edge);
+    const sign = edge >= 0 ? '+' : '';
+    return `<td class="edge-cell ${edgeClass}">${sign}${edge.toFixed(1)}%</td>`;
 }
 
 /**
- * Render the odds table with data
- * @param {object} data - Tournament data object
+ * Render the odds table with Kalshi data
+ * @param {object} data - Kalshi data object
  */
 function renderTable(data) {
     const tbody = document.querySelector('#odds-table tbody');
-    if (!tbody || !data.odds || data.odds.length === 0) {
+    if (!tbody || !data.markets || data.markets.length === 0) {
+        tbody.innerHTML = '<tr class="placeholder"><td colspan="6">No market data available</td></tr>';
         return;
     }
 
-    // Calculate raw implied probabilities for My Fair Odds (no devigging)
-    const myFairProbs = data.odds.map(p => americanToImplied(p[CONFIG.fairOddsSource]));
+    // Filter out inactive markets (ask of 0 or 1.00)
+    const activeMarkets = data.markets.filter(m => {
+        const ask = parseFloat(m.yes_ask_dollars) || 0;
+        return ask > 0 && ask < 1.0;
+    });
 
-    // Optionally devig market probabilities
-    // NOTE: Devigging requires complete field data for accurate results
-    let deviggedMarkets = {};
-    if (CONFIG.devigMarkets) {
-        for (const source of CONFIG.marketSources) {
-            deviggedMarkets[source] = devigMarket(data.odds, source);
-        }
-        // Also devig DataGolf for display if present
-        if (data.odds[0].DataGolf !== undefined) {
-            deviggedMarkets['DataGolf'] = devigMarket(data.odds, 'DataGolf');
-        }
+    if (activeMarkets.length === 0) {
+        tbody.innerHTML = '<tr class="placeholder"><td colspan="6">No active markets found</td></tr>';
+        return;
     }
 
+    // Sort by ask descending (favorites first)
+    activeMarkets.sort((a, b) => {
+        const askA = parseFloat(a.yes_ask_dollars) || 0;
+        const askB = parseFloat(b.yes_ask_dollars) || 0;
+        return askB - askA;
+    });
+
     // Build table rows
-    const rows = data.odds.map((player, index) => {
-        const myFairProb = myFairProbs[index];
+    const rows = activeMarkets.map(market => {
+        const playerName = market.player_name || market.player_code || 'Unknown';
 
-        // Build devigged probs map for this player (if devigging enabled)
-        let playerDeviggedProbs = null;
-        if (CONFIG.devigMarkets) {
-            playerDeviggedProbs = {};
-            for (const source of Object.keys(deviggedMarkets)) {
-                playerDeviggedProbs[source] = deviggedMarkets[source][index];
-            }
-        }
-
-        const edge = calculateEdge(myFairProb, player, playerDeviggedProbs);
-        const edgeClass = getEdgeClass(edge);
-
-        // Get display probabilities for each market
-        const dkProb = CONFIG.devigMarkets && playerDeviggedProbs
-            ? playerDeviggedProbs['DraftKings']
-            : null;
-        const kalshiProb = CONFIG.devigMarkets && playerDeviggedProbs
-            ? playerDeviggedProbs['Kalshi']
-            : null;
-        const dgProb = CONFIG.devigMarkets && playerDeviggedProbs
-            ? playerDeviggedProbs['DataGolf']
-            : null;
+        // Edge is null when My Fair Odds is missing
+        const edge = null;
 
         return `
             <tr>
-                <td>${player.player}</td>
-                <td class="odds-cell">${formatOddsCell(player.MyFairOdds, myFairProb)}</td>
-                <td class="odds-cell">${formatOddsCell(player.DraftKings, dkProb)}</td>
-                <td class="odds-cell">${formatOddsCell(player.Kalshi, kalshiProb)}</td>
-                <td class="odds-cell">${formatOddsCell(player.DataGolf, dgProb)}</td>
-                <td class="edge-cell ${edgeClass}">${edge >= 0 ? '+' : ''}${edge.toFixed(1)}%</td>
+                <td>${playerName}</td>
+                ${renderEmptyCell()}
+                ${renderEmptyCell()}
+                ${renderKalshiCell(market)}
+                ${renderEmptyCell()}
+                ${renderEdgeCell(edge)}
             </tr>
         `;
     });
-
-    // Add placeholder row
-    rows.push(`
-        <tr class="placeholder">
-            <td colspan="6">Select a tournament to load odds data...</td>
-        </tr>
-    `);
 
     tbody.innerHTML = rows.join('');
 }
@@ -210,26 +232,35 @@ function renderTable(data) {
 document.addEventListener('DOMContentLoaded', function() {
     const tournamentSelect = document.getElementById('tournament-select');
 
-    // Load sample data on page load for demonstration
-    fetch('data/sample-tournament.json')
-        .then(response => response.json())
+    // Load Kalshi data on page load
+    fetch(CONFIG.kalshiDataPath)
+        .then(response => {
+            if (!response.ok) {
+                throw new Error(`HTTP error! status: ${response.status}`);
+            }
+            return response.json();
+        })
         .then(data => {
+            renderDataInfo(data);
             renderTable(data);
+            console.log(`Loaded ${data.market_count} markets from ${data.event_ticker}`);
         })
         .catch(error => {
-            console.error('Error loading sample data:', error);
+            console.error('Error loading Kalshi data:', error);
+            const tbody = document.querySelector('#odds-table tbody');
+            if (tbody) {
+                tbody.innerHTML = `<tr class="placeholder"><td colspan="6">Error loading data: ${error.message}</td></tr>`;
+            }
         });
 
-    // Tournament selection handler
+    // Tournament selection handler (placeholder for future)
     tournamentSelect.addEventListener('change', function() {
         const selectedTournament = this.value;
         if (selectedTournament) {
             console.log('Selected tournament:', selectedTournament);
-            // TODO: Load data from data/{tournament}.json
+            // TODO: Load data for selected tournament
         }
     });
 
     console.log('Golf Odds Divergence Tracker initialized');
-    console.log('Edge thresholds:', CONFIG.edgeThresholds);
-    console.log('Devig markets:', CONFIG.devigMarkets);
 });
