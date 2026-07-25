@@ -34,42 +34,18 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <tr>
-                        <td>Scottie Scheffler</td>
-                        <td>+500</td>
-                        <td>+650</td>
-                        <td>+600</td>
-                        <td>+550</td>
-                        <td class="divergence positive">+150</td>
-                    </tr>
-                    <tr>
-                        <td>Rory McIlroy</td>
-                        <td>+850</td>
-                        <td>+1000</td>
-                        <td>+950</td>
-                        <td>+900</td>
-                        <td class="divergence positive">+150</td>
-                    </tr>
-                    <tr>
-                        <td>Jon Rahm</td>
-                        <td>+1000</td>
-                        <td>+1200</td>
-                        <td>+1150</td>
-                        <td>+1100</td>
-                        <td class="divergence">+200</td>
-                    </tr>
-                    <tr class="placeholder">
-                        <td colspan="6">Select a tournament to load odds data...</td>
-                    </tr>
+                    <!-- Table populated by JavaScript -->
                 </tbody>
             </table>
         </section>
 
         <section class="legend">
-            <h3>Legend</h3>
+            <h3>Edge Legend</h3>
             <ul>
-                <li><span class="dot positive"></span> High divergence (potential value)</li>
-                <li><span class="dot neutral"></span> Normal divergence</li>
+                <li><span class="edge-swatch edge-none"></span> &lt;1pt</li>
+                <li><span class="edge-swatch edge-light"></span> 1-3pt</li>
+                <li><span class="edge-swatch edge-medium"></span> 3-6pt</li>
+                <li><span class="edge-swatch edge-strong"></span> &gt;6pt</li>
             </ul>
         </section>
     </main>
@@ -78,6 +54,6 @@
         <p>Data updated manually from public sportsbook odds. For informational purposes only.</p>
     </footer>
 
-    <script src="js/main.js"></script>
+    <script type="module" src="js/main.js"></script>
 </body>
 </html>
