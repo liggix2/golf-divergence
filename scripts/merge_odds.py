@@ -15,49 +15,53 @@ from pathlib import Path
 SCRIPT_DIR = Path(__file__).parent.parent
 DATA_DIR = SCRIPT_DIR / "data"
 
-# Common nickname mappings (normalized form -> canonical form)
+# Active nickname mappings - only entries needed for current fields
 NICKNAME_MAP = {
     'johnny': 'john',
     'matt': 'matthew',
     'matthias': 'matthew',
     'matti': 'matthew',
     'zach': 'zachary',
-    'zack': 'zachary',
-    'mike': 'michael',
-    'chris': 'christopher',
-    'rob': 'robert',
-    'bob': 'robert',
-    'will': 'william',
-    'bill': 'william',
-    'tom': 'thomas',
-    'tommy': 'thomas',
-    'jim': 'james',
-    'jimmy': 'james',
-    'dan': 'daniel',
-    'danny': 'daniel',
-    'tony': 'anthony',
-    'nick': 'nicholas',
-    'cam': 'cameron',
-    'ben': 'benjamin',
-    'alex': 'alexander',
-    'sam': 'samuel',
-    'ed': 'edward',
-    'ted': 'theodore',
-    'joe': 'joseph',
-    'joey': 'joseph',
-    'rick': 'richard',
-    'rickie': 'richard',
-    'dick': 'richard',
-    'pat': 'patrick',
-    'steve': 'steven',
-    'dave': 'david',
-    'andy': 'andrew',
-    'drew': 'andrew',
-    'charlie': 'charles',
-    'chuck': 'charles',
-    'larry': 'lawrence',
-    'max': 'maxwell',
 }
+
+# Reserve mappings - add back if future fields need them
+# NICKNAME_MAP_RESERVE = {
+#     'zack': 'zachary',
+#     'mike': 'michael',
+#     'chris': 'christopher',
+#     'rob': 'robert',
+#     'bob': 'robert',
+#     'will': 'william',
+#     'bill': 'william',
+#     'tom': 'thomas',
+#     'tommy': 'thomas',
+#     'jim': 'james',
+#     'jimmy': 'james',
+#     'dan': 'daniel',
+#     'danny': 'daniel',
+#     'tony': 'anthony',
+#     'nick': 'nicholas',
+#     'cam': 'cameron',
+#     'ben': 'benjamin',
+#     'alex': 'alexander',
+#     'sam': 'samuel',
+#     'ed': 'edward',
+#     'ted': 'theodore',
+#     'joe': 'joseph',
+#     'joey': 'joseph',
+#     'rick': 'richard',
+#     'rickie': 'richard',
+#     'dick': 'richard',
+#     'pat': 'patrick',
+#     'steve': 'steven',
+#     'dave': 'david',
+#     'andy': 'andrew',
+#     'drew': 'andrew',
+#     'charlie': 'charles',
+#     'chuck': 'charles',
+#     'larry': 'lawrence',
+#     'max': 'maxwell',
+# }
 
 # Input files
 KALSHI_FILE = DATA_DIR / "kalshi" / "KXPGATOUR-ROC26.json"
@@ -68,16 +72,10 @@ OUTPUT_DIR = DATA_DIR / "merged"
 OUTPUT_FILE = OUTPUT_DIR / "rocket-classic-2026.json"
 
 
-def normalize_name(name: str) -> str:
+def normalize_name_base(name: str) -> str:
     """
-    Normalize player name for matching.
-
-    - Convert to lowercase
-    - Strip periods, apostrophes, hyphens
-    - Collapse whitespace
-    - Strip suffixes like Jr, Jr., II, III, IV
-    - Convert accented characters to ASCII
-    - Handle special characters like ø -> o
+    Normalize player name WITHOUT nickname mapping.
+    Used to detect if nickname mapping was needed for a match.
     """
     # Handle special Nordic characters before normalization
     replacements = {
@@ -114,6 +112,15 @@ def normalize_name(name: str) -> str:
     name = re.sub(r'\b[a-z]\b', '', name)
     name = ' '.join(name.split())
 
+    return name.strip()
+
+
+def normalize_name(name: str) -> str:
+    """
+    Normalize player name WITH nickname mapping.
+    """
+    name = normalize_name_base(name)
+
     # Apply nickname mappings to first name
     parts = name.split()
     if parts:
@@ -128,12 +135,6 @@ def normalize_name(name: str) -> str:
 def devig_probabilities(probs: list[float]) -> list[float]:
     """
     Devig probabilities by proportional scaling.
-
-    Args:
-        probs: List of implied probabilities
-
-    Returns:
-        List of devigged probabilities summing to 1.0
     """
     total = sum(probs)
     if total == 0:
@@ -141,70 +142,104 @@ def devig_probabilities(probs: list[float]) -> list[float]:
     return [p / total for p in probs]
 
 
-def load_kalshi() -> tuple[dict, str]:
+def load_source(file_path: Path, source_name: str, get_markets: callable) -> tuple[dict, dict, str, list]:
     """
-    Load Kalshi data and return dict keyed by normalized name.
+    Load a data source with collision detection.
 
     Returns:
-        (dict of normalized_name -> player data, fetched_at timestamp)
+        (players dict, base_names dict, fetched_at, collisions list)
     """
-    with open(KALSHI_FILE) as f:
+    with open(file_path) as f:
         data = json.load(f)
 
     fetched_at = data.get("fetched_at", "")
     players = {}
+    base_names = {}  # normalized_base -> display_name (for nickname match detection)
+    collisions = []
 
-    for market in data.get("markets", []):
-        name = market.get("player_name") or market.get("player_code", "")
-        if not name:
-            continue
+    # Track names before normalization to detect collisions
+    seen_normalized = {}  # normalized -> original display name
 
-        # Get ask price (yes_ask_dollars)
-        ask_dollars = market.get("yes_ask_dollars")
-        if not ask_dollars:
-            continue
-
-        ask = float(ask_dollars)
-        # Filter out inactive markets
-        if ask <= 0 or ask >= 1.0:
-            continue
-
-        normalized = normalize_name(name)
-        players[normalized] = {
-            "display_name": name,
-            "kalshi_ask": ask,
-            "kalshi_implied_prob": ask,  # Ask price IS the implied prob
-        }
-
-    return players, fetched_at
-
-
-def load_draftkings() -> tuple[dict, str]:
-    """
-    Load DraftKings data and return dict keyed by normalized name.
-
-    Returns:
-        (dict of normalized_name -> player data, fetched_at timestamp)
-    """
-    with open(DK_FILE) as f:
-        data = json.load(f)
-
-    fetched_at = data.get("fetched_at", "")
-    players = {}
-
-    for player in data.get("players", []):
-        name = player.get("player_name", "")
+    for item in get_markets(data):
+        name, player_data = item
         if not name:
             continue
 
         normalized = normalize_name(name)
-        players[normalized] = {
-            "display_name": name,
-            "dk_american_odds": player.get("american_odds"),
-            "dk_implied_prob": player.get("implied_prob"),
-        }
+        normalized_base = normalize_name_base(name)
 
-    return players, fetched_at
+        # Check for collision
+        if normalized in seen_normalized:
+            collisions.append({
+                "normalized": normalized,
+                "name1": seen_normalized[normalized],
+                "name2": name,
+            })
+            continue
+
+        seen_normalized[normalized] = name
+        players[normalized] = player_data
+        base_names[normalized_base] = name
+
+    return players, base_names, fetched_at, collisions
+
+
+def load_kalshi() -> tuple[dict, dict, str, list]:
+    """Load Kalshi data with collision detection."""
+    def get_markets(data):
+        for market in data.get("markets", []):
+            name = market.get("player_name") or market.get("player_code", "")
+            ask_dollars = market.get("yes_ask_dollars")
+            if not ask_dollars:
+                continue
+            ask = float(ask_dollars)
+            if ask <= 0 or ask >= 1.0:
+                continue
+            yield name, {
+                "display_name": name,
+                "kalshi_ask": ask,
+                "kalshi_implied_prob": ask,
+            }
+
+    return load_source(KALSHI_FILE, "Kalshi", get_markets)
+
+
+def load_draftkings() -> tuple[dict, dict, str, list]:
+    """Load DraftKings data with collision detection."""
+    def get_markets(data):
+        for player in data.get("players", []):
+            name = player.get("player_name", "")
+            yield name, {
+                "display_name": name,
+                "dk_american_odds": player.get("american_odds"),
+                "dk_implied_prob": player.get("implied_prob"),
+            }
+
+    return load_source(DK_FILE, "DraftKings", get_markets)
+
+
+def find_nickname_matches(kalshi_base: dict, dk_base: dict, kalshi: dict, dk: dict) -> list:
+    """
+    Find matches that only succeeded because of NICKNAME_MAP.
+
+    Returns list of (kalshi_name, dk_name, normalized_key) tuples.
+    """
+    nickname_matches = []
+
+    matched_normalized = set(kalshi.keys()) & set(dk.keys())
+
+    for norm_key in matched_normalized:
+        kalshi_display = kalshi[norm_key]["display_name"]
+        dk_display = dk[norm_key]["display_name"]
+
+        kalshi_base_norm = normalize_name_base(kalshi_display)
+        dk_base_norm = normalize_name_base(dk_display)
+
+        # If base normalizations differ, nickname mapping was needed
+        if kalshi_base_norm != dk_base_norm:
+            nickname_matches.append((kalshi_display, dk_display, norm_key))
+
+    return nickname_matches
 
 
 def merge_data(kalshi: dict, dk: dict) -> tuple[list, set, set]:
@@ -215,7 +250,6 @@ def merge_data(kalshi: dict, dk: dict) -> tuple[list, set, set]:
         (merged list, unmatched kalshi names, unmatched dk names)
     """
     all_normalized = set(kalshi.keys()) | set(dk.keys())
-    matched_names = set(kalshi.keys()) & set(dk.keys())
     unmatched_kalshi = set(kalshi.keys()) - set(dk.keys())
     unmatched_dk = set(dk.keys()) - set(kalshi.keys())
 
@@ -245,9 +279,9 @@ def merge_data(kalshi: dict, dk: dict) -> tuple[list, set, set]:
 
     # Sort by DK implied prob descending (favorites first), then Kalshi
     def sort_key(r):
-        dk = r.get("dk_implied_prob") or 0
-        ka = r.get("kalshi_implied_prob") or 0
-        return (dk, ka)
+        dk_prob = r.get("dk_implied_prob") or 0
+        ka_prob = r.get("kalshi_implied_prob") or 0
+        return (dk_prob, ka_prob)
 
     merged.sort(key=sort_key, reverse=True)
 
@@ -257,7 +291,7 @@ def merge_data(kalshi: dict, dk: dict) -> tuple[list, set, set]:
 def main():
     print("Loading Kalshi data...")
     try:
-        kalshi, kalshi_fetched = load_kalshi()
+        kalshi, kalshi_base, kalshi_fetched, kalshi_collisions = load_kalshi()
         print(f"  Loaded {len(kalshi)} players from Kalshi")
     except FileNotFoundError:
         print(f"Error: Kalshi file not found: {KALSHI_FILE}")
@@ -265,16 +299,31 @@ def main():
 
     print("Loading DraftKings data...")
     try:
-        dk, dk_fetched = load_draftkings()
+        dk, dk_base, dk_fetched, dk_collisions = load_draftkings()
         print(f"  Loaded {len(dk)} players from DraftKings")
     except FileNotFoundError:
         print(f"Error: DraftKings file not found: {DK_FILE}")
         sys.exit(1)
 
+    # Report collisions
+    if kalshi_collisions:
+        print(f"\n⚠️  KALSHI COLLISIONS ({len(kalshi_collisions)}):")
+        for c in kalshi_collisions:
+            print(f"  '{c['name1']}' and '{c['name2']}' both normalize to '{c['normalized']}'")
+            print(f"    -> Skipping '{c['name2']}'")
+
+    if dk_collisions:
+        print(f"\n⚠️  DRAFTKINGS COLLISIONS ({len(dk_collisions)}):")
+        for c in dk_collisions:
+            print(f"  '{c['name1']}' and '{c['name2']}' both normalize to '{c['normalized']}'")
+            print(f"    -> Skipping '{c['name2']}'")
+
+    # Find nickname-assisted matches
+    nickname_matches = find_nickname_matches(kalshi_base, dk_base, kalshi, dk)
+
     print("\nMerging data...")
     merged, unmatched_kalshi, unmatched_dk = merge_data(kalshi, dk)
 
-    matched = len(kalshi) + len(dk) - len(merged)
     matched_count = len(set(kalshi.keys()) & set(dk.keys()))
 
     print(f"  Total merged records: {len(merged)}")
@@ -314,10 +363,16 @@ def main():
     print(f"\nSaved to: {OUTPUT_FILE}")
 
     # Print match report
-    print("\n" + "=" * 60)
+    print("\n" + "=" * 70)
     print("MATCH REPORT")
-    print("=" * 60)
+    print("=" * 70)
     print(f"Matched: {matched_count} players")
+
+    # Print nickname-assisted matches
+    if nickname_matches:
+        print(f"\nNickname-assisted matches ({len(nickname_matches)}):")
+        for kalshi_name, dk_name, norm_key in sorted(nickname_matches):
+            print(f"  Kalshi: '{kalshi_name}' <-> DK: '{dk_name}'")
 
     if unmatched_kalshi:
         print(f"\nUnmatched from Kalshi ({len(unmatched_kalshi)}):")

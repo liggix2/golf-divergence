@@ -1,6 +1,6 @@
 {
   "event_name": "Rocket Classic 2026",
-  "merged_at": "2026-07-26T23:50:50.586863+00:00",
+  "merged_at": "2026-07-26T23:54:23.710988+00:00",
   "sources": {
     "kalshi": {
       "file": "KXPGATOUR-ROC26.json",
@@ -40,7 +40,7 @@
     },
     {
       "player_name": "Chris Gotterup",
-      "normalized_name": "christopher gotterup",
+      "normalized_name": "chris gotterup",
       "dk_american_odds": 1700,
       "dk_implied_prob": 0.055556,
       "dk_devigged_prob": 0.03987728740272213,
@@ -94,7 +94,7 @@
     },
     {
       "player_name": "Ben Griffin",
-      "normalized_name": "benjamin griffin",
+      "normalized_name": "ben griffin",
       "dk_american_odds": 2800,
       "dk_implied_prob": 0.034483,
       "dk_devigged_prob": 0.024751395015985084,
@@ -120,15 +120,6 @@
       "kalshi_implied_prob": 0.05
     },
     {
-      "player_name": "Harris English",
-      "normalized_name": "harris english",
-      "dk_american_odds": 3600,
-      "dk_implied_prob": 0.027027,
-      "dk_devigged_prob": 0.019399586842705936,
-      "kalshi_ask": 0.05,
-      "kalshi_implied_prob": 0.05
-    },
-    {
       "player_name": "Jake Knapp",
       "normalized_name": "jake knapp",
       "dk_american_odds": 3600,
@@ -138,8 +129,17 @@
       "kalshi_implied_prob": 0.05
     },
     {
-      "player_name": "Michael Thorbjornsen",
-      "normalized_name": "michael thorbjornsen",
+      "player_name": "Harris English",
+      "normalized_name": "harris english",
+      "dk_american_odds": 3600,
+      "dk_implied_prob": 0.027027,
+      "dk_devigged_prob": 0.019399586842705936,
+      "kalshi_ask": 0.05,
+      "kalshi_implied_prob": 0.05
+    },
+    {
+      "player_name": "Nicolai Hojgaard",
+      "normalized_name": "nicolai hojgaard",
       "dk_american_odds": 3900,
       "dk_implied_prob": 0.025,
       "dk_devigged_prob": 0.017944635774138767,
@@ -147,8 +147,8 @@
       "kalshi_implied_prob": 0.05
     },
     {
-      "player_name": "Nicolai Hojgaard",
-      "normalized_name": "nicolai hojgaard",
+      "player_name": "Michael Thorbjornsen",
+      "normalized_name": "michael thorbjornsen",
       "dk_american_odds": 3900,
       "dk_implied_prob": 0.025,
       "dk_devigged_prob": 0.017944635774138767,
@@ -175,7 +175,7 @@
     },
     {
       "player_name": "Rickie Fowler",
-      "normalized_name": "richard fowler",
+      "normalized_name": "rickie fowler",
       "dk_american_odds": 4300,
       "dk_implied_prob": 0.022727,
       "dk_devigged_prob": 0.01631310948955407,
@@ -219,8 +219,8 @@
       "kalshi_implied_prob": 0.05
     },
     {
-      "player_name": "Marco Penge",
-      "normalized_name": "marco penge",
+      "player_name": "Jordan Spieth",
+      "normalized_name": "jordan spieth",
       "dk_american_odds": 6600,
       "dk_implied_prob": 0.014925,
       "dk_devigged_prob": 0.010712947557160844,
@@ -228,8 +228,8 @@
       "kalshi_implied_prob": 0.05
     },
     {
-      "player_name": "Jordan Spieth",
-      "normalized_name": "jordan spieth",
+      "player_name": "Marco Penge",
+      "normalized_name": "marco penge",
       "dk_american_odds": 6600,
       "dk_implied_prob": 0.014925,
       "dk_devigged_prob": 0.010712947557160844,
@@ -246,8 +246,8 @@
       "kalshi_implied_prob": 0.05
     },
     {
-      "player_name": "Davis Thompson",
-      "normalized_name": "davis thompson",
+      "player_name": "Corey Conners",
+      "normalized_name": "corey conners",
       "dk_american_odds": 7600,
       "dk_implied_prob": 0.012987,
       "dk_devigged_prob": 0.009321879391949606,
@@ -255,8 +255,8 @@
       "kalshi_implied_prob": 0.05
     },
     {
-      "player_name": "Corey Conners",
-      "normalized_name": "corey conners",
+      "player_name": "Davis Thompson",
+      "normalized_name": "davis thompson",
       "dk_american_odds": 7600,
       "dk_implied_prob": 0.012987,
       "dk_devigged_prob": 0.009321879391949606,
@@ -309,8 +309,8 @@
       "kalshi_implied_prob": 0.05
     },
     {
-      "player_name": "John Keefer",
-      "normalized_name": "john keefer",
+      "player_name": "Max Greyserman",
+      "normalized_name": "max greyserman",
       "dk_american_odds": 8800,
       "dk_implied_prob": 0.011236,
       "dk_devigged_prob": 0.008065037102328927,
@@ -318,8 +318,8 @@
       "kalshi_implied_prob": 0.05
     },
     {
-      "player_name": "Max Greyserman",
-      "normalized_name": "maxwell greyserman",
+      "player_name": "John Keefer",
+      "normalized_name": "john keefer",
       "dk_american_odds": 8800,
       "dk_implied_prob": 0.011236,
       "dk_devigged_prob": 0.008065037102328927,
@@ -345,8 +345,8 @@
       "kalshi_implied_prob": 0.05
     },
     {
-      "player_name": "Nick Taylor",
-      "normalized_name": "nicholas taylor",
+      "player_name": "Denny McCarthy",
+      "normalized_name": "denny mccarthy",
       "dk_american_odds": 9400,
       "dk_implied_prob": 0.010526,
       "dk_devigged_prob": 0.007555409446343387,
@@ -354,8 +354,8 @@
       "kalshi_implied_prob": 0.05
     },
     {
-      "player_name": "Denny McCarthy",
-      "normalized_name": "denny mccarthy",
+      "player_name": "Nick Taylor",
+      "normalized_name": "nick taylor",
       "dk_american_odds": 9400,
       "dk_implied_prob": 0.010526,
       "dk_devigged_prob": 0.007555409446343387,
@@ -381,26 +381,8 @@
       "kalshi_implied_prob": 0.05
     },
     {
-      "player_name": "Rasmus Neergaard-Petersen",
-      "normalized_name": "rasmus neergaardpetersen",
-      "dk_american_odds": 10000,
-      "dk_implied_prob": 0.009901,
-      "dk_devigged_prob": 0.0071067935519899175,
-      "kalshi_ask": 0.05,
-      "kalshi_implied_prob": 0.05
-    },
-    {
-      "player_name": "Jackson Suber",
-      "normalized_name": "jackson suber",
-      "dk_american_odds": 10000,
-      "dk_implied_prob": 0.009901,
-      "dk_devigged_prob": 0.0071067935519899175,
-      "kalshi_ask": 0.05,
-      "kalshi_implied_prob": 0.05
-    },
-    {
-      "player_name": "Harry Hall",
-      "normalized_name": "harry hall",
+      "player_name": "Jason Day",
+      "normalized_name": "jason day",
       "dk_american_odds": 10000,
       "dk_implied_prob": 0.009901,
       "dk_devigged_prob": 0.0071067935519899175,
@@ -417,6 +399,15 @@
       "kalshi_implied_prob": 0.05
     },
     {
+      "player_name": "Harry Hall",
+      "normalized_name": "harry hall",
+      "dk_american_odds": 10000,
+      "dk_implied_prob": 0.009901,
+      "dk_devigged_prob": 0.0071067935519899175,
+      "kalshi_ask": 0.05,
+      "kalshi_implied_prob": 0.05
+    },
+    {
       "player_name": "Andrew Novak",
       "normalized_name": "andrew novak",
       "dk_american_odds": 10000,
@@ -426,8 +417,17 @@
       "kalshi_implied_prob": 0.05
     },
     {
-      "player_name": "Jason Day",
-      "normalized_name": "jason day",
+      "player_name": "Jackson Suber",
+      "normalized_name": "jackson suber",
+      "dk_american_odds": 10000,
+      "dk_implied_prob": 0.009901,
+      "dk_devigged_prob": 0.0071067935519899175,
+      "kalshi_ask": 0.05,
+      "kalshi_implied_prob": 0.05
+    },
+    {
+      "player_name": "Rasmus Neergaard-Petersen",
+      "normalized_name": "rasmus neergaardpetersen",
       "dk_american_odds": 10000,
       "dk_implied_prob": 0.009901,
       "dk_devigged_prob": 0.0071067935519899175,
@@ -462,6 +462,15 @@
       "kalshi_implied_prob": 0.05
     },
     {
+      "player_name": "Steven Fisk",
+      "normalized_name": "steven fisk",
+      "dk_american_odds": 11500,
+      "dk_implied_prob": 0.008621,
+      "dk_devigged_prob": 0.006188028200354012,
+      "kalshi_ask": 0.05,
+      "kalshi_implied_prob": 0.05
+    },
+    {
       "player_name": "Ricky Castillo",
       "normalized_name": "ricky castillo",
       "dk_american_odds": 11500,
@@ -472,7 +481,7 @@
     },
     {
       "player_name": "Sam Stevens",
-      "normalized_name": "samuel stevens",
+      "normalized_name": "sam stevens",
       "dk_american_odds": 11500,
       "dk_implied_prob": 0.008621,
       "dk_devigged_prob": 0.006188028200354012,
@@ -480,17 +489,17 @@
       "kalshi_implied_prob": 0.05
     },
     {
-      "player_name": "Steven Fisk",
-      "normalized_name": "steven fisk",
-      "dk_american_odds": 11500,
-      "dk_implied_prob": 0.008621,
-      "dk_devigged_prob": 0.006188028200354012,
+      "player_name": "Seamus Power",
+      "normalized_name": "seamus power",
+      "dk_american_odds": 12000,
+      "dk_implied_prob": 0.008264,
+      "dk_devigged_prob": 0.005931778801499311,
       "kalshi_ask": 0.05,
       "kalshi_implied_prob": 0.05
     },
     {
       "player_name": "Tony Finau",
-      "normalized_name": "anthony finau",
+      "normalized_name": "tony finau",
       "dk_american_odds": 12000,
       "dk_implied_prob": 0.008264,
       "dk_devigged_prob": 0.005931778801499311,
@@ -500,15 +509,6 @@
     {
       "player_name": "Stephan Jaeger",
       "normalized_name": "stephan jaeger",
-      "dk_american_odds": 12000,
-      "dk_implied_prob": 0.008264,
-      "dk_devigged_prob": 0.005931778801499311,
-      "kalshi_ask": 0.05,
-      "kalshi_implied_prob": 0.05
-    },
-    {
-      "player_name": "Seamus Power",
-      "normalized_name": "seamus power",
       "dk_american_odds": 12000,
       "dk_implied_prob": 0.008264,
       "dk_devigged_prob": 0.005931778801499311,
@@ -552,17 +552,8 @@
       "kalshi_implied_prob": 0.05
     },
     {
-      "player_name": "Rasmus Hojgaard",
-      "normalized_name": "rasmus hojgaard",
-      "dk_american_odds": 14000,
-      "dk_implied_prob": 0.007092,
-      "dk_devigged_prob": 0.005090534276407686,
-      "kalshi_ask": 0.05,
-      "kalshi_implied_prob": 0.05
-    },
-    {
-      "player_name": "Taylor Pendrith",
-      "normalized_name": "taylor pendrith",
+      "player_name": "Benjamin James",
+      "normalized_name": "benjamin james",
       "dk_american_odds": 14000,
       "dk_implied_prob": 0.007092,
       "dk_devigged_prob": 0.005090534276407686,
@@ -579,8 +570,17 @@
       "kalshi_implied_prob": 0.05
     },
     {
-      "player_name": "Benjamin James",
-      "normalized_name": "benjamin james",
+      "player_name": "Taylor Pendrith",
+      "normalized_name": "taylor pendrith",
+      "dk_american_odds": 14000,
+      "dk_implied_prob": 0.007092,
+      "dk_devigged_prob": 0.005090534276407686,
+      "kalshi_ask": 0.05,
+      "kalshi_implied_prob": 0.05
+    },
+    {
+      "player_name": "Rasmus Hojgaard",
+      "normalized_name": "rasmus hojgaard",
       "dk_american_odds": 14000,
       "dk_implied_prob": 0.007092,
       "dk_devigged_prob": 0.005090534276407686,
@@ -661,7 +661,7 @@
     },
     {
       "player_name": "Chris Kirk",
-      "normalized_name": "christopher kirk",
+      "normalized_name": "chris kirk",
       "dk_american_odds": 17000,
       "dk_implied_prob": 0.005848,
       "dk_devigged_prob": 0.0041976092002865405,
@@ -670,7 +670,7 @@
     },
     {
       "player_name": "Max McGreevy",
-      "normalized_name": "maxwell mcgreevy",
+      "normalized_name": "max mcgreevy",
       "dk_american_odds": 17500,
       "dk_implied_prob": 0.005682,
       "dk_devigged_prob": 0.004078456818746259,
@@ -696,8 +696,8 @@
       "kalshi_implied_prob": 0.05
     },
     {
-      "player_name": "Matthias Schmid",
-      "normalized_name": "matthew schmid",
+      "player_name": "Kevin Roy",
+      "normalized_name": "kevin roy",
       "dk_american_odds": 19000,
       "dk_implied_prob": 0.005236,
       "dk_devigged_prob": 0.0037583245165356233,
@@ -705,8 +705,8 @@
       "kalshi_implied_prob": 0.05
     },
     {
-      "player_name": "Kevin Roy",
-      "normalized_name": "kevin roy",
+      "player_name": "Matthias Schmid",
+      "normalized_name": "matthew schmid",
       "dk_american_odds": 19000,
       "dk_implied_prob": 0.005236,
       "dk_devigged_prob": 0.0037583245165356233,
@@ -741,8 +741,8 @@
       "kalshi_implied_prob": 0.05
     },
     {
-      "player_name": "Adrien Dumont De Chassart",
-      "normalized_name": "adrien dumont de chassart",
+      "player_name": "Lucas Glover",
+      "normalized_name": "lucas glover",
       "dk_american_odds": 23000,
       "dk_implied_prob": 0.004329,
       "dk_devigged_prob": 0.003107293130649869,
@@ -750,8 +750,8 @@
       "kalshi_implied_prob": 0.05
     },
     {
-      "player_name": "Lucas Glover",
-      "normalized_name": "lucas glover",
+      "player_name": "Adrien Dumont De Chassart",
+      "normalized_name": "adrien dumont de chassart",
       "dk_american_odds": 23000,
       "dk_implied_prob": 0.004329,
       "dk_devigged_prob": 0.003107293130649869,
@@ -886,7 +886,16 @@
     },
     {
       "player_name": "Tom Hoge",
-      "normalized_name": "thomas hoge",
+      "normalized_name": "tom hoge",
+      "dk_american_odds": 40000,
+      "dk_implied_prob": 0.002494,
+      "dk_devigged_prob": 0.0017901568648280835,
+      "kalshi_ask": 0.05,
+      "kalshi_implied_prob": 0.05
+    },
+    {
+      "player_name": "Luke Clanton",
+      "normalized_name": "luke clanton",
       "dk_american_odds": 40000,
       "dk_implied_prob": 0.002494,
       "dk_devigged_prob": 0.0017901568648280835,
@@ -912,15 +921,6 @@
       "kalshi_implied_prob": 0.05
     },
     {
-      "player_name": "Luke Clanton",
-      "normalized_name": "luke clanton",
-      "dk_american_odds": 40000,
-      "dk_implied_prob": 0.002494,
-      "dk_devigged_prob": 0.0017901568648280835,
-      "kalshi_ask": 0.05,
-      "kalshi_implied_prob": 0.05
-    },
-    {
       "player_name": "Mark Hubbard",
       "normalized_name": "mark hubbard",
       "dk_american_odds": 41000,
@@ -939,8 +939,8 @@
       "kalshi_implied_prob": 0.05
     },
     {
-      "player_name": "Takumi Kanaya",
-      "normalized_name": "takumi kanaya",
+      "player_name": "Vince Whaley",
+      "normalized_name": "vince whaley",
       "dk_american_odds": 46000,
       "dk_implied_prob": 0.002169,
       "dk_devigged_prob": 0.0015568765997642793,
@@ -948,8 +948,8 @@
       "kalshi_implied_prob": 0.05
     },
     {
-      "player_name": "Vince Whaley",
-      "normalized_name": "vince whaley",
+      "player_name": "Takumi Kanaya",
+      "normalized_name": "takumi kanaya",
       "dk_american_odds": 46000,
       "dk_implied_prob": 0.002169,
       "dk_devigged_prob": 0.0015568765997642793,
@@ -993,8 +993,8 @@
       "kalshi_implied_prob": 0.05
     },
     {
-      "player_name": "Nick Dunlap",
-      "normalized_name": "nicholas dunlap",
+      "player_name": "John Vanderlaan",
+      "normalized_name": "john vanderlaan",
       "dk_american_odds": 55000,
       "dk_implied_prob": 0.001815,
       "dk_devigged_prob": 0.0013027805572024744,
@@ -1011,8 +1011,8 @@
       "kalshi_implied_prob": 0.05
     },
     {
-      "player_name": "John Vanderlaan",
-      "normalized_name": "john vanderlaan",
+      "player_name": "Nick Dunlap",
+      "normalized_name": "nick dunlap",
       "dk_american_odds": 55000,
       "dk_implied_prob": 0.001815,
       "dk_devigged_prob": 0.0013027805572024744,
@@ -1048,7 +1048,7 @@
     },
     {
       "player_name": "Joe Highsmith",
-      "normalized_name": "joseph highsmith",
+      "normalized_name": "joe highsmith",
       "dk_american_odds": 77500,
       "dk_implied_prob": 0.001289,
       "dk_devigged_prob": 0.0009252254205145948,
@@ -1156,7 +1156,7 @@
     },
     {
       "player_name": "Danny Walker",
-      "normalized_name": "daniel walker",
+      "normalized_name": "danny walker",
       "dk_american_odds": 150000,
       "dk_implied_prob": 0.000666,
       "dk_devigged_prob": 0.00047804509702305677,
@@ -1227,8 +1227,8 @@
       "kalshi_implied_prob": 0.05
     },
     {
-      "player_name": "Marcelo Rozo",
-      "normalized_name": "marcelo rozo",
+      "player_name": "Rafael Campos",
+      "normalized_name": "rafael campos",
       "dk_american_odds": 350000,
       "dk_implied_prob": 0.000286,
       "dk_devigged_prob": 0.0002052866332561475,
@@ -1236,8 +1236,8 @@
       "kalshi_implied_prob": 0.001
     },
     {
-      "player_name": "Rafael Campos",
-      "normalized_name": "rafael campos",
+      "player_name": "Marcelo Rozo",
+      "normalized_name": "marcelo rozo",
       "dk_american_odds": 350000,
       "dk_implied_prob": 0.000286,
       "dk_devigged_prob": 0.0002052866332561475,
@@ -1255,7 +1255,7 @@
     },
     {
       "player_name": "Joe Hooks",
-      "normalized_name": "joseph hooks",
+      "normalized_name": "joe hooks",
       "dk_american_odds": 500000,
       "dk_implied_prob": 0.0002,
       "dk_devigged_prob": 0.00014355708619311013,
@@ -1272,8 +1272,8 @@
       "kalshi_implied_prob": 0.001
     },
     {
-      "player_name": "William Jennings",
-      "normalized_name": "william jennings",
+      "player_name": "Patrick Wilkes-Krier",
+      "normalized_name": "patrick wilkeskrier",
       "dk_american_odds": null,
       "dk_implied_prob": null,
       "dk_devigged_prob": null,
@@ -1281,8 +1281,8 @@
       "kalshi_implied_prob": 0.05
     },
     {
-      "player_name": "Patrick Wilkes-Krier",
-      "normalized_name": "patrick wilkeskrier",
+      "player_name": "William Jennings",
+      "normalized_name": "william jennings",
       "dk_american_odds": null,
       "dk_implied_prob": null,
       "dk_devigged_prob": null,
