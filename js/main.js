@@ -23,8 +23,8 @@ const CONFIG = {
         // Above 6pt = strong highlight
     },
 
-    // Data source path
-    kalshiDataPath: 'data/kalshi/KXPGATOUR-3MO26.json',
+    // Data source path - merged data from Kalshi + DraftKings
+    dataPath: 'data/merged/rocket-classic-2026.json',
 
     // Use fee-adjusted effective price for Kalshi edge calculations
     // When true, adds the 7% taker fee to the raw ask price before calculating edge
@@ -37,12 +37,15 @@ const CONFIG = {
 // ============================================================================
 
 /**
- * Convert a dollar price to implied probability as decimal
- * @param {string|number} dollars - Price in dollars (e.g., "0.31" = 31%)
- * @returns {number} Implied probability as decimal (e.g., 0.31)
+ * Convert implied probability (decimal) to American odds
+ * @param {number} impliedProb - Implied probability as decimal (e.g., 0.31)
+ * @returns {number} American odds (e.g., +223 for 31% implied)
  */
-function dollarToImpliedProb(dollars) {
-    return parseFloat(dollars) || 0;
+function probToAmericanOdds(impliedProb) {
+    if (impliedProb <= 0 || impliedProb >= 1) {
+        return 0;
+    }
+    return impliedToAmerican(impliedProb);
 }
 
 /**
@@ -52,11 +55,10 @@ function dollarToImpliedProb(dollars) {
  *
  * Display always shows raw ask; this only affects edge math.
  *
- * @param {string|number} askDollars - Raw ask price in dollars
+ * @param {number} rawPrice - Raw implied probability
  * @returns {number} Price to use for edge calculation (raw or fee-adjusted)
  */
-function getKalshiEdgePrice(askDollars) {
-    const rawPrice = dollarToImpliedProb(askDollars);
+function getKalshiEdgePrice(rawPrice) {
     if (rawPrice <= 0 || rawPrice >= 1) {
         return rawPrice;
     }
@@ -64,60 +66,18 @@ function getKalshiEdgePrice(askDollars) {
 }
 
 /**
- * Convert a dollar price to American odds
- * Note: yes_ask_dollars is the price field; yes_ask (integer) is null in Kalshi data
- * @param {string|number} dollars - Price in dollars (e.g., "0.31" = 31% implied)
- * @returns {number} American odds (e.g., +223 for 31% implied)
- */
-function dollarToAmericanOdds(dollars) {
-    const impliedProb = dollarToImpliedProb(dollars);
-    if (impliedProb <= 0 || impliedProb >= 1) {
-        return 0;
-    }
-    return impliedToAmerican(impliedProb);
-}
-
-/**
- * Format volume with K/M suffix
- * @param {string|number} volume - Volume value
- * @returns {string} Formatted volume (e.g., "1.3M", "450K")
- */
-function formatVolume(volume) {
-    const vol = parseFloat(volume) || 0;
-    if (vol >= 1_000_000) {
-        return (vol / 1_000_000).toFixed(1) + 'M';
-    } else if (vol >= 1_000) {
-        return Math.round(vol / 1_000) + 'K';
-    }
-    return vol.toFixed(0);
-}
-
-/**
- * Format spread value
- * @param {number|null} spread - Spread value
- * @returns {string} Formatted spread (e.g., "$0.010")
- */
-function formatSpread(spread) {
-    if (spread === null || spread === undefined) {
-        return '—';
-    }
-    return '$' + spread.toFixed(3);
-}
-
-/**
- * Format timestamp for display
+ * Format timestamp for display (short format)
  * @param {string} isoTimestamp - ISO timestamp string
  * @returns {string} Formatted timestamp
  */
 function formatTimestamp(isoTimestamp) {
+    if (!isoTimestamp) return 'Unknown';
     const date = new Date(isoTimestamp);
     return date.toLocaleString('en-US', {
         month: 'short',
         day: 'numeric',
-        year: 'numeric',
         hour: 'numeric',
         minute: '2-digit',
-        timeZoneName: 'short'
     });
 }
 
@@ -149,20 +109,27 @@ function getEdgeClass(edgePoints) {
 // ============================================================================
 
 /**
- * Render the data info header showing event ticker and fetch timestamp
- * @param {object} data - Kalshi data object
+ * Render the data info header showing event name and source timestamps
+ * @param {object} data - Merged data object
  */
 function renderDataInfo(data) {
     const dataInfo = document.getElementById('data-info');
     if (!dataInfo) return;
 
-    const eventTicker = data.event_ticker || 'Unknown';
-    const fetchedAt = data.fetched_at ? formatTimestamp(data.fetched_at) : 'Unknown';
-    const marketCount = data.market_count || 0;
+    const eventName = data.event_name || 'Unknown Event';
+    const sources = data.sources || {};
+    const playerCount = data.players ? data.players.length : 0;
+
+    const dkFetched = sources.draftkings?.fetched_at
+        ? formatTimestamp(sources.draftkings.fetched_at)
+        : 'N/A';
+    const kalshiFetched = sources.kalshi?.fetched_at
+        ? formatTimestamp(sources.kalshi.fetched_at)
+        : 'N/A';
 
     dataInfo.innerHTML = `
-        <span class="event-ticker">${eventTicker}</span>
-        <span class="fetched-at">Fetched: ${fetchedAt} · ${marketCount} markets</span>
+        <span class="event-ticker">${eventName}</span>
+        <span class="fetched-at">DK: ${dkFetched} · Kalshi: ${kalshiFetched} · ${playerCount} players</span>
     `;
 }
 
@@ -179,21 +146,48 @@ function renderEmptyCell() {
 }
 
 /**
- * Render Kalshi odds cell with American odds, implied probability, and volume
- * Note: All price reads use yes_ask_dollars since yes_ask (integer) is null in Kalshi data
- * @param {object} market - Market data object
+ * Render DraftKings odds cell with American odds and raw implied probability
+ * Uses raw implied probability, never devigged
+ * @param {object} player - Player data object from merged data
  * @returns {string} HTML for the cell
  */
-function renderKalshiCell(market) {
-    const americanOdds = dollarToAmericanOdds(market.yes_ask_dollars);
-    const impliedProb = dollarToImpliedProb(market.yes_ask_dollars);
-    const volume = formatVolume(market.volume_fp);
+function renderDraftKingsCell(player) {
+    const americanOdds = player.dk_american_odds;
+    const impliedProb = player.dk_implied_prob;
+
+    if (americanOdds === null || americanOdds === undefined) {
+        return renderEmptyCell();
+    }
+
+    const oddsStr = americanOdds >= 0 ? `+${americanOdds}` : `${americanOdds}`;
 
     return `
         <td class="odds-cell">
-            <span class="odds-american">${formatAmericanOdds(americanOdds)}</span>
+            <span class="odds-american">${oddsStr}</span>
             <span class="odds-implied">${formatProbability(impliedProb, 2)}</span>
-            <span class="odds-volume">Vol: ${volume}</span>
+        </td>
+    `;
+}
+
+/**
+ * Render Kalshi odds cell with American odds and implied probability
+ * @param {object} player - Player data object from merged data
+ * @returns {string} HTML for the cell
+ */
+function renderKalshiCell(player) {
+    const impliedProb = player.kalshi_implied_prob;
+
+    if (impliedProb === null || impliedProb === undefined) {
+        return renderEmptyCell();
+    }
+
+    const americanOdds = probToAmericanOdds(impliedProb);
+    const oddsStr = formatAmericanOdds(americanOdds);
+
+    return `
+        <td class="odds-cell">
+            <span class="odds-american">${oddsStr}</span>
+            <span class="odds-implied">${formatProbability(impliedProb, 2)}</span>
         </td>
     `;
 }
@@ -213,53 +207,48 @@ function renderEdgeCell(edge) {
 }
 
 /**
- * Render the odds table with Kalshi data
- * @param {object} data - Kalshi data object
+ * Render the odds table with merged data
+ * @param {object} data - Merged data object
  */
 function renderTable(data) {
     const tbody = document.querySelector('#odds-table tbody');
-    if (!tbody || !data.markets || data.markets.length === 0) {
+    if (!tbody || !data.players || data.players.length === 0) {
         tbody.innerHTML = '<tr class="placeholder"><td colspan="6">No market data available</td></tr>';
         return;
     }
 
-    // Filter out inactive markets (ask of 0 or 1.00)
-    const activeMarkets = data.markets.filter(m => {
-        const ask = parseFloat(m.yes_ask_dollars) || 0;
-        return ask > 0 && ask < 1.0;
-    });
+    // Filter to players with at least DK or Kalshi data
+    const activePlayers = data.players.filter(p =>
+        p.dk_implied_prob !== null || p.kalshi_implied_prob !== null
+    );
 
-    if (activeMarkets.length === 0) {
+    if (activePlayers.length === 0) {
         tbody.innerHTML = '<tr class="placeholder"><td colspan="6">No active markets found</td></tr>';
         return;
     }
 
-    // Sort by ask descending (favorites first)
-    activeMarkets.sort((a, b) => {
-        const askA = parseFloat(a.yes_ask_dollars) || 0;
-        const askB = parseFloat(b.yes_ask_dollars) || 0;
-        return askB - askA;
+    // Sort by DK implied probability descending (favorites first)
+    activePlayers.sort((a, b) => {
+        const probA = a.dk_implied_prob || 0;
+        const probB = b.dk_implied_prob || 0;
+        return probB - probA;
     });
 
     // Build table rows
-    const rows = activeMarkets.map(market => {
-        const playerName = market.player_name || market.player_code || 'Unknown';
+    const rows = activePlayers.map(player => {
+        const playerName = player.player_name || 'Unknown';
 
-        // Edge calculation: my fair probability - Kalshi effective price
-        // When CONFIG.useEffectivePrice is true, Kalshi price includes 7% taker fee
+        // Edge calculation: my fair probability - best market effective price
         // Edge is null when My Fair Odds is missing
         const myFairProb = null; // TODO: Load from My Fair Odds data
-        const kalshiEdgePrice = getKalshiEdgePrice(market.yes_ask_dollars);
-        const edge = myFairProb !== null
-            ? (myFairProb - kalshiEdgePrice) * 100
-            : null;
+        const edge = null; // No edge until fair odds exist
 
         return `
             <tr>
                 <td>${playerName}</td>
                 ${renderEmptyCell()}
-                ${renderEmptyCell()}
-                ${renderKalshiCell(market)}
+                ${renderDraftKingsCell(player)}
+                ${renderKalshiCell(player)}
                 ${renderEmptyCell()}
                 ${renderEdgeCell(edge)}
             </tr>
@@ -276,8 +265,8 @@ function renderTable(data) {
 document.addEventListener('DOMContentLoaded', function() {
     const tournamentSelect = document.getElementById('tournament-select');
 
-    // Load Kalshi data on page load
-    fetch(CONFIG.kalshiDataPath)
+    // Load merged data on page load
+    fetch(CONFIG.dataPath)
         .then(response => {
             if (!response.ok) {
                 throw new Error(`HTTP error! status: ${response.status}`);
@@ -287,10 +276,10 @@ document.addEventListener('DOMContentLoaded', function() {
         .then(data => {
             renderDataInfo(data);
             renderTable(data);
-            console.log(`Loaded ${data.market_count} markets from ${data.event_ticker}`);
+            console.log(`Loaded ${data.players?.length || 0} players for ${data.event_name}`);
         })
         .catch(error => {
-            console.error('Error loading Kalshi data:', error);
+            console.error('Error loading data:', error);
             const tbody = document.querySelector('#odds-table tbody');
             if (tbody) {
                 tbody.innerHTML = `<tr class="placeholder"><td colspan="6">Error loading data: ${error.message}</td></tr>`;
