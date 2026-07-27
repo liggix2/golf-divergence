@@ -1,0 +1,4960 @@
+{
+  "sports": [
+    {
+      "id": "12",
+      "seoIdentifier": "golf",
+      "name": "Golf",
+      "sortOrder": 59
+    }
+  ],
+  "leagues": [
+    {
+      "id": "189706",
+      "seoIdentifier": "rocket-classic",
+      "name": "Rocket Classic",
+      "sportId": "12",
+      "sortOrder": 4889
+    }
+  ],
+  "events": [
+    {
+      "id": "39bd2e36-5fc6-4514-38be-08ded845cbd3",
+      "seoIdentifier": "rocket-classic-2026",
+      "sportId": "12",
+      "leagueId": "189706",
+      "name": "Rocket Classic 2026",
+      "startEventDate": "2026-07-30T10:45:00.0000000Z",
+      "participants": [
+        {
+          "name": "Harris English",
+          "type": "Team",
+          "isNationalTeam": false,
+          "countryCode": "ZZ"
+        },
+        {
+          "name": "Mac Meissner",
+          "type": "Team",
+          "isNationalTeam": false,
+          "countryCode": "US"
+        },
+        {
+          "name": "Billy Horschel",
+          "type": "Team",
+          "isNationalTeam": false,
+          "countryCode": "ZZ"
+        },
+        {
+          "name": "Pierceson Coody",
+          "type": "Team",
+          "isNationalTeam": false,
+          "countryCode": "US"
+        },
+        {
+          "name": "Emiliano Grillo",
+          "type": "Team",
+          "isNationalTeam": false,
+          "countryCode": "ZZ"
+        },
+        {
+          "name": "Russell Henley",
+          "type": "Team",
+          "isNationalTeam": false,
+          "countryCode": "ZZ"
+        },
+        {
+          "name": "Patrick Cantlay",
+          "type": "Team",
+          "isNationalTeam": false,
+          "countryCode": "ZZ"
+        },
+        {
+          "name": "Jordan Spieth",
+          "type": "Team",
+          "isNationalTeam": false,
+          "countryCode": "ZZ"
+        },
+        {
+          "name": "Brice Garnett",
+          "type": "Team",
+          "isNationalTeam": false,
+          "countryCode": "ZZ"
+        },
+        {
+          "name": "Lucas Glover",
+          "type": "Team",
+          "isNationalTeam": false,
+          "countryCode": "ZZ"
+        },
+        {
+          "name": "David Lipsky",
+          "type": "Team",
+          "isNationalTeam": false,
+          "countryCode": "ZZ"
+        },
+        {
+          "name": "Andrew Putnam",
+          "type": "Team",
+          "isNationalTeam": false,
+          "countryCode": "ZZ"
+        },
+        {
+          "name": "Stephan Jaeger",
+          "type": "Team",
+          "isNationalTeam": false,
+          "countryCode": "ZZ"
+        },
+        {
+          "name": "Kevin Yu",
+          "type": "Team",
+          "isNationalTeam": false,
+          "countryCode": "US"
+        },
+        {
+          "name": "Hideki Matsuyama",
+          "type": "Team",
+          "isNationalTeam": false,
+          "countryCode": "ZZ"
+        },
+        {
+          "name": "Michael Kim",
+          "type": "Team",
+          "isNationalTeam": false,
+          "countryCode": "ZZ"
+        },
+        {
+          "name": "Brendon Todd",
+          "type": "Team",
+          "isNationalTeam": false,
+          "countryCode": "ZZ"
+        },
+        {
+          "name": "Brooks Koepka",
+          "type": "Team",
+          "isNationalTeam": false,
+          "countryCode": "ZZ"
+        },
+        {
+          "name": "Tom Hoge",
+          "type": "Team",
+          "isNationalTeam": false,
+          "countryCode": "ZZ"
+        },
+        {
+          "name": "Si Woo Kim",
+          "type": "Team",
+          "isNationalTeam": false,
+          "countryCode": "ZZ"
+        },
+        {
+          "name": "Peter Malnati",
+          "type": "Team",
+          "isNationalTeam": false,
+          "countryCode": "ZZ"
+        },
+        {
+          "name": "Seamus Power",
+          "type": "Team",
+          "isNationalTeam": false,
+          "countryCode": "ZZ"
+        },
+        {
+          "name": "Patrick Rodgers",
+          "type": "Team",
+          "isNationalTeam": false,
+          "countryCode": "ZZ"
+        },
+        {
+          "name": "Adrien Saddier",
+          "type": "Team",
+          "isNationalTeam": false,
+          "countryCode": "ZZ"
+        },
+        {
+          "name": "Mackenzie Hughes",
+          "type": "Team",
+          "isNationalTeam": false,
+          "countryCode": "ZZ"
+        },
+        {
+          "name": "Corey Conners",
+          "type": "Team",
+          "isNationalTeam": false,
+          "countryCode": "ZZ"
+        },
+        {
+          "name": "Adam Svensson",
+          "type": "Team",
+          "isNationalTeam": false,
+          "countryCode": "ZZ"
+        },
+        {
+          "name": "Mark Hubbard",
+          "type": "Team",
+          "isNationalTeam": false,
+          "countryCode": "ZZ"
+        },
+        {
+          "name": "Cameron Davis",
+          "type": "Team",
+          "isNationalTeam": false,
+          "countryCode": "ZZ"
+        },
+        {
+          "name": "Ryan Ruffels",
+          "type": "Team",
+          "isNationalTeam": false,
+          "countryCode": "ZZ"
+        },
+        {
+          "name": "Christiaan Bezuidenhout",
+          "type": "Team",
+          "isNationalTeam": false,
+          "countryCode": "ZZ"
+        },
+        {
+          "name": "Tony Finau",
+          "type": "Team",
+          "isNationalTeam": false,
+          "countryCode": "ZZ"
+        },
+        {
+          "name": "Nick Taylor",
+          "type": "Team",
+          "isNationalTeam": false,
+          "countryCode": "ZZ"
+        },
+        {
+          "name": "Steven Fisk",
+          "type": "Team",
+          "isNationalTeam": false,
+          "countryCode": "US"
+        },
+        {
+          "name": "Matt McCarty",
+          "type": "Team",
+          "isNationalTeam": false,
+          "countryCode": "US"
+        },
+        {
+          "name": "Marcelo Rozo",
+          "type": "Team",
+          "isNationalTeam": false,
+          "countryCode": "ZZ"
+        },
+        {
+          "name": "Erik Van Rooyen",
+          "type": "Team",
+          "isNationalTeam": false,
+          "countryCode": "ZZ"
+        },
+        {
+          "name": "Rafael Campos",
+          "type": "Team",
+          "isNationalTeam": false,
+          "countryCode": "ZZ"
+        },
+        {
+          "name": "Jacob Bridgeman",
+          "type": "Team",
+          "isNationalTeam": false,
+          "countryCode": "US"
+        },
+        {
+          "name": "Vince Whaley",
+          "type": "Team",
+          "isNationalTeam": false,
+          "countryCode": "GB"
+        },
+        {
+          "name": "Kris Ventura",
+          "type": "Team",
+          "isNationalTeam": false,
+          "countryCode": "US"
+        },
+        {
+          "name": "A.J. Ewart",
+          "type": "Team",
+          "isNationalTeam": false,
+          "countryCode": "US"
+        },
+        {
+          "name": "Chris Gotterup",
+          "type": "Team",
+          "isNationalTeam": false,
+          "countryCode": "US"
+        },
+        {
+          "name": "Ryan Gerard",
+          "type": "Team",
+          "isNationalTeam": false,
+          "countryCode": "DZ"
+        },
+        {
+          "name": "William Mouw",
+          "type": "Team",
+          "isNationalTeam": false,
+          "countryCode": "ZZ"
+        },
+        {
+          "name": "Benjamin James",
+          "type": "Team",
+          "isNationalTeam": false,
+          "countryCode": "US"
+        },
+        {
+          "name": "Aldrich Potgieter",
+          "type": "Team",
+          "isNationalTeam": false,
+          "countryCode": "GB"
+        },
+        {
+          "name": "Joe Highsmith",
+          "type": "Team",
+          "isNationalTeam": false,
+          "countryCode": "ZZ"
+        },
+        {
+          "name": "Eric Cole",
+          "type": "Team",
+          "isNationalTeam": false,
+          "countryCode": "ZZ"
+        },
+        {
+          "name": "Davis Chatfield",
+          "type": "Team",
+          "isNationalTeam": false,
+          "countryCode": "US"
+        },
+        {
+          "name": "Sudarshan Yellamaraju",
+          "type": "Team",
+          "isNationalTeam": false,
+          "countryCode": "US"
+        },
+        {
+          "name": "Adrien Dumont De Chassart",
+          "type": "Team",
+          "isNationalTeam": false,
+          "countryCode": "US"
+        },
+        {
+          "name": "Cameron Young",
+          "type": "Team",
+          "isNationalTeam": false,
+          "countryCode": "US"
+        },
+        {
+          "name": "Denny McCarthy",
+          "type": "Team",
+          "isNationalTeam": false,
+          "countryCode": "ZZ"
+        },
+        {
+          "name": "Patton Kizzire",
+          "type": "Team",
+          "isNationalTeam": false,
+          "countryCode": "ZZ"
+        },
+        {
+          "name": "Neal Shipley",
+          "type": "Team",
+          "isNationalTeam": false,
+          "countryCode": "US"
+        },
+        {
+          "name": "Lanto Griffin",
+          "type": "Team",
+          "isNationalTeam": false,
+          "countryCode": "ZZ"
+        },
+        {
+          "name": "Jackson Koivun",
+          "type": "Team",
+          "isNationalTeam": false,
+          "countryCode": "US"
+        },
+        {
+          "name": "Luke Clanton",
+          "type": "Team",
+          "isNationalTeam": false,
+          "countryCode": "US"
+        },
+        {
+          "name": "Joel Dahmen",
+          "type": "Team",
+          "isNationalTeam": false,
+          "countryCode": "ZZ"
+        },
+        {
+          "name": "Takumi Kanaya",
+          "type": "Team",
+          "isNationalTeam": false,
+          "countryCode": "JP"
+        },
+        {
+          "name": "Taylor Pendrith",
+          "type": "Team",
+          "isNationalTeam": false,
+          "countryCode": "US"
+        },
+        {
+          "name": "Jake Knapp",
+          "type": "Team",
+          "isNationalTeam": false,
+          "countryCode": "ZZ"
+        },
+        {
+          "name": "Beau Hossler",
+          "type": "Team",
+          "isNationalTeam": false,
+          "countryCode": "ZZ"
+        },
+        {
+          "name": "Davis Riley",
+          "type": "Team",
+          "isNationalTeam": false,
+          "countryCode": "US"
+        },
+        {
+          "name": "Xander Schauffele",
+          "type": "Team",
+          "isNationalTeam": false,
+          "countryCode": "ZZ"
+        },
+        {
+          "name": "Brian Campbell",
+          "type": "Team",
+          "isNationalTeam": false,
+          "countryCode": "US"
+        },
+        {
+          "name": "Matthieu Pavon",
+          "type": "Team",
+          "isNationalTeam": false,
+          "countryCode": "ZZ"
+        },
+        {
+          "name": "Jordan Smith",
+          "type": "Team",
+          "isNationalTeam": false,
+          "countryCode": "ZZ"
+        },
+        {
+          "name": "Daniel Brown",
+          "type": "Team",
+          "isNationalTeam": false,
+          "countryCode": "ZZ"
+        },
+        {
+          "name": "Stefano Mazzoli",
+          "type": "Team",
+          "isNationalTeam": false,
+          "countryCode": "IT"
+        },
+        {
+          "name": "Kensei Hirata",
+          "type": "Team",
+          "isNationalTeam": false,
+          "countryCode": "JP"
+        },
+        {
+          "name": "Matt Wallace",
+          "type": "Team",
+          "isNationalTeam": false,
+          "countryCode": "ZZ"
+        },
+        {
+          "name": "Keita Nakajima",
+          "type": "Team",
+          "isNationalTeam": false,
+          "countryCode": "JP"
+        },
+        {
+          "name": "Chad Ramey",
+          "type": "Team",
+          "isNationalTeam": false,
+          "countryCode": "US"
+        },
+        {
+          "name": "Adam Schenk",
+          "type": "Team",
+          "isNationalTeam": false,
+          "countryCode": "US"
+        },
+        {
+          "name": "J.J. Spaun",
+          "type": "Team",
+          "isNationalTeam": false,
+          "countryCode": "PA"
+        },
+        {
+          "name": "Jason Day",
+          "type": "Team",
+          "isNationalTeam": false,
+          "countryCode": "ZZ"
+        },
+        {
+          "name": "Brad Dalke",
+          "type": "Team",
+          "isNationalTeam": false,
+          "countryCode": "US"
+        },
+        {
+          "name": "Zecheng Dou",
+          "type": "Team",
+          "isNationalTeam": false,
+          "countryCode": "CA"
+        },
+        {
+          "name": "Aaron Wise",
+          "type": "Team",
+          "isNationalTeam": false,
+          "countryCode": "ZZ"
+        },
+        {
+          "name": "Taylor Moore",
+          "type": "Team",
+          "isNationalTeam": false,
+          "countryCode": "CA"
+        },
+        {
+          "name": "Haotong Li",
+          "type": "Team",
+          "isNationalTeam": false,
+          "countryCode": "DK"
+        },
+        {
+          "name": "Ryo Hisatsune",
+          "type": "Team",
+          "isNationalTeam": false,
+          "countryCode": "JP"
+        },
+        {
+          "name": "Brandt Snedeker",
+          "type": "Team",
+          "isNationalTeam": false,
+          "countryCode": "US"
+        },
+        {
+          "name": "Austin Smotherman",
+          "type": "Team",
+          "isNationalTeam": false,
+          "countryCode": "US"
+        },
+        {
+          "name": "Max Greyserman",
+          "type": "Team",
+          "isNationalTeam": false,
+          "countryCode": "US"
+        },
+        {
+          "name": "Wyndham Clark",
+          "type": "Team",
+          "isNationalTeam": false,
+          "countryCode": "ZZ"
+        },
+        {
+          "name": "Trace Crowe",
+          "type": "Team",
+          "isNationalTeam": false,
+          "countryCode": "US"
+        },
+        {
+          "name": "Matt Kuchar",
+          "type": "Team",
+          "isNationalTeam": false,
+          "countryCode": "US"
+        },
+        {
+          "name": "Rasmus Hojgaard",
+          "type": "Team",
+          "isNationalTeam": false,
+          "countryCode": "ZZ"
+        },
+        {
+          "name": "Nicolai Hojgaard",
+          "type": "Team",
+          "isNationalTeam": false,
+          "countryCode": "DK"
+        },
+        {
+          "name": "Kevin Streelman",
+          "type": "Team",
+          "isNationalTeam": false,
+          "countryCode": "YT"
+        },
+        {
+          "name": "Andrew Novak",
+          "type": "Team",
+          "isNationalTeam": false,
+          "countryCode": "US"
+        },
+        {
+          "name": "Karl Vilips",
+          "type": "Team",
+          "isNationalTeam": false,
+          "countryCode": "AU"
+        },
+        {
+          "name": "Rico Hoey",
+          "type": "Team",
+          "isNationalTeam": false,
+          "countryCode": "US"
+        },
+        {
+          "name": "Max McGreevy",
+          "type": "Team",
+          "isNationalTeam": false,
+          "countryCode": "US"
+        },
+        {
+          "name": "Garrick Higgo",
+          "type": "Team",
+          "isNationalTeam": false,
+          "countryCode": "ZZ"
+        },
+        {
+          "name": "Christo Lamprecht",
+          "type": "Team",
+          "isNationalTeam": false,
+          "countryCode": "ZA"
+        },
+        {
+          "name": "Sungjae Im",
+          "type": "Team",
+          "isNationalTeam": false,
+          "countryCode": "US"
+        },
+        {
+          "name": "Hank Lebioda",
+          "type": "Team",
+          "isNationalTeam": false,
+          "countryCode": "ZZ"
+        },
+        {
+          "name": "Doug Ghim",
+          "type": "Team",
+          "isNationalTeam": false,
+          "countryCode": "US"
+        },
+        {
+          "name": "Jeffrey Kang",
+          "type": "Team",
+          "isNationalTeam": false,
+          "countryCode": "CN"
+        },
+        {
+          "name": "Marco Penge",
+          "type": "Team",
+          "isNationalTeam": false,
+          "countryCode": "PT"
+        },
+        {
+          "name": "Alejandro Tosti",
+          "type": "Team",
+          "isNationalTeam": false,
+          "countryCode": "US"
+        },
+        {
+          "name": "Patrick Fishburn",
+          "type": "Team",
+          "isNationalTeam": false,
+          "countryCode": "US"
+        },
+        {
+          "name": "John Vanderlaan",
+          "type": "Team",
+          "isNationalTeam": false,
+          "countryCode": "US"
+        },
+        {
+          "name": "Jesper Svensson",
+          "type": "Team",
+          "isNationalTeam": false,
+          "countryCode": "SE"
+        },
+        {
+          "name": "Pontus Nyholm",
+          "type": "Team",
+          "isNationalTeam": false,
+          "countryCode": "SE"
+        },
+        {
+          "name": "Zach Bauchou",
+          "type": "Team",
+          "isNationalTeam": false,
+          "countryCode": "AU"
+        },
+        {
+          "name": "Lee Hodges",
+          "type": "Team",
+          "isNationalTeam": false,
+          "countryCode": "US"
+        },
+        {
+          "name": "Nicolas Echavarria",
+          "type": "Team",
+          "isNationalTeam": false,
+          "countryCode": "US"
+        },
+        {
+          "name": "Dylan Wu",
+          "type": "Team",
+          "isNationalTeam": false,
+          "countryCode": "US"
+        },
+        {
+          "name": "Danny Walker",
+          "type": "Team",
+          "isNationalTeam": false,
+          "countryCode": "US"
+        },
+        {
+          "name": "Kevin Roy",
+          "type": "Team",
+          "isNationalTeam": false,
+          "countryCode": "US"
+        },
+        {
+          "name": "Ben Griffin",
+          "type": "Team",
+          "isNationalTeam": false,
+          "countryCode": "US"
+        },
+        {
+          "name": "Webb Simpson",
+          "type": "Team",
+          "isNationalTeam": false,
+          "countryCode": "ZZ"
+        },
+        {
+          "name": "Akshay Bhatia",
+          "type": "Team",
+          "isNationalTeam": false,
+          "countryCode": "US"
+        },
+        {
+          "name": "Austin Eckroat",
+          "type": "Team",
+          "isNationalTeam": false,
+          "countryCode": "US"
+        },
+        {
+          "name": "Michael Thorbjornsen",
+          "type": "Team",
+          "isNationalTeam": false,
+          "countryCode": "US"
+        },
+        {
+          "name": "Matthias Schmid",
+          "type": "Team",
+          "isNationalTeam": false,
+          "countryCode": "EU"
+        },
+        {
+          "name": "Chandler Phillips",
+          "type": "Team",
+          "isNationalTeam": false,
+          "countryCode": "US"
+        },
+        {
+          "name": "Harry Hall",
+          "type": "Team",
+          "isNationalTeam": false,
+          "countryCode": "KK"
+        },
+        {
+          "name": "Davis Thompson",
+          "type": "Team",
+          "isNationalTeam": false,
+          "countryCode": "US"
+        },
+        {
+          "name": "Rickie Fowler",
+          "type": "Team",
+          "isNationalTeam": false,
+          "countryCode": "US"
+        },
+        {
+          "name": "Chandler Blanchet",
+          "type": "Team",
+          "isNationalTeam": false,
+          "countryCode": "US"
+        },
+        {
+          "name": "Sam Stevens",
+          "type": "Team",
+          "isNationalTeam": false,
+          "countryCode": "US"
+        },
+        {
+          "name": "John Parry",
+          "type": "Team",
+          "isNationalTeam": false,
+          "countryCode": "EN"
+        },
+        {
+          "name": "Thorbjorn Olesen",
+          "type": "Team",
+          "isNationalTeam": false,
+          "countryCode": "ZZ"
+        },
+        {
+          "name": "Joe Hooks",
+          "type": "Team",
+          "isNationalTeam": false,
+          "countryCode": "US"
+        },
+        {
+          "name": "Rasmus Neergaard-Petersen",
+          "type": "Team",
+          "isNationalTeam": false,
+          "countryCode": "ZZ"
+        },
+        {
+          "name": "John Keefer",
+          "type": "Team",
+          "isNationalTeam": false,
+          "countryCode": "US"
+        },
+        {
+          "name": "Michael Brennan",
+          "type": "Team",
+          "isNationalTeam": false,
+          "countryCode": "ZZ"
+        },
+        {
+          "name": "Gordon Sargent",
+          "type": "Team",
+          "isNationalTeam": false,
+          "countryCode": "ZZ"
+        },
+        {
+          "name": "Nick Dunlap",
+          "type": "Team",
+          "isNationalTeam": false,
+          "countryCode": "ZZ"
+        },
+        {
+          "name": "Jackson Suber",
+          "type": "Team",
+          "isNationalTeam": false,
+          "countryCode": "US"
+        },
+        {
+          "name": "Chris Kirk",
+          "type": "Team",
+          "isNationalTeam": false,
+          "countryCode": "US"
+        },
+        {
+          "name": "Ricky Castillo",
+          "type": "Team",
+          "isNationalTeam": false,
+          "countryCode": "US"
+        },
+        {
+          "name": "Keegan Bradley",
+          "type": "Team",
+          "isNationalTeam": false,
+          "countryCode": "ZZ"
+        }
+      ],
+      "eventParticipantType": "MultiTeam",
+      "status": "NOT_STARTED",
+      "media": [
+        {
+          "providerName": "IMG",
+          "providerEventId": "1401",
+          "mediaType": "MatchTracker",
+          "metadata": {
+            "imgCoverage": "L1",
+            "tournamentId": "1401"
+          }
+        }
+      ],
+      "tags": [
+        "FeaturedSubcategory",
+        "OSB",
+        "STP"
+      ],
+      "metadata": {
+        "settlementDate": "2026-08-02T23:00:00Z"
+      },
+      "sortOrder": 540688551,
+      "subscriptionKey": "events-1162975456"
+    }
+  ],
+  "markets": [
+    {
+      "id": "354220436",
+      "eventId": "39bd2e36-5fc6-4514-38be-08ded845cbd3",
+      "sportId": "12",
+      "leagueId": "189706",
+      "name": "Winner",
+      "subcategoryId": "4508",
+      "componentMapping": {
+        "primary": 18,
+        "fallback": 0
+      },
+      "marketType": {
+        "id": "8996",
+        "betOfferTypeId": 0,
+        "name": "Outright Winner"
+      },
+      "subscriptionKey": "events-1162975456",
+      "sortOrder": 1436,
+      "tags": [
+        "STP",
+        "YourBetEligible",
+        "Cashout",
+        "Default",
+        "FeaturedSubcategory",
+        "IgnoreSortOrderOnPush",
+        "OSB"
+      ],
+      "dynamicMetadata": {}
+    }
+  ],
+  "selections": [
+    {
+      "id": "0QA354220436#2225356801_13L189706Q1202156Q2-1",
+      "marketId": "354220436",
+      "label": "Cameron Young",
+      "displayOdds": {
+        "american": "+990",
+        "decimal": "10.90",
+        "fractional": "99/10",
+        "percentage": "9.1%"
+      },
+      "trueOdds": 10.9,
+      "participants": [
+        {
+          "name": "Cameron Young",
+          "type": "Team",
+          "isNationalTeam": false,
+          "countryCode": "US",
+          "metadata": {
+            "sdid": "202156"
+          }
+        }
+      ],
+      "sortOrder": 109001,
+      "tags": [
+        "STP",
+        "OSB"
+      ],
+      "metadata": {}
+    },
+    {
+      "id": "0QA354220436#2225356689_13L189706Q1263245Q2-1",
+      "marketId": "354220436",
+      "label": "Xander Schauffele",
+      "displayOdds": {
+        "american": "+1600",
+        "decimal": "17.00",
+        "fractional": "16/1",
+        "percentage": "5.8%"
+      },
+      "trueOdds": 17,
+      "participants": [
+        {
+          "name": "Xander Schauffele",
+          "type": "Team",
+          "isNationalTeam": false,
+          "countryCode": "ZZ",
+          "metadata": {
+            "sdid": "263245"
+          }
+        }
+      ],
+      "sortOrder": 170089,
+      "tags": [
+        "STP",
+        "OSB"
+      ],
+      "metadata": {}
+    },
+    {
+      "id": "0QA354220436#2225356797_13L189706Q11592957Q2-1",
+      "marketId": "354220436",
+      "label": "Chris Gotterup",
+      "displayOdds": {
+        "american": "+1700",
+        "decimal": "18.00",
+        "fractional": "17/1",
+        "percentage": "5.5%"
+      },
+      "trueOdds": 18,
+      "participants": [
+        {
+          "name": "Chris Gotterup",
+          "type": "Team",
+          "isNationalTeam": false,
+          "countryCode": "US",
+          "metadata": {
+            "sdid": "1592957"
+          }
+        }
+      ],
+      "sortOrder": 180097,
+      "tags": [
+        "STP",
+        "OSB"
+      ],
+      "metadata": {}
+    },
+    {
+      "id": "0QA354220436#2225356706_13L189706Q1124719Q2-1",
+      "marketId": "354220436",
+      "label": "Si Woo Kim",
+      "displayOdds": {
+        "american": "+1850",
+        "decimal": "19.50",
+        "fractional": "37/2",
+        "percentage": "5.1%"
+      },
+      "trueOdds": 19.5,
+      "participants": [
+        {
+          "name": "Si Woo Kim",
+          "type": "Team",
+          "isNationalTeam": false,
+          "countryCode": "ZZ",
+          "metadata": {
+            "sdid": "124719"
+          }
+        }
+      ],
+      "sortOrder": 195006,
+      "tags": [
+        "STP",
+        "OSB"
+      ],
+      "metadata": {}
+    },
+    {
+      "id": "0QA354220436#2225356690_13L189706Q1444400Q2-1",
+      "marketId": "354220436",
+      "label": "Wyndham Clark",
+      "displayOdds": {
+        "american": "+2050",
+        "decimal": "21.50",
+        "fractional": "41/2",
+        "percentage": "4.6%"
+      },
+      "trueOdds": 21.5,
+      "participants": [
+        {
+          "name": "Wyndham Clark",
+          "type": "Team",
+          "isNationalTeam": false,
+          "countryCode": "ZZ",
+          "metadata": {
+            "sdid": "444400"
+          }
+        }
+      ],
+      "sortOrder": 215090,
+      "tags": [
+        "STP",
+        "OSB"
+      ],
+      "metadata": {}
+    },
+    {
+      "id": "0QA354220436#2225356727_13L189706Q1118740Q2-1",
+      "marketId": "354220436",
+      "label": "Patrick Cantlay",
+      "displayOdds": {
+        "american": "+2150",
+        "decimal": "22.50",
+        "fractional": "43/2",
+        "percentage": "4.4%"
+      },
+      "trueOdds": 22.5,
+      "participants": [
+        {
+          "name": "Patrick Cantlay",
+          "type": "Team",
+          "isNationalTeam": false,
+          "countryCode": "ZZ",
+          "metadata": {
+            "sdid": "118740"
+          }
+        }
+      ],
+      "sortOrder": 225027,
+      "tags": [
+        "STP",
+        "OSB"
+      ],
+      "metadata": {}
+    },
+    {
+      "id": "0QA354220436#2225356714_13L189706Q1118431Q2-1",
+      "marketId": "354220436",
+      "label": "Russell Henley",
+      "displayOdds": {
+        "american": "+2500",
+        "decimal": "26.00",
+        "fractional": "25/1",
+        "percentage": "3.8%"
+      },
+      "trueOdds": 26,
+      "participants": [
+        {
+          "name": "Russell Henley",
+          "type": "Team",
+          "isNationalTeam": false,
+          "countryCode": "ZZ",
+          "metadata": {
+            "sdid": "118431"
+          }
+        }
+      ],
+      "sortOrder": 260014,
+      "tags": [
+        "STP",
+        "OSB"
+      ],
+      "metadata": {}
+    },
+    {
+      "id": "0QA354220436#2225356773_13L189706Q12316177Q2-1",
+      "marketId": "354220436",
+      "label": "Jackson Koivun",
+      "displayOdds": {
+        "american": "+2600",
+        "decimal": "27.00",
+        "fractional": "26/1",
+        "percentage": "3.7%"
+      },
+      "trueOdds": 27,
+      "participants": [
+        {
+          "name": "Jackson Koivun",
+          "type": "Team",
+          "isNationalTeam": false,
+          "countryCode": "US",
+          "metadata": {
+            "sdid": "2316177"
+          }
+        }
+      ],
+      "sortOrder": 270073,
+      "tags": [
+        "STP",
+        "OSB"
+      ],
+      "metadata": {}
+    },
+    {
+      "id": "0QA354220436#2225356811_13L189706Q1598628Q2-1",
+      "marketId": "354220436",
+      "label": "Ben Griffin",
+      "displayOdds": {
+        "american": "+2800",
+        "decimal": "29.00",
+        "fractional": "28/1",
+        "percentage": "3.4%"
+      },
+      "trueOdds": 29,
+      "participants": [
+        {
+          "name": "Ben Griffin",
+          "type": "Team",
+          "isNationalTeam": false,
+          "countryCode": "US",
+          "metadata": {
+            "sdid": "598628"
+          }
+        }
+      ],
+      "sortOrder": 290011,
+      "tags": [
+        "STP",
+        "OSB"
+      ],
+      "metadata": {}
+    },
+    {
+      "id": "0QA354220436#2225356774_13L189706Q1320684Q2-1",
+      "marketId": "354220436",
+      "label": "J.J. Spaun",
+      "displayOdds": {
+        "american": "+3300",
+        "decimal": "34.00",
+        "fractional": "33/1",
+        "percentage": "2.9%"
+      },
+      "trueOdds": 34,
+      "participants": [
+        {
+          "name": "J.J. Spaun",
+          "type": "Team",
+          "isNationalTeam": false,
+          "countryCode": "PA",
+          "metadata": {
+            "sdid": "320684"
+          }
+        }
+      ],
+      "sortOrder": 340074,
+      "tags": [
+        "STP",
+        "OSB"
+      ],
+      "metadata": {}
+    },
+    {
+      "id": "0QA354220436#2225356775_13L189706Q1122583Q2-1",
+      "marketId": "354220436",
+      "label": "Hideki Matsuyama",
+      "displayOdds": {
+        "american": "+3500",
+        "decimal": "36.00",
+        "fractional": "35/1",
+        "percentage": "2.7%"
+      },
+      "trueOdds": 36,
+      "participants": [
+        {
+          "name": "Hideki Matsuyama",
+          "type": "Team",
+          "isNationalTeam": false,
+          "countryCode": "ZZ",
+          "metadata": {
+            "sdid": "122583"
+          }
+        }
+      ],
+      "sortOrder": 360075,
+      "tags": [
+        "STP",
+        "OSB"
+      ],
+      "metadata": {}
+    },
+    {
+      "id": "0QA354220436#2225356770_13L189706Q1261697Q2-1",
+      "marketId": "354220436",
+      "label": "Jake Knapp",
+      "displayOdds": {
+        "american": "+3600",
+        "decimal": "37.00",
+        "fractional": "36/1",
+        "percentage": "2.7%"
+      },
+      "trueOdds": 37,
+      "participants": [
+        {
+          "name": "Jake Knapp",
+          "type": "Team",
+          "isNationalTeam": false,
+          "countryCode": "ZZ",
+          "metadata": {
+            "sdid": "261697"
+          }
+        }
+      ],
+      "sortOrder": 370070,
+      "tags": [
+        "STP",
+        "OSB"
+      ],
+      "metadata": {}
+    },
+    {
+      "id": "0QA354220436#2225356777_13L189706Q1107524Q2-1",
+      "marketId": "354220436",
+      "label": "Harris English",
+      "displayOdds": {
+        "american": "+3600",
+        "decimal": "37.00",
+        "fractional": "36/1",
+        "percentage": "2.7%"
+      },
+      "trueOdds": 37,
+      "participants": [
+        {
+          "name": "Harris English",
+          "type": "Team",
+          "isNationalTeam": false,
+          "countryCode": "ZZ",
+          "metadata": {
+            "sdid": "107524"
+          }
+        }
+      ],
+      "sortOrder": 370077,
+      "tags": [
+        "STP",
+        "OSB"
+      ],
+      "metadata": {}
+    },
+    {
+      "id": "0QA354220436#2225356729_13L189706Q1462850Q2-1",
+      "marketId": "354220436",
+      "label": "Nicolai Hojgaard",
+      "displayOdds": {
+        "american": "+3900",
+        "decimal": "40.00",
+        "fractional": "39/1",
+        "percentage": "2.5%"
+      },
+      "trueOdds": 40,
+      "participants": [
+        {
+          "name": "Nicolai Hojgaard",
+          "type": "Team",
+          "isNationalTeam": false,
+          "countryCode": "DK",
+          "metadata": {
+            "sdid": "462850"
+          }
+        }
+      ],
+      "sortOrder": 400029,
+      "tags": [
+        "STP",
+        "OSB"
+      ],
+      "metadata": {}
+    },
+    {
+      "id": "0QA354220436#2225356733_13L189706Q1688185Q2-1",
+      "marketId": "354220436",
+      "label": "Michael Thorbjornsen",
+      "displayOdds": {
+        "american": "+3900",
+        "decimal": "40.00",
+        "fractional": "39/1",
+        "percentage": "2.5%"
+      },
+      "trueOdds": 40,
+      "participants": [
+        {
+          "name": "Michael Thorbjornsen",
+          "type": "Team",
+          "isNationalTeam": false,
+          "countryCode": "US",
+          "metadata": {
+            "sdid": "688185"
+          }
+        }
+      ],
+      "sortOrder": 400033,
+      "tags": [
+        "STP",
+        "OSB"
+      ],
+      "metadata": {}
+    },
+    {
+      "id": "0QA354220436#2225356819_13L189706Q1638827Q2-1",
+      "marketId": "354220436",
+      "label": "Akshay Bhatia",
+      "displayOdds": {
+        "american": "+4000",
+        "decimal": "41.00",
+        "fractional": "40/1",
+        "percentage": "2.4%"
+      },
+      "trueOdds": 41,
+      "participants": [
+        {
+          "name": "Akshay Bhatia",
+          "type": "Team",
+          "isNationalTeam": false,
+          "countryCode": "US",
+          "metadata": {
+            "sdid": "638827"
+          }
+        }
+      ],
+      "sortOrder": 410019,
+      "tags": [
+        "STP",
+        "OSB"
+      ],
+      "metadata": {}
+    },
+    {
+      "id": "0QA354220436#2225356713_13L189706Q11592990Q2-1",
+      "marketId": "354220436",
+      "label": "Ryan Gerard",
+      "displayOdds": {
+        "american": "+4100",
+        "decimal": "42.00",
+        "fractional": "41/1",
+        "percentage": "2.3%"
+      },
+      "trueOdds": 42,
+      "participants": [
+        {
+          "name": "Ryan Gerard",
+          "type": "Team",
+          "isNationalTeam": false,
+          "countryCode": "DZ",
+          "metadata": {
+            "sdid": "1592990"
+          }
+        }
+      ],
+      "sortOrder": 420013,
+      "tags": [
+        "STP",
+        "OSB"
+      ],
+      "metadata": {}
+    },
+    {
+      "id": "0QA354220436#2225356717_13L189706Q176139Q2-1",
+      "marketId": "354220436",
+      "label": "Rickie Fowler",
+      "displayOdds": {
+        "american": "+4300",
+        "decimal": "44.00",
+        "fractional": "43/1",
+        "percentage": "2.2%"
+      },
+      "trueOdds": 44,
+      "participants": [
+        {
+          "name": "Rickie Fowler",
+          "type": "Team",
+          "isNationalTeam": false,
+          "countryCode": "US",
+          "metadata": {
+            "sdid": "76139"
+          }
+        }
+      ],
+      "sortOrder": 440017,
+      "tags": [
+        "STP",
+        "OSB"
+      ],
+      "metadata": {}
+    },
+    {
+      "id": "0QA354220436#2225356771_13L189706Q11556575Q2-1",
+      "marketId": "354220436",
+      "label": "Jacob Bridgeman",
+      "displayOdds": {
+        "american": "+4500",
+        "decimal": "46.00",
+        "fractional": "45/1",
+        "percentage": "2.1%"
+      },
+      "trueOdds": 46,
+      "participants": [
+        {
+          "name": "Jacob Bridgeman",
+          "type": "Team",
+          "isNationalTeam": false,
+          "countryCode": "US",
+          "metadata": {
+            "sdid": "1556575"
+          }
+        }
+      ],
+      "sortOrder": 460071,
+      "tags": [
+        "STP",
+        "OSB"
+      ],
+      "metadata": {}
+    },
+    {
+      "id": "0QA354220436#2225356803_13L189706Q1124598Q2-1",
+      "marketId": "354220436",
+      "label": "Brooks Koepka",
+      "displayOdds": {
+        "american": "+4700",
+        "decimal": "48.00",
+        "fractional": "47/1",
+        "percentage": "2%"
+      },
+      "trueOdds": 48,
+      "participants": [
+        {
+          "name": "Brooks Koepka",
+          "type": "Team",
+          "isNationalTeam": false,
+          "countryCode": "ZZ",
+          "metadata": {
+            "sdid": "124598"
+          }
+        }
+      ],
+      "sortOrder": 480003,
+      "tags": [
+        "STP",
+        "OSB"
+      ],
+      "metadata": {}
+    },
+    {
+      "id": "0QA354220436#2225356735_13L189706Q1887320Q2-1",
+      "marketId": "354220436",
+      "label": "Michael Brennan",
+      "displayOdds": {
+        "american": "+5100",
+        "decimal": "52.00",
+        "fractional": "51/1",
+        "percentage": "1.9%"
+      },
+      "trueOdds": 52,
+      "participants": [
+        {
+          "name": "Michael Brennan",
+          "type": "Team",
+          "isNationalTeam": false,
+          "countryCode": "ZZ",
+          "metadata": {
+            "sdid": "887320"
+          }
+        }
+      ],
+      "sortOrder": 520035,
+      "tags": [
+        "STP",
+        "OSB"
+      ],
+      "metadata": {}
+    },
+    {
+      "id": "0QA354220436#2225356757_13L189706Q196893Q2-1",
+      "marketId": "354220436",
+      "label": "Keegan Bradley",
+      "displayOdds": {
+        "american": "+5100",
+        "decimal": "52.00",
+        "fractional": "51/1",
+        "percentage": "1.9%"
+      },
+      "trueOdds": 52,
+      "participants": [
+        {
+          "name": "Keegan Bradley",
+          "type": "Team",
+          "isNationalTeam": false,
+          "countryCode": "ZZ",
+          "metadata": {
+            "sdid": "96893"
+          }
+        }
+      ],
+      "sortOrder": 520057,
+      "tags": [
+        "STP",
+        "OSB"
+      ],
+      "metadata": {}
+    },
+    {
+      "id": "0QA354220436#2225356743_13L189706Q1532302Q2-1",
+      "marketId": "354220436",
+      "label": "Marco Penge",
+      "displayOdds": {
+        "american": "+6600",
+        "decimal": "67.00",
+        "fractional": "66/1",
+        "percentage": "1.4%"
+      },
+      "trueOdds": 67,
+      "participants": [
+        {
+          "name": "Marco Penge",
+          "type": "Team",
+          "isNationalTeam": false,
+          "countryCode": "PT",
+          "metadata": {
+            "sdid": "532302"
+          }
+        }
+      ],
+      "sortOrder": 670043,
+      "tags": [
+        "STP",
+        "OSB"
+      ],
+      "metadata": {}
+    },
+    {
+      "id": "0QA354220436#2225356759_13L189706Q1118743Q2-1",
+      "marketId": "354220436",
+      "label": "Jordan Spieth",
+      "displayOdds": {
+        "american": "+6600",
+        "decimal": "67.00",
+        "fractional": "66/1",
+        "percentage": "1.4%"
+      },
+      "trueOdds": 67,
+      "participants": [
+        {
+          "name": "Jordan Spieth",
+          "type": "Team",
+          "isNationalTeam": false,
+          "countryCode": "ZZ",
+          "metadata": {
+            "sdid": "118743"
+          }
+        }
+      ],
+      "sortOrder": 670059,
+      "tags": [
+        "STP",
+        "OSB"
+      ],
+      "metadata": {}
+    },
+    {
+      "id": "0QA354220436#2225356711_13L189706Q1381547Q2-1",
+      "marketId": "354220436",
+      "label": "Ryo Hisatsune",
+      "displayOdds": {
+        "american": "+7200",
+        "decimal": "73.00",
+        "fractional": "72/1",
+        "percentage": "1.3%"
+      },
+      "trueOdds": 73,
+      "participants": [
+        {
+          "name": "Ryo Hisatsune",
+          "type": "Team",
+          "isNationalTeam": false,
+          "countryCode": "JP",
+          "metadata": {
+            "sdid": "381547"
+          }
+        }
+      ],
+      "sortOrder": 730011,
+      "tags": [
+        "STP",
+        "OSB"
+      ],
+      "metadata": {}
+    },
+    {
+      "id": "0QA354220436#2225356787_13L189706Q1751031Q2-1",
+      "marketId": "354220436",
+      "label": "Davis Thompson",
+      "displayOdds": {
+        "american": "+7600",
+        "decimal": "77.00",
+        "fractional": "76/1",
+        "percentage": "1.2%"
+      },
+      "trueOdds": 77,
+      "participants": [
+        {
+          "name": "Davis Thompson",
+          "type": "Team",
+          "isNationalTeam": false,
+          "countryCode": "US",
+          "metadata": {
+            "sdid": "751031"
+          }
+        }
+      ],
+      "sortOrder": 770087,
+      "tags": [
+        "STP",
+        "OSB"
+      ],
+      "metadata": {}
+    },
+    {
+      "id": "0QA354220436#2225356793_13L189706Q1128096Q2-1",
+      "marketId": "354220436",
+      "label": "Corey Conners",
+      "displayOdds": {
+        "american": "+7600",
+        "decimal": "77.00",
+        "fractional": "76/1",
+        "percentage": "1.2%"
+      },
+      "trueOdds": 77,
+      "participants": [
+        {
+          "name": "Corey Conners",
+          "type": "Team",
+          "isNationalTeam": false,
+          "countryCode": "ZZ",
+          "metadata": {
+            "sdid": "128096"
+          }
+        }
+      ],
+      "sortOrder": 770093,
+      "tags": [
+        "STP",
+        "OSB"
+      ],
+      "metadata": {}
+    },
+    {
+      "id": "0QA354220436#2225356783_13L189706Q1169315Q2-1",
+      "marketId": "354220436",
+      "label": "Eric Cole",
+      "displayOdds": {
+        "american": "+7800",
+        "decimal": "79.00",
+        "fractional": "78/1",
+        "percentage": "1.2%"
+      },
+      "trueOdds": 79,
+      "participants": [
+        {
+          "name": "Eric Cole",
+          "type": "Team",
+          "isNationalTeam": false,
+          "countryCode": "ZZ",
+          "metadata": {
+            "sdid": "169315"
+          }
+        }
+      ],
+      "sortOrder": 790083,
+      "tags": [
+        "STP",
+        "OSB"
+      ],
+      "metadata": {}
+    },
+    {
+      "id": "0QA354220436#2225356760_13L189706Q1278099Q2-1",
+      "marketId": "354220436",
+      "label": "Jordan Smith",
+      "displayOdds": {
+        "american": "+8000",
+        "decimal": "81.00",
+        "fractional": "80/1",
+        "percentage": "1.2%"
+      },
+      "trueOdds": 81,
+      "participants": [
+        {
+          "name": "Jordan Smith",
+          "type": "Team",
+          "isNationalTeam": false,
+          "countryCode": "ZZ",
+          "metadata": {
+            "sdid": "278099"
+          }
+        }
+      ],
+      "sortOrder": 810060,
+      "tags": [
+        "STP",
+        "OSB"
+      ],
+      "metadata": {}
+    },
+    {
+      "id": "0QA354220436#2225356786_13L189706Q1518145Q2-1",
+      "marketId": "354220436",
+      "label": "Doug Ghim",
+      "displayOdds": {
+        "american": "+8000",
+        "decimal": "81.00",
+        "fractional": "80/1",
+        "percentage": "1.2%"
+      },
+      "trueOdds": 81,
+      "participants": [
+        {
+          "name": "Doug Ghim",
+          "type": "Team",
+          "isNationalTeam": false,
+          "countryCode": "US",
+          "metadata": {
+            "sdid": "518145"
+          }
+        }
+      ],
+      "sortOrder": 810086,
+      "tags": [
+        "STP",
+        "OSB"
+      ],
+      "metadata": {}
+    },
+    {
+      "id": "0QA354220436#2225356734_13L189706Q1123044Q2-1",
+      "marketId": "354220436",
+      "label": "Michael Kim",
+      "displayOdds": {
+        "american": "+8600",
+        "decimal": "87.00",
+        "fractional": "86/1",
+        "percentage": "1.1%"
+      },
+      "trueOdds": 87,
+      "participants": [
+        {
+          "name": "Michael Kim",
+          "type": "Team",
+          "isNationalTeam": false,
+          "countryCode": "ZZ",
+          "metadata": {
+            "sdid": "123044"
+          }
+        }
+      ],
+      "sortOrder": 870034,
+      "tags": [
+        "STP",
+        "OSB"
+      ],
+      "metadata": {}
+    },
+    {
+      "id": "0QA354220436#2225356746_13L189706Q11134821Q2-1",
+      "marketId": "354220436",
+      "label": "Mac Meissner",
+      "displayOdds": {
+        "american": "+8600",
+        "decimal": "87.00",
+        "fractional": "86/1",
+        "percentage": "1.1%"
+      },
+      "trueOdds": 87,
+      "participants": [
+        {
+          "name": "Mac Meissner",
+          "type": "Team",
+          "isNationalTeam": false,
+          "countryCode": "US",
+          "metadata": {
+            "sdid": "1134821"
+          }
+        }
+      ],
+      "sortOrder": 870046,
+      "tags": [
+        "STP",
+        "OSB"
+      ],
+      "metadata": {}
+    },
+    {
+      "id": "0QA354220436#2225356736_13L189706Q1441217Q2-1",
+      "marketId": "354220436",
+      "label": "Max Greyserman",
+      "displayOdds": {
+        "american": "+8800",
+        "decimal": "89.00",
+        "fractional": "88/1",
+        "percentage": "1.1%"
+      },
+      "trueOdds": 89,
+      "participants": [
+        {
+          "name": "Max Greyserman",
+          "type": "Team",
+          "isNationalTeam": false,
+          "countryCode": "US",
+          "metadata": {
+            "sdid": "441217"
+          }
+        }
+      ],
+      "sortOrder": 890036,
+      "tags": [
+        "STP",
+        "OSB"
+      ],
+      "metadata": {}
+    },
+    {
+      "id": "0QA354220436#2225356763_13L189706Q1887316Q2-1",
+      "marketId": "354220436",
+      "label": "John Keefer",
+      "displayOdds": {
+        "american": "+8800",
+        "decimal": "89.00",
+        "fractional": "88/1",
+        "percentage": "1.1%"
+      },
+      "trueOdds": 89,
+      "participants": [
+        {
+          "name": "John Keefer",
+          "type": "Team",
+          "isNationalTeam": false,
+          "countryCode": "US",
+          "metadata": {
+            "sdid": "887316"
+          }
+        }
+      ],
+      "sortOrder": 890063,
+      "tags": [
+        "STP",
+        "OSB"
+      ],
+      "metadata": {}
+    },
+    {
+      "id": "0QA354220436#2225356722_13L189706Q11175003Q2-1",
+      "marketId": "354220436",
+      "label": "Pierceson Coody",
+      "displayOdds": {
+        "american": "+9000",
+        "decimal": "91.00",
+        "fractional": "90/1",
+        "percentage": "1%"
+      },
+      "trueOdds": 91,
+      "participants": [
+        {
+          "name": "Pierceson Coody",
+          "type": "Team",
+          "isNationalTeam": false,
+          "countryCode": "US",
+          "metadata": {
+            "sdid": "1175003"
+          }
+        }
+      ],
+      "sortOrder": 910022,
+      "tags": [
+        "STP",
+        "OSB"
+      ],
+      "metadata": {}
+    },
+    {
+      "id": "0QA354220436#2225356740_13L189706Q1304280Q2-1",
+      "marketId": "354220436",
+      "label": "Matt Wallace",
+      "displayOdds": {
+        "american": "+9200",
+        "decimal": "93.00",
+        "fractional": "92/1",
+        "percentage": "1%"
+      },
+      "trueOdds": 93,
+      "participants": [
+        {
+          "name": "Matt Wallace",
+          "type": "Team",
+          "isNationalTeam": false,
+          "countryCode": "ZZ",
+          "metadata": {
+            "sdid": "304280"
+          }
+        }
+      ],
+      "sortOrder": 930040,
+      "tags": [
+        "STP",
+        "OSB"
+      ],
+      "metadata": {}
+    },
+    {
+      "id": "0QA354220436#2225356730_13L189706Q1140244Q2-1",
+      "marketId": "354220436",
+      "label": "Nick Taylor",
+      "displayOdds": {
+        "american": "+9400",
+        "decimal": "95.00",
+        "fractional": "94/1",
+        "percentage": "1%"
+      },
+      "trueOdds": 95,
+      "participants": [
+        {
+          "name": "Nick Taylor",
+          "type": "Team",
+          "isNationalTeam": false,
+          "countryCode": "ZZ",
+          "metadata": {
+            "sdid": "140244"
+          }
+        }
+      ],
+      "sortOrder": 950030,
+      "tags": [
+        "STP",
+        "OSB"
+      ],
+      "metadata": {}
+    },
+    {
+      "id": "0QA354220436#2225357633_13L189706Q1202157Q2-1",
+      "marketId": "354220436",
+      "label": "Denny McCarthy",
+      "displayOdds": {
+        "american": "+9400",
+        "decimal": "95.00",
+        "fractional": "94/1",
+        "percentage": "1%"
+      },
+      "trueOdds": 95,
+      "participants": [
+        {
+          "name": "Denny McCarthy",
+          "type": "Team",
+          "isNationalTeam": false,
+          "countryCode": "ZZ",
+          "metadata": {
+            "sdid": "202157"
+          }
+        }
+      ],
+      "sortOrder": 950033,
+      "tags": [
+        "STP",
+        "OSB"
+      ],
+      "metadata": {}
+    },
+    {
+      "id": "0QA354220436#2225356701_13L189706Q1501036Q2-1",
+      "marketId": "354220436",
+      "label": "Sungjae Im",
+      "displayOdds": {
+        "american": "+9600",
+        "decimal": "97.00",
+        "fractional": "96/1",
+        "percentage": "1%"
+      },
+      "trueOdds": 97,
+      "participants": [
+        {
+          "name": "Sungjae Im",
+          "type": "Team",
+          "isNationalTeam": false,
+          "countryCode": "US",
+          "metadata": {
+            "sdid": "501036"
+          }
+        }
+      ],
+      "sortOrder": 970001,
+      "tags": [
+        "STP",
+        "OSB"
+      ],
+      "metadata": {}
+    },
+    {
+      "id": "0QA354220436#2225356795_13L189706Q1137876Q2-1",
+      "marketId": "354220436",
+      "label": "Christiaan Bezuidenhout",
+      "displayOdds": {
+        "american": "+9800",
+        "decimal": "99.00",
+        "fractional": "98/1",
+        "percentage": "1%"
+      },
+      "trueOdds": 99,
+      "participants": [
+        {
+          "name": "Christiaan Bezuidenhout",
+          "type": "Team",
+          "isNationalTeam": false,
+          "countryCode": "ZZ",
+          "metadata": {
+            "sdid": "137876"
+          }
+        }
+      ],
+      "sortOrder": 990095,
+      "tags": [
+        "STP",
+        "OSB"
+      ],
+      "metadata": {}
+    },
+    {
+      "id": "0QA354220436#2225356816_13L189706Q1487406Q2-1",
+      "marketId": "354220436",
+      "label": "Andrew Novak",
+      "displayOdds": {
+        "american": "+10000",
+        "decimal": "101.00",
+        "fractional": "100/1",
+        "percentage": "0.99%"
+      },
+      "trueOdds": 101,
+      "participants": [
+        {
+          "name": "Andrew Novak",
+          "type": "Team",
+          "isNationalTeam": false,
+          "countryCode": "US",
+          "metadata": {
+            "sdid": "487406"
+          }
+        }
+      ],
+      "sortOrder": 1010016,
+      "tags": [
+        "STP",
+        "OSB"
+      ],
+      "metadata": {}
+    },
+    {
+      "id": "0QA354220436#2225356718_13L189706Q1887314Q2-1",
+      "marketId": "354220436",
+      "label": "Rasmus Neergaard-Petersen",
+      "displayOdds": {
+        "american": "+10000",
+        "decimal": "101.00",
+        "fractional": "100/1",
+        "percentage": "0.99%"
+      },
+      "trueOdds": 101,
+      "participants": [
+        {
+          "name": "Rasmus Neergaard-Petersen",
+          "type": "Team",
+          "isNationalTeam": false,
+          "countryCode": "ZZ",
+          "metadata": {
+            "sdid": "887314"
+          }
+        }
+      ],
+      "sortOrder": 1010018,
+      "tags": [
+        "STP",
+        "OSB"
+      ],
+      "metadata": {}
+    },
+    {
+      "id": "0QA354220436#2225356818_13L189706Q11630680Q2-1",
+      "marketId": "354220436",
+      "label": "Aldrich Potgieter",
+      "displayOdds": {
+        "american": "+10000",
+        "decimal": "101.00",
+        "fractional": "100/1",
+        "percentage": "0.99%"
+      },
+      "trueOdds": 101,
+      "participants": [
+        {
+          "name": "Aldrich Potgieter",
+          "type": "Team",
+          "isNationalTeam": false,
+          "countryCode": "GB",
+          "metadata": {
+            "sdid": "1630680"
+          }
+        }
+      ],
+      "sortOrder": 1010018,
+      "tags": [
+        "STP",
+        "OSB"
+      ],
+      "metadata": {}
+    },
+    {
+      "id": "0QA354220436#2225356769_13L189706Q133338Q2-1",
+      "marketId": "354220436",
+      "label": "Jason Day",
+      "displayOdds": {
+        "american": "+10000",
+        "decimal": "101.00",
+        "fractional": "100/1",
+        "percentage": "0.99%"
+      },
+      "trueOdds": 101,
+      "participants": [
+        {
+          "name": "Jason Day",
+          "type": "Team",
+          "isNationalTeam": false,
+          "countryCode": "ZZ",
+          "metadata": {
+            "sdid": "33338"
+          }
+        }
+      ],
+      "sortOrder": 1010069,
+      "tags": [
+        "STP",
+        "OSB"
+      ],
+      "metadata": {}
+    },
+    {
+      "id": "0QA354220436#2225356772_13L189706Q1892118Q2-1",
+      "marketId": "354220436",
+      "label": "Jackson Suber",
+      "displayOdds": {
+        "american": "+10000",
+        "decimal": "101.00",
+        "fractional": "100/1",
+        "percentage": "0.99%"
+      },
+      "trueOdds": 101,
+      "participants": [
+        {
+          "name": "Jackson Suber",
+          "type": "Team",
+          "isNationalTeam": false,
+          "countryCode": "US",
+          "metadata": {
+            "sdid": "892118"
+          }
+        }
+      ],
+      "sortOrder": 1010072,
+      "tags": [
+        "STP",
+        "OSB"
+      ],
+      "metadata": {}
+    },
+    {
+      "id": "0QA354220436#2225356776_13L189706Q1734228Q2-1",
+      "marketId": "354220436",
+      "label": "Harry Hall",
+      "displayOdds": {
+        "american": "+10000",
+        "decimal": "101.00",
+        "fractional": "100/1",
+        "percentage": "0.99%"
+      },
+      "trueOdds": 101,
+      "participants": [
+        {
+          "name": "Harry Hall",
+          "type": "Team",
+          "isNationalTeam": false,
+          "countryCode": "KK",
+          "metadata": {
+            "sdid": "734228"
+          }
+        }
+      ],
+      "sortOrder": 1010076,
+      "tags": [
+        "STP",
+        "OSB"
+      ],
+      "metadata": {}
+    },
+    {
+      "id": "0QA354220436#2225356812_13L189706Q1261699Q2-1",
+      "marketId": "354220436",
+      "label": "Beau Hossler",
+      "displayOdds": {
+        "american": "+10500",
+        "decimal": "106.00",
+        "fractional": "105/1",
+        "percentage": "0.94%"
+      },
+      "trueOdds": 106,
+      "participants": [
+        {
+          "name": "Beau Hossler",
+          "type": "Team",
+          "isNationalTeam": false,
+          "countryCode": "ZZ",
+          "metadata": {
+            "sdid": "261699"
+          }
+        }
+      ],
+      "sortOrder": 1060012,
+      "tags": [
+        "STP",
+        "OSB"
+      ],
+      "metadata": {}
+    },
+    {
+      "id": "0QA354220436#2225356751_13L189706Q11207639Q2-1",
+      "marketId": "354220436",
+      "label": "Kevin Yu",
+      "displayOdds": {
+        "american": "+11000",
+        "decimal": "111.00",
+        "fractional": "110/1",
+        "percentage": "0.9%"
+      },
+      "trueOdds": 111,
+      "participants": [
+        {
+          "name": "Kevin Yu",
+          "type": "Team",
+          "isNationalTeam": false,
+          "countryCode": "US",
+          "metadata": {
+            "sdid": "1207639"
+          }
+        }
+      ],
+      "sortOrder": 1110051,
+      "tags": [
+        "STP",
+        "OSB"
+      ],
+      "metadata": {}
+    },
+    {
+      "id": "0QA354220436#2225356784_13L189706Q1118113Q2-1",
+      "marketId": "354220436",
+      "label": "Emiliano Grillo",
+      "displayOdds": {
+        "american": "+11000",
+        "decimal": "111.00",
+        "fractional": "110/1",
+        "percentage": "0.9%"
+      },
+      "trueOdds": 111,
+      "participants": [
+        {
+          "name": "Emiliano Grillo",
+          "type": "Team",
+          "isNationalTeam": false,
+          "countryCode": "ZZ",
+          "metadata": {
+            "sdid": "118113"
+          }
+        }
+      ],
+      "sortOrder": 1110084,
+      "tags": [
+        "STP",
+        "OSB"
+      ],
+      "metadata": {}
+    },
+    {
+      "id": "0QA354220436#2225356703_13L189706Q11449754Q2-1",
+      "marketId": "354220436",
+      "label": "Steven Fisk",
+      "displayOdds": {
+        "american": "+11500",
+        "decimal": "116.00",
+        "fractional": "115/1",
+        "percentage": "0.86%"
+      },
+      "trueOdds": 116,
+      "participants": [
+        {
+          "name": "Steven Fisk",
+          "type": "Team",
+          "isNationalTeam": false,
+          "countryCode": "US",
+          "metadata": {
+            "sdid": "1449754"
+          }
+        }
+      ],
+      "sortOrder": 1160003,
+      "tags": [
+        "STP",
+        "OSB"
+      ],
+      "metadata": {}
+    },
+    {
+      "id": "0QA354220436#2225356710_13L189706Q1801466Q2-1",
+      "marketId": "354220436",
+      "label": "Sam Stevens",
+      "displayOdds": {
+        "american": "+11500",
+        "decimal": "116.00",
+        "fractional": "115/1",
+        "percentage": "0.86%"
+      },
+      "trueOdds": 116,
+      "participants": [
+        {
+          "name": "Sam Stevens",
+          "type": "Team",
+          "isNationalTeam": false,
+          "countryCode": "US",
+          "metadata": {
+            "sdid": "801466"
+          }
+        }
+      ],
+      "sortOrder": 1160010,
+      "tags": [
+        "STP",
+        "OSB"
+      ],
+      "metadata": {}
+    },
+    {
+      "id": "0QA354220436#2225356716_13L189706Q1964686Q2-1",
+      "marketId": "354220436",
+      "label": "Ricky Castillo",
+      "displayOdds": {
+        "american": "+11500",
+        "decimal": "116.00",
+        "fractional": "115/1",
+        "percentage": "0.86%"
+      },
+      "trueOdds": 116,
+      "participants": [
+        {
+          "name": "Ricky Castillo",
+          "type": "Team",
+          "isNationalTeam": false,
+          "countryCode": "US",
+          "metadata": {
+            "sdid": "964686"
+          }
+        }
+      ],
+      "sortOrder": 1160016,
+      "tags": [
+        "STP",
+        "OSB"
+      ],
+      "metadata": {}
+    },
+    {
+      "id": "0QA354220436#2225356704_13L189706Q1120739Q2-1",
+      "marketId": "354220436",
+      "label": "Stephan Jaeger",
+      "displayOdds": {
+        "american": "+12000",
+        "decimal": "121.00",
+        "fractional": "120/1",
+        "percentage": "0.82%"
+      },
+      "trueOdds": 121,
+      "participants": [
+        {
+          "name": "Stephan Jaeger",
+          "type": "Team",
+          "isNationalTeam": false,
+          "countryCode": "ZZ",
+          "metadata": {
+            "sdid": "120739"
+          }
+        }
+      ],
+      "sortOrder": 1210004,
+      "tags": [
+        "STP",
+        "OSB"
+      ],
+      "metadata": {}
+    },
+    {
+      "id": "0QA354220436#2225356707_13L189706Q1125856Q2-1",
+      "marketId": "354220436",
+      "label": "Seamus Power",
+      "displayOdds": {
+        "american": "+12000",
+        "decimal": "121.00",
+        "fractional": "120/1",
+        "percentage": "0.82%"
+      },
+      "trueOdds": 121,
+      "participants": [
+        {
+          "name": "Seamus Power",
+          "type": "Team",
+          "isNationalTeam": false,
+          "countryCode": "ZZ",
+          "metadata": {
+            "sdid": "125856"
+          }
+        }
+      ],
+      "sortOrder": 1210007,
+      "tags": [
+        "STP",
+        "OSB"
+      ],
+      "metadata": {}
+    },
+    {
+      "id": "0QA354220436#2225356695_13L189706Q1140233Q2-1",
+      "marketId": "354220436",
+      "label": "Tony Finau",
+      "displayOdds": {
+        "american": "+12000",
+        "decimal": "121.00",
+        "fractional": "120/1",
+        "percentage": "0.82%"
+      },
+      "trueOdds": 121,
+      "participants": [
+        {
+          "name": "Tony Finau",
+          "type": "Team",
+          "isNationalTeam": false,
+          "countryCode": "ZZ",
+          "metadata": {
+            "sdid": "140233"
+          }
+        }
+      ],
+      "sortOrder": 1210095,
+      "tags": [
+        "STP",
+        "OSB"
+      ],
+      "metadata": {}
+    },
+    {
+      "id": "0QA354220436#2225356702_13L189706Q11926363Q2-1",
+      "marketId": "354220436",
+      "label": "Sudarshan Yellamaraju",
+      "displayOdds": {
+        "american": "+12500",
+        "decimal": "126.00",
+        "fractional": "125/1",
+        "percentage": "0.79%"
+      },
+      "trueOdds": 126,
+      "participants": [
+        {
+          "name": "Sudarshan Yellamaraju",
+          "type": "Team",
+          "isNationalTeam": false,
+          "countryCode": "US",
+          "metadata": {
+            "sdid": "1926363"
+          }
+        }
+      ],
+      "sortOrder": 1260002,
+      "tags": [
+        "STP",
+        "OSB"
+      ],
+      "metadata": {}
+    },
+    {
+      "id": "0QA354220436#2225356745_13L189706Q1128091Q2-1",
+      "marketId": "354220436",
+      "label": "Mackenzie Hughes",
+      "displayOdds": {
+        "american": "+12500",
+        "decimal": "126.00",
+        "fractional": "125/1",
+        "percentage": "0.79%"
+      },
+      "trueOdds": 126,
+      "participants": [
+        {
+          "name": "Mackenzie Hughes",
+          "type": "Team",
+          "isNationalTeam": false,
+          "countryCode": "ZZ",
+          "metadata": {
+            "sdid": "128091"
+          }
+        }
+      ],
+      "sortOrder": 1260045,
+      "tags": [
+        "STP",
+        "OSB"
+      ],
+      "metadata": {}
+    },
+    {
+      "id": "0QA354220436#2225356767_13L189706Q1555675Q2-1",
+      "marketId": "354220436",
+      "label": "Jesper Svensson",
+      "displayOdds": {
+        "american": "+13000",
+        "decimal": "131.00",
+        "fractional": "130/1",
+        "percentage": "0.76%"
+      },
+      "trueOdds": 131,
+      "participants": [
+        {
+          "name": "Jesper Svensson",
+          "type": "Team",
+          "isNationalTeam": false,
+          "countryCode": "SE",
+          "metadata": {
+            "sdid": "555675"
+          }
+        }
+      ],
+      "sortOrder": 1310067,
+      "tags": [
+        "STP",
+        "OSB"
+      ],
+      "metadata": {}
+    },
+    {
+      "id": "0QA354220436#2225356728_13L189706Q1598613Q2-1",
+      "marketId": "354220436",
+      "label": "Nicolas Echavarria",
+      "displayOdds": {
+        "american": "+13500",
+        "decimal": "136.00",
+        "fractional": "135/1",
+        "percentage": "0.73%"
+      },
+      "trueOdds": 136,
+      "participants": [
+        {
+          "name": "Nicolas Echavarria",
+          "type": "Team",
+          "isNationalTeam": false,
+          "countryCode": "US",
+          "metadata": {
+            "sdid": "598613"
+          }
+        }
+      ],
+      "sortOrder": 1360028,
+      "tags": [
+        "STP",
+        "OSB"
+      ],
+      "metadata": {}
+    },
+    {
+      "id": "0QA354220436#2225356810_13L189706Q11610454Q2-1",
+      "marketId": "354220436",
+      "label": "Benjamin James",
+      "displayOdds": {
+        "american": "+14000",
+        "decimal": "141.00",
+        "fractional": "140/1",
+        "percentage": "0.7%"
+      },
+      "trueOdds": 141,
+      "participants": [
+        {
+          "name": "Benjamin James",
+          "type": "Team",
+          "isNationalTeam": false,
+          "countryCode": "US",
+          "metadata": {
+            "sdid": "1610454"
+          }
+        }
+      ],
+      "sortOrder": 1410010,
+      "tags": [
+        "STP",
+        "OSB"
+      ],
+      "metadata": {}
+    },
+    {
+      "id": "0QA354220436#2225356719_13L189706Q1462849Q2-1",
+      "marketId": "354220436",
+      "label": "Rasmus Hojgaard",
+      "displayOdds": {
+        "american": "+14000",
+        "decimal": "141.00",
+        "fractional": "140/1",
+        "percentage": "0.7%"
+      },
+      "trueOdds": 141,
+      "participants": [
+        {
+          "name": "Rasmus Hojgaard",
+          "type": "Team",
+          "isNationalTeam": false,
+          "countryCode": "ZZ",
+          "metadata": {
+            "sdid": "462849"
+          }
+        }
+      ],
+      "sortOrder": 1410019,
+      "tags": [
+        "STP",
+        "OSB"
+      ],
+      "metadata": {}
+    },
+    {
+      "id": "0QA354220436#2225357632_13L189706Q11449760Q2-1",
+      "marketId": "354220436",
+      "label": "Matt McCarty",
+      "displayOdds": {
+        "american": "+14000",
+        "decimal": "141.00",
+        "fractional": "140/1",
+        "percentage": "0.7%"
+      },
+      "trueOdds": 141,
+      "participants": [
+        {
+          "name": "Matt McCarty",
+          "type": "Team",
+          "isNationalTeam": false,
+          "countryCode": "US",
+          "metadata": {
+            "sdid": "1449760"
+          }
+        }
+      ],
+      "sortOrder": 1410032,
+      "tags": [
+        "STP",
+        "OSB"
+      ],
+      "metadata": {}
+    },
+    {
+      "id": "0QA354220436#2225356698_13L189706Q1260797Q2-1",
+      "marketId": "354220436",
+      "label": "Taylor Pendrith",
+      "displayOdds": {
+        "american": "+14000",
+        "decimal": "141.00",
+        "fractional": "140/1",
+        "percentage": "0.7%"
+      },
+      "trueOdds": 141,
+      "participants": [
+        {
+          "name": "Taylor Pendrith",
+          "type": "Team",
+          "isNationalTeam": false,
+          "countryCode": "US",
+          "metadata": {
+            "sdid": "260797"
+          }
+        }
+      ],
+      "sortOrder": 1410098,
+      "tags": [
+        "STP",
+        "OSB"
+      ],
+      "metadata": {}
+    },
+    {
+      "id": "0QA354220436#2225356756_13L189706Q1307774Q2-1",
+      "marketId": "354220436",
+      "label": "Keita Nakajima",
+      "displayOdds": {
+        "american": "+14500",
+        "decimal": "146.00",
+        "fractional": "145/1",
+        "percentage": "0.68%"
+      },
+      "trueOdds": 146,
+      "participants": [
+        {
+          "name": "Keita Nakajima",
+          "type": "Team",
+          "isNationalTeam": false,
+          "countryCode": "JP",
+          "metadata": {
+            "sdid": "307774"
+          }
+        }
+      ],
+      "sortOrder": 1460056,
+      "tags": [
+        "STP",
+        "OSB"
+      ],
+      "metadata": {}
+    },
+    {
+      "id": "0QA354220436#2225356715_13L189706Q1493844Q2-1",
+      "marketId": "354220436",
+      "label": "Rico Hoey",
+      "displayOdds": {
+        "american": "+15000",
+        "decimal": "151.00",
+        "fractional": "150/1",
+        "percentage": "0.66%"
+      },
+      "trueOdds": 151,
+      "participants": [
+        {
+          "name": "Rico Hoey",
+          "type": "Team",
+          "isNationalTeam": false,
+          "countryCode": "US",
+          "metadata": {
+            "sdid": "493844"
+          }
+        }
+      ],
+      "sortOrder": 1510015,
+      "tags": [
+        "STP",
+        "OSB"
+      ],
+      "metadata": {}
+    },
+    {
+      "id": "0QA354220436#2225356699_13L189706Q1361551Q2-1",
+      "marketId": "354220436",
+      "label": "Taylor Moore",
+      "displayOdds": {
+        "american": "+15000",
+        "decimal": "151.00",
+        "fractional": "150/1",
+        "percentage": "0.66%"
+      },
+      "trueOdds": 151,
+      "participants": [
+        {
+          "name": "Taylor Moore",
+          "type": "Team",
+          "isNationalTeam": false,
+          "countryCode": "CA",
+          "metadata": {
+            "sdid": "361551"
+          }
+        }
+      ],
+      "sortOrder": 1510099,
+      "tags": [
+        "STP",
+        "OSB"
+      ],
+      "metadata": {}
+    },
+    {
+      "id": "0QA354220436#2225356749_13L189706Q1588015Q2-1",
+      "marketId": "354220436",
+      "label": "Lee Hodges",
+      "displayOdds": {
+        "american": "+15500",
+        "decimal": "156.00",
+        "fractional": "155/1",
+        "percentage": "0.64%"
+      },
+      "trueOdds": 156,
+      "participants": [
+        {
+          "name": "Lee Hodges",
+          "type": "Team",
+          "isNationalTeam": false,
+          "countryCode": "US",
+          "metadata": {
+            "sdid": "588015"
+          }
+        }
+      ],
+      "sortOrder": 1560049,
+      "tags": [
+        "STP",
+        "OSB"
+      ],
+      "metadata": {}
+    },
+    {
+      "id": "0QA354220436#2225356691_13L189706Q11598628Q2-1",
+      "marketId": "354220436",
+      "label": "William Mouw",
+      "displayOdds": {
+        "american": "+15500",
+        "decimal": "156.00",
+        "fractional": "155/1",
+        "percentage": "0.64%"
+      },
+      "trueOdds": 156,
+      "participants": [
+        {
+          "name": "William Mouw",
+          "type": "Team",
+          "isNationalTeam": false,
+          "countryCode": "ZZ",
+          "metadata": {
+            "sdid": "1598628"
+          }
+        }
+      ],
+      "sortOrder": 1560091,
+      "tags": [
+        "STP",
+        "OSB"
+      ],
+      "metadata": {}
+    },
+    {
+      "id": "0QA354220436#2225357123_13L189706Q1339401Q2-1",
+      "marketId": "354220436",
+      "label": "Zecheng Dou",
+      "displayOdds": {
+        "american": "+16000",
+        "decimal": "161.00",
+        "fractional": "160/1",
+        "percentage": "0.62%"
+      },
+      "trueOdds": 161,
+      "participants": [
+        {
+          "name": "Zecheng Dou",
+          "type": "Team",
+          "isNationalTeam": false,
+          "countryCode": "CA",
+          "metadata": {
+            "sdid": "339401"
+          }
+        }
+      ],
+      "sortOrder": 1610023,
+      "tags": [
+        "STP",
+        "OSB"
+      ],
+      "metadata": {}
+    },
+    {
+      "id": "0QA354220436#2225357146_13L189706Q11563100Q2-1",
+      "marketId": "354220436",
+      "label": "Kris Ventura",
+      "displayOdds": {
+        "american": "+16000",
+        "decimal": "161.00",
+        "fractional": "160/1",
+        "percentage": "0.62%"
+      },
+      "trueOdds": 161,
+      "participants": [
+        {
+          "name": "Kris Ventura",
+          "type": "Team",
+          "isNationalTeam": false,
+          "countryCode": "US",
+          "metadata": {
+            "sdid": "1563100"
+          }
+        }
+      ],
+      "sortOrder": 1610046,
+      "tags": [
+        "STP",
+        "OSB"
+      ],
+      "metadata": {}
+    },
+    {
+      "id": "0QA354220436#2225356688_13L189706Q1587723Q2-1",
+      "marketId": "354220436",
+      "label": "Zach Bauchou",
+      "displayOdds": {
+        "american": "+16500",
+        "decimal": "166.00",
+        "fractional": "165/1",
+        "percentage": "0.6%"
+      },
+      "trueOdds": 166,
+      "participants": [
+        {
+          "name": "Zach Bauchou",
+          "type": "Team",
+          "isNationalTeam": false,
+          "countryCode": "AU",
+          "metadata": {
+            "sdid": "587723"
+          }
+        }
+      ],
+      "sortOrder": 1660088,
+      "tags": [
+        "STP",
+        "OSB"
+      ],
+      "metadata": {}
+    },
+    {
+      "id": "0QA354220436#2225356796_13L189706Q190634Q2-1",
+      "marketId": "354220436",
+      "label": "Chris Kirk",
+      "displayOdds": {
+        "american": "+17000",
+        "decimal": "171.00",
+        "fractional": "170/1",
+        "percentage": "0.58%"
+      },
+      "trueOdds": 171,
+      "participants": [
+        {
+          "name": "Chris Kirk",
+          "type": "Team",
+          "isNationalTeam": false,
+          "countryCode": "US",
+          "metadata": {
+            "sdid": "90634"
+          }
+        }
+      ],
+      "sortOrder": 1710096,
+      "tags": [
+        "STP",
+        "OSB"
+      ],
+      "metadata": {}
+    },
+    {
+      "id": "0QA354220436#2225357631_13L189706Q1493848Q2-1",
+      "marketId": "354220436",
+      "label": "Max McGreevy",
+      "displayOdds": {
+        "american": "+17500",
+        "decimal": "176.00",
+        "fractional": "175/1",
+        "percentage": "0.56%"
+      },
+      "trueOdds": 176,
+      "participants": [
+        {
+          "name": "Max McGreevy",
+          "type": "Team",
+          "isNationalTeam": false,
+          "countryCode": "US",
+          "metadata": {
+            "sdid": "493848"
+          }
+        }
+      ],
+      "sortOrder": 1760031,
+      "tags": [
+        "STP",
+        "OSB"
+      ],
+      "metadata": {}
+    },
+    {
+      "id": "0QA354220436#2225356809_13L189706Q1116627Q2-1",
+      "marketId": "354220436",
+      "label": "Billy Horschel",
+      "displayOdds": {
+        "american": "+18500",
+        "decimal": "186.00",
+        "fractional": "185/1",
+        "percentage": "0.53%"
+      },
+      "trueOdds": 186,
+      "participants": [
+        {
+          "name": "Billy Horschel",
+          "type": "Team",
+          "isNationalTeam": false,
+          "countryCode": "ZZ",
+          "metadata": {
+            "sdid": "116627"
+          }
+        }
+      ],
+      "sortOrder": 1860009,
+      "tags": [
+        "STP",
+        "OSB"
+      ],
+      "metadata": {}
+    },
+    {
+      "id": "0QA354220436#2225356762_13L189706Q180149Q2-1",
+      "marketId": "354220436",
+      "label": "John Parry",
+      "displayOdds": {
+        "american": "+18500",
+        "decimal": "186.00",
+        "fractional": "185/1",
+        "percentage": "0.53%"
+      },
+      "trueOdds": 186,
+      "participants": [
+        {
+          "name": "John Parry",
+          "type": "Team",
+          "isNationalTeam": false,
+          "countryCode": "EN",
+          "metadata": {
+            "sdid": "80149"
+          }
+        }
+      ],
+      "sortOrder": 1860062,
+      "tags": [
+        "STP",
+        "OSB"
+      ],
+      "metadata": {}
+    },
+    {
+      "id": "0QA354220436#2225356739_13L189706Q1725842Q2-1",
+      "marketId": "354220436",
+      "label": "Matthias Schmid",
+      "displayOdds": {
+        "american": "+19000",
+        "decimal": "191.00",
+        "fractional": "190/1",
+        "percentage": "0.52%"
+      },
+      "trueOdds": 191,
+      "participants": [
+        {
+          "name": "Matthias Schmid",
+          "type": "Team",
+          "isNationalTeam": false,
+          "countryCode": "EU",
+          "metadata": {
+            "sdid": "725842"
+          }
+        }
+      ],
+      "sortOrder": 1910039,
+      "tags": [
+        "STP",
+        "OSB"
+      ],
+      "metadata": {}
+    },
+    {
+      "id": "0QA354220436#2225356753_13L189706Q1598627Q2-1",
+      "marketId": "354220436",
+      "label": "Kevin Roy",
+      "displayOdds": {
+        "american": "+19000",
+        "decimal": "191.00",
+        "fractional": "190/1",
+        "percentage": "0.52%"
+      },
+      "trueOdds": 191,
+      "participants": [
+        {
+          "name": "Kevin Roy",
+          "type": "Team",
+          "isNationalTeam": false,
+          "countryCode": "US",
+          "metadata": {
+            "sdid": "598627"
+          }
+        }
+      ],
+      "sortOrder": 1910053,
+      "tags": [
+        "STP",
+        "OSB"
+      ],
+      "metadata": {}
+    },
+    {
+      "id": "0QA354220436#2225356792_13L189706Q1279007Q2-1",
+      "marketId": "354220436",
+      "label": "Daniel Brown",
+      "displayOdds": {
+        "american": "+19500",
+        "decimal": "196.00",
+        "fractional": "195/1",
+        "percentage": "0.51%"
+      },
+      "trueOdds": 196,
+      "participants": [
+        {
+          "name": "Daniel Brown",
+          "type": "Team",
+          "isNationalTeam": false,
+          "countryCode": "ZZ",
+          "metadata": {
+            "sdid": "279007"
+          }
+        }
+      ],
+      "sortOrder": 1960092,
+      "tags": [
+        "STP",
+        "OSB"
+      ],
+      "metadata": {}
+    },
+    {
+      "id": "0QA354220436#2225356778_13L189706Q1371188Q2-1",
+      "marketId": "354220436",
+      "label": "Haotong Li",
+      "displayOdds": {
+        "american": "+20000",
+        "decimal": "201.00",
+        "fractional": "200/1",
+        "percentage": "0.49%"
+      },
+      "trueOdds": 201,
+      "participants": [
+        {
+          "name": "Haotong Li",
+          "type": "Team",
+          "isNationalTeam": false,
+          "countryCode": "DK",
+          "metadata": {
+            "sdid": "371188"
+          }
+        }
+      ],
+      "sortOrder": 2010078,
+      "tags": [
+        "STP",
+        "OSB"
+      ],
+      "metadata": {}
+    },
+    {
+      "id": "0QA354220436#2225356813_13L189706Q1434524Q2-1",
+      "marketId": "354220436",
+      "label": "Austin Smotherman",
+      "displayOdds": {
+        "american": "+21000",
+        "decimal": "211.00",
+        "fractional": "210/1",
+        "percentage": "0.47%"
+      },
+      "trueOdds": 211,
+      "participants": [
+        {
+          "name": "Austin Smotherman",
+          "type": "Team",
+          "isNationalTeam": false,
+          "countryCode": "US",
+          "metadata": {
+            "sdid": "434524"
+          }
+        }
+      ],
+      "sortOrder": 2110013,
+      "tags": [
+        "STP",
+        "OSB"
+      ],
+      "metadata": {}
+    },
+    {
+      "id": "0QA354220436#2225356822_13L189706Q11979665Q2-1",
+      "marketId": "354220436",
+      "label": "Adrien Dumont De Chassart",
+      "displayOdds": {
+        "american": "+23000",
+        "decimal": "231.00",
+        "fractional": "230/1",
+        "percentage": "0.43%"
+      },
+      "trueOdds": 231,
+      "participants": [
+        {
+          "name": "Adrien Dumont De Chassart",
+          "type": "Team",
+          "isNationalTeam": false,
+          "countryCode": "US",
+          "metadata": {
+            "sdid": "1979665"
+          }
+        }
+      ],
+      "sortOrder": 2310022,
+      "tags": [
+        "STP",
+        "OSB"
+      ],
+      "metadata": {}
+    },
+    {
+      "id": "0QA354220436#2225356748_13L189706Q112034Q2-1",
+      "marketId": "354220436",
+      "label": "Lucas Glover",
+      "displayOdds": {
+        "american": "+23000",
+        "decimal": "231.00",
+        "fractional": "230/1",
+        "percentage": "0.43%"
+      },
+      "trueOdds": 231,
+      "participants": [
+        {
+          "name": "Lucas Glover",
+          "type": "Team",
+          "isNationalTeam": false,
+          "countryCode": "ZZ",
+          "metadata": {
+            "sdid": "12034"
+          }
+        }
+      ],
+      "sortOrder": 2310048,
+      "tags": [
+        "STP",
+        "OSB"
+      ],
+      "metadata": {}
+    },
+    {
+      "id": "0QA354220436#2225356697_13L189706Q184347Q2-1",
+      "marketId": "354220436",
+      "label": "Thorbjorn Olesen",
+      "displayOdds": {
+        "american": "+24000",
+        "decimal": "241.00",
+        "fractional": "240/1",
+        "percentage": "0.41%"
+      },
+      "trueOdds": 241,
+      "participants": [
+        {
+          "name": "Thorbjorn Olesen",
+          "type": "Team",
+          "isNationalTeam": false,
+          "countryCode": "ZZ",
+          "metadata": {
+            "sdid": "84347"
+          }
+        }
+      ],
+      "sortOrder": 2410097,
+      "tags": [
+        "STP",
+        "OSB"
+      ],
+      "metadata": {}
+    },
+    {
+      "id": "0QA354220436#2225356814_13L189706Q1688183Q2-1",
+      "marketId": "354220436",
+      "label": "Austin Eckroat",
+      "displayOdds": {
+        "american": "+25000",
+        "decimal": "251.00",
+        "fractional": "250/1",
+        "percentage": "0.39%"
+      },
+      "trueOdds": 251,
+      "participants": [
+        {
+          "name": "Austin Eckroat",
+          "type": "Team",
+          "isNationalTeam": false,
+          "countryCode": "US",
+          "metadata": {
+            "sdid": "688183"
+          }
+        }
+      ],
+      "sortOrder": 2510014,
+      "tags": [
+        "STP",
+        "OSB"
+      ],
+      "metadata": {}
+    },
+    {
+      "id": "0QA354220436#2225356726_13L189706Q1549658Q2-1",
+      "marketId": "354220436",
+      "label": "Patrick Fishburn",
+      "displayOdds": {
+        "american": "+25000",
+        "decimal": "251.00",
+        "fractional": "250/1",
+        "percentage": "0.39%"
+      },
+      "trueOdds": 251,
+      "participants": [
+        {
+          "name": "Patrick Fishburn",
+          "type": "Team",
+          "isNationalTeam": false,
+          "countryCode": "US",
+          "metadata": {
+            "sdid": "549658"
+          }
+        }
+      ],
+      "sortOrder": 2510026,
+      "tags": [
+        "STP",
+        "OSB"
+      ],
+      "metadata": {}
+    },
+    {
+      "id": "0QA354220436#2225356798_13L189706Q1731744Q2-1",
+      "marketId": "354220436",
+      "label": "Chandler Phillips",
+      "displayOdds": {
+        "american": "+25000",
+        "decimal": "251.00",
+        "fractional": "250/1",
+        "percentage": "0.39%"
+      },
+      "trueOdds": 251,
+      "participants": [
+        {
+          "name": "Chandler Phillips",
+          "type": "Team",
+          "isNationalTeam": false,
+          "countryCode": "US",
+          "metadata": {
+            "sdid": "731744"
+          }
+        }
+      ],
+      "sortOrder": 2510098,
+      "tags": [
+        "STP",
+        "OSB"
+      ],
+      "metadata": {}
+    },
+    {
+      "id": "0QA354220436#2225356758_13L189706Q1488961Q2-1",
+      "marketId": "354220436",
+      "label": "Karl Vilips",
+      "displayOdds": {
+        "american": "+26000",
+        "decimal": "261.00",
+        "fractional": "260/1",
+        "percentage": "0.38%"
+      },
+      "trueOdds": 261,
+      "participants": [
+        {
+          "name": "Karl Vilips",
+          "type": "Team",
+          "isNationalTeam": false,
+          "countryCode": "AU",
+          "metadata": {
+            "sdid": "488961"
+          }
+        }
+      ],
+      "sortOrder": 2610058,
+      "tags": [
+        "STP",
+        "OSB"
+      ],
+      "metadata": {}
+    },
+    {
+      "id": "0QA354220436#2225356732_13L189706Q12198120Q2-1",
+      "marketId": "354220436",
+      "label": "Neal Shipley",
+      "displayOdds": {
+        "american": "+27000",
+        "decimal": "271.00",
+        "fractional": "270/1",
+        "percentage": "0.36%"
+      },
+      "trueOdds": 271,
+      "participants": [
+        {
+          "name": "Neal Shipley",
+          "type": "Team",
+          "isNationalTeam": false,
+          "countryCode": "US",
+          "metadata": {
+            "sdid": "2198120"
+          }
+        }
+      ],
+      "sortOrder": 2710032,
+      "tags": [
+        "STP",
+        "OSB"
+      ],
+      "metadata": {}
+    },
+    {
+      "id": "0QA354220436#2225356826_13L189706Q11592084Q2-1",
+      "marketId": "354220436",
+      "label": "A.J. Ewart",
+      "displayOdds": {
+        "american": "+28000",
+        "decimal": "281.00",
+        "fractional": "280/1",
+        "percentage": "0.35%"
+      },
+      "trueOdds": 281,
+      "participants": [
+        {
+          "name": "A.J. Ewart",
+          "type": "Team",
+          "isNationalTeam": false,
+          "countryCode": "US",
+          "metadata": {
+            "sdid": "1592084"
+          }
+        }
+      ],
+      "sortOrder": 2810026,
+      "tags": [
+        "STP",
+        "OSB"
+      ],
+      "metadata": {}
+    },
+    {
+      "id": "0QA354220436#2225356815_13L189706Q1120737Q2-1",
+      "marketId": "354220436",
+      "label": "Andrew Putnam",
+      "displayOdds": {
+        "american": "+31000",
+        "decimal": "311.00",
+        "fractional": "310/1",
+        "percentage": "0.32%"
+      },
+      "trueOdds": 311,
+      "participants": [
+        {
+          "name": "Andrew Putnam",
+          "type": "Team",
+          "isNationalTeam": false,
+          "countryCode": "ZZ",
+          "metadata": {
+            "sdid": "120737"
+          }
+        }
+      ],
+      "sortOrder": 3110015,
+      "tags": [
+        "STP",
+        "OSB"
+      ],
+      "metadata": {}
+    },
+    {
+      "id": "0QA354220436#2225356725_13L189706Q1127066Q2-1",
+      "marketId": "354220436",
+      "label": "Patrick Rodgers",
+      "displayOdds": {
+        "american": "+34000",
+        "decimal": "341.00",
+        "fractional": "340/1",
+        "percentage": "0.29%"
+      },
+      "trueOdds": 341,
+      "participants": [
+        {
+          "name": "Patrick Rodgers",
+          "type": "Team",
+          "isNationalTeam": false,
+          "countryCode": "ZZ",
+          "metadata": {
+            "sdid": "127066"
+          }
+        }
+      ],
+      "sortOrder": 3410025,
+      "tags": [
+        "STP",
+        "OSB"
+      ],
+      "metadata": {}
+    },
+    {
+      "id": "0QA354220436#2225356781_13L189706Q1499496Q2-1",
+      "marketId": "354220436",
+      "label": "Garrick Higgo",
+      "displayOdds": {
+        "american": "+34000",
+        "decimal": "341.00",
+        "fractional": "340/1",
+        "percentage": "0.29%"
+      },
+      "trueOdds": 341,
+      "participants": [
+        {
+          "name": "Garrick Higgo",
+          "type": "Team",
+          "isNationalTeam": false,
+          "countryCode": "ZZ",
+          "metadata": {
+            "sdid": "499496"
+          }
+        }
+      ],
+      "sortOrder": 3410081,
+      "tags": [
+        "STP",
+        "OSB"
+      ],
+      "metadata": {}
+    },
+    {
+      "id": "0QA354220436#2225356782_13L189706Q1147465Q2-1",
+      "marketId": "354220436",
+      "label": "Erik Van Rooyen",
+      "displayOdds": {
+        "american": "+36000",
+        "decimal": "361.00",
+        "fractional": "360/1",
+        "percentage": "0.27%"
+      },
+      "trueOdds": 361,
+      "participants": [
+        {
+          "name": "Erik Van Rooyen",
+          "type": "Team",
+          "isNationalTeam": false,
+          "countryCode": "ZZ",
+          "metadata": {
+            "sdid": "147465"
+          }
+        }
+      ],
+      "sortOrder": 3610082,
+      "tags": [
+        "STP",
+        "OSB"
+      ],
+      "metadata": {}
+    },
+    {
+      "id": "0QA354220436#2225356800_13L189706Q1311426Q2-1",
+      "marketId": "354220436",
+      "label": "Chad Ramey",
+      "displayOdds": {
+        "american": "+37000",
+        "decimal": "371.00",
+        "fractional": "370/1",
+        "percentage": "0.26%"
+      },
+      "trueOdds": 371,
+      "participants": [
+        {
+          "name": "Chad Ramey",
+          "type": "Team",
+          "isNationalTeam": false,
+          "countryCode": "US",
+          "metadata": {
+            "sdid": "311426"
+          }
+        }
+      ],
+      "sortOrder": 3710000,
+      "tags": [
+        "STP",
+        "OSB"
+      ],
+      "metadata": {}
+    },
+    {
+      "id": "0QA354220436#2225356764_13L189706Q1237364Q2-1",
+      "marketId": "354220436",
+      "label": "Joel Dahmen",
+      "displayOdds": {
+        "american": "+38000",
+        "decimal": "381.00",
+        "fractional": "380/1",
+        "percentage": "0.26%"
+      },
+      "trueOdds": 381,
+      "participants": [
+        {
+          "name": "Joel Dahmen",
+          "type": "Team",
+          "isNationalTeam": false,
+          "countryCode": "ZZ",
+          "metadata": {
+            "sdid": "237364"
+          }
+        }
+      ],
+      "sortOrder": 3810064,
+      "tags": [
+        "STP",
+        "OSB"
+      ],
+      "metadata": {}
+    },
+    {
+      "id": "0QA354220436#2225356694_13L189706Q1452663Q2-1",
+      "marketId": "354220436",
+      "label": "Trace Crowe",
+      "displayOdds": {
+        "american": "+39000",
+        "decimal": "391.00",
+        "fractional": "390/1",
+        "percentage": "0.25%"
+      },
+      "trueOdds": 391,
+      "participants": [
+        {
+          "name": "Trace Crowe",
+          "type": "Team",
+          "isNationalTeam": false,
+          "countryCode": "US",
+          "metadata": {
+            "sdid": "452663"
+          }
+        }
+      ],
+      "sortOrder": 3910094,
+      "tags": [
+        "STP",
+        "OSB"
+      ],
+      "metadata": {}
+    },
+    {
+      "id": "0QA354220436#2225356820_13L189706Q1127612Q2-1",
+      "marketId": "354220436",
+      "label": "Adrien Saddier",
+      "displayOdds": {
+        "american": "+40000",
+        "decimal": "401.00",
+        "fractional": "400/1",
+        "percentage": "0.24%"
+      },
+      "trueOdds": 401,
+      "participants": [
+        {
+          "name": "Adrien Saddier",
+          "type": "Team",
+          "isNationalTeam": false,
+          "countryCode": "ZZ",
+          "metadata": {
+            "sdid": "127612"
+          }
+        }
+      ],
+      "sortOrder": 4010020,
+      "tags": [
+        "STP",
+        "OSB"
+      ],
+      "metadata": {}
+    },
+    {
+      "id": "0QA354220436#2225356738_13L189706Q1268371Q2-1",
+      "marketId": "354220436",
+      "label": "Matthieu Pavon",
+      "displayOdds": {
+        "american": "+40000",
+        "decimal": "401.00",
+        "fractional": "400/1",
+        "percentage": "0.24%"
+      },
+      "trueOdds": 401,
+      "participants": [
+        {
+          "name": "Matthieu Pavon",
+          "type": "Team",
+          "isNationalTeam": false,
+          "countryCode": "ZZ",
+          "metadata": {
+            "sdid": "268371"
+          }
+        }
+      ],
+      "sortOrder": 4010038,
+      "tags": [
+        "STP",
+        "OSB"
+      ],
+      "metadata": {}
+    },
+    {
+      "id": "0QA354220436#2225356747_13L189706Q12319287Q2-1",
+      "marketId": "354220436",
+      "label": "Luke Clanton",
+      "displayOdds": {
+        "american": "+40000",
+        "decimal": "401.00",
+        "fractional": "400/1",
+        "percentage": "0.24%"
+      },
+      "trueOdds": 401,
+      "participants": [
+        {
+          "name": "Luke Clanton",
+          "type": "Team",
+          "isNationalTeam": false,
+          "countryCode": "US",
+          "metadata": {
+            "sdid": "2319287"
+          }
+        }
+      ],
+      "sortOrder": 4010047,
+      "tags": [
+        "STP",
+        "OSB"
+      ],
+      "metadata": {}
+    },
+    {
+      "id": "0QA354220436#2225356696_13L189706Q1124705Q2-1",
+      "marketId": "354220436",
+      "label": "Tom Hoge",
+      "displayOdds": {
+        "american": "+40000",
+        "decimal": "401.00",
+        "fractional": "400/1",
+        "percentage": "0.24%"
+      },
+      "trueOdds": 401,
+      "participants": [
+        {
+          "name": "Tom Hoge",
+          "type": "Team",
+          "isNationalTeam": false,
+          "countryCode": "ZZ",
+          "metadata": {
+            "sdid": "124705"
+          }
+        }
+      ],
+      "sortOrder": 4010096,
+      "tags": [
+        "STP",
+        "OSB"
+      ],
+      "metadata": {}
+    },
+    {
+      "id": "0QA354220436#2225356742_13L189706Q1134344Q2-1",
+      "marketId": "354220436",
+      "label": "Mark Hubbard",
+      "displayOdds": {
+        "american": "+41000",
+        "decimal": "411.00",
+        "fractional": "410/1",
+        "percentage": "0.24%"
+      },
+      "trueOdds": 411,
+      "participants": [
+        {
+          "name": "Mark Hubbard",
+          "type": "Team",
+          "isNationalTeam": false,
+          "countryCode": "ZZ",
+          "metadata": {
+            "sdid": "134344"
+          }
+        }
+      ],
+      "sortOrder": 4110042,
+      "tags": [
+        "STP",
+        "OSB"
+      ],
+      "metadata": {}
+    },
+    {
+      "id": "0QA354220436#2225356741_13L189706Q146032Q2-1",
+      "marketId": "354220436",
+      "label": "Matt Kuchar",
+      "displayOdds": {
+        "american": "+44000",
+        "decimal": "441.00",
+        "fractional": "440/1",
+        "percentage": "0.22%"
+      },
+      "trueOdds": 441,
+      "participants": [
+        {
+          "name": "Matt Kuchar",
+          "type": "Team",
+          "isNationalTeam": false,
+          "countryCode": "US",
+          "metadata": {
+            "sdid": "46032"
+          }
+        }
+      ],
+      "sortOrder": 4410041,
+      "tags": [
+        "STP",
+        "OSB"
+      ],
+      "metadata": {}
+    },
+    {
+      "id": "0QA354220436#2225356700_13L189706Q1257954Q2-1",
+      "marketId": "354220436",
+      "label": "Takumi Kanaya",
+      "displayOdds": {
+        "american": "+46000",
+        "decimal": "461.00",
+        "fractional": "460/1",
+        "percentage": "0.21%"
+      },
+      "trueOdds": 461,
+      "participants": [
+        {
+          "name": "Takumi Kanaya",
+          "type": "Team",
+          "isNationalTeam": false,
+          "countryCode": "JP",
+          "metadata": {
+            "sdid": "257954"
+          }
+        }
+      ],
+      "sortOrder": 4610000,
+      "tags": [
+        "STP",
+        "OSB"
+      ],
+      "metadata": {}
+    },
+    {
+      "id": "0QA354220436#2225356721_13L189706Q1559087Q2-1",
+      "marketId": "354220436",
+      "label": "Pontus Nyholm",
+      "displayOdds": {
+        "american": "+46000",
+        "decimal": "461.00",
+        "fractional": "460/1",
+        "percentage": "0.21%"
+      },
+      "trueOdds": 461,
+      "participants": [
+        {
+          "name": "Pontus Nyholm",
+          "type": "Team",
+          "isNationalTeam": false,
+          "countryCode": "SE",
+          "metadata": {
+            "sdid": "559087"
+          }
+        }
+      ],
+      "sortOrder": 4610021,
+      "tags": [
+        "STP",
+        "OSB"
+      ],
+      "metadata": {}
+    },
+    {
+      "id": "0QA354220436#2225356693_13L189706Q11562422Q2-1",
+      "marketId": "354220436",
+      "label": "Vince Whaley",
+      "displayOdds": {
+        "american": "+46000",
+        "decimal": "461.00",
+        "fractional": "460/1",
+        "percentage": "0.21%"
+      },
+      "trueOdds": 461,
+      "participants": [
+        {
+          "name": "Vince Whaley",
+          "type": "Team",
+          "isNationalTeam": false,
+          "countryCode": "GB",
+          "metadata": {
+            "sdid": "1562422"
+          }
+        }
+      ],
+      "sortOrder": 4610093,
+      "tags": [
+        "STP",
+        "OSB"
+      ],
+      "metadata": {}
+    },
+    {
+      "id": "0QA354220436#2225356789_13L189706Q11828493Q2-1",
+      "marketId": "354220436",
+      "label": "Davis Chatfield",
+      "displayOdds": {
+        "american": "+48000",
+        "decimal": "481.00",
+        "fractional": "480/1",
+        "percentage": "0.2%"
+      },
+      "trueOdds": 481,
+      "participants": [
+        {
+          "name": "Davis Chatfield",
+          "type": "Team",
+          "isNationalTeam": false,
+          "countryCode": "US",
+          "metadata": {
+            "sdid": "1828493"
+          }
+        }
+      ],
+      "sortOrder": 4810089,
+      "tags": [
+        "STP",
+        "OSB"
+      ],
+      "metadata": {}
+    },
+    {
+      "id": "0QA354220436#2225356750_13L189706Q1230189Q2-1",
+      "marketId": "354220436",
+      "label": "Lanto Griffin",
+      "displayOdds": {
+        "american": "+50000",
+        "decimal": "501.00",
+        "fractional": "500/1",
+        "percentage": "0.19%"
+      },
+      "trueOdds": 501,
+      "participants": [
+        {
+          "name": "Lanto Griffin",
+          "type": "Team",
+          "isNationalTeam": false,
+          "countryCode": "ZZ",
+          "metadata": {
+            "sdid": "230189"
+          }
+        }
+      ],
+      "sortOrder": 5010050,
+      "tags": [
+        "STP",
+        "OSB"
+      ],
+      "metadata": {}
+    },
+    {
+      "id": "0QA354220436#2225356825_13L189706Q1350853Q2-1",
+      "marketId": "354220436",
+      "label": "Aaron Wise",
+      "displayOdds": {
+        "american": "+52500",
+        "decimal": "526.00",
+        "fractional": "525/1",
+        "percentage": "0.19%"
+      },
+      "trueOdds": 526,
+      "participants": [
+        {
+          "name": "Aaron Wise",
+          "type": "Team",
+          "isNationalTeam": false,
+          "countryCode": "ZZ",
+          "metadata": {
+            "sdid": "350853"
+          }
+        }
+      ],
+      "sortOrder": 5260025,
+      "tags": [
+        "STP",
+        "OSB"
+      ],
+      "metadata": {}
+    },
+    {
+      "id": "0QA354220436#2225356731_13L189706Q1887332Q2-1",
+      "marketId": "354220436",
+      "label": "Nick Dunlap",
+      "displayOdds": {
+        "american": "+55000",
+        "decimal": "551.00",
+        "fractional": "550/1",
+        "percentage": "0.18%"
+      },
+      "trueOdds": 551,
+      "participants": [
+        {
+          "name": "Nick Dunlap",
+          "type": "Team",
+          "isNationalTeam": false,
+          "countryCode": "ZZ",
+          "metadata": {
+            "sdid": "887332"
+          }
+        }
+      ],
+      "sortOrder": 5510031,
+      "tags": [
+        "STP",
+        "OSB"
+      ],
+      "metadata": {}
+    },
+    {
+      "id": "0QA354220436#2225356761_13L189706Q1551567Q2-1",
+      "marketId": "354220436",
+      "label": "John Vanderlaan",
+      "displayOdds": {
+        "american": "+55000",
+        "decimal": "551.00",
+        "fractional": "550/1",
+        "percentage": "0.18%"
+      },
+      "trueOdds": 551,
+      "participants": [
+        {
+          "name": "John Vanderlaan",
+          "type": "Team",
+          "isNationalTeam": false,
+          "countryCode": "US",
+          "metadata": {
+            "sdid": "551567"
+          }
+        }
+      ],
+      "sortOrder": 5510061,
+      "tags": [
+        "STP",
+        "OSB"
+      ],
+      "metadata": {}
+    },
+    {
+      "id": "0QA354220436#2225356692_13L189706Q162041Q2-1",
+      "marketId": "354220436",
+      "label": "Webb Simpson",
+      "displayOdds": {
+        "american": "+55000",
+        "decimal": "551.00",
+        "fractional": "550/1",
+        "percentage": "0.18%"
+      },
+      "trueOdds": 551,
+      "participants": [
+        {
+          "name": "Webb Simpson",
+          "type": "Team",
+          "isNationalTeam": false,
+          "countryCode": "ZZ",
+          "metadata": {
+            "sdid": "62041"
+          }
+        }
+      ],
+      "sortOrder": 5510092,
+      "tags": [
+        "STP",
+        "OSB"
+      ],
+      "metadata": {}
+    },
+    {
+      "id": "0QA354220436#2225356799_13L189706Q1782901Q2-1",
+      "marketId": "354220436",
+      "label": "Chandler Blanchet",
+      "displayOdds": {
+        "american": "+55000",
+        "decimal": "551.00",
+        "fractional": "550/1",
+        "percentage": "0.18%"
+      },
+      "trueOdds": 551,
+      "participants": [
+        {
+          "name": "Chandler Blanchet",
+          "type": "Team",
+          "isNationalTeam": false,
+          "countryCode": "US",
+          "metadata": {
+            "sdid": "782901"
+          }
+        }
+      ],
+      "sortOrder": 5510099,
+      "tags": [
+        "STP",
+        "OSB"
+      ],
+      "metadata": {}
+    },
+    {
+      "id": "0QA354220436#2225356790_13L189706Q1120405Q2-1",
+      "marketId": "354220436",
+      "label": "David Lipsky",
+      "displayOdds": {
+        "american": "+60000",
+        "decimal": "601.00",
+        "fractional": "600/1",
+        "percentage": "0.16%"
+      },
+      "trueOdds": 601,
+      "participants": [
+        {
+          "name": "David Lipsky",
+          "type": "Team",
+          "isNationalTeam": false,
+          "countryCode": "ZZ",
+          "metadata": {
+            "sdid": "120405"
+          }
+        }
+      ],
+      "sortOrder": 6010090,
+      "tags": [
+        "STP",
+        "OSB"
+      ],
+      "metadata": {}
+    },
+    {
+      "id": "0QA354220436#2225356802_13L189706Q1135105Q2-1",
+      "marketId": "354220436",
+      "label": "Cameron Davis",
+      "displayOdds": {
+        "american": "+75000",
+        "decimal": "751.00",
+        "fractional": "750/1",
+        "percentage": "0.13%"
+      },
+      "trueOdds": 751,
+      "participants": [
+        {
+          "name": "Cameron Davis",
+          "type": "Team",
+          "isNationalTeam": false,
+          "countryCode": "ZZ",
+          "metadata": {
+            "sdid": "135105"
+          }
+        }
+      ],
+      "sortOrder": 7510002,
+      "tags": [
+        "STP",
+        "OSB"
+      ],
+      "metadata": {}
+    },
+    {
+      "id": "0QA354220436#2225356752_13L189706Q147640Q2-1",
+      "marketId": "354220436",
+      "label": "Kevin Streelman",
+      "displayOdds": {
+        "american": "+77500",
+        "decimal": "776.00",
+        "fractional": "775/1",
+        "percentage": "0.12%"
+      },
+      "trueOdds": 776,
+      "participants": [
+        {
+          "name": "Kevin Streelman",
+          "type": "Team",
+          "isNationalTeam": false,
+          "countryCode": "YT",
+          "metadata": {
+            "sdid": "47640"
+          }
+        }
+      ],
+      "sortOrder": 7760052,
+      "tags": [
+        "STP",
+        "OSB"
+      ],
+      "metadata": {}
+    },
+    {
+      "id": "0QA354220436#2225356766_13L189706Q11631051Q2-1",
+      "marketId": "354220436",
+      "label": "Joe Highsmith",
+      "displayOdds": {
+        "american": "+77500",
+        "decimal": "776.00",
+        "fractional": "775/1",
+        "percentage": "0.12%"
+      },
+      "trueOdds": 776,
+      "participants": [
+        {
+          "name": "Joe Highsmith",
+          "type": "Team",
+          "isNationalTeam": false,
+          "countryCode": "ZZ",
+          "metadata": {
+            "sdid": "1631051"
+          }
+        }
+      ],
+      "sortOrder": 7760066,
+      "tags": [
+        "STP",
+        "OSB"
+      ],
+      "metadata": {}
+    },
+    {
+      "id": "0QA354220436#2225356780_13L189706Q1887323Q2-1",
+      "marketId": "354220436",
+      "label": "Gordon Sargent",
+      "displayOdds": {
+        "american": "+82500",
+        "decimal": "826.00",
+        "fractional": "825/1",
+        "percentage": "0.12%"
+      },
+      "trueOdds": 826,
+      "participants": [
+        {
+          "name": "Gordon Sargent",
+          "type": "Team",
+          "isNationalTeam": false,
+          "countryCode": "ZZ",
+          "metadata": {
+            "sdid": "887323"
+          }
+        }
+      ],
+      "sortOrder": 8260080,
+      "tags": [
+        "STP",
+        "OSB"
+      ],
+      "metadata": {}
+    },
+    {
+      "id": "0QA354220436#2225356817_13L189706Q1549657Q2-1",
+      "marketId": "354220436",
+      "label": "Alejandro Tosti",
+      "displayOdds": {
+        "american": "+85000",
+        "decimal": "851.00",
+        "fractional": "850/1",
+        "percentage": "0.11%"
+      },
+      "trueOdds": 851,
+      "participants": [
+        {
+          "name": "Alejandro Tosti",
+          "type": "Team",
+          "isNationalTeam": false,
+          "countryCode": "US",
+          "metadata": {
+            "sdid": "549657"
+          }
+        }
+      ],
+      "sortOrder": 8510017,
+      "tags": [
+        "STP",
+        "OSB"
+      ],
+      "metadata": {}
+    },
+    {
+      "id": "0QA354220436#2225356807_13L189706Q138779Q2-1",
+      "marketId": "354220436",
+      "label": "Brandt Snedeker",
+      "displayOdds": {
+        "american": "+87500",
+        "decimal": "876.00",
+        "fractional": "875/1",
+        "percentage": "0.11%"
+      },
+      "trueOdds": 876,
+      "participants": [
+        {
+          "name": "Brandt Snedeker",
+          "type": "Team",
+          "isNationalTeam": false,
+          "countryCode": "US",
+          "metadata": {
+            "sdid": "38779"
+          }
+        }
+      ],
+      "sortOrder": 8760007,
+      "tags": [
+        "STP",
+        "OSB"
+      ],
+      "metadata": {}
+    },
+    {
+      "id": "0QA354220436#2225356785_13L189706Q1598616Q2-1",
+      "marketId": "354220436",
+      "label": "Dylan Wu",
+      "displayOdds": {
+        "american": "+95000",
+        "decimal": "951.00",
+        "fractional": "950/1",
+        "percentage": "0.1%"
+      },
+      "trueOdds": 951,
+      "participants": [
+        {
+          "name": "Dylan Wu",
+          "type": "Team",
+          "isNationalTeam": false,
+          "countryCode": "US",
+          "metadata": {
+            "sdid": "598616"
+          }
+        }
+      ],
+      "sortOrder": 9510085,
+      "tags": [
+        "STP",
+        "OSB"
+      ],
+      "metadata": {}
+    },
+    {
+      "id": "0QA354220436#2225356779_13L189706Q1501038Q2-1",
+      "marketId": "354220436",
+      "label": "Hank Lebioda",
+      "displayOdds": {
+        "american": "+97500",
+        "decimal": "976.00",
+        "fractional": "975/1",
+        "percentage": "0.1%"
+      },
+      "trueOdds": 976,
+      "participants": [
+        {
+          "name": "Hank Lebioda",
+          "type": "Team",
+          "isNationalTeam": false,
+          "countryCode": "ZZ",
+          "metadata": {
+            "sdid": "501038"
+          }
+        }
+      ],
+      "sortOrder": 9760079,
+      "tags": [
+        "STP",
+        "OSB"
+      ],
+      "metadata": {}
+    },
+    {
+      "id": "0QA354220436#2225356705_13L189706Q1279935Q2-1",
+      "marketId": "354220436",
+      "label": "Stefano Mazzoli",
+      "displayOdds": {
+        "american": "+105000",
+        "decimal": "1051.00",
+        "fractional": "1050/1",
+        "percentage": "0.09%"
+      },
+      "trueOdds": 1051,
+      "participants": [
+        {
+          "name": "Stefano Mazzoli",
+          "type": "Team",
+          "isNationalTeam": false,
+          "countryCode": "IT",
+          "metadata": {
+            "sdid": "279935"
+          }
+        }
+      ],
+      "sortOrder": 10510005,
+      "tags": [
+        "STP",
+        "OSB"
+      ],
+      "metadata": {}
+    },
+    {
+      "id": "0QA354220436#2225356823_13L189706Q1128097Q2-1",
+      "marketId": "354220436",
+      "label": "Adam Svensson",
+      "displayOdds": {
+        "american": "+110000",
+        "decimal": "1101.00",
+        "fractional": "1100/1",
+        "percentage": "0.09%"
+      },
+      "trueOdds": 1101,
+      "participants": [
+        {
+          "name": "Adam Svensson",
+          "type": "Team",
+          "isNationalTeam": false,
+          "countryCode": "ZZ",
+          "metadata": {
+            "sdid": "128097"
+          }
+        }
+      ],
+      "sortOrder": 11010023,
+      "tags": [
+        "STP",
+        "OSB"
+      ],
+      "metadata": {}
+    },
+    {
+      "id": "0QA354220436#2225356804_13L189706Q1118766Q2-1",
+      "marketId": "354220436",
+      "label": "Brice Garnett",
+      "displayOdds": {
+        "american": "+120000",
+        "decimal": "1201.00",
+        "fractional": "1200/1",
+        "percentage": "0.08%"
+      },
+      "trueOdds": 1201,
+      "participants": [
+        {
+          "name": "Brice Garnett",
+          "type": "Team",
+          "isNationalTeam": false,
+          "countryCode": "ZZ",
+          "metadata": {
+            "sdid": "118766"
+          }
+        }
+      ],
+      "sortOrder": 12010004,
+      "tags": [
+        "STP",
+        "OSB"
+      ],
+      "metadata": {}
+    },
+    {
+      "id": "0QA354220436#2225356788_13L189706Q1262159Q2-1",
+      "marketId": "354220436",
+      "label": "Davis Riley",
+      "displayOdds": {
+        "american": "+125000",
+        "decimal": "1251.00",
+        "fractional": "1250/1",
+        "percentage": "0.07%"
+      },
+      "trueOdds": 1251,
+      "participants": [
+        {
+          "name": "Davis Riley",
+          "type": "Team",
+          "isNationalTeam": false,
+          "countryCode": "US",
+          "metadata": {
+            "sdid": "262159"
+          }
+        }
+      ],
+      "sortOrder": 12510088,
+      "tags": [
+        "STP",
+        "OSB"
+      ],
+      "metadata": {}
+    },
+    {
+      "id": "0QA354220436#2225356768_13L189706Q1522556Q2-1",
+      "marketId": "354220436",
+      "label": "Jeffrey Kang",
+      "displayOdds": {
+        "american": "+130000",
+        "decimal": "1301.00",
+        "fractional": "1300/1",
+        "percentage": "0.07%"
+      },
+      "trueOdds": 1301,
+      "participants": [
+        {
+          "name": "Jeffrey Kang",
+          "type": "Team",
+          "isNationalTeam": false,
+          "countryCode": "CN",
+          "metadata": {
+            "sdid": "522556"
+          }
+        }
+      ],
+      "sortOrder": 13010068,
+      "tags": [
+        "STP",
+        "OSB"
+      ],
+      "metadata": {}
+    },
+    {
+      "id": "0QA354220436#2225356791_13L189706Q1598617Q2-1",
+      "marketId": "354220436",
+      "label": "Danny Walker",
+      "displayOdds": {
+        "american": "+150000",
+        "decimal": "1501.00",
+        "fractional": "1500/1",
+        "percentage": "0.06%"
+      },
+      "trueOdds": 1501,
+      "participants": [
+        {
+          "name": "Danny Walker",
+          "type": "Team",
+          "isNationalTeam": false,
+          "countryCode": "US",
+          "metadata": {
+            "sdid": "598617"
+          }
+        }
+      ],
+      "sortOrder": 15010091,
+      "tags": [
+        "STP",
+        "OSB"
+      ],
+      "metadata": {}
+    },
+    {
+      "id": "0QA354220436#2225356824_13L189706Q1311440Q2-1",
+      "marketId": "354220436",
+      "label": "Adam Schenk",
+      "displayOdds": {
+        "american": "+160000",
+        "decimal": "1601.00",
+        "fractional": "1600/1",
+        "percentage": "0.06%"
+      },
+      "trueOdds": 1601,
+      "participants": [
+        {
+          "name": "Adam Schenk",
+          "type": "Team",
+          "isNationalTeam": false,
+          "countryCode": "US",
+          "metadata": {
+            "sdid": "311440"
+          }
+        }
+      ],
+      "sortOrder": 16010024,
+      "tags": [
+        "STP",
+        "OSB"
+      ],
+      "metadata": {}
+    },
+    {
+      "id": "0QA354220436#2225356805_13L189706Q1267019Q2-1",
+      "marketId": "354220436",
+      "label": "Brian Campbell",
+      "displayOdds": {
+        "american": "+190000",
+        "decimal": "1901.00",
+        "fractional": "1900/1",
+        "percentage": "0.05%"
+      },
+      "trueOdds": 1901,
+      "participants": [
+        {
+          "name": "Brian Campbell",
+          "type": "Team",
+          "isNationalTeam": false,
+          "countryCode": "US",
+          "metadata": {
+            "sdid": "267019"
+          }
+        }
+      ],
+      "sortOrder": 19010005,
+      "tags": [
+        "STP",
+        "OSB"
+      ],
+      "metadata": {}
+    },
+    {
+      "id": "0QA354220436#2225356754_13L189706Q1291040Q2-1",
+      "marketId": "354220436",
+      "label": "Kensei Hirata",
+      "displayOdds": {
+        "american": "+200000",
+        "decimal": "2001.00",
+        "fractional": "2000/1",
+        "percentage": "0.04%"
+      },
+      "trueOdds": 2001,
+      "participants": [
+        {
+          "name": "Kensei Hirata",
+          "type": "Team",
+          "isNationalTeam": false,
+          "countryCode": "JP",
+          "metadata": {
+            "sdid": "291040"
+          }
+        }
+      ],
+      "sortOrder": 20010054,
+      "tags": [
+        "STP",
+        "OSB"
+      ],
+      "metadata": {}
+    },
+    {
+      "id": "0QA354220436#2225356712_13L189706Q1137091Q2-1",
+      "marketId": "354220436",
+      "label": "Ryan Ruffels",
+      "displayOdds": {
+        "american": "+250000",
+        "decimal": "2501.00",
+        "fractional": "2500/1",
+        "percentage": "0.03%"
+      },
+      "trueOdds": 2501,
+      "participants": [
+        {
+          "name": "Ryan Ruffels",
+          "type": "Team",
+          "isNationalTeam": false,
+          "countryCode": "ZZ",
+          "metadata": {
+            "sdid": "137091"
+          }
+        }
+      ],
+      "sortOrder": 25010012,
+      "tags": [
+        "STP",
+        "OSB"
+      ],
+      "metadata": {}
+    },
+    {
+      "id": "0QA354220436#2225356723_13L189706Q1124722Q2-1",
+      "marketId": "354220436",
+      "label": "Peter Malnati",
+      "displayOdds": {
+        "american": "+250000",
+        "decimal": "2501.00",
+        "fractional": "2500/1",
+        "percentage": "0.03%"
+      },
+      "trueOdds": 2501,
+      "participants": [
+        {
+          "name": "Peter Malnati",
+          "type": "Team",
+          "isNationalTeam": false,
+          "countryCode": "ZZ",
+          "metadata": {
+            "sdid": "124722"
+          }
+        }
+      ],
+      "sortOrder": 25010023,
+      "tags": [
+        "STP",
+        "OSB"
+      ],
+      "metadata": {}
+    },
+    {
+      "id": "0QA354220436#2225356794_13L189706Q1499497Q2-1",
+      "marketId": "354220436",
+      "label": "Christo Lamprecht",
+      "displayOdds": {
+        "american": "+275000",
+        "decimal": "2751.00",
+        "fractional": "2750/1",
+        "percentage": "0.03%"
+      },
+      "trueOdds": 2751,
+      "participants": [
+        {
+          "name": "Christo Lamprecht",
+          "type": "Team",
+          "isNationalTeam": false,
+          "countryCode": "ZA",
+          "metadata": {
+            "sdid": "499497"
+          }
+        }
+      ],
+      "sortOrder": 27510094,
+      "tags": [
+        "STP",
+        "OSB"
+      ],
+      "metadata": {}
+    },
+    {
+      "id": "0QA354220436#2225356808_13L189706Q1337297Q2-1",
+      "marketId": "354220436",
+      "label": "Brad Dalke",
+      "displayOdds": {
+        "american": "+350000",
+        "decimal": "3501.00",
+        "fractional": "3500/1",
+        "percentage": "0.02%"
+      },
+      "trueOdds": 3501,
+      "participants": [
+        {
+          "name": "Brad Dalke",
+          "type": "Team",
+          "isNationalTeam": false,
+          "countryCode": "US",
+          "metadata": {
+            "sdid": "337297"
+          }
+        }
+      ],
+      "sortOrder": 35010008,
+      "tags": [
+        "STP",
+        "OSB"
+      ],
+      "metadata": {}
+    },
+    {
+      "id": "0QA354220436#2225356720_13L189706Q1147840Q2-1",
+      "marketId": "354220436",
+      "label": "Rafael Campos",
+      "displayOdds": {
+        "american": "+350000",
+        "decimal": "3501.00",
+        "fractional": "3500/1",
+        "percentage": "0.02%"
+      },
+      "trueOdds": 3501,
+      "participants": [
+        {
+          "name": "Rafael Campos",
+          "type": "Team",
+          "isNationalTeam": false,
+          "countryCode": "ZZ",
+          "metadata": {
+            "sdid": "147840"
+          }
+        }
+      ],
+      "sortOrder": 35010020,
+      "tags": [
+        "STP",
+        "OSB"
+      ],
+      "metadata": {}
+    },
+    {
+      "id": "0QA354220436#2225356744_13L189706Q1146011Q2-1",
+      "marketId": "354220436",
+      "label": "Marcelo Rozo",
+      "displayOdds": {
+        "american": "+350000",
+        "decimal": "3501.00",
+        "fractional": "3500/1",
+        "percentage": "0.02%"
+      },
+      "trueOdds": 3501,
+      "participants": [
+        {
+          "name": "Marcelo Rozo",
+          "type": "Team",
+          "isNationalTeam": false,
+          "countryCode": "ZZ",
+          "metadata": {
+            "sdid": "146011"
+          }
+        }
+      ],
+      "sortOrder": 35010044,
+      "tags": [
+        "STP",
+        "OSB"
+      ],
+      "metadata": {}
+    },
+    {
+      "id": "0QA354220436#2225356724_13L189706Q1217949Q2-1",
+      "marketId": "354220436",
+      "label": "Patton Kizzire",
+      "displayOdds": {
+        "american": "+400000",
+        "decimal": "4001.00",
+        "fractional": "4000/1",
+        "percentage": "0.02%"
+      },
+      "trueOdds": 4001,
+      "participants": [
+        {
+          "name": "Patton Kizzire",
+          "type": "Team",
+          "isNationalTeam": false,
+          "countryCode": "ZZ",
+          "metadata": {
+            "sdid": "217949"
+          }
+        }
+      ],
+      "sortOrder": 40010024,
+      "tags": [
+        "STP",
+        "OSB"
+      ],
+      "metadata": {}
+    },
+    {
+      "id": "0QA354220436#2225356806_13L189706Q1123998Q2-1",
+      "marketId": "354220436",
+      "label": "Brendon Todd",
+      "displayOdds": {
+        "american": "+500000",
+        "decimal": "5001.00",
+        "fractional": "5000/1",
+        "percentage": "0.01%"
+      },
+      "trueOdds": 5001,
+      "participants": [
+        {
+          "name": "Brendon Todd",
+          "type": "Team",
+          "isNationalTeam": false,
+          "countryCode": "ZZ",
+          "metadata": {
+            "sdid": "123998"
+          }
+        }
+      ],
+      "sortOrder": 50010006,
+      "tags": [
+        "STP",
+        "OSB"
+      ],
+      "metadata": {}
+    },
+    {
+      "id": "0QA354220436#2225356765_13L189706Q1873407Q2-1",
+      "marketId": "354220436",
+      "label": "Joe Hooks",
+      "displayOdds": {
+        "american": "+500000",
+        "decimal": "5001.00",
+        "fractional": "5000/1",
+        "percentage": "0.01%"
+      },
+      "trueOdds": 5001,
+      "participants": [
+        {
+          "name": "Joe Hooks",
+          "type": "Team",
+          "isNationalTeam": false,
+          "countryCode": "US",
+          "metadata": {
+            "sdid": "873407"
+          }
+        }
+      ],
+      "sortOrder": 50010065,
+      "tags": [
+        "STP",
+        "OSB"
+      ],
+      "metadata": {}
+    }
+  ],
+  "subscriptionPartials": {
+    "events-1162975456": {
+      "entity": "events",
+      "query": "$filter=leagueId eq '189706' AND clientMetadata/Subcategories/any(s: s/Id eq '4508') and tags/any(t: t eq 'OSB')",
+      "includeMarkets": "$filter=clientMetadata/subCategoryId eq '4508' AND tags/all(t: t ne 'SportcastBetBuilder') and tags/any(t: t eq 'OSB')",
+      "locale": "en"
+    }
+  }
+}
