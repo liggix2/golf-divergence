@@ -80,6 +80,17 @@ def fetch_pretournament(api_key: str) -> dict:
     return response.json()
 
 
+def fetch_skill_ratings(api_key: str) -> dict:
+    """Fetch skill ratings."""
+    url = f"{BASE_URL}/preds/skill-ratings"
+    params = {"key": api_key, "file_format": "json"}
+
+    print("Fetching skill ratings...")
+    response = requests.get(url, params=params, timeout=30)
+    response.raise_for_status()
+    return response.json()
+
+
 def parse_and_save(data: dict) -> None:
     """Parse pre-tournament data and save structured output."""
     event_name = data.get("event_name", "Unknown Event")
@@ -145,6 +156,66 @@ def parse_and_save(data: dict) -> None:
         total = sum(p.get(key, 0) for p in players)
         print(f"  {model} win prob sum: {total * 100:.1f}%")
 
+    return players
+
+
+def parse_skill_ratings(data: dict, field_players: list) -> None:
+    """Parse skill ratings and save structured output."""
+    last_updated = data.get("last_updated", "")
+    raw_players = data.get("players", [])
+
+    players = []
+    for player in raw_players:
+        dg_id = player.get("dg_id")
+        if dg_id is None:
+            continue
+
+        raw_name = player.get("player_name", "")
+        players.append({
+            "dg_id": dg_id,
+            "player_name": last_first_to_first_last(raw_name),
+            "sg_total": player.get("sg_total"),
+            "sg_ott": player.get("sg_ott"),
+            "sg_app": player.get("sg_app"),
+            "sg_arg": player.get("sg_arg"),
+            "sg_putt": player.get("sg_putt"),
+        })
+
+    players.sort(key=lambda p: p.get("sg_total") or 0, reverse=True)
+
+    # Build output
+    output = {
+        "source": "datagolf",
+        "fetched_at": datetime.now(timezone.utc).isoformat(),
+        "last_updated": last_updated,
+        "player_count": len(players),
+        "players": players,
+    }
+
+    # Save to file
+    DATA_DIR.mkdir(parents=True, exist_ok=True)
+    output_path = DATA_DIR / "skill-ratings.json"
+    with open(output_path, "w") as f:
+        json.dump(output, f, indent=2)
+
+    print(f"Saved to: {output_path}")
+    print(f"Players: {len(players)}")
+
+    # Cross-reference with tournament field
+    skill_ids = {p["dg_id"] for p in players}
+    field_ids = {p["dg_id"] for p in field_players}
+
+    have_ratings = field_ids & skill_ids
+    missing_ratings = field_ids - skill_ids
+
+    print(f"\nField coverage: {len(have_ratings)}/{len(field_ids)} players have skill ratings")
+
+    if missing_ratings:
+        missing_names = [p["player_name"] for p in field_players if p["dg_id"] in missing_ratings]
+        print(f"Missing ratings ({len(missing_ratings)}):")
+        for name in sorted(missing_names):
+            print(f"  - {name}")
+
 
 def dump_raw(api_key: str) -> None:
     """Dump raw responses for discovery."""
@@ -203,8 +274,15 @@ def main():
     if args.raw:
         dump_raw(api_key)
     else:
-        data = fetch_pretournament(api_key)
-        parse_and_save(data)
+        # Fetch and parse pre-tournament predictions
+        pretournament_data = fetch_pretournament(api_key)
+        field_players = parse_and_save(pretournament_data)
+
+        print()
+
+        # Fetch and parse skill ratings
+        skills_data = fetch_skill_ratings(api_key)
+        parse_skill_ratings(skills_data, field_players)
 
 
 if __name__ == "__main__":
