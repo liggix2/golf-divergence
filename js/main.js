@@ -193,6 +193,29 @@ function renderKalshiCell(player) {
 }
 
 /**
+ * Render Data Golf odds cell with American odds and implied probability
+ * @param {object} player - Player data object from merged data
+ * @returns {string} HTML for the cell
+ */
+function renderDataGolfCell(player) {
+    const impliedProb = player.dg_win_prob;
+
+    if (impliedProb === null || impliedProb === undefined) {
+        return renderEmptyCell();
+    }
+
+    const americanOdds = probToAmericanOdds(impliedProb);
+    const oddsStr = formatAmericanOdds(americanOdds);
+
+    return `
+        <td class="odds-cell">
+            <span class="odds-american">${oddsStr}</span>
+            <span class="odds-implied">${formatProbability(impliedProb, 2)}</span>
+        </td>
+    `;
+}
+
+/**
  * Render edge cell
  * @param {number|null} edge - Edge value in percentage points, or null if not calculable
  * @returns {string} HTML for edge cell
@@ -249,7 +272,7 @@ function renderTable(data) {
                 ${renderEmptyCell()}
                 ${renderDraftKingsCell(player)}
                 ${renderKalshiCell(player)}
-                ${renderEmptyCell()}
+                ${renderDataGolfCell(player)}
                 ${renderEdgeCell(edge)}
             </tr>
         `;
