@@ -66,10 +66,20 @@ NICKNAME_MAP = {
 # Input files
 KALSHI_FILE = DATA_DIR / "kalshi" / "KXPGATOUR-ROC26.json"
 DK_FILE = DATA_DIR / "draftkings" / "rocket-classic-2026.json"
+DG_FILE = DATA_DIR / "datagolf" / "raw_pretournament.json"
 
 # Output file
 OUTPUT_DIR = DATA_DIR / "merged"
 OUTPUT_FILE = OUTPUT_DIR / "rocket-classic-2026.json"
+
+
+def last_first_to_first_last(name: str) -> str:
+    """Convert 'Last, First' format to 'First Last'."""
+    if ',' in name:
+        parts = name.split(',', 1)
+        if len(parts) == 2:
+            return f"{parts[1].strip()} {parts[0].strip()}"
+    return name
 
 
 def normalize_name_base(name: str) -> str:
@@ -218,6 +228,24 @@ def load_draftkings() -> tuple[dict, dict, str, list]:
     return load_source(DK_FILE, "DraftKings", get_markets)
 
 
+def load_datagolf() -> tuple[dict, dict, str, list]:
+    """Load Data Golf data with collision detection."""
+    def get_markets(data):
+        for player in data.get("baseline", []):
+            raw_name = player.get("player_name", "")
+            display_name = last_first_to_first_last(raw_name)
+            win_prob = player.get("win")
+            if win_prob is None:
+                continue
+            yield display_name, {
+                "display_name": display_name,
+                "dg_win_prob": win_prob,
+                "dg_id": player.get("dg_id"),
+            }
+
+    return load_source(DG_FILE, "DataGolf", get_markets)
+
+
 def find_nickname_matches(kalshi_base: dict, dk_base: dict, kalshi: dict, dk: dict) -> list:
     """
     Find matches that only succeeded because of NICKNAME_MAP.
@@ -242,16 +270,18 @@ def find_nickname_matches(kalshi_base: dict, dk_base: dict, kalshi: dict, dk: di
     return nickname_matches
 
 
-def merge_data(kalshi: dict, dk: dict) -> tuple[list, set, set]:
+def merge_data(kalshi: dict, dk: dict, dg: dict) -> tuple[list, set, set, set]:
     """
-    Merge Kalshi and DraftKings data.
+    Merge Kalshi, DraftKings, and Data Golf data.
 
     Returns:
-        (merged list, unmatched kalshi names, unmatched dk names)
+        (merged list, unmatched kalshi names, unmatched dk names, unmatched dg names)
     """
-    all_normalized = set(kalshi.keys()) | set(dk.keys())
+    all_normalized = set(kalshi.keys()) | set(dk.keys()) | set(dg.keys())
+    matched_any = set(kalshi.keys()) | set(dk.keys())
     unmatched_kalshi = set(kalshi.keys()) - set(dk.keys())
     unmatched_dk = set(dk.keys()) - set(kalshi.keys())
+    unmatched_dg = set(dg.keys()) - matched_any
 
     # Calculate devigged DK probabilities
     dk_probs = [dk[n]["dk_implied_prob"] for n in dk.keys()]
@@ -262,18 +292,21 @@ def merge_data(kalshi: dict, dk: dict) -> tuple[list, set, set]:
     for norm_name in all_normalized:
         k = kalshi.get(norm_name, {})
         d = dk.get(norm_name, {})
+        g = dg.get(norm_name, {})
 
-        # Use DK display name if available, else Kalshi
-        display_name = d.get("display_name") or k.get("display_name", norm_name)
+        # Use DK display name if available, else Kalshi, else Data Golf
+        display_name = d.get("display_name") or k.get("display_name") or g.get("display_name", norm_name)
 
         record = {
             "player_name": display_name,
             "normalized_name": norm_name,
+            "dg_id": g.get("dg_id"),
             "dk_american_odds": d.get("dk_american_odds"),
             "dk_implied_prob": d.get("dk_implied_prob"),
             "dk_devigged_prob": dk_devigged_map.get(norm_name),
             "kalshi_ask": k.get("kalshi_ask"),
             "kalshi_implied_prob": k.get("kalshi_implied_prob"),
+            "dg_win_prob": g.get("dg_win_prob"),
         }
         merged.append(record)
 
@@ -285,7 +318,7 @@ def merge_data(kalshi: dict, dk: dict) -> tuple[list, set, set]:
 
     merged.sort(key=sort_key, reverse=True)
 
-    return merged, unmatched_kalshi, unmatched_dk
+    return merged, unmatched_kalshi, unmatched_dk, unmatched_dg
 
 
 def main():
@@ -305,6 +338,14 @@ def main():
         print(f"Error: DraftKings file not found: {DK_FILE}")
         sys.exit(1)
 
+    print("Loading Data Golf data...")
+    try:
+        dg, dg_base, dg_fetched, dg_collisions = load_datagolf()
+        print(f"  Loaded {len(dg)} players from Data Golf")
+    except FileNotFoundError:
+        print(f"Error: Data Golf file not found: {DG_FILE}")
+        sys.exit(1)
+
     # Report collisions
     if kalshi_collisions:
         print(f"\n⚠️  KALSHI COLLISIONS ({len(kalshi_collisions)}):")
@@ -318,18 +359,27 @@ def main():
             print(f"  '{c['name1']}' and '{c['name2']}' both normalize to '{c['normalized']}'")
             print(f"    -> Skipping '{c['name2']}'")
 
+    if dg_collisions:
+        print(f"\n⚠️  DATA GOLF COLLISIONS ({len(dg_collisions)}):")
+        for c in dg_collisions:
+            print(f"  '{c['name1']}' and '{c['name2']}' both normalize to '{c['normalized']}'")
+            print(f"    -> Skipping '{c['name2']}'")
+
     # Find nickname-assisted matches
     nickname_matches = find_nickname_matches(kalshi_base, dk_base, kalshi, dk)
 
     print("\nMerging data...")
-    merged, unmatched_kalshi, unmatched_dk = merge_data(kalshi, dk)
+    merged, unmatched_kalshi, unmatched_dk, unmatched_dg = merge_data(kalshi, dk, dg)
 
-    matched_count = len(set(kalshi.keys()) & set(dk.keys()))
+    matched_dk_kalshi = len(set(kalshi.keys()) & set(dk.keys()))
+    matched_dg = len(set(dg.keys()) & (set(kalshi.keys()) | set(dk.keys())))
 
     print(f"  Total merged records: {len(merged)}")
-    print(f"  Matched players: {matched_count}")
+    print(f"  DK-Kalshi matched: {matched_dk_kalshi}")
+    print(f"  Data Golf matched: {matched_dg}")
     print(f"  Unmatched from Kalshi: {len(unmatched_kalshi)}")
     print(f"  Unmatched from DraftKings: {len(unmatched_dk)}")
+    print(f"  Unmatched from Data Golf: {len(unmatched_dg)}")
 
     # Build output
     output = {
@@ -346,11 +396,18 @@ def main():
                 "fetched_at": dk_fetched,
                 "player_count": len(dk),
             },
+            "datagolf": {
+                "file": str(DG_FILE.name),
+                "fetched_at": dg_fetched,
+                "player_count": len(dg),
+            },
         },
         "match_stats": {
-            "matched": matched_count,
+            "dk_kalshi_matched": matched_dk_kalshi,
+            "dg_matched": matched_dg,
             "unmatched_kalshi": len(unmatched_kalshi),
             "unmatched_dk": len(unmatched_dk),
+            "unmatched_dg": len(unmatched_dg),
             "total_merged": len(merged),
         },
         "players": merged,
@@ -366,7 +423,8 @@ def main():
     print("\n" + "=" * 70)
     print("MATCH REPORT")
     print("=" * 70)
-    print(f"Matched: {matched_count} players")
+    print(f"DK-Kalshi matched: {matched_dk_kalshi} players")
+    print(f"Data Golf matched: {matched_dg} players")
 
     # Print nickname-assisted matches
     if nickname_matches:
@@ -386,7 +444,13 @@ def main():
             display = dk[name]["display_name"]
             print(f"  - {display}")
 
-    if not unmatched_kalshi and not unmatched_dk:
+    if unmatched_dg:
+        print(f"\nUnmatched from Data Golf ({len(unmatched_dg)}):")
+        for name in sorted(unmatched_dg):
+            display = dg[name]["display_name"]
+            print(f"  - {display}")
+
+    if not unmatched_kalshi and not unmatched_dk and not unmatched_dg:
         print("\nAll players matched!")
 
 
