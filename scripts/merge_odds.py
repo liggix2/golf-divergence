@@ -66,7 +66,7 @@ NICKNAME_MAP = {
 # Input files
 KALSHI_FILE = DATA_DIR / "kalshi" / "KXPGATOUR-ROC26.json"
 DK_FILE = DATA_DIR / "draftkings" / "rocket-classic-2026.json"
-DG_FILE = DATA_DIR / "datagolf" / "raw_pretournament.json"
+DG_FILE = DATA_DIR / "datagolf" / "rocket-classic-2026.json"
 
 # Output file
 OUTPUT_DIR = DATA_DIR / "merged"
@@ -231,15 +231,14 @@ def load_draftkings() -> tuple[dict, dict, str, list]:
 def load_datagolf() -> tuple[dict, dict, str, list]:
     """Load Data Golf data with collision detection."""
     def get_markets(data):
-        for player in data.get("baseline", []):
-            raw_name = player.get("player_name", "")
-            display_name = last_first_to_first_last(raw_name)
-            win_prob = player.get("win")
-            if win_prob is None:
+        for player in data.get("players", []):
+            display_name = player.get("player_name", "")
+            win_baseline = player.get("win_baseline")
+            if win_baseline is None:
                 continue
             yield display_name, {
                 "display_name": display_name,
-                "dg_win_prob": win_prob,
+                "dg_win_prob": win_baseline,
                 "dg_id": player.get("dg_id"),
             }
 

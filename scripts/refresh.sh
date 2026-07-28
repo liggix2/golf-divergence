@@ -43,12 +43,18 @@ DK_COUNT=$(echo "$DK_OUT" | grep -o "Players: [0-9]*" | grep -o "[0-9]*")
 DK_HOLD=$(echo "$DK_OUT" | grep -o "Total implied probability: [0-9.]*%" | grep -o "[0-9.]*%")
 echo "  DraftKings: $DK_COUNT players, hold $DK_HOLD"
 
+# Fetch Data Golf (suppress verbose output, capture summary)
+echo "Fetching Data Golf..."
+DG_OUT=$("$PYTHON" "$SCRIPT_DIR/dg_fetch.py" 2>&1)
+DG_COUNT=$(echo "$DG_OUT" | grep -o "Players: [0-9]*" | grep -o "[0-9]*")
+echo "  Data Golf: $DG_COUNT players"
+
 # Merge (suppress verbose output, capture match stats)
 echo "Merging..."
 MERGE_OUT=$("$PYTHON" "$SCRIPT_DIR/merge_odds.py" 2>&1)
-MATCHED=$(echo "$MERGE_OUT" | grep -o "Matched players: [0-9]*" | grep -o "[0-9]*")
+DK_KA_MATCHED=$(echo "$MERGE_OUT" | grep -o "DK-Kalshi matched: [0-9]*" | grep -o "[0-9]*")
 TOTAL=$(echo "$MERGE_OUT" | grep -o "Total merged records: [0-9]*" | grep -o "[0-9]*")
-echo "  Merged: $MATCHED matched of $TOTAL total"
+echo "  Merged: $DK_KA_MATCHED DK-Kalshi matched of $TOTAL total"
 
 echo "========================================"
 echo "Done."

@@ -1,6 +1,6 @@
 {
   "event_name": "Rocket Classic 2026",
-  "merged_at": "2026-07-28T02:20:29.082251+00:00",
+  "merged_at": "2026-07-28T03:00:35.112708+00:00",
   "sources": {
     "kalshi": {
       "file": "KXPGATOUR-ROC26.json",
@@ -11,1355 +11,1748 @@
       "file": "rocket-classic-2026.json",
       "fetched_at": "2026-07-28T02:20:29.008226+00:00",
       "player_count": 142
+    },
+    "datagolf": {
+      "file": "rocket-classic-2026.json",
+      "fetched_at": "2026-07-28T03:00:30.806197+00:00",
+      "player_count": 147
     }
   },
   "match_stats": {
-    "matched": 142,
+    "dk_kalshi_matched": 142,
+    "dg_matched": 139,
     "unmatched_kalshi": 7,
     "unmatched_dk": 0,
-    "total_merged": 149
+    "unmatched_dg": 8,
+    "total_merged": 157
   },
   "players": [
     {
       "player_name": "Cameron Young",
       "normalized_name": "cameron young",
+      "dg_id": 26651,
       "dk_american_odds": 960,
       "dk_implied_prob": 0.09434,
       "dk_devigged_prob": 0.0677204953918622,
       "kalshi_ask": 0.081,
-      "kalshi_implied_prob": 0.081
+      "kalshi_implied_prob": 0.081,
+      "dg_win_prob": 0.0725833333333333
     },
     {
       "player_name": "Xander Schauffele",
       "normalized_name": "xander schauffele",
+      "dg_id": 19895,
       "dk_american_odds": 1600,
       "dk_implied_prob": 0.058824,
       "dk_devigged_prob": 0.04222588955830933,
       "kalshi_ask": 0.044,
-      "kalshi_implied_prob": 0.044
+      "kalshi_implied_prob": 0.044,
+      "dg_win_prob": 0.0496166666666667
     },
     {
       "player_name": "Chris Gotterup",
       "normalized_name": "chris gotterup",
+      "dg_id": 27774,
       "dk_american_odds": 1750,
       "dk_implied_prob": 0.054054,
       "dk_devigged_prob": 0.03880181956658596,
       "kalshi_ask": 0.048,
-      "kalshi_implied_prob": 0.048
+      "kalshi_implied_prob": 0.048,
+      "dg_win_prob": 0.0486166666666667
     },
     {
       "player_name": "Si Woo Kim",
       "normalized_name": "si woo kim",
+      "dg_id": 14609,
       "dk_american_odds": 1900,
       "dk_implied_prob": 0.05,
       "dk_devigged_prob": 0.035891718990811006,
       "kalshi_ask": 0.039,
-      "kalshi_implied_prob": 0.039
+      "kalshi_implied_prob": 0.039,
+      "dg_win_prob": 0.03985
     },
     {
       "player_name": "Wyndham Clark",
       "normalized_name": "wyndham clark",
+      "dg_id": 23604,
       "dk_american_odds": 1900,
       "dk_implied_prob": 0.05,
       "dk_devigged_prob": 0.035891718990811006,
       "kalshi_ask": 0.036,
-      "kalshi_implied_prob": 0.036
+      "kalshi_implied_prob": 0.036,
+      "dg_win_prob": 0.0311333333333333
     },
     {
       "player_name": "Patrick Cantlay",
       "normalized_name": "patrick cantlay",
+      "dg_id": 15466,
       "dk_american_odds": 2250,
       "dk_implied_prob": 0.042553,
       "dk_devigged_prob": 0.030546006364319613,
       "kalshi_ask": 0.03,
-      "kalshi_implied_prob": 0.03
+      "kalshi_implied_prob": 0.03,
+      "dg_win_prob": 0.0316333333333333
     },
     {
       "player_name": "Jackson Koivun",
       "normalized_name": "jackson koivun",
+      "dg_id": 32319,
       "dk_american_odds": 2300,
       "dk_implied_prob": 0.041667,
       "dk_devigged_prob": 0.029910005103802442,
       "kalshi_ask": 0.04,
-      "kalshi_implied_prob": 0.04
+      "kalshi_implied_prob": 0.04,
+      "dg_win_prob": 0.02875
     },
     {
       "player_name": "Russell Henley",
       "normalized_name": "russell henley",
+      "dg_id": 14578,
       "dk_american_odds": 2700,
       "dk_implied_prob": 0.035714,
       "dk_devigged_prob": 0.025636737040756485,
       "kalshi_ask": 0.026,
-      "kalshi_implied_prob": 0.026
+      "kalshi_implied_prob": 0.026,
+      "dg_win_prob": 0.0254833333333333
     },
     {
       "player_name": "Ben Griffin",
       "normalized_name": "ben griffin",
+      "dg_id": 24968,
       "dk_american_odds": 2900,
       "dk_implied_prob": 0.033333,
       "dk_devigged_prob": 0.023927573382414063,
       "kalshi_ask": 0.026,
-      "kalshi_implied_prob": 0.026
+      "kalshi_implied_prob": 0.026,
+      "dg_win_prob": 0.0263833333333333
     },
     {
       "player_name": "J.J. Spaun",
       "normalized_name": "jj spaun",
+      "dg_id": 17536,
       "dk_american_odds": 3100,
       "dk_implied_prob": 0.03125,
       "dk_devigged_prob": 0.02243232436925688,
       "kalshi_ask": 0.029,
-      "kalshi_implied_prob": 0.029
+      "kalshi_implied_prob": 0.029,
+      "dg_win_prob": 0.02065
     },
     {
       "player_name": "Jake Knapp",
       "normalized_name": "jake knapp",
+      "dg_id": 19396,
       "dk_american_odds": 3200,
       "dk_implied_prob": 0.030303,
       "dk_devigged_prob": 0.021752535211570917,
       "kalshi_ask": 0.027,
-      "kalshi_implied_prob": 0.027
+      "kalshi_implied_prob": 0.027,
+      "dg_win_prob": 0.0211666666666667
     },
     {
       "player_name": "Hideki Matsuyama",
       "normalized_name": "hideki matsuyama",
+      "dg_id": 13562,
       "dk_american_odds": 3500,
       "dk_implied_prob": 0.027778,
       "dk_devigged_prob": 0.01994000340253496,
       "kalshi_ask": 0.025,
-      "kalshi_implied_prob": 0.025
+      "kalshi_implied_prob": 0.025,
+      "dg_win_prob": 0.0236833333333333
     },
     {
       "player_name": "Michael Thorbjornsen",
       "normalized_name": "michael thorbjornsen",
+      "dg_id": 26649,
       "dk_american_odds": 4100,
       "dk_implied_prob": 0.02381,
       "dk_devigged_prob": 0.0170916365834242,
       "kalshi_ask": 0.018,
-      "kalshi_implied_prob": 0.018
+      "kalshi_implied_prob": 0.018,
+      "dg_win_prob": 0.0162
     },
     {
       "player_name": "Nicolai Hojgaard",
       "normalized_name": "nicolai hojgaard",
+      "dg_id": 23602,
       "dk_american_odds": 4200,
       "dk_implied_prob": 0.023256,
       "dk_devigged_prob": 0.016693956337006013,
       "kalshi_ask": 0.019,
-      "kalshi_implied_prob": 0.019
+      "kalshi_implied_prob": 0.019,
+      "dg_win_prob": 0.0169333333333333
     },
     {
       "player_name": "Ryan Gerard",
       "normalized_name": "ryan gerard",
+      "dg_id": 29767,
       "dk_american_odds": 4300,
       "dk_implied_prob": 0.022727,
       "dk_devigged_prob": 0.016314221950083235,
       "kalshi_ask": 0.02,
-      "kalshi_implied_prob": 0.02
+      "kalshi_implied_prob": 0.02,
+      "dg_win_prob": 0.02325
     },
     {
       "player_name": "Akshay Bhatia",
       "normalized_name": "akshay bhatia",
+      "dg_id": 26096,
       "dk_american_odds": 4300,
       "dk_implied_prob": 0.022727,
       "dk_devigged_prob": 0.016314221950083235,
       "kalshi_ask": 0.019,
-      "kalshi_implied_prob": 0.019
+      "kalshi_implied_prob": 0.019,
+      "dg_win_prob": 0.0145166666666667
     },
     {
       "player_name": "Rickie Fowler",
       "normalized_name": "rickie fowler",
+      "dg_id": 12965,
       "dk_american_odds": 4500,
       "dk_implied_prob": 0.021739,
       "dk_devigged_prob": 0.01560500158282481,
       "kalshi_ask": 0.015,
-      "kalshi_implied_prob": 0.015
+      "kalshi_implied_prob": 0.015,
+      "dg_win_prob": 0.01195
     },
     {
       "player_name": "Keegan Bradley",
       "normalized_name": "keegan bradley",
+      "dg_id": 13872,
       "dk_american_odds": 4500,
       "dk_implied_prob": 0.021739,
       "dk_devigged_prob": 0.01560500158282481,
       "kalshi_ask": 0.015,
-      "kalshi_implied_prob": 0.015
+      "kalshi_implied_prob": 0.015,
+      "dg_win_prob": 0.01415
     },
     {
       "player_name": "Harris English",
       "normalized_name": "harris english",
+      "dg_id": 14577,
       "dk_american_odds": 4800,
       "dk_implied_prob": 0.020408,
       "dk_devigged_prob": 0.014649564023289418,
       "kalshi_ask": 0.014,
-      "kalshi_implied_prob": 0.014
+      "kalshi_implied_prob": 0.014,
+      "dg_win_prob": 0.015
     },
     {
       "player_name": "Jacob Bridgeman",
       "normalized_name": "jacob bridgeman",
+      "dg_id": 29433,
       "dk_american_odds": 4900,
       "dk_implied_prob": 0.02,
       "dk_devigged_prob": 0.014356687596324401,
       "kalshi_ask": 0.014,
-      "kalshi_implied_prob": 0.014
+      "kalshi_implied_prob": 0.014,
+      "dg_win_prob": 0.0128666666666667
     },
     {
       "player_name": "Brooks Koepka",
       "normalized_name": "brooks koepka",
+      "dg_id": 16243,
       "dk_american_odds": 5100,
       "dk_implied_prob": 0.019231,
       "dk_devigged_prob": 0.01380467295824573,
       "kalshi_ask": 0.013,
-      "kalshi_implied_prob": 0.013
+      "kalshi_implied_prob": 0.013,
+      "dg_win_prob": 0.0105666666666667
     },
     {
       "player_name": "Michael Brennan",
       "normalized_name": "michael brennan",
+      "dg_id": 29197,
       "dk_american_odds": 5800,
       "dk_implied_prob": 0.016949,
       "dk_devigged_prob": 0.012166574903505112,
       "kalshi_ask": 0.013,
-      "kalshi_implied_prob": 0.013
+      "kalshi_implied_prob": 0.013,
+      "dg_win_prob": 0.01245
     },
     {
       "player_name": "Davis Thompson",
       "normalized_name": "davis thompson",
+      "dg_id": 27364,
       "dk_american_odds": 6400,
       "dk_implied_prob": 0.015385,
       "dk_devigged_prob": 0.011043881933472546,
       "kalshi_ask": 0.013,
-      "kalshi_implied_prob": 0.013
+      "kalshi_implied_prob": 0.013,
+      "dg_win_prob": 0.01135
     },
     {
       "player_name": "Ryo Hisatsune",
       "normalized_name": "ryo hisatsune",
+      "dg_id": 22760,
       "dk_american_odds": 6900,
       "dk_implied_prob": 0.014286,
       "dk_devigged_prob": 0.01025498195005452,
       "kalshi_ask": 0.01,
-      "kalshi_implied_prob": 0.01
+      "kalshi_implied_prob": 0.01,
+      "dg_win_prob": 0.0110166666666667
     },
     {
       "player_name": "Corey Conners",
       "normalized_name": "corey conners",
+      "dg_id": 17576,
       "dk_american_odds": 7000,
       "dk_implied_prob": 0.014085,
       "dk_devigged_prob": 0.010110697239711459,
       "kalshi_ask": 0.01,
-      "kalshi_implied_prob": 0.01
+      "kalshi_implied_prob": 0.01,
+      "dg_win_prob": 0.0126166666666667
     },
     {
       "player_name": "Jordan Spieth",
       "normalized_name": "jordan spieth",
+      "dg_id": 14636,
       "dk_american_odds": 7200,
       "dk_implied_prob": 0.013699,
       "dk_devigged_prob": 0.009833613169102398,
       "kalshi_ask": 0.009,
-      "kalshi_implied_prob": 0.009
+      "kalshi_implied_prob": 0.009,
+      "dg_win_prob": 0.0074
     },
     {
       "player_name": "Doug Ghim",
       "normalized_name": "doug ghim",
+      "dg_id": 24550,
       "dk_american_odds": 7200,
       "dk_implied_prob": 0.013699,
       "dk_devigged_prob": 0.009833613169102398,
       "kalshi_ask": 0.008,
-      "kalshi_implied_prob": 0.008
+      "kalshi_implied_prob": 0.008,
+      "dg_win_prob": 0.01015
     },
     {
       "player_name": "Jordan Smith",
       "normalized_name": "jordan smith",
+      "dg_id": 18586,
       "dk_american_odds": 7400,
       "dk_implied_prob": 0.013333,
       "dk_devigged_prob": 0.009570885786089662,
       "kalshi_ask": 0.01,
-      "kalshi_implied_prob": 0.01
+      "kalshi_implied_prob": 0.01,
+      "dg_win_prob": 0.01335
     },
     {
       "player_name": "Marco Penge",
       "normalized_name": "marco penge",
+      "dg_id": 22465,
       "dk_american_odds": 7800,
       "dk_implied_prob": 0.012658,
       "dk_devigged_prob": 0.009086347579713714,
       "kalshi_ask": 0.008,
-      "kalshi_implied_prob": 0.008
+      "kalshi_implied_prob": 0.008,
+      "dg_win_prob": 0.0074
     },
     {
       "player_name": "Eric Cole",
       "normalized_name": "eric cole",
+      "dg_id": 21756,
       "dk_american_odds": 8000,
       "dk_implied_prob": 0.012346,
       "dk_devigged_prob": 0.008862383253211053,
       "kalshi_ask": 0.01,
-      "kalshi_implied_prob": 0.01
+      "kalshi_implied_prob": 0.01,
+      "dg_win_prob": 0.0095166666666666
     },
     {
       "player_name": "Sungjae Im",
       "normalized_name": "sungjae im",
+      "dg_id": 17488,
       "dk_american_odds": 8400,
       "dk_implied_prob": 0.011765,
       "dk_devigged_prob": 0.008445321478537828,
       "kalshi_ask": 0.01,
-      "kalshi_implied_prob": 0.01
+      "kalshi_implied_prob": 0.01,
+      "dg_win_prob": 0.0100833333333333
     },
     {
       "player_name": "Mac Meissner",
       "normalized_name": "mac meissner",
+      "dg_id": 28159,
       "dk_american_odds": 8400,
       "dk_implied_prob": 0.011765,
       "dk_devigged_prob": 0.008445321478537828,
       "kalshi_ask": 0.009,
-      "kalshi_implied_prob": 0.009
+      "kalshi_implied_prob": 0.009,
+      "dg_win_prob": 0.0110666666666667
     },
     {
       "player_name": "Max Greyserman",
       "normalized_name": "max greyserman",
+      "dg_id": 23465,
       "dk_american_odds": 8400,
       "dk_implied_prob": 0.011765,
       "dk_devigged_prob": 0.008445321478537828,
       "kalshi_ask": 0.008,
-      "kalshi_implied_prob": 0.008
+      "kalshi_implied_prob": 0.008,
+      "dg_win_prob": 0.0079333333333333
     },
     {
       "player_name": "Ben Kohles",
       "normalized_name": "ben kohles",
+      "dg_id": 16395,
       "dk_american_odds": 8600,
       "dk_implied_prob": 0.011494,
       "dk_devigged_prob": 0.008250788361607635,
       "kalshi_ask": 0.008,
-      "kalshi_implied_prob": 0.008
+      "kalshi_implied_prob": 0.008,
+      "dg_win_prob": 0.0065
     },
     {
       "player_name": "Michael Kim",
       "normalized_name": "michael kim",
+      "dg_id": 17543,
       "dk_american_odds": 9000,
       "dk_implied_prob": 0.010989,
       "dk_devigged_prob": 0.007888281999800443,
       "kalshi_ask": 0.009,
-      "kalshi_implied_prob": 0.009
+      "kalshi_implied_prob": 0.009,
+      "dg_win_prob": 0.0085166666666666
     },
     {
       "player_name": "Jackson Suber",
       "normalized_name": "jackson suber",
+      "dg_id": 29279,
       "dk_american_odds": 9200,
       "dk_implied_prob": 0.010753,
       "dk_devigged_prob": 0.007718873086163815,
       "kalshi_ask": 0.01,
-      "kalshi_implied_prob": 0.01
-    },
-    {
-      "player_name": "John Keefer",
-      "normalized_name": "john keefer",
-      "dk_american_odds": 9600,
-      "dk_implied_prob": 0.010309,
-      "dk_devigged_prob": 0.007400154621525413,
-      "kalshi_ask": 0.008,
-      "kalshi_implied_prob": 0.008
+      "kalshi_implied_prob": 0.01,
+      "dg_win_prob": 0.0083333333333333
     },
     {
       "player_name": "Matt Wallace",
       "normalized_name": "matthew wallace",
+      "dg_id": 20706,
       "dk_american_odds": 9600,
       "dk_implied_prob": 0.010309,
       "dk_devigged_prob": 0.007400154621525413,
       "kalshi_ask": 0.008,
-      "kalshi_implied_prob": 0.008
+      "kalshi_implied_prob": 0.008,
+      "dg_win_prob": 0.00685
     },
     {
       "player_name": "Rasmus Neergaard-Petersen",
       "normalized_name": "rasmus neergaardpetersen",
+      "dg_id": 23841,
       "dk_american_odds": 9600,
       "dk_implied_prob": 0.010309,
       "dk_devigged_prob": 0.007400154621525413,
       "kalshi_ask": 0.008,
-      "kalshi_implied_prob": 0.008
+      "kalshi_implied_prob": 0.008,
+      "dg_win_prob": 0.0104
+    },
+    {
+      "player_name": "John Keefer",
+      "normalized_name": "john keefer",
+      "dg_id": 32457,
+      "dk_american_odds": 9600,
+      "dk_implied_prob": 0.010309,
+      "dk_devigged_prob": 0.007400154621525413,
+      "kalshi_ask": 0.008,
+      "kalshi_implied_prob": 0.008,
+      "dg_win_prob": 0.0067833333333333
     },
     {
       "player_name": "Benjamin James",
       "normalized_name": "benjamin james",
+      "dg_id": null,
       "dk_american_odds": 10000,
       "dk_implied_prob": 0.009901,
       "dk_devigged_prob": 0.0071072781945603946,
       "kalshi_ask": 0.009,
-      "kalshi_implied_prob": 0.009
+      "kalshi_implied_prob": 0.009,
+      "dg_win_prob": null
     },
     {
       "player_name": "Andrew Novak",
       "normalized_name": "andrew novak",
+      "dg_id": 23475,
       "dk_american_odds": 10000,
       "dk_implied_prob": 0.009901,
       "dk_devigged_prob": 0.0071072781945603946,
       "kalshi_ask": 0.008,
-      "kalshi_implied_prob": 0.008
+      "kalshi_implied_prob": 0.008,
+      "dg_win_prob": 0.0085
     },
     {
       "player_name": "Pierceson Coody",
       "normalized_name": "pierceson coody",
+      "dg_id": 28309,
       "dk_american_odds": 10000,
       "dk_implied_prob": 0.009901,
       "dk_devigged_prob": 0.0071072781945603946,
       "kalshi_ask": 0.007,
-      "kalshi_implied_prob": 0.007
+      "kalshi_implied_prob": 0.007,
+      "dg_win_prob": 0.0056833333333333
     },
     {
       "player_name": "Christiaan Bezuidenhout",
       "normalized_name": "christiaan bezuidenhout",
+      "dg_id": 18103,
       "dk_american_odds": 10000,
       "dk_implied_prob": 0.009901,
       "dk_devigged_prob": 0.0071072781945603946,
       "kalshi_ask": 0.006,
-      "kalshi_implied_prob": 0.006
+      "kalshi_implied_prob": 0.006,
+      "dg_win_prob": 0.00555
     },
     {
       "player_name": "Aldrich Potgieter",
       "normalized_name": "aldrich potgieter",
+      "dg_id": 27900,
       "dk_american_odds": 10500,
       "dk_implied_prob": 0.009434,
       "dk_devigged_prob": 0.00677204953918622,
       "kalshi_ask": 0.008,
-      "kalshi_implied_prob": 0.008
+      "kalshi_implied_prob": 0.008,
+      "dg_win_prob": 0.0061333333333333
     },
     {
       "player_name": "Denny McCarthy",
       "normalized_name": "denny mccarthy",
+      "dg_id": 19870,
       "dk_american_odds": 10500,
       "dk_implied_prob": 0.009434,
       "dk_devigged_prob": 0.00677204953918622,
       "kalshi_ask": 0.006,
-      "kalshi_implied_prob": 0.006
+      "kalshi_implied_prob": 0.006,
+      "dg_win_prob": 0.0058333333333333
     },
     {
       "player_name": "Nick Taylor",
       "normalized_name": "nick taylor",
+      "dg_id": 13126,
       "dk_american_odds": 11000,
       "dk_implied_prob": 0.009009,
       "dk_devigged_prob": 0.006466969927764327,
       "kalshi_ask": 0.006,
-      "kalshi_implied_prob": 0.006
+      "kalshi_implied_prob": 0.006,
+      "dg_win_prob": 0.0055833333333333
     },
     {
       "player_name": "Beau Hossler",
       "normalized_name": "beau hossler",
+      "dg_id": 15470,
       "dk_american_odds": 11000,
       "dk_implied_prob": 0.009009,
       "dk_devigged_prob": 0.006466969927764327,
       "kalshi_ask": 0.005,
-      "kalshi_implied_prob": 0.005
-    },
-    {
-      "player_name": "Kevin Yu",
-      "normalized_name": "kevin yu",
-      "dk_american_odds": 11500,
-      "dk_implied_prob": 0.008621,
-      "dk_devigged_prob": 0.006188450188395633,
-      "kalshi_ask": 0.006,
-      "kalshi_implied_prob": 0.006
+      "kalshi_implied_prob": 0.005,
+      "dg_win_prob": 0.0055833333333333
     },
     {
       "player_name": "Emiliano Grillo",
       "normalized_name": "emiliano grillo",
+      "dg_id": 12808,
       "dk_american_odds": 11500,
       "dk_implied_prob": 0.008621,
       "dk_devigged_prob": 0.006188450188395633,
       "kalshi_ask": 0.006,
-      "kalshi_implied_prob": 0.006
+      "kalshi_implied_prob": 0.006,
+      "dg_win_prob": 0.0052833333333333
+    },
+    {
+      "player_name": "Kevin Yu",
+      "normalized_name": "kevin yu",
+      "dg_id": 17881,
+      "dk_american_odds": 11500,
+      "dk_implied_prob": 0.008621,
+      "dk_devigged_prob": 0.006188450188395633,
+      "kalshi_ask": 0.006,
+      "kalshi_implied_prob": 0.006,
+      "dg_win_prob": 0.0073166666666666
     },
     {
       "player_name": "Tony Finau",
       "normalized_name": "tony finau",
+      "dg_id": 11676,
       "dk_american_odds": 12000,
       "dk_implied_prob": 0.008264,
       "dk_devigged_prob": 0.005932183314801243,
       "kalshi_ask": 0.006,
-      "kalshi_implied_prob": 0.006
+      "kalshi_implied_prob": 0.006,
+      "dg_win_prob": 0.0067833333333333
     },
     {
       "player_name": "Mackenzie Hughes",
       "normalized_name": "mackenzie hughes",
+      "dg_id": 15556,
       "dk_american_odds": 12000,
       "dk_implied_prob": 0.008264,
       "dk_devigged_prob": 0.005932183314801243,
       "kalshi_ask": 0.005,
-      "kalshi_implied_prob": 0.005
+      "kalshi_implied_prob": 0.005,
+      "dg_win_prob": 0.0048
     },
     {
       "player_name": "Sam Stevens",
       "normalized_name": "sam stevens",
+      "dg_id": 25569,
       "dk_american_odds": 12500,
       "dk_implied_prob": 0.007937,
       "dk_devigged_prob": 0.005697451472601338,
       "kalshi_ask": 0.006,
-      "kalshi_implied_prob": 0.006
+      "kalshi_implied_prob": 0.006,
+      "dg_win_prob": 0.006
     },
     {
       "player_name": "Steven Fisk",
       "normalized_name": "steven fisk",
+      "dg_id": 26657,
       "dk_american_odds": 12500,
       "dk_implied_prob": 0.007937,
       "dk_devigged_prob": 0.005697451472601338,
       "kalshi_ask": 0.005,
-      "kalshi_implied_prob": 0.005
-    },
-    {
-      "player_name": "Sudarshan Yellamaraju",
-      "normalized_name": "sudarshan yellamaraju",
-      "dk_american_odds": 13000,
-      "dk_implied_prob": 0.007634,
-      "dk_devigged_prob": 0.005479947655517024,
-      "kalshi_ask": 0.006,
-      "kalshi_implied_prob": 0.006
+      "kalshi_implied_prob": 0.005,
+      "dg_win_prob": 0.0057666666666666
     },
     {
       "player_name": "William Mouw",
       "normalized_name": "william mouw",
+      "dg_id": 29770,
       "dk_american_odds": 13000,
       "dk_implied_prob": 0.007634,
       "dk_devigged_prob": 0.005479947655517024,
       "kalshi_ask": 0.006,
-      "kalshi_implied_prob": 0.006
+      "kalshi_implied_prob": 0.006,
+      "dg_win_prob": 0.00625
+    },
+    {
+      "player_name": "Sudarshan Yellamaraju",
+      "normalized_name": "sudarshan yellamaraju",
+      "dg_id": 29925,
+      "dk_american_odds": 13000,
+      "dk_implied_prob": 0.007634,
+      "dk_devigged_prob": 0.005479947655517024,
+      "kalshi_ask": 0.006,
+      "kalshi_implied_prob": 0.006,
+      "dg_win_prob": 0.0058
     },
     {
       "player_name": "Jesper Svensson",
       "normalized_name": "jesper svensson",
+      "dg_id": 26850,
       "dk_american_odds": 13000,
       "dk_implied_prob": 0.007634,
       "dk_devigged_prob": 0.005479947655517024,
       "kalshi_ask": 0.005,
-      "kalshi_implied_prob": 0.005
+      "kalshi_implied_prob": 0.005,
+      "dg_win_prob": 0.00535
     },
     {
       "player_name": "Seamus Power",
       "normalized_name": "seamus power",
+      "dg_id": 10104,
       "dk_american_odds": 13000,
       "dk_implied_prob": 0.007634,
       "dk_devigged_prob": 0.005479947655517024,
       "kalshi_ask": 0.004,
-      "kalshi_implied_prob": 0.004
+      "kalshi_implied_prob": 0.004,
+      "dg_win_prob": 0.00305
     },
     {
       "player_name": "Harry Hall",
       "normalized_name": "harry hall",
+      "dg_id": 27194,
       "dk_american_odds": 13000,
       "dk_implied_prob": 0.007634,
       "dk_devigged_prob": 0.005479947655517024,
       "kalshi_ask": 0.003,
-      "kalshi_implied_prob": 0.003
+      "kalshi_implied_prob": 0.003,
+      "dg_win_prob": 0.0039333333333333
     },
     {
       "player_name": "Zecheng Dou",
       "normalized_name": "zecheng dou",
+      "dg_id": 16757,
       "dk_american_odds": 13500,
       "dk_implied_prob": 0.007353,
       "dk_devigged_prob": 0.0052782361947886665,
       "kalshi_ask": 0.006,
-      "kalshi_implied_prob": 0.006
-    },
-    {
-      "player_name": "Taylor Moore",
-      "normalized_name": "taylor moore",
-      "dk_american_odds": 13500,
-      "dk_implied_prob": 0.007353,
-      "dk_devigged_prob": 0.0052782361947886665,
-      "kalshi_ask": 0.005,
-      "kalshi_implied_prob": 0.005
+      "kalshi_implied_prob": 0.006,
+      "dg_win_prob": 0.0065333333333333
     },
     {
       "player_name": "Rasmus Hojgaard",
       "normalized_name": "rasmus hojgaard",
+      "dg_id": 23838,
       "dk_american_odds": 13500,
       "dk_implied_prob": 0.007353,
       "dk_devigged_prob": 0.0052782361947886665,
       "kalshi_ask": 0.005,
-      "kalshi_implied_prob": 0.005
+      "kalshi_implied_prob": 0.005,
+      "dg_win_prob": 0.0045
     },
     {
       "player_name": "Stephan Jaeger",
       "normalized_name": "stephan jaeger",
+      "dg_id": 16394,
       "dk_american_odds": 13500,
       "dk_implied_prob": 0.007353,
       "dk_devigged_prob": 0.0052782361947886665,
       "kalshi_ask": 0.005,
-      "kalshi_implied_prob": 0.005
+      "kalshi_implied_prob": 0.005,
+      "dg_win_prob": 0.0034833333333333
+    },
+    {
+      "player_name": "Taylor Moore",
+      "normalized_name": "taylor moore",
+      "dg_id": 21944,
+      "dk_american_odds": 13500,
+      "dk_implied_prob": 0.007353,
+      "dk_devigged_prob": 0.0052782361947886665,
+      "kalshi_ask": 0.005,
+      "kalshi_implied_prob": 0.005,
+      "dg_win_prob": 0.0046666666666666
     },
     {
       "player_name": "Lee Hodges",
       "normalized_name": "lee hodges",
+      "dg_id": 25157,
       "dk_american_odds": 14000,
       "dk_implied_prob": 0.007092,
       "dk_devigged_prob": 0.005090881421656633,
       "kalshi_ask": 0.005,
-      "kalshi_implied_prob": 0.005
+      "kalshi_implied_prob": 0.005,
+      "dg_win_prob": 0.0044666666666666
     },
     {
       "player_name": "Ricky Castillo",
       "normalized_name": "ricky castillo",
+      "dg_id": 27819,
       "dk_american_odds": 14000,
       "dk_implied_prob": 0.007092,
       "dk_devigged_prob": 0.005090881421656633,
       "kalshi_ask": 0.004,
-      "kalshi_implied_prob": 0.004
+      "kalshi_implied_prob": 0.004,
+      "dg_win_prob": 0.00515
     },
     {
       "player_name": "Chris Kirk",
       "normalized_name": "chris kirk",
+      "dg_id": 12423,
       "dk_american_odds": 15000,
       "dk_implied_prob": 0.006623,
       "dk_devigged_prob": 0.004754217097522826,
       "kalshi_ask": 0.005,
-      "kalshi_implied_prob": 0.005
+      "kalshi_implied_prob": 0.005,
+      "dg_win_prob": 0.0034
     },
     {
       "player_name": "Keita Nakajima",
       "normalized_name": "keita nakajima",
+      "dg_id": 21074,
       "dk_american_odds": 15000,
       "dk_implied_prob": 0.006623,
       "dk_devigged_prob": 0.004754217097522826,
       "kalshi_ask": 0.004,
-      "kalshi_implied_prob": 0.004
+      "kalshi_implied_prob": 0.004,
+      "dg_win_prob": 0.00435
     },
     {
       "player_name": "Taylor Pendrith",
       "normalized_name": "taylor pendrith",
+      "dg_id": 17780,
       "dk_american_odds": 16000,
       "dk_implied_prob": 0.006211,
       "dk_devigged_prob": 0.004458469333038543,
       "kalshi_ask": 0.004,
-      "kalshi_implied_prob": 0.004
+      "kalshi_implied_prob": 0.004,
+      "dg_win_prob": 0.00395
     },
     {
       "player_name": "Kevin Roy",
       "normalized_name": "kevin roy",
+      "dg_id": 18424,
       "dk_american_odds": 16500,
       "dk_implied_prob": 0.006024,
       "dk_devigged_prob": 0.004324234304012909,
       "kalshi_ask": 0.004,
-      "kalshi_implied_prob": 0.004
+      "kalshi_implied_prob": 0.004,
+      "dg_win_prob": 0.0038333333333333
     },
     {
       "player_name": "Rico Hoey",
       "normalized_name": "rico hoey",
+      "dg_id": 23504,
       "dk_american_odds": 16500,
       "dk_implied_prob": 0.006024,
       "dk_devigged_prob": 0.004324234304012909,
       "kalshi_ask": 0.004,
-      "kalshi_implied_prob": 0.004
+      "kalshi_implied_prob": 0.004,
+      "dg_win_prob": 0.0043333333333333
     },
     {
       "player_name": "Billy Horschel",
       "normalized_name": "billy horschel",
+      "dg_id": 11276,
       "dk_american_odds": 17000,
       "dk_implied_prob": 0.005848,
       "dk_devigged_prob": 0.0041978954531652546,
       "kalshi_ask": 0.005,
-      "kalshi_implied_prob": 0.005
+      "kalshi_implied_prob": 0.005,
+      "dg_win_prob": 0.0025833333333333
     },
     {
       "player_name": "Nicolas Echavarria",
       "normalized_name": "nicolas echavarria",
+      "dg_id": null,
       "dk_american_odds": 17000,
       "dk_implied_prob": 0.005848,
       "dk_devigged_prob": 0.0041978954531652546,
       "kalshi_ask": 0.005,
-      "kalshi_implied_prob": 0.005
-    },
-    {
-      "player_name": "Zach Bauchou",
-      "normalized_name": "zachary bauchou",
-      "dk_american_odds": 17000,
-      "dk_implied_prob": 0.005848,
-      "dk_devigged_prob": 0.0041978954531652546,
-      "kalshi_ask": 0.004,
-      "kalshi_implied_prob": 0.004
-    },
-    {
-      "player_name": "Matt McCarty",
-      "normalized_name": "matthew mccarty",
-      "dk_american_odds": 17000,
-      "dk_implied_prob": 0.005848,
-      "dk_devigged_prob": 0.0041978954531652546,
-      "kalshi_ask": 0.004,
-      "kalshi_implied_prob": 0.004
+      "kalshi_implied_prob": 0.005,
+      "dg_win_prob": null
     },
     {
       "player_name": "Kris Ventura",
       "normalized_name": "kris ventura",
+      "dg_id": null,
       "dk_american_odds": 17000,
       "dk_implied_prob": 0.005848,
       "dk_devigged_prob": 0.0041978954531652546,
       "kalshi_ask": 0.004,
-      "kalshi_implied_prob": 0.004
+      "kalshi_implied_prob": 0.004,
+      "dg_win_prob": null
+    },
+    {
+      "player_name": "Zach Bauchou",
+      "normalized_name": "zachary bauchou",
+      "dg_id": 19846,
+      "dk_american_odds": 17000,
+      "dk_implied_prob": 0.005848,
+      "dk_devigged_prob": 0.0041978954531652546,
+      "kalshi_ask": 0.004,
+      "kalshi_implied_prob": 0.004,
+      "dg_win_prob": 0.0046166666666666
+    },
+    {
+      "player_name": "Matt McCarty",
+      "normalized_name": "matthew mccarty",
+      "dg_id": 28635,
+      "dk_american_odds": 17000,
+      "dk_implied_prob": 0.005848,
+      "dk_devigged_prob": 0.0041978954531652546,
+      "kalshi_ask": 0.004,
+      "kalshi_implied_prob": 0.004,
+      "dg_win_prob": 0.0039
     },
     {
       "player_name": "William Jennings",
       "normalized_name": "william jennings",
+      "dg_id": 35417,
       "dk_american_odds": 17000,
       "dk_implied_prob": 0.005848,
       "dk_devigged_prob": 0.0041978954531652546,
       "kalshi_ask": 0.002,
-      "kalshi_implied_prob": 0.002
+      "kalshi_implied_prob": 0.002,
+      "dg_win_prob": 0.00065
     },
     {
       "player_name": "Matthias Schmid",
       "normalized_name": "matthew schmid",
+      "dg_id": 20722,
       "dk_american_odds": 18000,
       "dk_implied_prob": 0.005525,
       "dk_devigged_prob": 0.003966034948484616,
       "kalshi_ask": 0.005,
-      "kalshi_implied_prob": 0.005
+      "kalshi_implied_prob": 0.005,
+      "dg_win_prob": 0.0043333333333333
     },
     {
       "player_name": "Max McGreevy",
       "normalized_name": "max mcgreevy",
+      "dg_id": 23505,
       "dk_american_odds": 18000,
       "dk_implied_prob": 0.005525,
       "dk_devigged_prob": 0.003966034948484616,
       "kalshi_ask": 0.004,
-      "kalshi_implied_prob": 0.004
+      "kalshi_implied_prob": 0.004,
+      "dg_win_prob": 0.00445
     },
     {
       "player_name": "Lucas Glover",
       "normalized_name": "lucas glover",
+      "dg_id": 7399,
       "dk_american_odds": 18000,
       "dk_implied_prob": 0.005525,
       "dk_devigged_prob": 0.003966034948484616,
       "kalshi_ask": 0.003,
-      "kalshi_implied_prob": 0.003
+      "kalshi_implied_prob": 0.003,
+      "dg_win_prob": 0.0021166666666666
     },
     {
       "player_name": "Austin Smotherman",
       "normalized_name": "austin smotherman",
+      "dg_id": 22985,
       "dk_american_odds": 18500,
       "dk_implied_prob": 0.005376,
       "dk_devigged_prob": 0.0038590776258919986,
       "kalshi_ask": 0.004,
-      "kalshi_implied_prob": 0.004
+      "kalshi_implied_prob": 0.004,
+      "dg_win_prob": 0.0038166666666666
     },
     {
       "player_name": "John Parry",
       "normalized_name": "john parry",
+      "dg_id": 13764,
       "dk_american_odds": 20000,
       "dk_implied_prob": 0.004975,
       "dk_devigged_prob": 0.003571226039585695,
       "kalshi_ask": 0.004,
-      "kalshi_implied_prob": 0.004
-    },
-    {
-      "player_name": "Adrien Dumont De Chassart",
-      "normalized_name": "adrien dumont de chassart",
-      "dk_american_odds": 22500,
-      "dk_implied_prob": 0.004425,
-      "dk_devigged_prob": 0.003176417130686774,
-      "kalshi_ask": 0.003,
-      "kalshi_implied_prob": 0.003
+      "kalshi_implied_prob": 0.004,
+      "dg_win_prob": 0.0040833333333333
     },
     {
       "player_name": "Haotong Li",
       "normalized_name": "haotong li",
+      "dg_id": 15310,
       "dk_american_odds": 22500,
       "dk_implied_prob": 0.004425,
       "dk_devigged_prob": 0.003176417130686774,
       "kalshi_ask": 0.003,
-      "kalshi_implied_prob": 0.003
+      "kalshi_implied_prob": 0.003,
+      "dg_win_prob": 0.0027
+    },
+    {
+      "player_name": "Adrien Dumont De Chassart",
+      "normalized_name": "adrien dumont de chassart",
+      "dg_id": 22002,
+      "dk_american_odds": 22500,
+      "dk_implied_prob": 0.004425,
+      "dk_devigged_prob": 0.003176417130686774,
+      "kalshi_ask": 0.003,
+      "kalshi_implied_prob": 0.003,
+      "dg_win_prob": 0.0030333333333333
     },
     {
       "player_name": "Neal Shipley",
       "normalized_name": "neal shipley",
+      "dg_id": 32055,
       "dk_american_odds": 23000,
       "dk_implied_prob": 0.004329,
       "dk_devigged_prob": 0.003107505030224417,
       "kalshi_ask": 0.003,
-      "kalshi_implied_prob": 0.003
+      "kalshi_implied_prob": 0.003,
+      "dg_win_prob": 0.0020666666666666
     },
     {
       "player_name": "Zac Blair",
       "normalized_name": "zac blair",
+      "dg_id": 17639,
       "dk_american_odds": 25000,
       "dk_implied_prob": 0.003984,
       "dk_devigged_prob": 0.0028598521691878204,
       "kalshi_ask": 0.003,
-      "kalshi_implied_prob": 0.003
+      "kalshi_implied_prob": 0.003,
+      "dg_win_prob": 0.0023166666666666
     },
     {
       "player_name": "Thorbjorn Olesen",
       "normalized_name": "thorbjorn olesen",
+      "dg_id": 13412,
       "dk_american_odds": 25000,
       "dk_implied_prob": 0.003984,
       "dk_devigged_prob": 0.0028598521691878204,
       "kalshi_ask": 0.003,
-      "kalshi_implied_prob": 0.003
+      "kalshi_implied_prob": 0.003,
+      "dg_win_prob": 0.0022666666666666
     },
     {
       "player_name": "Chandler Phillips",
       "normalized_name": "chandler phillips",
+      "dg_id": 27164,
       "dk_american_odds": 27000,
       "dk_implied_prob": 0.00369,
       "dk_devigged_prob": 0.002648808861521852,
       "kalshi_ask": 0.004,
-      "kalshi_implied_prob": 0.004
+      "kalshi_implied_prob": 0.004,
+      "dg_win_prob": 0.0024333333333333
     },
     {
       "player_name": "Patrick Fishburn",
       "normalized_name": "patrick fishburn",
+      "dg_id": 25094,
       "dk_american_odds": 27500,
       "dk_implied_prob": 0.003623,
       "dk_devigged_prob": 0.0026007139580741653,
       "kalshi_ask": 0.002,
-      "kalshi_implied_prob": 0.002
+      "kalshi_implied_prob": 0.002,
+      "dg_win_prob": 0.00255
     },
     {
       "player_name": "Austin Eckroat",
       "normalized_name": "austin eckroat",
+      "dg_id": 26653,
       "dk_american_odds": 29000,
       "dk_implied_prob": 0.003436,
       "dk_devigged_prob": 0.002466478929048532,
       "kalshi_ask": 0.002,
-      "kalshi_implied_prob": 0.002
+      "kalshi_implied_prob": 0.002,
+      "dg_win_prob": 0.0021666666666666
     },
     {
       "player_name": "Joel Dahmen",
       "normalized_name": "joel dahmen",
+      "dg_id": 14509,
       "dk_american_odds": 30000,
       "dk_implied_prob": 0.003322,
       "dk_devigged_prob": 0.002384645809749483,
       "kalshi_ask": 0.002,
-      "kalshi_implied_prob": 0.002
-    },
-    {
-      "player_name": "Garrick Higgo",
-      "normalized_name": "garrick higgo",
-      "dk_american_odds": 31000,
-      "dk_implied_prob": 0.003215,
-      "dk_devigged_prob": 0.0023078375311091476,
-      "kalshi_ask": 0.002,
-      "kalshi_implied_prob": 0.002
+      "kalshi_implied_prob": 0.002,
+      "dg_win_prob": 0.0019666666666666
     },
     {
       "player_name": "Andrew Putnam",
       "normalized_name": "andrew putnam",
+      "dg_id": 14704,
       "dk_american_odds": 31000,
       "dk_implied_prob": 0.003215,
       "dk_devigged_prob": 0.0023078375311091476,
       "kalshi_ask": 0.002,
-      "kalshi_implied_prob": 0.002
+      "kalshi_implied_prob": 0.002,
+      "dg_win_prob": 0.0023166666666666
+    },
+    {
+      "player_name": "Garrick Higgo",
+      "normalized_name": "garrick higgo",
+      "dg_id": 24342,
+      "dk_american_odds": 31000,
+      "dk_implied_prob": 0.003215,
+      "dk_devigged_prob": 0.0023078375311091476,
+      "kalshi_ask": 0.002,
+      "kalshi_implied_prob": 0.002,
+      "dg_win_prob": 0.00175
     },
     {
       "player_name": "Karl Vilips",
       "normalized_name": "karl vilips",
+      "dg_id": 24304,
       "dk_american_odds": 32000,
       "dk_implied_prob": 0.003115,
       "dk_devigged_prob": 0.0022360540931275256,
       "kalshi_ask": 0.003,
-      "kalshi_implied_prob": 0.003
+      "kalshi_implied_prob": 0.003,
+      "dg_win_prob": 0.0017333333333333
     },
     {
       "player_name": "A.J. Ewart",
       "normalized_name": "aj ewart",
+      "dg_id": 21883,
       "dk_american_odds": 32000,
       "dk_implied_prob": 0.003115,
       "dk_devigged_prob": 0.0022360540931275256,
       "kalshi_ask": 0.002,
-      "kalshi_implied_prob": 0.002
-    },
-    {
-      "player_name": "Patrick Rodgers",
-      "normalized_name": "patrick rodgers",
-      "dk_american_odds": 33000,
-      "dk_implied_prob": 0.003021,
-      "dk_devigged_prob": 0.002168577661424801,
-      "kalshi_ask": 0.002,
-      "kalshi_implied_prob": 0.002
+      "kalshi_implied_prob": 0.002,
+      "dg_win_prob": 0.0026
     },
     {
       "player_name": "Mark Hubbard",
       "normalized_name": "mark hubbard",
+      "dg_id": 16333,
       "dk_american_odds": 33000,
       "dk_implied_prob": 0.003021,
       "dk_devigged_prob": 0.002168577661424801,
       "kalshi_ask": 0.002,
-      "kalshi_implied_prob": 0.002
+      "kalshi_implied_prob": 0.002,
+      "dg_win_prob": 0.0016666666666666
+    },
+    {
+      "player_name": "Patrick Rodgers",
+      "normalized_name": "patrick rodgers",
+      "dg_id": 16283,
+      "dk_american_odds": 33000,
+      "dk_implied_prob": 0.003021,
+      "dk_devigged_prob": 0.002168577661424801,
+      "kalshi_ask": 0.002,
+      "kalshi_implied_prob": 0.002,
+      "dg_win_prob": 0.0020166666666666
     },
     {
       "player_name": "Luke Clanton",
       "normalized_name": "luke clanton",
+      "dg_id": 32330,
       "dk_american_odds": 37500,
       "dk_implied_prob": 0.00266,
       "dk_devigged_prob": 0.0019094394503111453,
       "kalshi_ask": 0.002,
-      "kalshi_implied_prob": 0.002
+      "kalshi_implied_prob": 0.002,
+      "dg_win_prob": 0.0014166666666666
     },
     {
       "player_name": "Trace Crowe",
       "normalized_name": "trace crowe",
+      "dg_id": 27780,
       "dk_american_odds": 39000,
       "dk_implied_prob": 0.002558,
       "dk_devigged_prob": 0.0018362203435698908,
       "kalshi_ask": 0.001,
-      "kalshi_implied_prob": 0.001
-    },
-    {
-      "player_name": "Hayden Springer",
-      "normalized_name": "hayden springer",
-      "dk_american_odds": 40000,
-      "dk_implied_prob": 0.002494,
-      "dk_devigged_prob": 0.001790278943261653,
-      "kalshi_ask": 0.002,
-      "kalshi_implied_prob": 0.002
+      "kalshi_implied_prob": 0.001,
+      "dg_win_prob": 0.0019166666666666
     },
     {
       "player_name": "Matthieu Pavon",
       "normalized_name": "matthieu pavon",
+      "dg_id": 19960,
       "dk_american_odds": 40000,
       "dk_implied_prob": 0.002494,
       "dk_devigged_prob": 0.001790278943261653,
       "kalshi_ask": 0.002,
-      "kalshi_implied_prob": 0.002
+      "kalshi_implied_prob": 0.002,
+      "dg_win_prob": 0.00185
+    },
+    {
+      "player_name": "Hayden Springer",
+      "normalized_name": "hayden springer",
+      "dg_id": 21995,
+      "dk_american_odds": 40000,
+      "dk_implied_prob": 0.002494,
+      "dk_devigged_prob": 0.001790278943261653,
+      "kalshi_ask": 0.002,
+      "kalshi_implied_prob": 0.002,
+      "dg_win_prob": 0.0010833333333333
     },
     {
       "player_name": "Chad Ramey",
       "normalized_name": "chad ramey",
+      "dg_id": 19840,
       "dk_american_odds": 41000,
       "dk_implied_prob": 0.002433,
       "dk_devigged_prob": 0.0017464910460928632,
       "kalshi_ask": 0.002,
-      "kalshi_implied_prob": 0.002
+      "kalshi_implied_prob": 0.002,
+      "dg_win_prob": 0.00115
     },
     {
       "player_name": "Pontus Nyholm",
       "normalized_name": "pontus nyholm",
+      "dg_id": 25475,
       "dk_american_odds": 42000,
       "dk_implied_prob": 0.002375,
       "dk_devigged_prob": 0.0017048566520635226,
       "kalshi_ask": 0.002,
-      "kalshi_implied_prob": 0.002
+      "kalshi_implied_prob": 0.002,
+      "dg_win_prob": 0.0016333333333333
     },
     {
       "player_name": "Adrien Saddier",
       "normalized_name": "adrien saddier",
+      "dg_id": 14792,
       "dk_american_odds": 43000,
       "dk_implied_prob": 0.00232,
       "dk_devigged_prob": 0.0016653757611736306,
       "kalshi_ask": 0.002,
-      "kalshi_implied_prob": 0.002
+      "kalshi_implied_prob": 0.002,
+      "dg_win_prob": 0.0014833333333333
     },
     {
       "player_name": "Vince Whaley",
       "normalized_name": "vince whaley",
+      "dg_id": 25908,
       "dk_american_odds": 45000,
       "dk_implied_prob": 0.002217,
       "dk_devigged_prob": 0.0015914388200525596,
       "kalshi_ask": 0.002,
-      "kalshi_implied_prob": 0.002
+      "kalshi_implied_prob": 0.002,
+      "dg_win_prob": 0.0009166666666666
     },
     {
       "player_name": "Davis Chatfield",
       "normalized_name": "davis chatfield",
+      "dg_id": 30620,
       "dk_american_odds": 46000,
       "dk_implied_prob": 0.002169,
       "dk_devigged_prob": 0.0015569827698213813,
       "kalshi_ask": 0.002,
-      "kalshi_implied_prob": 0.002
+      "kalshi_implied_prob": 0.002,
+      "dg_win_prob": 0.00105
     },
     {
       "player_name": "Erik Van Rooyen",
       "normalized_name": "erik van rooyen",
+      "dg_id": 17550,
       "dk_american_odds": 47000,
       "dk_implied_prob": 0.002123,
       "dk_devigged_prob": 0.0015239623883498352,
       "kalshi_ask": 0.002,
-      "kalshi_implied_prob": 0.002
+      "kalshi_implied_prob": 0.002,
+      "dg_win_prob": 0.0013833333333333
     },
     {
       "player_name": "Chandler Blanchet",
       "normalized_name": "chandler blanchet",
+      "dg_id": 24956,
       "dk_american_odds": 47500,
       "dk_implied_prob": 0.002101,
       "dk_devigged_prob": 0.0015081700319938783,
       "kalshi_ask": 0.002,
-      "kalshi_implied_prob": 0.002
-    },
-    {
-      "player_name": "Tom Hoge",
-      "normalized_name": "tom hoge",
-      "dk_american_odds": 48000,
-      "dk_implied_prob": 0.002079,
-      "dk_devigged_prob": 0.0014923776756379215,
-      "kalshi_ask": 0.002,
-      "kalshi_implied_prob": 0.002
+      "kalshi_implied_prob": 0.002,
+      "dg_win_prob": 0.0016666666666666
     },
     {
       "player_name": "Takumi Kanaya",
       "normalized_name": "takumi kanaya",
+      "dg_id": 19729,
       "dk_american_odds": 48000,
       "dk_implied_prob": 0.002079,
       "dk_devigged_prob": 0.0014923776756379215,
       "kalshi_ask": 0.002,
-      "kalshi_implied_prob": 0.002
+      "kalshi_implied_prob": 0.002,
+      "dg_win_prob": 0.0017166666666666
+    },
+    {
+      "player_name": "Tom Hoge",
+      "normalized_name": "tom hoge",
+      "dg_id": 15575,
+      "dk_american_odds": 48000,
+      "dk_implied_prob": 0.002079,
+      "dk_devigged_prob": 0.0014923776756379215,
+      "kalshi_ask": 0.002,
+      "kalshi_implied_prob": 0.002,
+      "dg_win_prob": 0.0016666666666666
     },
     {
       "player_name": "Nick Dunlap",
       "normalized_name": "nick dunlap",
+      "dg_id": 28270,
       "dk_american_odds": 50000,
       "dk_implied_prob": 0.001996,
       "dk_devigged_prob": 0.0014327974221131751,
       "kalshi_ask": 0.002,
-      "kalshi_implied_prob": 0.002
+      "kalshi_implied_prob": 0.002,
+      "dg_win_prob": 0.0011333333333333
     },
     {
       "player_name": "David Lipsky",
       "normalized_name": "david lipsky",
+      "dg_id": 15980,
       "dk_american_odds": 52500,
       "dk_implied_prob": 0.001901,
       "dk_devigged_prob": 0.0013646031560306342,
       "kalshi_ask": 0.002,
-      "kalshi_implied_prob": 0.002
+      "kalshi_implied_prob": 0.002,
+      "dg_win_prob": 0.0009166666666666
     },
     {
       "player_name": "Matt Kuchar",
       "normalized_name": "matthew kuchar",
+      "dg_id": 6169,
       "dk_american_odds": 52500,
       "dk_implied_prob": 0.001901,
       "dk_devigged_prob": 0.0013646031560306342,
       "kalshi_ask": 0.001,
-      "kalshi_implied_prob": 0.001
+      "kalshi_implied_prob": 0.001,
+      "dg_win_prob": 0.0009666666666666
     },
     {
       "player_name": "Aaron Wise",
       "normalized_name": "aaron wise",
+      "dg_id": 22051,
       "dk_american_odds": 55000,
       "dk_implied_prob": 0.001815,
       "dk_devigged_prob": 0.0013028693993664393,
       "kalshi_ask": 0.002,
-      "kalshi_implied_prob": 0.002
+      "kalshi_implied_prob": 0.002,
+      "dg_win_prob": 0.0011333333333333
     },
     {
       "player_name": "Webb Simpson",
       "normalized_name": "webb simpson",
+      "dg_id": 11049,
       "dk_american_odds": 55000,
       "dk_implied_prob": 0.001815,
       "dk_devigged_prob": 0.0013028693993664393,
       "kalshi_ask": 0.001,
-      "kalshi_implied_prob": 0.001
+      "kalshi_implied_prob": 0.001,
+      "dg_win_prob": 0.0009833333333333
     },
     {
       "player_name": "Cameron Davis",
       "normalized_name": "cameron davis",
+      "dg_id": null,
       "dk_american_odds": 57500,
       "dk_implied_prob": 0.001736,
       "dk_devigged_prob": 0.0012461604833609579,
       "kalshi_ask": 0.002,
-      "kalshi_implied_prob": 0.002
-    },
-    {
-      "player_name": "John Vanderlaan",
-      "normalized_name": "john vanderlaan",
-      "dk_american_odds": 57500,
-      "dk_implied_prob": 0.001736,
-      "dk_devigged_prob": 0.0012461604833609579,
-      "kalshi_ask": 0.001,
-      "kalshi_implied_prob": 0.001
+      "kalshi_implied_prob": 0.002,
+      "dg_win_prob": null
     },
     {
       "player_name": "Alejandro Tosti",
       "normalized_name": "alejandro tosti",
+      "dg_id": 17032,
       "dk_american_odds": 57500,
       "dk_implied_prob": 0.001736,
       "dk_devigged_prob": 0.0012461604833609579,
       "kalshi_ask": 0.001,
-      "kalshi_implied_prob": 0.001
+      "kalshi_implied_prob": 0.001,
+      "dg_win_prob": 0.0009833333333333
+    },
+    {
+      "player_name": "John Vanderlaan",
+      "normalized_name": "john vanderlaan",
+      "dg_id": 25319,
+      "dk_american_odds": 57500,
+      "dk_implied_prob": 0.001736,
+      "dk_devigged_prob": 0.0012461604833609579,
+      "kalshi_ask": 0.001,
+      "kalshi_implied_prob": 0.001,
+      "dg_win_prob": 0.0012833333333333
     },
     {
       "player_name": "Lanto Griffin",
       "normalized_name": "lanto griffin",
+      "dg_id": 15330,
       "dk_american_odds": 60000,
       "dk_implied_prob": 0.001664,
       "dk_devigged_prob": 0.00119447640801419,
       "kalshi_ask": 0.001,
-      "kalshi_implied_prob": 0.001
+      "kalshi_implied_prob": 0.001,
+      "dg_win_prob": 0.00105
     },
     {
       "player_name": "Joe Highsmith",
       "normalized_name": "joe highsmith",
+      "dg_id": 28469,
       "dk_american_odds": 65000,
       "dk_implied_prob": 0.001536,
       "dk_devigged_prob": 0.001102593607397714,
       "kalshi_ask": 0.002,
-      "kalshi_implied_prob": 0.002
+      "kalshi_implied_prob": 0.002,
+      "dg_win_prob": 0.0010833333333333
     },
     {
       "player_name": "Brandt Snedeker",
       "normalized_name": "brandt snedeker",
+      "dg_id": 8820,
       "dk_american_odds": 67500,
       "dk_implied_prob": 0.001479,
       "dk_devigged_prob": 0.0010616770477481895,
       "kalshi_ask": 0.001,
-      "kalshi_implied_prob": 0.001
+      "kalshi_implied_prob": 0.001,
+      "dg_win_prob": 0.0007333333333333
     },
     {
       "player_name": "Hank Lebioda",
       "normalized_name": "hank lebioda",
+      "dg_id": 21943,
       "dk_american_odds": 72500,
       "dk_implied_prob": 0.001377,
       "dk_devigged_prob": 0.000988457941006935,
       "kalshi_ask": 0.001,
-      "kalshi_implied_prob": 0.001
+      "kalshi_implied_prob": 0.001,
+      "dg_win_prob": 0.0007833333333333
     },
     {
       "player_name": "Kevin Streelman",
       "normalized_name": "kevin streelman",
+      "dg_id": 8480,
       "dk_american_odds": 72500,
       "dk_implied_prob": 0.001377,
       "dk_devigged_prob": 0.000988457941006935,
       "kalshi_ask": 0.001,
-      "kalshi_implied_prob": 0.001
+      "kalshi_implied_prob": 0.001,
+      "dg_win_prob": 0.0005333333333333
     },
     {
       "player_name": "Gordon Sargent",
       "normalized_name": "gordon sargent",
+      "dg_id": 30814,
       "dk_american_odds": 82500,
       "dk_implied_prob": 0.001211,
       "dk_devigged_prob": 0.0008692974339574426,
       "kalshi_ask": 0.001,
-      "kalshi_implied_prob": 0.001
+      "kalshi_implied_prob": 0.001,
+      "dg_win_prob": 0.00085
     },
     {
       "player_name": "Davis Riley",
       "normalized_name": "davis riley",
+      "dg_id": 19872,
       "dk_american_odds": 82500,
       "dk_implied_prob": 0.001211,
       "dk_devigged_prob": 0.0008692974339574426,
       "kalshi_ask": 0.001,
-      "kalshi_implied_prob": 0.001
+      "kalshi_implied_prob": 0.001,
+      "dg_win_prob": 0.0006
     },
     {
       "player_name": "Adam Schenk",
       "normalized_name": "adam schenk",
+      "dg_id": 19477,
       "dk_american_odds": 95000,
       "dk_implied_prob": 0.001052,
       "dk_devigged_prob": 0.0007551617675666635,
       "kalshi_ask": 0.001,
-      "kalshi_implied_prob": 0.001
+      "kalshi_implied_prob": 0.001,
+      "dg_win_prob": 0.0004
     },
     {
       "player_name": "Dylan Wu",
       "normalized_name": "dylan wu",
+      "dg_id": 25002,
       "dk_american_odds": 97500,
       "dk_implied_prob": 0.001025,
       "dk_devigged_prob": 0.0007357802393116256,
       "kalshi_ask": 0.001,
-      "kalshi_implied_prob": 0.001
+      "kalshi_implied_prob": 0.001,
+      "dg_win_prob": 0.0007
     },
     {
       "player_name": "Brice Garnett",
       "normalized_name": "brice garnett",
+      "dg_id": 11451,
       "dk_american_odds": 100000,
       "dk_implied_prob": 0.000999,
       "dk_devigged_prob": 0.0007171165454364039,
       "kalshi_ask": 0.001,
-      "kalshi_implied_prob": 0.001
+      "kalshi_implied_prob": 0.001,
+      "dg_win_prob": 0.0005666666666666
     },
     {
       "player_name": "Brad Dalke",
       "normalized_name": "brad dalke",
+      "dg_id": 21501,
       "dk_american_odds": 105000,
       "dk_implied_prob": 0.000951,
       "dk_devigged_prob": 0.0006826604952052253,
       "kalshi_ask": 0.002,
-      "kalshi_implied_prob": 0.002
+      "kalshi_implied_prob": 0.002,
+      "dg_win_prob": 5e-05
     },
     {
       "player_name": "Adam Svensson",
       "normalized_name": "adam svensson",
+      "dg_id": 13997,
       "dk_american_odds": 105000,
       "dk_implied_prob": 0.000951,
       "dk_devigged_prob": 0.0006826604952052253,
       "kalshi_ask": 0.001,
-      "kalshi_implied_prob": 0.001
+      "kalshi_implied_prob": 0.001,
+      "dg_win_prob": 0.0008
     },
     {
       "player_name": "Danny Walker",
       "normalized_name": "danny walker",
+      "dg_id": 25003,
       "dk_american_odds": 105000,
       "dk_implied_prob": 0.000951,
       "dk_devigged_prob": 0.0006826604952052253,
       "kalshi_ask": 0.001,
-      "kalshi_implied_prob": 0.001
+      "kalshi_implied_prob": 0.001,
+      "dg_win_prob": 0.0006166666666666
     },
     {
       "player_name": "Stefano Mazzoli",
       "normalized_name": "stefano mazzoli",
+      "dg_id": 20844,
       "dk_american_odds": 110000,
       "dk_implied_prob": 0.000908,
       "dk_devigged_prob": 0.0006517936168731278,
       "kalshi_ask": 0.001,
-      "kalshi_implied_prob": 0.001
+      "kalshi_implied_prob": 0.001,
+      "dg_win_prob": 0.0007333333333333
     },
     {
       "player_name": "Jeffrey Kang",
       "normalized_name": "jeffrey kang",
+      "dg_id": 21889,
       "dk_american_odds": 135000,
       "dk_implied_prob": 0.00074,
       "dk_devigged_prob": 0.0005311974410640029,
       "kalshi_ask": 0.001,
-      "kalshi_implied_prob": 0.001
+      "kalshi_implied_prob": 0.001,
+      "dg_win_prob": 0.0004833333333333
     },
     {
       "player_name": "Brian Campbell",
       "normalized_name": "brian campbell",
+      "dg_id": 18628,
       "dk_american_odds": 160000,
       "dk_implied_prob": 0.000625,
       "dk_devigged_prob": 0.00044864648738513754,
       "kalshi_ask": 0.001,
-      "kalshi_implied_prob": 0.001
+      "kalshi_implied_prob": 0.001,
+      "dg_win_prob": 0.0002666666666666
     },
     {
       "player_name": "Ryan Ruffels",
       "normalized_name": "ryan ruffels",
+      "dg_id": 17169,
       "dk_american_odds": 170000,
       "dk_implied_prob": 0.000588,
       "dk_devigged_prob": 0.0004220866153319374,
       "kalshi_ask": 0.001,
-      "kalshi_implied_prob": 0.001
+      "kalshi_implied_prob": 0.001,
+      "dg_win_prob": 8.33333333333333e-05
     },
     {
       "player_name": "Peter Malnati",
       "normalized_name": "peter malnati",
+      "dg_id": 14926,
       "dk_american_odds": 190000,
       "dk_implied_prob": 0.000526,
       "dk_devigged_prob": 0.00037758088378333176,
       "kalshi_ask": 0.001,
-      "kalshi_implied_prob": 0.001
+      "kalshi_implied_prob": 0.001,
+      "dg_win_prob": 0.00035
     },
     {
       "player_name": "Kensei Hirata",
       "normalized_name": "kensei hirata",
+      "dg_id": 20954,
       "dk_american_odds": 200000,
       "dk_implied_prob": 0.0005,
       "dk_devigged_prob": 0.00035891718990811006,
       "kalshi_ask": 0.001,
-      "kalshi_implied_prob": 0.001
+      "kalshi_implied_prob": 0.001,
+      "dg_win_prob": 0.0004666666666666
     },
     {
       "player_name": "Christo Lamprecht",
       "normalized_name": "christo lamprecht",
+      "dg_id": 24343,
       "dk_american_odds": 250000,
       "dk_implied_prob": 0.0004,
       "dk_devigged_prob": 0.00028713375192648805,
       "kalshi_ask": 0.001,
-      "kalshi_implied_prob": 0.001
+      "kalshi_implied_prob": 0.001,
+      "dg_win_prob": 0.00025
     },
     {
       "player_name": "Rafael Campos",
       "normalized_name": "rafael campos",
+      "dg_id": 12909,
       "dk_american_odds": 275000,
       "dk_implied_prob": 0.000364,
       "dk_devigged_prob": 0.0002612917142531041,
       "kalshi_ask": 0.001,
-      "kalshi_implied_prob": 0.001
+      "kalshi_implied_prob": 0.001,
+      "dg_win_prob": 0.0003
     },
     {
       "player_name": "Patton Kizzire",
       "normalized_name": "patton kizzire",
+      "dg_id": 13470,
       "dk_american_odds": 325000,
       "dk_implied_prob": 0.000308,
       "dk_devigged_prob": 0.0002210929889833958,
       "kalshi_ask": 0.001,
-      "kalshi_implied_prob": 0.001
+      "kalshi_implied_prob": 0.001,
+      "dg_win_prob": 0.0001333333333333
     },
     {
       "player_name": "Marcelo Rozo",
       "normalized_name": "marcelo rozo",
+      "dg_id": 16591,
       "dk_american_odds": 350000,
       "dk_implied_prob": 0.000286,
       "dk_devigged_prob": 0.00020530063262743894,
       "kalshi_ask": 0.001,
-      "kalshi_implied_prob": 0.001
+      "kalshi_implied_prob": 0.001,
+      "dg_win_prob": 0.0003666666666666
     },
     {
       "player_name": "Patrick Wilkes-Krier",
       "normalized_name": "patrick wilkeskrier",
+      "dg_id": 14001,
       "dk_american_odds": 450000,
       "dk_implied_prob": 0.000222,
       "dk_devigged_prob": 0.00015935923231920085,
       "kalshi_ask": 0.001,
-      "kalshi_implied_prob": 0.001
-    },
-    {
-      "player_name": "Joe Hooks",
-      "normalized_name": "joe hooks",
-      "dk_american_odds": 500000,
-      "dk_implied_prob": 0.0002,
-      "dk_devigged_prob": 0.00014356687596324403,
-      "kalshi_ask": 0.001,
-      "kalshi_implied_prob": 0.001
+      "kalshi_implied_prob": 0.001,
+      "dg_win_prob": 8.33333333333333e-05
     },
     {
       "player_name": "Brendon Todd",
       "normalized_name": "brendon todd",
+      "dg_id": 12425,
       "dk_american_odds": 500000,
       "dk_implied_prob": 0.0002,
       "dk_devigged_prob": 0.00014356687596324403,
       "kalshi_ask": 0.001,
-      "kalshi_implied_prob": 0.001
+      "kalshi_implied_prob": 0.001,
+      "dg_win_prob": 1.66666666666667e-05
+    },
+    {
+      "player_name": "Joe Hooks",
+      "normalized_name": "joe hooks",
+      "dg_id": 33913,
+      "dk_american_odds": 500000,
+      "dk_implied_prob": 0.0002,
+      "dk_devigged_prob": 0.00014356687596324403,
+      "kalshi_ask": 0.001,
+      "kalshi_implied_prob": 0.001,
+      "dg_win_prob": 0.0
     },
     {
       "player_name": "Ryan Celano",
       "normalized_name": "ryan celano",
+      "dg_id": null,
       "dk_american_odds": null,
       "dk_implied_prob": null,
       "dk_devigged_prob": null,
       "kalshi_ask": 0.001,
-      "kalshi_implied_prob": 0.001
-    },
-    {
-      "player_name": "Justin Lower",
-      "normalized_name": "justin lower",
-      "dk_american_odds": null,
-      "dk_implied_prob": null,
-      "dk_devigged_prob": null,
-      "kalshi_ask": 0.001,
-      "kalshi_implied_prob": 0.001
-    },
-    {
-      "player_name": "Daniel Azallion",
-      "normalized_name": "daniel azallion",
-      "dk_american_odds": null,
-      "dk_implied_prob": null,
-      "dk_devigged_prob": null,
-      "kalshi_ask": 0.001,
-      "kalshi_implied_prob": 0.001
-    },
-    {
-      "player_name": "Daniel Brown",
-      "normalized_name": "daniel brown",
-      "dk_american_odds": null,
-      "dk_implied_prob": null,
-      "dk_devigged_prob": null,
-      "kalshi_ask": 0.001,
-      "kalshi_implied_prob": 0.001
-    },
-    {
-      "player_name": "Justin Quiban",
-      "normalized_name": "justin quiban",
-      "dk_american_odds": null,
-      "dk_implied_prob": null,
-      "dk_devigged_prob": null,
-      "kalshi_ask": 0.001,
-      "kalshi_implied_prob": 0.001
-    },
-    {
-      "player_name": "Jason Day",
-      "normalized_name": "jason day",
-      "dk_american_odds": null,
-      "dk_implied_prob": null,
-      "dk_devigged_prob": null,
-      "kalshi_ask": 0.001,
-      "kalshi_implied_prob": 0.001
+      "kalshi_implied_prob": 0.001,
+      "dg_win_prob": null
     },
     {
       "player_name": "Keenan Huskey",
       "normalized_name": "keenan huskey",
+      "dg_id": null,
       "dk_american_odds": null,
       "dk_implied_prob": null,
       "dk_devigged_prob": null,
       "kalshi_ask": 0.001,
-      "kalshi_implied_prob": 0.001
+      "kalshi_implied_prob": 0.001,
+      "dg_win_prob": null
+    },
+    {
+      "player_name": "Justin Lower",
+      "normalized_name": "justin lower",
+      "dg_id": 17723,
+      "dk_american_odds": null,
+      "dk_implied_prob": null,
+      "dk_devigged_prob": null,
+      "kalshi_ask": 0.001,
+      "kalshi_implied_prob": 0.001,
+      "dg_win_prob": 0.00045
+    },
+    {
+      "player_name": "Jason Day",
+      "normalized_name": "jason day",
+      "dg_id": null,
+      "dk_american_odds": null,
+      "dk_implied_prob": null,
+      "dk_devigged_prob": null,
+      "kalshi_ask": 0.001,
+      "kalshi_implied_prob": 0.001,
+      "dg_win_prob": null
+    },
+    {
+      "player_name": "Daniel Brown",
+      "normalized_name": "daniel brown",
+      "dg_id": null,
+      "dk_american_odds": null,
+      "dk_implied_prob": null,
+      "dk_devigged_prob": null,
+      "kalshi_ask": 0.001,
+      "kalshi_implied_prob": 0.001,
+      "dg_win_prob": null
+    },
+    {
+      "player_name": "Justin Quiban",
+      "normalized_name": "justin quiban",
+      "dg_id": null,
+      "dk_american_odds": null,
+      "dk_implied_prob": null,
+      "dk_devigged_prob": null,
+      "kalshi_ask": 0.001,
+      "kalshi_implied_prob": 0.001,
+      "dg_win_prob": null
+    },
+    {
+      "player_name": "Daniel Azallion",
+      "normalized_name": "daniel azallion",
+      "dg_id": null,
+      "dk_american_odds": null,
+      "dk_implied_prob": null,
+      "dk_devigged_prob": null,
+      "kalshi_ask": 0.001,
+      "kalshi_implied_prob": 0.001,
+      "dg_win_prob": null
+    },
+    {
+      "player_name": "Nico Echavarria",
+      "normalized_name": "nico echavarria",
+      "dg_id": 22833,
+      "dk_american_odds": null,
+      "dk_implied_prob": null,
+      "dk_devigged_prob": null,
+      "kalshi_ask": null,
+      "kalshi_implied_prob": null,
+      "dg_win_prob": 0.0038833333333333
+    },
+    {
+      "player_name": "Ben James",
+      "normalized_name": "ben james",
+      "dg_id": 29827,
+      "dk_american_odds": null,
+      "dk_implied_prob": null,
+      "dk_devigged_prob": null,
+      "kalshi_ask": null,
+      "kalshi_implied_prob": null,
+      "dg_win_prob": 0.0094666666666666
+    },
+    {
+      "player_name": "Q4 Monday",
+      "normalized_name": "q4 monday",
+      "dg_id": -4,
+      "dk_american_odds": null,
+      "dk_implied_prob": null,
+      "dk_devigged_prob": null,
+      "kalshi_ask": null,
+      "kalshi_implied_prob": null,
+      "dg_win_prob": 0.0001666666666666
+    },
+    {
+      "player_name": "Q1 Monday",
+      "normalized_name": "q1 monday",
+      "dg_id": -1,
+      "dk_american_odds": null,
+      "dk_implied_prob": null,
+      "dk_devigged_prob": null,
+      "kalshi_ask": null,
+      "kalshi_implied_prob": null,
+      "dg_win_prob": 8.33333333333333e-05
+    },
+    {
+      "player_name": "Kristoffer Ventura",
+      "normalized_name": "kristoffer ventura",
+      "dg_id": 15651,
+      "dk_american_odds": null,
+      "dk_implied_prob": null,
+      "dk_devigged_prob": null,
+      "kalshi_ask": null,
+      "kalshi_implied_prob": null,
+      "dg_win_prob": 0.00345
+    },
+    {
+      "player_name": "Cam Davis",
+      "normalized_name": "cam davis",
+      "dg_id": 17786,
+      "dk_american_odds": null,
+      "dk_implied_prob": null,
+      "dk_devigged_prob": null,
+      "kalshi_ask": null,
+      "kalshi_implied_prob": null,
+      "dg_win_prob": 0.0009166666666666
+    },
+    {
+      "player_name": "Q2 Monday",
+      "normalized_name": "q2 monday",
+      "dg_id": -2,
+      "dk_american_odds": null,
+      "dk_implied_prob": null,
+      "dk_devigged_prob": null,
+      "kalshi_ask": null,
+      "kalshi_implied_prob": null,
+      "dg_win_prob": 8.33333333333333e-05
+    },
+    {
+      "player_name": "Q3 Monday",
+      "normalized_name": "q3 monday",
+      "dg_id": -3,
+      "dk_american_odds": null,
+      "dk_implied_prob": null,
+      "dk_devigged_prob": null,
+      "kalshi_ask": null,
+      "kalshi_implied_prob": null,
+      "dg_win_prob": 0.0001666666666666
     }
   ]
 }
