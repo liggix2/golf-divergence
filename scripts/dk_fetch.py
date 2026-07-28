@@ -65,6 +65,13 @@ HEADERS = {
 SCRIPT_DIR = Path(__file__).parent.parent
 DATA_DIR = SCRIPT_DIR / "data" / "draftkings"
 
+# Market type ID for outright winner (stable across events)
+OUTRIGHT_WINNER_MARKET_TYPE = "8996"
+
+# Valid range for total implied probability (105% to 175%)
+MIN_HOLD = 1.05
+MAX_HOLD = 1.75
+
 
 def american_to_implied(american_odds: int) -> float:
     """
@@ -134,6 +141,15 @@ def dump_raw(data: dict) -> None:
             print(f"  {key}: {type(value).__name__} = {repr(value)[:50]}")
 
 
+def find_outright_market(markets: list) -> dict:
+    """Find the outright winner market by marketType.id."""
+    for market in markets:
+        market_type = market.get("marketType", {})
+        if market_type.get("id") == OUTRIGHT_WINNER_MARKET_TYPE:
+            return market
+    return {}
+
+
 def parse_and_save(data: dict) -> None:
     """Parse selections and save to JSON file."""
     # Extract event info
@@ -146,11 +162,29 @@ def parse_and_save(data: dict) -> None:
     event_id = event.get("id", "")
     event_name = event.get("name", "Unknown Event")
 
-    # Parse selections
-    selections = data.get("selections", [])
-    if not selections:
-        print("Error: No selections found in response")
+    # Find the outright winner market
+    markets = data.get("markets", [])
+    outright_market = find_outright_market(markets)
+    if not outright_market:
+        print(f"Error: No outright winner market found (marketType.id={OUTRIGHT_WINNER_MARKET_TYPE})")
+        print("Available markets:")
+        for m in markets:
+            mt = m.get("marketType", {})
+            print(f"  {m.get('id')}: {mt.get('name')} (type={mt.get('id')})")
         sys.exit(1)
+
+    outright_market_id = outright_market.get("id")
+    print(f"Found outright winner market: {outright_market_id}")
+
+    # Filter selections to outright winner market only
+    all_selections = data.get("selections", [])
+    selections = [s for s in all_selections if s.get("marketId") == outright_market_id]
+
+    if not selections:
+        print("Error: No selections found for outright winner market")
+        sys.exit(1)
+
+    print(f"Filtered to {len(selections)} selections (from {len(all_selections)} total)")
 
     players = []
     for sel in selections:
@@ -172,6 +206,20 @@ def parse_and_save(data: dict) -> None:
 
     # Sort by implied probability descending (favorites first)
     players.sort(key=lambda p: p["implied_prob"], reverse=True)
+
+    # Validate total hold is in expected range
+    total_implied = sum(p["implied_prob"] for p in players)
+    if total_implied < MIN_HOLD or total_implied > MAX_HOLD:
+        print()
+        print("!" * 70)
+        print("ERROR: Total implied probability out of expected range!")
+        print(f"  Got: {total_implied * 100:.1f}%")
+        print(f"  Expected: {MIN_HOLD * 100:.0f}% to {MAX_HOLD * 100:.0f}%")
+        print()
+        print("This likely indicates wrong market type or data corruption.")
+        print("Use --raw to inspect the response.")
+        print("!" * 70)
+        sys.exit(1)
 
     # Build output
     output = {
@@ -206,9 +254,6 @@ def parse_and_save(data: dict) -> None:
     print("=" * 60)
     print(f"Showing top 20 of {len(players)} players")
     print()
-
-    # Calculate and print total hold
-    total_implied = sum(p["implied_prob"] for p in players)
     print(f"Total implied probability: {total_implied * 100:.1f}%")
     print(f"Book hold (overround): {(total_implied - 1) * 100:.1f}%")
 
