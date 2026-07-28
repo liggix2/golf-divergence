@@ -1,6 +1,6 @@
 {
   "source": "draftkings",
-  "fetched_at": "2026-07-28T02:20:29.008226+00:00",
+  "fetched_at": "2026-07-28T03:08:44.419432+00:00",
   "event_id": "39bd2e36-5fc6-4514-38be-08ded845cbd3",
   "event_name": "Rocket Classic 2026",
   "player_count": 142,
@@ -637,8 +637,8 @@
     },
     {
       "player_name": "Brad Dalke",
-      "american_odds": 105000,
-      "implied_prob": 0.000951
+      "american_odds": 100000,
+      "implied_prob": 0.000999
     },
     {
       "player_name": "Adam Svensson",
