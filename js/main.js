@@ -265,8 +265,8 @@ function renderTable(data) {
 document.addEventListener('DOMContentLoaded', function() {
     const tournamentSelect = document.getElementById('tournament-select');
 
-    // Load merged data on page load
-    fetch(CONFIG.dataPath)
+    // Load merged data on page load (cache-bust with timestamp)
+    fetch(`${CONFIG.dataPath}?t=${Date.now()}`)
         .then(response => {
             if (!response.ok) {
                 throw new Error(`HTTP error! status: ${response.status}`);
