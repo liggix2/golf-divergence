@@ -50,6 +50,12 @@ DG_FIELD=$(echo "$DG_OUT" | grep -m1 "Players: [0-9]*" | grep -o "[0-9]*")
 DG_SKILLS=$(echo "$DG_OUT" | grep "skill ratings" | grep -o "[0-9]*/[0-9]*")
 echo "  Data Golf: $DG_FIELD field, $DG_SKILLS with skills"
 
+# Run model (suppress verbose output, capture summary)
+echo "Running model..."
+MODEL_OUT=$("$PYTHON" "$SCRIPT_DIR/model.py" 2>&1)
+MODEL_PROB=$(echo "$MODEL_OUT" | grep "Total win probability sum:" | grep -o "[0-9.]*%")
+echo "  Model: win prob sum $MODEL_PROB"
+
 # Merge (suppress verbose output, capture match stats)
 echo "Merging..."
 MERGE_OUT=$("$PYTHON" "$SCRIPT_DIR/merge_odds.py" 2>&1)

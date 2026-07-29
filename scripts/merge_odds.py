@@ -67,10 +67,22 @@ NICKNAME_MAP = {
 KALSHI_FILE = DATA_DIR / "kalshi" / "KXPGATOUR-ROC26.json"
 DK_FILE = DATA_DIR / "draftkings" / "rocket-classic-2026.json"
 DG_FILE = DATA_DIR / "datagolf" / "rocket-classic-2026.json"
+MODEL_FILE = DATA_DIR / "model" / "rocket-classic-2026.json"
+
+# Kalshi taker fee: 7% * price * (1 - price)
+KALSHI_FEE_RATE = 0.07
 
 # Output file
 OUTPUT_DIR = DATA_DIR / "merged"
 OUTPUT_FILE = OUTPUT_DIR / "rocket-classic-2026.json"
+
+
+def kalshi_effective_price(raw_price: float) -> float:
+    """Calculate Kalshi effective price including taker fee."""
+    if raw_price <= 0 or raw_price >= 1:
+        return raw_price
+    fee = KALSHI_FEE_RATE * raw_price * (1 - raw_price)
+    return raw_price + fee
 
 
 def last_first_to_first_last(name: str) -> str:
@@ -245,6 +257,41 @@ def load_datagolf() -> tuple[dict, dict, str, list]:
     return load_source(DG_FILE, "DataGolf", get_markets)
 
 
+def load_model() -> tuple[dict, dict, str]:
+    """
+    Load model output indexed by dg_id and normalized name.
+
+    Returns:
+        (by_dg_id dict, by_normalized_name dict, fetched_at)
+    """
+    with open(MODEL_FILE) as f:
+        data = json.load(f)
+
+    fetched_at = data.get("fetched_at", "")
+    by_dg_id = {}
+    by_name = {}
+
+    for player in data.get("players", []):
+        dg_id = player.get("dg_id")
+        name = player.get("player_name", "")
+        win_prob = player.get("win_prob")
+        placeholder = player.get("placeholder_rating", False)
+
+        record = {
+            "my_fair_prob": win_prob,
+            "my_fair_placeholder": placeholder,
+        }
+
+        if dg_id is not None:
+            by_dg_id[dg_id] = record
+
+        if name:
+            normalized = normalize_name(name)
+            by_name[normalized] = record
+
+    return by_dg_id, by_name, fetched_at
+
+
 def find_nickname_matches(kalshi_base: dict, dk_base: dict, kalshi: dict, dk: dict) -> list:
     """
     Find matches that only succeeded because of NICKNAME_MAP.
@@ -269,9 +316,9 @@ def find_nickname_matches(kalshi_base: dict, dk_base: dict, kalshi: dict, dk: di
     return nickname_matches
 
 
-def merge_data(kalshi: dict, dk: dict, dg: dict) -> tuple[list, set, set, set]:
+def merge_data(kalshi: dict, dk: dict, dg: dict, model_by_id: dict, model_by_name: dict) -> tuple[list, set, set, set]:
     """
-    Merge Kalshi, DraftKings, and Data Golf data.
+    Merge Kalshi, DraftKings, Data Golf, and model data.
 
     Returns:
         (merged list, unmatched kalshi names, unmatched dk names, unmatched dg names)
@@ -296,16 +343,46 @@ def merge_data(kalshi: dict, dk: dict, dg: dict) -> tuple[list, set, set, set]:
         # Use DK display name if available, else Kalshi, else Data Golf
         display_name = d.get("display_name") or k.get("display_name") or g.get("display_name", norm_name)
 
+        # Look up model data by dg_id first, then by normalized name
+        dg_id = g.get("dg_id")
+        model = None
+        if dg_id and dg_id in model_by_id:
+            model = model_by_id[dg_id]
+        elif norm_name in model_by_name:
+            model = model_by_name[norm_name]
+
+        my_fair_prob = model.get("my_fair_prob") if model else None
+        my_fair_placeholder = model.get("my_fair_placeholder", False) if model else False
+
+        # Compute edge: my_fair_prob - market implied prob (in percentage points)
+        edge_dk = None
+        edge_kalshi = None
+
+        if my_fair_prob is not None:
+            dk_prob = d.get("dk_implied_prob")
+            if dk_prob is not None:
+                edge_dk = (my_fair_prob - dk_prob) * 100
+
+            kalshi_prob = k.get("kalshi_implied_prob")
+            if kalshi_prob is not None:
+                # Use fee-adjusted effective price for Kalshi
+                effective_prob = kalshi_effective_price(kalshi_prob)
+                edge_kalshi = (my_fair_prob - effective_prob) * 100
+
         record = {
             "player_name": display_name,
             "normalized_name": norm_name,
-            "dg_id": g.get("dg_id"),
+            "dg_id": dg_id,
             "dk_american_odds": d.get("dk_american_odds"),
             "dk_implied_prob": d.get("dk_implied_prob"),
             "dk_devigged_prob": dk_devigged_map.get(norm_name),
             "kalshi_ask": k.get("kalshi_ask"),
             "kalshi_implied_prob": k.get("kalshi_implied_prob"),
             "dg_win_prob": g.get("dg_win_prob"),
+            "my_fair_prob": my_fair_prob,
+            "my_fair_placeholder": my_fair_placeholder,
+            "edge_dk": edge_dk,
+            "edge_kalshi": edge_kalshi,
         }
         merged.append(record)
 
@@ -345,6 +422,14 @@ def main():
         print(f"Error: Data Golf file not found: {DG_FILE}")
         sys.exit(1)
 
+    print("Loading model data...")
+    try:
+        model_by_id, model_by_name, model_fetched = load_model()
+        print(f"  Loaded {len(model_by_id)} players from model")
+    except FileNotFoundError:
+        print(f"Error: Model file not found: {MODEL_FILE}")
+        sys.exit(1)
+
     # Report collisions
     if kalshi_collisions:
         print(f"\n⚠️  KALSHI COLLISIONS ({len(kalshi_collisions)}):")
@@ -368,7 +453,7 @@ def main():
     nickname_matches = find_nickname_matches(kalshi_base, dk_base, kalshi, dk)
 
     print("\nMerging data...")
-    merged, unmatched_kalshi, unmatched_dk, unmatched_dg = merge_data(kalshi, dk, dg)
+    merged, unmatched_kalshi, unmatched_dk, unmatched_dg = merge_data(kalshi, dk, dg, model_by_id, model_by_name)
 
     matched_dk_kalshi = len(set(kalshi.keys()) & set(dk.keys()))
     matched_dg = len(set(dg.keys()) & (set(kalshi.keys()) | set(dk.keys())))
@@ -399,6 +484,11 @@ def main():
                 "file": str(DG_FILE.name),
                 "fetched_at": dg_fetched,
                 "player_count": len(dg),
+            },
+            "model": {
+                "file": str(MODEL_FILE.name),
+                "fetched_at": model_fetched,
+                "player_count": len(model_by_id),
             },
         },
         "match_stats": {

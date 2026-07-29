@@ -216,17 +216,65 @@ function renderDataGolfCell(player) {
 }
 
 /**
- * Render edge cell
- * @param {number|null} edge - Edge value in percentage points, or null if not calculable
+ * Render My Fair Odds cell with American odds and implied probability
+ * Marks placeholder ratings visually
+ * @param {object} player - Player data object from merged data
+ * @returns {string} HTML for the cell
+ */
+function renderMyFairOddsCell(player) {
+    const impliedProb = player.my_fair_prob;
+    const isPlaceholder = player.my_fair_placeholder;
+
+    if (impliedProb === null || impliedProb === undefined) {
+        return renderEmptyCell();
+    }
+
+    const americanOdds = probToAmericanOdds(impliedProb);
+    const oddsStr = formatAmericanOdds(americanOdds);
+    const placeholderClass = isPlaceholder ? ' placeholder-rating' : '';
+    const placeholderMark = isPlaceholder ? '<span class="placeholder-mark">*</span>' : '';
+
+    return `
+        <td class="odds-cell${placeholderClass}">
+            <span class="odds-american">${oddsStr}${placeholderMark}</span>
+            <span class="odds-implied">${formatProbability(impliedProb, 2)}</span>
+        </td>
+    `;
+}
+
+/**
+ * Render edge cell showing the better of DK or Kalshi edge with source label
+ * @param {object} player - Player data object with edge_dk and edge_kalshi
  * @returns {string} HTML for edge cell
  */
-function renderEdgeCell(edge) {
-    if (edge === null) {
+function renderEdgeCell(player) {
+    const edgeDk = player.edge_dk;
+    const edgeKalshi = player.edge_kalshi;
+
+    // No edge if both are null
+    if (edgeDk === null && edgeKalshi === null) {
         return '<td class="edge-cell edge-none">—</td>';
     }
-    const edgeClass = getEdgeClass(edge);
-    const sign = edge >= 0 ? '+' : '';
-    return `<td class="edge-cell ${edgeClass}">${sign}${edge.toFixed(1)}%</td>`;
+
+    // Pick the better (higher) edge
+    let bestEdge, source;
+    if (edgeDk === null) {
+        bestEdge = edgeKalshi;
+        source = 'Ka';
+    } else if (edgeKalshi === null) {
+        bestEdge = edgeDk;
+        source = 'DK';
+    } else if (edgeDk >= edgeKalshi) {
+        bestEdge = edgeDk;
+        source = 'DK';
+    } else {
+        bestEdge = edgeKalshi;
+        source = 'Ka';
+    }
+
+    const edgeClass = getEdgeClass(bestEdge);
+    const sign = bestEdge >= 0 ? '+' : '';
+    return `<td class="edge-cell ${edgeClass}">${sign}${bestEdge.toFixed(1)}% <span class="edge-source">${source}</span></td>`;
 }
 
 /**
@@ -260,20 +308,17 @@ function renderTable(data) {
     // Build table rows
     const rows = activePlayers.map(player => {
         const playerName = player.player_name || 'Unknown';
-
-        // Edge calculation: my fair probability - best market effective price
-        // Edge is null when My Fair Odds is missing
-        const myFairProb = null; // TODO: Load from My Fair Odds data
-        const edge = null; // No edge until fair odds exist
+        const isPlaceholder = player.my_fair_placeholder;
+        const rowClass = isPlaceholder ? ' class="placeholder-row"' : '';
 
         return `
-            <tr>
+            <tr${rowClass}>
                 <td>${playerName}</td>
-                ${renderEmptyCell()}
+                ${renderMyFairOddsCell(player)}
                 ${renderDraftKingsCell(player)}
                 ${renderKalshiCell(player)}
                 ${renderDataGolfCell(player)}
-                ${renderEdgeCell(edge)}
+                ${renderEdgeCell(player)}
             </tr>
         `;
     });
