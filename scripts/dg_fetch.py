@@ -91,6 +91,17 @@ def fetch_skill_ratings(api_key: str) -> dict:
     return response.json()
 
 
+def fetch_rankings(api_key: str) -> dict:
+    """Fetch Data Golf rankings."""
+    url = f"{BASE_URL}/preds/get-dg-rankings"
+    params = {"key": api_key, "file_format": "json"}
+
+    print("Fetching rankings...")
+    response = requests.get(url, params=params, timeout=30)
+    response.raise_for_status()
+    return response.json()
+
+
 def parse_and_save(data: dict) -> None:
     """Parse pre-tournament data and save structured output."""
     event_name = data.get("event_name", "Unknown Event")
@@ -216,6 +227,108 @@ def parse_skill_ratings(data: dict, field_players: list) -> None:
         for name in sorted(missing_names):
             print(f"  - {name}")
 
+    return skill_ids, missing_ratings
+
+
+def parse_rankings(data: dict, field_players: list, skill_ids: set, missing_from_skills: set) -> None:
+    """Parse rankings and save structured output. Validate scale against skill ratings."""
+    last_updated = data.get("last_updated", "")
+    raw_rankings = data.get("rankings", [])
+
+    print(f"\nRankings endpoint fields (sample):")
+    if raw_rankings:
+        sample = raw_rankings[0]
+        for key in sorted(sample.keys()):
+            print(f"  {key}: {type(sample[key]).__name__} = {repr(sample[key])[:40]}")
+
+    players = []
+    for player in raw_rankings:
+        dg_id = player.get("dg_id")
+        if dg_id is None:
+            continue
+
+        raw_name = player.get("player_name", "")
+        players.append({
+            "dg_id": dg_id,
+            "player_name": last_first_to_first_last(raw_name),
+            "dg_rank": player.get("datagolf_rank"),
+            "dg_skill_estimate": player.get("dg_skill_estimate"),
+        })
+
+    players.sort(key=lambda p: p.get("dg_rank") or 999)
+
+    # Build output
+    output = {
+        "source": "datagolf",
+        "fetched_at": datetime.now(timezone.utc).isoformat(),
+        "last_updated": last_updated,
+        "player_count": len(players),
+        "players": players,
+    }
+
+    # Save to file
+    DATA_DIR.mkdir(parents=True, exist_ok=True)
+    output_path = DATA_DIR / "rankings.json"
+    with open(output_path, "w") as f:
+        json.dump(output, f, indent=2)
+
+    print(f"\nSaved to: {output_path}")
+    print(f"Players: {len(players)}")
+
+    # Load skill ratings for comparison
+    skill_ratings_file = DATA_DIR / "skill-ratings.json"
+    if skill_ratings_file.exists():
+        with open(skill_ratings_file) as f:
+            skill_data = json.load(f)
+        skill_by_id = {p["dg_id"]: p["sg_total"] for p in skill_data["players"] if p.get("sg_total") is not None}
+
+        # Find players in both
+        rankings_by_id = {p["dg_id"]: p["dg_skill_estimate"] for p in players if p.get("dg_skill_estimate") is not None}
+        common_ids = set(skill_by_id.keys()) & set(rankings_by_id.keys())
+
+        if common_ids:
+            sg_totals = [skill_by_id[i] for i in common_ids]
+            skill_estimates = [rankings_by_id[i] for i in common_ids]
+
+            # Compute correlation and mean difference
+            n = len(common_ids)
+            mean_sg = sum(sg_totals) / n
+            mean_est = sum(skill_estimates) / n
+
+            # Pearson correlation
+            num = sum((sg_totals[i] - mean_sg) * (skill_estimates[i] - mean_est) for i in range(n))
+            denom_sg = sum((x - mean_sg) ** 2 for x in sg_totals) ** 0.5
+            denom_est = sum((x - mean_est) ** 2 for x in skill_estimates) ** 0.5
+            corr = num / (denom_sg * denom_est) if denom_sg * denom_est > 0 else 0
+
+            # Mean difference
+            diffs = [skill_estimates[i] - sg_totals[i] for i in range(n)]
+            mean_diff = sum(diffs) / n
+
+            print(f"\nScale validation ({n} players in both):")
+            print(f"  Correlation (dg_skill_estimate vs sg_total): {corr:.4f}")
+            print(f"  Mean difference (estimate - sg_total): {mean_diff:+.4f}")
+            print(f"  sg_total range: {min(sg_totals):.3f} to {max(sg_totals):.3f}")
+            print(f"  dg_skill_estimate range: {min(skill_estimates):.3f} to {max(skill_estimates):.3f}")
+
+    # Check coverage of missing field players
+    ranking_ids = {p["dg_id"] for p in players}
+    field_ids = {p["dg_id"] for p in field_players}
+    covered_by_rankings = missing_from_skills & ranking_ids
+
+    print(f"\nMissing from skills but covered by rankings: {len(covered_by_rankings)}/{len(missing_from_skills)}")
+    if covered_by_rankings:
+        covered_names = [p["player_name"] for p in field_players if p["dg_id"] in covered_by_rankings]
+        for name in sorted(covered_names):
+            print(f"  + {name}")
+
+    still_missing = missing_from_skills - ranking_ids
+    if still_missing:
+        print(f"\nStill missing ({len(still_missing)}):")
+        still_missing_names = [p["player_name"] for p in field_players if p["dg_id"] in still_missing]
+        for name in sorted(still_missing_names):
+            print(f"  - {name}")
+
 
 def dump_raw(api_key: str) -> None:
     """Dump raw responses for discovery."""
@@ -282,7 +395,11 @@ def main():
 
         # Fetch and parse skill ratings
         skills_data = fetch_skill_ratings(api_key)
-        parse_skill_ratings(skills_data, field_players)
+        skill_ids, missing_from_skills = parse_skill_ratings(skills_data, field_players)
+
+        # Fetch and parse rankings (fallback skill source)
+        rankings_data = fetch_rankings(api_key)
+        parse_rankings(rankings_data, field_players, skill_ids, missing_from_skills)
 
 
 if __name__ == "__main__":
