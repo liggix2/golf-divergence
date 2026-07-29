@@ -1,6 +1,6 @@
 {
   "source": "model",
-  "fetched_at": "2026-07-29T13:03:56.460439+00:00",
+  "fetched_at": "2026-07-29T13:11:47.685820+00:00",
   "model_version": "v1-tiered",
   "parameters": {
     "num_simulations": 20000,

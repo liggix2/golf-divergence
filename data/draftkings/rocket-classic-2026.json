@@ -1,54 +1,54 @@
 {
   "source": "draftkings",
-  "fetched_at": "2026-07-29T00:54:35.979816+00:00",
+  "fetched_at": "2026-07-29T13:11:46.509139+00:00",
   "event_id": "39bd2e36-5fc6-4514-38be-08ded845cbd3",
   "event_name": "Rocket Classic 2026",
   "player_count": 147,
   "players": [
     {
       "player_name": "Cameron Young",
-      "american_odds": 950,
-      "implied_prob": 0.095238
+      "american_odds": 970,
+      "implied_prob": 0.093458
     },
     {
       "player_name": "Xander Schauffele",
-      "american_odds": 1550,
-      "implied_prob": 0.060606
+      "american_odds": 1600,
+      "implied_prob": 0.058824
     },
     {
       "player_name": "Chris Gotterup",
-      "american_odds": 1750,
-      "implied_prob": 0.054054
+      "american_odds": 1800,
+      "implied_prob": 0.052632
     },
     {
       "player_name": "Wyndham Clark",
-      "american_odds": 1850,
-      "implied_prob": 0.051282
-    },
-    {
-      "player_name": "Si Woo Kim",
       "american_odds": 1900,
       "implied_prob": 0.05
     },
     {
-      "player_name": "Patrick Cantlay",
-      "american_odds": 2250,
-      "implied_prob": 0.042553
+      "player_name": "Si Woo Kim",
+      "american_odds": 1950,
+      "implied_prob": 0.04878
     },
     {
-      "player_name": "Jackson Koivun",
+      "player_name": "Patrick Cantlay",
       "american_odds": 2300,
       "implied_prob": 0.041667
     },
     {
+      "player_name": "Jackson Koivun",
+      "american_odds": 2350,
+      "implied_prob": 0.040816
+    },
+    {
       "player_name": "Russell Henley",
-      "american_odds": 2600,
-      "implied_prob": 0.037037
+      "american_odds": 2700,
+      "implied_prob": 0.035714
     },
     {
       "player_name": "Ben Griffin",
-      "american_odds": 2800,
-      "implied_prob": 0.034483
+      "american_odds": 2900,
+      "implied_prob": 0.033333
     },
     {
       "player_name": "J.J. Spaun",
@@ -57,71 +57,66 @@
     },
     {
       "player_name": "Jake Knapp",
-      "american_odds": 3200,
-      "implied_prob": 0.030303
+      "american_odds": 3300,
+      "implied_prob": 0.029412
     },
     {
       "player_name": "Hideki Matsuyama",
-      "american_odds": 3200,
-      "implied_prob": 0.030303
+      "american_odds": 3300,
+      "implied_prob": 0.029412
     },
     {
       "player_name": "Ryan Gerard",
-      "american_odds": 4000,
-      "implied_prob": 0.02439
-    },
-    {
-      "player_name": "Michael Thorbjornsen",
       "american_odds": 4100,
       "implied_prob": 0.02381
     },
     {
-      "player_name": "Nicolai Hojgaard",
+      "player_name": "Michael Thorbjornsen",
       "american_odds": 4200,
       "implied_prob": 0.023256
     },
     {
-      "player_name": "Akshay Bhatia",
+      "player_name": "Nicolai Hojgaard",
       "american_odds": 4300,
       "implied_prob": 0.022727
     },
     {
-      "player_name": "Rickie Fowler",
+      "player_name": "Akshay Bhatia",
       "american_odds": 4500,
       "implied_prob": 0.021739
     },
     {
-      "player_name": "Keegan Bradley",
+      "player_name": "Rickie Fowler",
       "american_odds": 4700,
       "implied_prob": 0.020833
     },
     {
-      "player_name": "Jacob Bridgeman",
-      "american_odds": 4800,
-      "implied_prob": 0.020408
+      "player_name": "Keegan Bradley",
+      "american_odds": 4900,
+      "implied_prob": 0.02
     },
     {
       "player_name": "Harris English",
-      "american_odds": 4800,
-      "implied_prob": 0.020408
+      "american_odds": 4900,
+      "implied_prob": 0.02
+    },
+    {
+      "player_name": "Jacob Bridgeman",
+      "american_odds": 5000,
+      "implied_prob": 0.019608
     },
     {
       "player_name": "Michael Brennan",
-      "american_odds": 5800,
-      "implied_prob": 0.016949
+      "american_odds": 6000,
+      "implied_prob": 0.016393
     },
     {
       "player_name": "Davis Thompson",
-      "american_odds": 6100,
-      "implied_prob": 0.016129
+      "american_odds": 6300,
+      "implied_prob": 0.015625
     },
     {
       "player_name": "Ryo Hisatsune",
-      "american_odds": 6900,
-      "implied_prob": 0.014286
-    },
-    {
-      "player_name": "Corey Conners",
       "american_odds": 7000,
       "implied_prob": 0.014085
     },
@@ -131,79 +126,74 @@
       "implied_prob": 0.013699
     },
     {
-      "player_name": "Doug Ghim",
+      "player_name": "Corey Conners",
       "american_odds": 7200,
       "implied_prob": 0.013699
     },
     {
       "player_name": "Jordan Smith",
-      "american_odds": 7400,
-      "implied_prob": 0.013333
+      "american_odds": 7600,
+      "implied_prob": 0.012987
+    },
+    {
+      "player_name": "Doug Ghim",
+      "american_odds": 7600,
+      "implied_prob": 0.012987
     },
     {
       "player_name": "Marco Penge",
-      "american_odds": 7800,
-      "implied_prob": 0.012658
-    },
-    {
-      "player_name": "Jackson Suber",
       "american_odds": 8000,
       "implied_prob": 0.012346
     },
     {
       "player_name": "Eric Cole",
-      "american_odds": 8000,
-      "implied_prob": 0.012346
+      "american_odds": 8200,
+      "implied_prob": 0.012048
+    },
+    {
+      "player_name": "Jackson Suber",
+      "american_odds": 8400,
+      "implied_prob": 0.011765
     },
     {
       "player_name": "Sungjae Im",
-      "american_odds": 8200,
-      "implied_prob": 0.012048
+      "american_odds": 8600,
+      "implied_prob": 0.011494
     },
     {
       "player_name": "Mac Meissner",
-      "american_odds": 8200,
-      "implied_prob": 0.012048
+      "american_odds": 8600,
+      "implied_prob": 0.011494
     },
     {
       "player_name": "Max Greyserman",
-      "american_odds": 8400,
-      "implied_prob": 0.011765
+      "american_odds": 8800,
+      "implied_prob": 0.011236
     },
     {
       "player_name": "Ben Kohles",
-      "american_odds": 8400,
-      "implied_prob": 0.011765
+      "american_odds": 8800,
+      "implied_prob": 0.011236
     },
     {
       "player_name": "Michael Kim",
-      "american_odds": 9000,
-      "implied_prob": 0.010989
-    },
-    {
-      "player_name": "Benjamin James",
       "american_odds": 9200,
       "implied_prob": 0.010753
     },
     {
-      "player_name": "Rasmus Neergaard-Petersen",
-      "american_odds": 9600,
-      "implied_prob": 0.010309
-    },
-    {
-      "player_name": "Matt Wallace",
-      "american_odds": 9600,
-      "implied_prob": 0.010309
-    },
-    {
-      "player_name": "John Keefer",
+      "player_name": "Benjamin James",
       "american_odds": 9600,
       "implied_prob": 0.010309
     },
     {
       "player_name": "Andrew Novak",
-      "american_odds": 9800,
-      "implied_prob": 0.010101
+      "american_odds": 10000,
+      "implied_prob": 0.009901
+    },
+    {
+      "player_name": "Rasmus Neergaard-Petersen",
+      "american_odds": 10000,
+      "implied_prob": 0.009901
     },
     {
       "player_name": "Pierceson Coody",
@@ -211,339 +201,344 @@
       "implied_prob": 0.009901
     },
     {
-      "player_name": "Christiaan Bezuidenhout",
+      "player_name": "Matt Wallace",
       "american_odds": 10000,
       "implied_prob": 0.009901
     },
     {
-      "player_name": "Aldrich Potgieter",
+      "player_name": "John Keefer",
+      "american_odds": 10000,
+      "implied_prob": 0.009901
+    },
+    {
+      "player_name": "Christiaan Bezuidenhout",
       "american_odds": 10500,
       "implied_prob": 0.009434
+    },
+    {
+      "player_name": "Aldrich Potgieter",
+      "american_odds": 11000,
+      "implied_prob": 0.009009
     },
     {
       "player_name": "Denny McCarthy",
-      "american_odds": 10500,
-      "implied_prob": 0.009434
+      "american_odds": 11000,
+      "implied_prob": 0.009009
     },
     {
       "player_name": "Beau Hossler",
-      "american_odds": 11000,
-      "implied_prob": 0.009009
+      "american_odds": 11500,
+      "implied_prob": 0.008621
     },
     {
       "player_name": "Nick Taylor",
-      "american_odds": 11000,
-      "implied_prob": 0.009009
+      "american_odds": 11500,
+      "implied_prob": 0.008621
     },
     {
       "player_name": "Kevin Yu",
-      "american_odds": 11500,
-      "implied_prob": 0.008621
+      "american_odds": 12000,
+      "implied_prob": 0.008264
     },
     {
       "player_name": "Emiliano Grillo",
-      "american_odds": 11500,
-      "implied_prob": 0.008621
+      "american_odds": 12000,
+      "implied_prob": 0.008264
     },
     {
       "player_name": "Mackenzie Hughes",
-      "american_odds": 12000,
-      "implied_prob": 0.008264
+      "american_odds": 12500,
+      "implied_prob": 0.007937
     },
     {
       "player_name": "Tony Finau",
-      "american_odds": 12000,
-      "implied_prob": 0.008264
+      "american_odds": 12500,
+      "implied_prob": 0.007937
     },
     {
       "player_name": "Steven Fisk",
-      "american_odds": 12500,
-      "implied_prob": 0.007937
+      "american_odds": 13000,
+      "implied_prob": 0.007634
     },
     {
       "player_name": "Seamus Power",
-      "american_odds": 12500,
-      "implied_prob": 0.007937
+      "american_odds": 13000,
+      "implied_prob": 0.007634
     },
     {
       "player_name": "Sam Stevens",
-      "american_odds": 12500,
-      "implied_prob": 0.007937
+      "american_odds": 13000,
+      "implied_prob": 0.007634
     },
     {
       "player_name": "Sudarshan Yellamaraju",
-      "american_odds": 13000,
-      "implied_prob": 0.007634
+      "american_odds": 13500,
+      "implied_prob": 0.007353
     },
     {
       "player_name": "Jesper Svensson",
-      "american_odds": 13000,
-      "implied_prob": 0.007634
+      "american_odds": 13500,
+      "implied_prob": 0.007353
     },
     {
       "player_name": "Harry Hall",
-      "american_odds": 13000,
-      "implied_prob": 0.007634
+      "american_odds": 13500,
+      "implied_prob": 0.007353
     },
     {
       "player_name": "William Mouw",
-      "american_odds": 13000,
-      "implied_prob": 0.007634
+      "american_odds": 13500,
+      "implied_prob": 0.007353
     },
     {
       "player_name": "Stephan Jaeger",
-      "american_odds": 13500,
-      "implied_prob": 0.007353
-    },
-    {
-      "player_name": "Rasmus Hojgaard",
-      "american_odds": 13500,
-      "implied_prob": 0.007353
-    },
-    {
-      "player_name": "Zecheng Dou",
-      "american_odds": 13500,
-      "implied_prob": 0.007353
-    },
-    {
-      "player_name": "Lee Hodges",
-      "american_odds": 13500,
-      "implied_prob": 0.007353
-    },
-    {
-      "player_name": "Taylor Moore",
-      "american_odds": 13500,
-      "implied_prob": 0.007353
-    },
-    {
-      "player_name": "Ricky Castillo",
       "american_odds": 14000,
       "implied_prob": 0.007092
     },
     {
+      "player_name": "Rasmus Hojgaard",
+      "american_odds": 14000,
+      "implied_prob": 0.007092
+    },
+    {
+      "player_name": "Zecheng Dou",
+      "american_odds": 14000,
+      "implied_prob": 0.007092
+    },
+    {
+      "player_name": "Lee Hodges",
+      "american_odds": 14000,
+      "implied_prob": 0.007092
+    },
+    {
+      "player_name": "Taylor Moore",
+      "american_odds": 14000,
+      "implied_prob": 0.007092
+    },
+    {
+      "player_name": "Ricky Castillo",
+      "american_odds": 14500,
+      "implied_prob": 0.006849
+    },
+    {
       "player_name": "Keita Nakajima",
-      "american_odds": 15000,
-      "implied_prob": 0.006623
-    },
-    {
-      "player_name": "Chris Kirk",
-      "american_odds": 15000,
-      "implied_prob": 0.006623
-    },
-    {
-      "player_name": "Taylor Pendrith",
       "american_odds": 15500,
       "implied_prob": 0.00641
     },
     {
+      "player_name": "Chris Kirk",
+      "american_odds": 15500,
+      "implied_prob": 0.00641
+    },
+    {
+      "player_name": "Taylor Pendrith",
+      "american_odds": 16500,
+      "implied_prob": 0.006024
+    },
+    {
       "player_name": "Billy Horschel",
-      "american_odds": 16000,
-      "implied_prob": 0.006211
+      "american_odds": 17000,
+      "implied_prob": 0.005848
     },
     {
       "player_name": "Rico Hoey",
-      "american_odds": 16000,
-      "implied_prob": 0.006211
-    },
-    {
-      "player_name": "Nicolas Echavarria",
-      "american_odds": 16500,
-      "implied_prob": 0.006024
-    },
-    {
-      "player_name": "Matt McCarty",
-      "american_odds": 16500,
-      "implied_prob": 0.006024
+      "american_odds": 17000,
+      "implied_prob": 0.005848
     },
     {
       "player_name": "Kevin Roy",
-      "american_odds": 16500,
-      "implied_prob": 0.006024
-    },
-    {
-      "player_name": "William Jennings",
       "american_odds": 17000,
       "implied_prob": 0.005848
     },
     {
-      "player_name": "Kris Ventura",
-      "american_odds": 17000,
-      "implied_prob": 0.005848
-    },
-    {
-      "player_name": "Zach Bauchou",
-      "american_odds": 17000,
-      "implied_prob": 0.005848
-    },
-    {
-      "player_name": "Max McGreevy",
+      "player_name": "Nicolas Echavarria",
       "american_odds": 17500,
       "implied_prob": 0.005682
     },
     {
-      "player_name": "Matthias Schmid",
-      "american_odds": 18000,
-      "implied_prob": 0.005525
+      "player_name": "Matt McCarty",
+      "american_odds": 17500,
+      "implied_prob": 0.005682
     },
     {
-      "player_name": "Lucas Glover",
-      "american_odds": 18000,
-      "implied_prob": 0.005525
+      "player_name": "William Jennings",
+      "american_odds": 17500,
+      "implied_prob": 0.005682
     },
     {
-      "player_name": "Austin Smotherman",
+      "player_name": "Kris Ventura",
+      "american_odds": 17500,
+      "implied_prob": 0.005682
+    },
+    {
+      "player_name": "Zach Bauchou",
+      "american_odds": 17500,
+      "implied_prob": 0.005682
+    },
+    {
+      "player_name": "Max McGreevy",
       "american_odds": 18500,
       "implied_prob": 0.005376
     },
     {
+      "player_name": "Matthias Schmid",
+      "american_odds": 18500,
+      "implied_prob": 0.005376
+    },
+    {
+      "player_name": "Lucas Glover",
+      "american_odds": 18500,
+      "implied_prob": 0.005376
+    },
+    {
+      "player_name": "Austin Smotherman",
+      "american_odds": 19000,
+      "implied_prob": 0.005236
+    },
+    {
       "player_name": "John Parry",
-      "american_odds": 20000,
-      "implied_prob": 0.004975
+      "american_odds": 21000,
+      "implied_prob": 0.004739
     },
     {
       "player_name": "Adrien Dumont De Chassart",
-      "american_odds": 22500,
-      "implied_prob": 0.004425
-    },
-    {
-      "player_name": "Haotong Li",
-      "american_odds": 22500,
-      "implied_prob": 0.004425
-    },
-    {
-      "player_name": "Neal Shipley",
       "american_odds": 23000,
       "implied_prob": 0.004329
     },
     {
-      "player_name": "Chandler Phillips",
+      "player_name": "Haotong Li",
+      "american_odds": 23000,
+      "implied_prob": 0.004329
+    },
+    {
+      "player_name": "Neal Shipley",
       "american_odds": 24000,
       "implied_prob": 0.004149
     },
     {
-      "player_name": "Zac Blair",
+      "player_name": "Chandler Phillips",
       "american_odds": 25000,
       "implied_prob": 0.003984
+    },
+    {
+      "player_name": "Zac Blair",
+      "american_odds": 26000,
+      "implied_prob": 0.003831
     },
     {
       "player_name": "Thorbjorn Olesen",
-      "american_odds": 25000,
-      "implied_prob": 0.003984
+      "american_odds": 26000,
+      "implied_prob": 0.003831
     },
     {
       "player_name": "Patrick Fishburn",
-      "american_odds": 27500,
-      "implied_prob": 0.003623
+      "american_odds": 28000,
+      "implied_prob": 0.003559
     },
     {
       "player_name": "Austin Eckroat",
-      "american_odds": 29000,
-      "implied_prob": 0.003436
+      "american_odds": 30000,
+      "implied_prob": 0.003322
     },
     {
       "player_name": "Joel Dahmen",
-      "american_odds": 30000,
-      "implied_prob": 0.003322
+      "american_odds": 31000,
+      "implied_prob": 0.003215
     },
     {
       "player_name": "Garrick Higgo",
-      "american_odds": 30000,
-      "implied_prob": 0.003322
-    },
-    {
-      "player_name": "Andrew Putnam",
-      "american_odds": 31000,
-      "implied_prob": 0.003215
-    },
-    {
-      "player_name": "A.J. Ewart",
-      "american_odds": 31000,
-      "implied_prob": 0.003215
-    },
-    {
-      "player_name": "Karl Vilips",
       "american_odds": 32000,
       "implied_prob": 0.003115
     },
     {
-      "player_name": "Patrick Rodgers",
+      "player_name": "Andrew Putnam",
+      "american_odds": 32500,
+      "implied_prob": 0.003067
+    },
+    {
+      "player_name": "A.J. Ewart",
       "american_odds": 33000,
       "implied_prob": 0.003021
+    },
+    {
+      "player_name": "Karl Vilips",
+      "american_odds": 33000,
+      "implied_prob": 0.003021
+    },
+    {
+      "player_name": "Patrick Rodgers",
+      "american_odds": 34000,
+      "implied_prob": 0.002933
     },
     {
       "player_name": "Mark Hubbard",
-      "american_odds": 33000,
-      "implied_prob": 0.003021
+      "american_odds": 34000,
+      "implied_prob": 0.002933
     },
     {
       "player_name": "Ben Silverman",
-      "american_odds": 35000,
-      "implied_prob": 0.002849
-    },
-    {
-      "player_name": "Luke Clanton",
       "american_odds": 37500,
       "implied_prob": 0.00266
     },
     {
-      "player_name": "Trace Crowe",
-      "american_odds": 38000,
-      "implied_prob": 0.002625
-    },
-    {
-      "player_name": "Matthieu Pavon",
+      "player_name": "Luke Clanton",
       "american_odds": 39000,
       "implied_prob": 0.002558
     },
     {
-      "player_name": "Hayden Springer",
+      "player_name": "Trace Crowe",
       "american_odds": 40000,
       "implied_prob": 0.002494
     },
     {
-      "player_name": "Chad Ramey",
+      "player_name": "Matthieu Pavon",
       "american_odds": 41000,
       "implied_prob": 0.002433
     },
     {
-      "player_name": "Pontus Nyholm",
-      "american_odds": 42500,
-      "implied_prob": 0.002347
+      "player_name": "Hayden Springer",
+      "american_odds": 42000,
+      "implied_prob": 0.002375
     },
     {
-      "player_name": "Adrien Saddier",
+      "player_name": "Chad Ramey",
       "american_odds": 43000,
       "implied_prob": 0.00232
     },
     {
-      "player_name": "Vince Whaley",
+      "player_name": "Pontus Nyholm",
+      "american_odds": 44000,
+      "implied_prob": 0.002268
+    },
+    {
+      "player_name": "Adrien Saddier",
       "american_odds": 45000,
       "implied_prob": 0.002217
     },
     {
-      "player_name": "Erik Van Rooyen",
-      "american_odds": 46000,
-      "implied_prob": 0.002169
-    },
-    {
-      "player_name": "Davis Chatfield",
-      "american_odds": 46000,
-      "implied_prob": 0.002169
-    },
-    {
-      "player_name": "Chandler Blanchet",
+      "player_name": "Vince Whaley",
       "american_odds": 47000,
       "implied_prob": 0.002123
     },
     {
-      "player_name": "Takumi Kanaya",
-      "american_odds": 47500,
-      "implied_prob": 0.002101
+      "player_name": "Davis Chatfield",
+      "american_odds": 48000,
+      "implied_prob": 0.002079
     },
     {
-      "player_name": "Tom Hoge",
-      "american_odds": 47500,
-      "implied_prob": 0.002101
+      "player_name": "Takumi Kanaya",
+      "american_odds": 49000,
+      "implied_prob": 0.002037
+    },
+    {
+      "player_name": "Erik Van Rooyen",
+      "american_odds": 49000,
+      "implied_prob": 0.002037
+    },
+    {
+      "player_name": "Chandler Blanchet",
+      "american_odds": 49000,
+      "implied_prob": 0.002037
     },
     {
       "player_name": "Nick Dunlap",
@@ -556,34 +551,39 @@
       "implied_prob": 0.001996
     },
     {
+      "player_name": "Tom Hoge",
+      "american_odds": 50000,
+      "implied_prob": 0.001996
+    },
+    {
       "player_name": "Matt Kuchar",
-      "american_odds": 52500,
-      "implied_prob": 0.001901
+      "american_odds": 55000,
+      "implied_prob": 0.001815
     },
     {
       "player_name": "David Lipsky",
-      "american_odds": 52500,
-      "implied_prob": 0.001901
+      "american_odds": 55000,
+      "implied_prob": 0.001815
     },
     {
       "player_name": "Aaron Wise",
-      "american_odds": 55000,
-      "implied_prob": 0.001815
-    },
-    {
-      "player_name": "Webb Simpson",
-      "american_odds": 55000,
-      "implied_prob": 0.001815
-    },
-    {
-      "player_name": "Cameron Davis",
       "american_odds": 57500,
       "implied_prob": 0.001736
     },
     {
-      "player_name": "Lanto Griffin",
+      "player_name": "Webb Simpson",
+      "american_odds": 57500,
+      "implied_prob": 0.001736
+    },
+    {
+      "player_name": "Cameron Davis",
       "american_odds": 60000,
       "implied_prob": 0.001664
+    },
+    {
+      "player_name": "Lanto Griffin",
+      "american_odds": 62500,
+      "implied_prob": 0.001597
     },
     {
       "player_name": "Brad Dalke",
@@ -592,78 +592,78 @@
     },
     {
       "player_name": "Joe Highsmith",
-      "american_odds": 65000,
-      "implied_prob": 0.001536
-    },
-    {
-      "player_name": "Brandt Snedeker",
       "american_odds": 67500,
       "implied_prob": 0.001479
     },
     {
-      "player_name": "Kevin Streelman",
-      "american_odds": 72500,
-      "implied_prob": 0.001377
+      "player_name": "Brandt Snedeker",
+      "american_odds": 70000,
+      "implied_prob": 0.001427
     },
     {
       "player_name": "Hank Lebioda",
-      "american_odds": 72500,
-      "implied_prob": 0.001377
-    },
-    {
-      "player_name": "Alejandro Tosti",
       "american_odds": 75000,
       "implied_prob": 0.001332
     },
     {
+      "player_name": "Alejandro Tosti",
+      "american_odds": 77500,
+      "implied_prob": 0.001289
+    },
+    {
+      "player_name": "Kevin Streelman",
+      "american_odds": 77500,
+      "implied_prob": 0.001289
+    },
+    {
       "player_name": "Gordon Sargent",
-      "american_odds": 82500,
-      "implied_prob": 0.001211
+      "american_odds": 87500,
+      "implied_prob": 0.001142
     },
     {
       "player_name": "Davis Riley",
-      "american_odds": 82500,
-      "implied_prob": 0.001211
+      "american_odds": 87500,
+      "implied_prob": 0.001142
     },
     {
       "player_name": "Adam Schenk",
-      "american_odds": 85000,
-      "implied_prob": 0.001175
-    },
-    {
-      "player_name": "Justin Lower",
       "american_odds": 90000,
       "implied_prob": 0.00111
     },
     {
-      "player_name": "Dylan Wu",
+      "player_name": "Justin Lower",
       "american_odds": 95000,
       "implied_prob": 0.001052
     },
     {
-      "player_name": "Brice Garnett",
+      "player_name": "Dylan Wu",
       "american_odds": 100000,
       "implied_prob": 0.000999
     },
     {
-      "player_name": "Adam Svensson",
+      "player_name": "Brice Garnett",
       "american_odds": 105000,
       "implied_prob": 0.000951
     },
     {
       "player_name": "Danny Walker",
-      "american_odds": 105000,
-      "implied_prob": 0.000951
-    },
-    {
-      "player_name": "Stefano Mazzoli",
       "american_odds": 110000,
       "implied_prob": 0.000908
     },
     {
+      "player_name": "Stefano Mazzoli",
+      "american_odds": 115000,
+      "implied_prob": 0.000869
+    },
+    {
+      "player_name": "Adam Svensson",
+      "american_odds": 115000,
+      "implied_prob": 0.000869
+    },
+    {
       "player_name": "Jeffrey Kang",
-      "american_odds": 135000,
-      "implied_prob": 0.00074
+      "american_odds": 140000,
+      "implied_prob": 0.000714
     },
     {
       "player_name": "Brian Campbell",
@@ -672,13 +672,13 @@
     },
     {
       "player_name": "Ryan Ruffels",
-      "american_odds": 180000,
-      "implied_prob": 0.000555
+      "american_odds": 190000,
+      "implied_prob": 0.000526
     },
     {
       "player_name": "Peter Malnati",
-      "american_odds": 190000,
-      "implied_prob": 0.000526
+      "american_odds": 200000,
+      "implied_prob": 0.0005
     },
     {
       "player_name": "Kensei Hirata",
@@ -686,19 +686,19 @@
       "implied_prob": 0.0005
     },
     {
-      "player_name": "Rafael Campos",
-      "american_odds": 250000,
-      "implied_prob": 0.0004
-    },
-    {
       "player_name": "Christo Lamprecht",
       "american_odds": 250000,
       "implied_prob": 0.0004
     },
     {
+      "player_name": "Rafael Campos",
+      "american_odds": 275000,
+      "implied_prob": 0.000364
+    },
+    {
       "player_name": "Patton Kizzire",
-      "american_odds": 300000,
-      "implied_prob": 0.000333
+      "american_odds": 325000,
+      "implied_prob": 0.000308
     },
     {
       "player_name": "Marcelo Rozo",
