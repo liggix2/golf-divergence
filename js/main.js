@@ -23,8 +23,8 @@ const CONFIG = {
         // Above 6pt = strong highlight
     },
 
-    // Data source path - merged data from Kalshi + DraftKings
-    dataPath: 'data/merged/rocket-classic-2026.json',
+    // Data source path - merged data from all sources (current event)
+    dataPath: 'data/merged/current.json',
 
     // Use fee-adjusted effective price for Kalshi edge calculations
     // When true, adds the 7% taker fee to the raw ask price before calculating edge

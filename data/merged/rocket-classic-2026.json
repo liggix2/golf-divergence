@@ -1,11 +1,12 @@
 {
-  "event_name": "Rocket Classic 2026",
-  "merged_at": "2026-07-29T14:51:01.757897+00:00",
+  "event_slug": "rocket-classic-2026",
+  "kalshi_ticker": "KXPGATOUR-ROC26",
+  "merged_at": "2026-08-02T23:35:51.816746+00:00",
   "sources": {
     "kalshi": {
       "file": "KXPGATOUR-ROC26.json",
-      "fetched_at": "2026-07-29T14:51:00.244033+00:00",
-      "player_count": 147
+      "fetched_at": "2026-08-02T23:35:31.960988+00:00",
+      "player_count": 0
     },
     "draftkings": {
       "file": "rocket-classic-2026.json",
@@ -24,10 +25,10 @@
     }
   },
   "match_stats": {
-    "dk_kalshi_matched": 147,
+    "dk_kalshi_matched": 0,
     "dg_matched": 143,
     "unmatched_kalshi": 0,
-    "unmatched_dk": 0,
+    "unmatched_dk": 147,
     "unmatched_dg": 4,
     "total_merged": 151
   },
@@ -39,13 +40,13 @@
       "dk_american_odds": 970,
       "dk_implied_prob": 0.093458,
       "dk_devigged_prob": 0.06906234735719655,
-      "kalshi_ask": 0.076,
-      "kalshi_implied_prob": 0.076,
+      "kalshi_ask": null,
+      "kalshi_implied_prob": null,
       "dg_win_prob": 0.0729833333333333,
       "my_fair_prob": 0.0746,
       "my_fair_placeholder": false,
       "edge_dk": -1.8858,
-      "edge_kalshi": -0.6315680000000004
+      "edge_kalshi": null
     },
     {
       "player_name": "Xander Schauffele",
@@ -54,13 +55,13 @@
       "dk_american_odds": 1600,
       "dk_implied_prob": 0.058824,
       "dk_devigged_prob": 0.04346897559266975,
-      "kalshi_ask": 0.045,
-      "kalshi_implied_prob": 0.045,
+      "kalshi_ask": null,
+      "kalshi_implied_prob": null,
       "dg_win_prob": 0.04975,
       "my_fair_prob": 0.05265,
       "my_fair_placeholder": false,
       "edge_dk": -0.6174,
-      "edge_kalshi": 0.46417500000000067
+      "edge_kalshi": null
     },
     {
       "player_name": "Chris Gotterup",
@@ -69,13 +70,13 @@
       "dk_american_odds": 1800,
       "dk_implied_prob": 0.052632,
       "dk_devigged_prob": 0.03889329395133609,
-      "kalshi_ask": 0.047,
-      "kalshi_implied_prob": 0.047,
+      "kalshi_ask": null,
+      "kalshi_implied_prob": null,
       "dg_win_prob": 0.0480333333333333,
       "my_fair_prob": 0.05,
       "my_fair_placeholder": false,
       "edge_dk": -0.26319999999999955,
-      "edge_kalshi": -0.013536999999999577
+      "edge_kalshi": null
     },
     {
       "player_name": "Wyndham Clark",
@@ -84,13 +85,13 @@
       "dk_american_odds": 1900,
       "dk_implied_prob": 0.05,
       "dk_devigged_prob": 0.03694833366709995,
-      "kalshi_ask": 0.033,
-      "kalshi_implied_prob": 0.033,
+      "kalshi_ask": null,
+      "kalshi_implied_prob": null,
       "dg_win_prob": 0.03035,
       "my_fair_prob": 0.0318,
       "my_fair_placeholder": false,
       "edge_dk": -1.82,
-      "edge_kalshi": -0.34337700000000027
+      "edge_kalshi": null
     },
     {
       "player_name": "Si Woo Kim",
@@ -99,13 +100,13 @@
       "dk_american_odds": 1950,
       "dk_implied_prob": 0.04878,
       "dk_devigged_prob": 0.03604679432562271,
-      "kalshi_ask": 0.038,
-      "kalshi_implied_prob": 0.038,
+      "kalshi_ask": null,
+      "kalshi_implied_prob": null,
       "dg_win_prob": 0.0417,
       "my_fair_prob": 0.0526,
       "my_fair_placeholder": false,
       "edge_dk": 0.3820000000000004,
-      "edge_kalshi": 1.2041080000000002
+      "edge_kalshi": null
     },
     {
       "player_name": "Patrick Cantlay",
@@ -114,13 +115,13 @@
       "dk_american_odds": 2300,
       "dk_implied_prob": 0.041667,
       "dk_devigged_prob": 0.030790524378141074,
-      "kalshi_ask": 0.029,
-      "kalshi_implied_prob": 0.029,
+      "kalshi_ask": null,
+      "kalshi_implied_prob": null,
       "dg_win_prob": 0.0336833333333333,
       "my_fair_prob": 0.0377,
       "my_fair_placeholder": false,
       "edge_dk": -0.3967000000000005,
-      "edge_kalshi": 0.6728869999999995
+      "edge_kalshi": null
     },
     {
       "player_name": "Jackson Koivun",
@@ -129,13 +130,13 @@
       "dk_american_odds": 2350,
       "dk_implied_prob": 0.040816,
       "dk_devigged_prob": 0.03016166373912703,
-      "kalshi_ask": 0.04,
-      "kalshi_implied_prob": 0.04,
+      "kalshi_ask": null,
+      "kalshi_implied_prob": null,
       "dg_win_prob": 0.0282833333333333,
       "my_fair_prob": 0.0208,
       "my_fair_placeholder": false,
       "edge_dk": -2.0016,
-      "edge_kalshi": -2.1888000000000005
+      "edge_kalshi": null
     },
     {
       "player_name": "Russell Henley",
@@ -144,13 +145,13 @@
       "dk_american_odds": 2700,
       "dk_implied_prob": 0.035714,
       "dk_devigged_prob": 0.026391455771736155,
-      "kalshi_ask": 0.026,
-      "kalshi_implied_prob": 0.026,
+      "kalshi_ask": null,
+      "kalshi_implied_prob": null,
       "dg_win_prob": 0.0255,
       "my_fair_prob": 0.02775,
       "my_fair_placeholder": false,
       "edge_dk": -0.7964000000000002,
-      "edge_kalshi": -0.0022679999999997147
+      "edge_kalshi": null
     },
     {
       "player_name": "Ben Griffin",
@@ -159,13 +160,13 @@
       "dk_american_odds": 2900,
       "dk_implied_prob": 0.033333,
       "dk_devigged_prob": 0.024631976122508854,
-      "kalshi_ask": 0.025,
-      "kalshi_implied_prob": 0.025,
+      "kalshi_ask": null,
+      "kalshi_implied_prob": null,
       "dg_win_prob": 0.0269333333333333,
       "my_fair_prob": 0.03075,
       "my_fair_placeholder": false,
       "edge_dk": -0.2583000000000002,
-      "edge_kalshi": 0.4043749999999999
+      "edge_kalshi": null
     },
     {
       "player_name": "J.J. Spaun",
@@ -174,28 +175,13 @@
       "dk_american_odds": 3100,
       "dk_implied_prob": 0.03125,
       "dk_devigged_prob": 0.023092708541937467,
-      "kalshi_ask": 0.029,
-      "kalshi_implied_prob": 0.029,
+      "kalshi_ask": null,
+      "kalshi_implied_prob": null,
       "dg_win_prob": 0.02125,
       "my_fair_prob": 0.02495,
       "my_fair_placeholder": false,
       "edge_dk": -0.63,
-      "edge_kalshi": -0.6021130000000003
-    },
-    {
-      "player_name": "Jake Knapp",
-      "normalized_name": "jake knapp",
-      "dg_id": 19396,
-      "dk_american_odds": 3300,
-      "dk_implied_prob": 0.029412,
-      "dk_devigged_prob": 0.021734487796334873,
-      "kalshi_ask": 0.029,
-      "kalshi_implied_prob": 0.029,
-      "dg_win_prob": 0.0221,
-      "my_fair_prob": 0.01615,
-      "my_fair_placeholder": false,
-      "edge_dk": -1.3262,
-      "edge_kalshi": -1.4821130000000002
+      "edge_kalshi": null
     },
     {
       "player_name": "Hideki Matsuyama",
@@ -204,13 +190,28 @@
       "dk_american_odds": 3300,
       "dk_implied_prob": 0.029412,
       "dk_devigged_prob": 0.021734487796334873,
-      "kalshi_ask": 0.025,
-      "kalshi_implied_prob": 0.025,
+      "kalshi_ask": null,
+      "kalshi_implied_prob": null,
       "dg_win_prob": 0.02425,
       "my_fair_prob": 0.0234,
       "my_fair_placeholder": false,
       "edge_dk": -0.6012,
-      "edge_kalshi": -0.330625
+      "edge_kalshi": null
+    },
+    {
+      "player_name": "Jake Knapp",
+      "normalized_name": "jake knapp",
+      "dg_id": 19396,
+      "dk_american_odds": 3300,
+      "dk_implied_prob": 0.029412,
+      "dk_devigged_prob": 0.021734487796334873,
+      "kalshi_ask": null,
+      "kalshi_implied_prob": null,
+      "dg_win_prob": 0.0221,
+      "my_fair_prob": 0.01615,
+      "my_fair_placeholder": false,
+      "edge_dk": -1.3262,
+      "edge_kalshi": null
     },
     {
       "player_name": "Ryan Gerard",
@@ -219,13 +220,13 @@
       "dk_american_odds": 4100,
       "dk_implied_prob": 0.02381,
       "dk_devigged_prob": 0.017594796492272996,
-      "kalshi_ask": 0.023,
-      "kalshi_implied_prob": 0.023,
+      "kalshi_ask": null,
+      "kalshi_implied_prob": null,
       "dg_win_prob": 0.02305,
       "my_fair_prob": 0.0273,
       "my_fair_placeholder": false,
       "edge_dk": 0.349,
-      "edge_kalshi": 0.2727030000000002
+      "edge_kalshi": null
     },
     {
       "player_name": "Michael Thorbjornsen",
@@ -234,13 +235,13 @@
       "dk_american_odds": 4200,
       "dk_implied_prob": 0.023256,
       "dk_devigged_prob": 0.017185408955241527,
-      "kalshi_ask": 0.019,
-      "kalshi_implied_prob": 0.019,
+      "kalshi_ask": null,
+      "kalshi_implied_prob": null,
       "dg_win_prob": 0.0173666666666667,
       "my_fair_prob": 0.0173,
       "my_fair_placeholder": false,
       "edge_dk": -0.5955999999999999,
-      "edge_kalshi": -0.30047300000000005
+      "edge_kalshi": null
     },
     {
       "player_name": "Nicolai Hojgaard",
@@ -249,13 +250,13 @@
       "dk_american_odds": 4300,
       "dk_implied_prob": 0.022727,
       "dk_devigged_prob": 0.01679449558504361,
-      "kalshi_ask": 0.021,
-      "kalshi_implied_prob": 0.021,
+      "kalshi_ask": null,
+      "kalshi_implied_prob": null,
       "dg_win_prob": 0.0175666666666667,
       "my_fair_prob": 0.0185,
       "my_fair_placeholder": false,
       "edge_dk": -0.4227000000000002,
-      "edge_kalshi": -0.39391300000000024
+      "edge_kalshi": null
     },
     {
       "player_name": "Akshay Bhatia",
@@ -264,13 +265,13 @@
       "dk_american_odds": 4500,
       "dk_implied_prob": 0.021739,
       "dk_devigged_prob": 0.016064396511781716,
-      "kalshi_ask": 0.018,
-      "kalshi_implied_prob": 0.018,
+      "kalshi_ask": null,
+      "kalshi_implied_prob": null,
       "dg_win_prob": 0.0152333333333333,
       "my_fair_prob": 0.0172,
       "my_fair_placeholder": false,
       "edge_dk": -0.45390000000000014,
-      "edge_kalshi": -0.20373199999999986
+      "edge_kalshi": null
     },
     {
       "player_name": "Rickie Fowler",
@@ -279,13 +280,13 @@
       "dk_american_odds": 4700,
       "dk_implied_prob": 0.020833,
       "dk_devigged_prob": 0.015394892705733866,
-      "kalshi_ask": 0.016,
-      "kalshi_implied_prob": 0.016,
+      "kalshi_ask": null,
+      "kalshi_implied_prob": null,
       "dg_win_prob": 0.0115166666666667,
       "my_fair_prob": 0.01135,
       "my_fair_placeholder": false,
       "edge_dk": -0.9483,
-      "edge_kalshi": -0.5752079999999998
+      "edge_kalshi": null
     },
     {
       "player_name": "Keegan Bradley",
@@ -294,13 +295,13 @@
       "dk_american_odds": 4900,
       "dk_implied_prob": 0.02,
       "dk_devigged_prob": 0.01477933346683998,
-      "kalshi_ask": 0.015,
-      "kalshi_implied_prob": 0.015,
+      "kalshi_ask": null,
+      "kalshi_implied_prob": null,
       "dg_win_prob": 0.01295,
       "my_fair_prob": 0.0151,
       "my_fair_placeholder": false,
       "edge_dk": -0.49,
-      "edge_kalshi": -0.09342499999999992
+      "edge_kalshi": null
     },
     {
       "player_name": "Harris English",
@@ -309,13 +310,13 @@
       "dk_american_odds": 4900,
       "dk_implied_prob": 0.02,
       "dk_devigged_prob": 0.01477933346683998,
-      "kalshi_ask": 0.014,
-      "kalshi_implied_prob": 0.014,
+      "kalshi_ask": null,
+      "kalshi_implied_prob": null,
       "dg_win_prob": 0.0147166666666667,
       "my_fair_prob": 0.0188,
       "my_fair_placeholder": false,
       "edge_dk": -0.11999999999999997,
-      "edge_kalshi": 0.38337200000000005
+      "edge_kalshi": null
     },
     {
       "player_name": "Jacob Bridgeman",
@@ -324,13 +325,13 @@
       "dk_american_odds": 5000,
       "dk_implied_prob": 0.019608,
       "dk_devigged_prob": 0.014489658530889916,
-      "kalshi_ask": 0.016,
-      "kalshi_implied_prob": 0.016,
+      "kalshi_ask": null,
+      "kalshi_implied_prob": null,
       "dg_win_prob": 0.0142,
       "my_fair_prob": 0.0146,
       "my_fair_placeholder": false,
       "edge_dk": -0.5008,
-      "edge_kalshi": -0.2502079999999999
+      "edge_kalshi": null
     },
     {
       "player_name": "Michael Brennan",
@@ -339,13 +340,13 @@
       "dk_american_odds": 6000,
       "dk_implied_prob": 0.016393,
       "dk_devigged_prob": 0.01211388067609539,
-      "kalshi_ask": 0.013,
-      "kalshi_implied_prob": 0.013,
+      "kalshi_ask": null,
+      "kalshi_implied_prob": null,
       "dg_win_prob": 0.0135666666666667,
       "my_fair_prob": 0.00985,
       "my_fair_placeholder": false,
       "edge_dk": -0.6543000000000002,
-      "edge_kalshi": -0.40481700000000004
+      "edge_kalshi": null
     },
     {
       "player_name": "Davis Thompson",
@@ -354,13 +355,13 @@
       "dk_american_odds": 6300,
       "dk_implied_prob": 0.015625,
       "dk_devigged_prob": 0.011546354270968734,
-      "kalshi_ask": 0.013,
-      "kalshi_implied_prob": 0.013,
+      "kalshi_ask": null,
+      "kalshi_implied_prob": null,
       "dg_win_prob": 0.0111,
       "my_fair_prob": 0.0114,
       "my_fair_placeholder": false,
       "edge_dk": -0.4225,
-      "edge_kalshi": -0.24981699999999993
+      "edge_kalshi": null
     },
     {
       "player_name": "Ryo Hisatsune",
@@ -369,13 +370,13 @@
       "dk_american_odds": 7000,
       "dk_implied_prob": 0.014085,
       "dk_devigged_prob": 0.010408345594022057,
-      "kalshi_ask": 0.012,
-      "kalshi_implied_prob": 0.012,
+      "kalshi_ask": null,
+      "kalshi_implied_prob": null,
       "dg_win_prob": 0.0109666666666667,
       "my_fair_prob": 0.0114,
       "my_fair_placeholder": false,
       "edge_dk": -0.26849999999999996,
-      "edge_kalshi": -0.14299199999999995
+      "edge_kalshi": null
     },
     {
       "player_name": "Corey Conners",
@@ -384,13 +385,13 @@
       "dk_american_odds": 7200,
       "dk_implied_prob": 0.013699,
       "dk_devigged_prob": 0.010123104458112044,
-      "kalshi_ask": 0.01,
-      "kalshi_implied_prob": 0.01,
+      "kalshi_ask": null,
+      "kalshi_implied_prob": null,
       "dg_win_prob": 0.01305,
       "my_fair_prob": 0.011,
       "my_fair_placeholder": false,
       "edge_dk": -0.26990000000000003,
-      "edge_kalshi": 0.030699999999999825
+      "edge_kalshi": null
     },
     {
       "player_name": "Jordan Spieth",
@@ -399,28 +400,13 @@
       "dk_american_odds": 7200,
       "dk_implied_prob": 0.013699,
       "dk_devigged_prob": 0.010123104458112044,
-      "kalshi_ask": 0.008,
-      "kalshi_implied_prob": 0.008,
+      "kalshi_ask": null,
+      "kalshi_implied_prob": null,
       "dg_win_prob": 0.0078166666666666,
       "my_fair_prob": 0.00895,
       "my_fair_placeholder": false,
       "edge_dk": -0.4749,
-      "edge_kalshi": 0.039447999999999914
-    },
-    {
-      "player_name": "Jordan Smith",
-      "normalized_name": "jordan smith",
-      "dg_id": 18586,
-      "dk_american_odds": 7600,
-      "dk_implied_prob": 0.012987,
-      "dk_devigged_prob": 0.009596960186692542,
-      "kalshi_ask": 0.01,
-      "kalshi_implied_prob": 0.01,
-      "dg_win_prob": 0.0130166666666667,
-      "my_fair_prob": 0.0121,
-      "my_fair_placeholder": false,
-      "edge_dk": -0.08870000000000006,
-      "edge_kalshi": 0.14069999999999985
+      "edge_kalshi": null
     },
     {
       "player_name": "Doug Ghim",
@@ -429,13 +415,28 @@
       "dk_american_odds": 7600,
       "dk_implied_prob": 0.012987,
       "dk_devigged_prob": 0.009596960186692542,
-      "kalshi_ask": 0.008,
-      "kalshi_implied_prob": 0.008,
+      "kalshi_ask": null,
+      "kalshi_implied_prob": null,
       "dg_win_prob": 0.0091333333333333,
       "my_fair_prob": 0.01025,
       "my_fair_placeholder": false,
       "edge_dk": -0.2737,
-      "edge_kalshi": 0.169448
+      "edge_kalshi": null
+    },
+    {
+      "player_name": "Jordan Smith",
+      "normalized_name": "jordan smith",
+      "dg_id": 18586,
+      "dk_american_odds": 7600,
+      "dk_implied_prob": 0.012987,
+      "dk_devigged_prob": 0.009596960186692542,
+      "kalshi_ask": null,
+      "kalshi_implied_prob": null,
+      "dg_win_prob": 0.0130166666666667,
+      "my_fair_prob": 0.0121,
+      "my_fair_placeholder": false,
+      "edge_dk": -0.08870000000000006,
+      "edge_kalshi": null
     },
     {
       "player_name": "Marco Penge",
@@ -444,13 +445,13 @@
       "dk_american_odds": 8000,
       "dk_implied_prob": 0.012346,
       "dk_devigged_prob": 0.00912328254908032,
-      "kalshi_ask": 0.008,
-      "kalshi_implied_prob": 0.008,
+      "kalshi_ask": null,
+      "kalshi_implied_prob": null,
       "dg_win_prob": 0.00755,
       "my_fair_prob": 0.0063,
       "my_fair_placeholder": false,
       "edge_dk": -0.6045999999999999,
-      "edge_kalshi": -0.22555200000000003
+      "edge_kalshi": null
     },
     {
       "player_name": "Eric Cole",
@@ -459,13 +460,13 @@
       "dk_american_odds": 8200,
       "dk_implied_prob": 0.012048,
       "dk_devigged_prob": 0.008903070480424404,
-      "kalshi_ask": 0.009,
-      "kalshi_implied_prob": 0.009,
+      "kalshi_ask": null,
+      "kalshi_implied_prob": null,
       "dg_win_prob": 0.0101166666666667,
       "my_fair_prob": 0.009,
       "my_fair_placeholder": false,
       "edge_dk": -0.3048,
-      "edge_kalshi": -0.06243299999999993
+      "edge_kalshi": null
     },
     {
       "player_name": "Jackson Suber",
@@ -474,28 +475,13 @@
       "dk_american_odds": 8400,
       "dk_implied_prob": 0.011765,
       "dk_devigged_prob": 0.008693942911868618,
-      "kalshi_ask": 0.012,
-      "kalshi_implied_prob": 0.012,
+      "kalshi_ask": null,
+      "kalshi_implied_prob": null,
       "dg_win_prob": 0.0087166666666666,
       "my_fair_prob": 0.00715,
       "my_fair_placeholder": false,
       "edge_dk": -0.4614999999999999,
-      "edge_kalshi": -0.5679919999999999
-    },
-    {
-      "player_name": "Mac Meissner",
-      "normalized_name": "mac meissner",
-      "dg_id": 28159,
-      "dk_american_odds": 8600,
-      "dk_implied_prob": 0.011494,
-      "dk_devigged_prob": 0.008493682943392937,
-      "kalshi_ask": 0.009,
-      "kalshi_implied_prob": 0.009,
-      "dg_win_prob": 0.0120666666666667,
-      "my_fair_prob": 0.01345,
-      "my_fair_placeholder": false,
-      "edge_dk": 0.19559999999999994,
-      "edge_kalshi": 0.38256700000000016
+      "edge_kalshi": null
     },
     {
       "player_name": "Sungjae Im",
@@ -504,13 +490,28 @@
       "dk_american_odds": 8600,
       "dk_implied_prob": 0.011494,
       "dk_devigged_prob": 0.008493682943392937,
-      "kalshi_ask": 0.009,
-      "kalshi_implied_prob": 0.009,
+      "kalshi_ask": null,
+      "kalshi_implied_prob": null,
       "dg_win_prob": 0.0095833333333333,
       "my_fair_prob": 0.00995,
       "my_fair_placeholder": false,
       "edge_dk": -0.15440000000000004,
-      "edge_kalshi": 0.032567000000000186
+      "edge_kalshi": null
+    },
+    {
+      "player_name": "Mac Meissner",
+      "normalized_name": "mac meissner",
+      "dg_id": 28159,
+      "dk_american_odds": 8600,
+      "dk_implied_prob": 0.011494,
+      "dk_devigged_prob": 0.008493682943392937,
+      "kalshi_ask": null,
+      "kalshi_implied_prob": null,
+      "dg_win_prob": 0.0120666666666667,
+      "my_fair_prob": 0.01345,
+      "my_fair_placeholder": false,
+      "edge_dk": 0.19559999999999994,
+      "edge_kalshi": null
     },
     {
       "player_name": "Max Greyserman",
@@ -519,13 +520,13 @@
       "dk_american_odds": 8800,
       "dk_implied_prob": 0.011236,
       "dk_devigged_prob": 0.0083030295416707,
-      "kalshi_ask": 0.008,
-      "kalshi_implied_prob": 0.008,
+      "kalshi_ask": null,
+      "kalshi_implied_prob": null,
       "dg_win_prob": 0.00805,
       "my_fair_prob": 0.0063,
       "my_fair_placeholder": false,
       "edge_dk": -0.4935999999999999,
-      "edge_kalshi": -0.22555200000000003
+      "edge_kalshi": null
     },
     {
       "player_name": "Ben Kohles",
@@ -534,13 +535,13 @@
       "dk_american_odds": 8800,
       "dk_implied_prob": 0.011236,
       "dk_devigged_prob": 0.0083030295416707,
-      "kalshi_ask": 0.007,
-      "kalshi_implied_prob": 0.007,
+      "kalshi_ask": null,
+      "kalshi_implied_prob": null,
       "dg_win_prob": 0.0064,
       "my_fair_prob": 0.0082,
       "my_fair_placeholder": false,
       "edge_dk": -0.30359999999999987,
-      "edge_kalshi": 0.07134300000000002
+      "edge_kalshi": null
     },
     {
       "player_name": "Michael Kim",
@@ -549,13 +550,13 @@
       "dk_american_odds": 9200,
       "dk_implied_prob": 0.010753,
       "dk_devigged_prob": 0.007946108638446515,
-      "kalshi_ask": 0.009,
-      "kalshi_implied_prob": 0.009,
+      "kalshi_ask": null,
+      "kalshi_implied_prob": null,
       "dg_win_prob": 0.0088333333333333,
       "my_fair_prob": 0.00845,
       "my_fair_placeholder": false,
       "edge_dk": -0.23030000000000012,
-      "edge_kalshi": -0.11743299999999995
+      "edge_kalshi": null
     },
     {
       "player_name": "Benjamin James",
@@ -564,12 +565,57 @@
       "dk_american_odds": 9600,
       "dk_implied_prob": 0.010309,
       "dk_devigged_prob": 0.007618007435482668,
-      "kalshi_ask": 0.008,
-      "kalshi_implied_prob": 0.008,
+      "kalshi_ask": null,
+      "kalshi_implied_prob": null,
       "dg_win_prob": null,
       "my_fair_prob": null,
       "my_fair_placeholder": false,
       "edge_dk": null,
+      "edge_kalshi": null
+    },
+    {
+      "player_name": "Andrew Novak",
+      "normalized_name": "andrew novak",
+      "dg_id": 23475,
+      "dk_american_odds": 10000,
+      "dk_implied_prob": 0.009901,
+      "dk_devigged_prob": 0.007316509032759132,
+      "kalshi_ask": null,
+      "kalshi_implied_prob": null,
+      "dg_win_prob": 0.0076166666666666,
+      "my_fair_prob": 0.0094,
+      "my_fair_placeholder": false,
+      "edge_dk": -0.05009999999999997,
+      "edge_kalshi": null
+    },
+    {
+      "player_name": "John Keefer",
+      "normalized_name": "john keefer",
+      "dg_id": 32457,
+      "dk_american_odds": 10000,
+      "dk_implied_prob": 0.009901,
+      "dk_devigged_prob": 0.007316509032759132,
+      "kalshi_ask": null,
+      "kalshi_implied_prob": null,
+      "dg_win_prob": 0.0068166666666666,
+      "my_fair_prob": 0.0062,
+      "my_fair_placeholder": false,
+      "edge_dk": -0.37010000000000004,
+      "edge_kalshi": null
+    },
+    {
+      "player_name": "Matt Wallace",
+      "normalized_name": "matthew wallace",
+      "dg_id": 20706,
+      "dk_american_odds": 10000,
+      "dk_implied_prob": 0.009901,
+      "dk_devigged_prob": 0.007316509032759132,
+      "kalshi_ask": null,
+      "kalshi_implied_prob": null,
+      "dg_win_prob": 0.0075833333333333,
+      "my_fair_prob": 0.00825,
+      "my_fair_placeholder": false,
+      "edge_dk": -0.16509999999999997,
       "edge_kalshi": null
     },
     {
@@ -579,58 +625,13 @@
       "dk_american_odds": 10000,
       "dk_implied_prob": 0.009901,
       "dk_devigged_prob": 0.007316509032759132,
-      "kalshi_ask": 0.009,
-      "kalshi_implied_prob": 0.009,
+      "kalshi_ask": null,
+      "kalshi_implied_prob": null,
       "dg_win_prob": 0.0107333333333333,
       "my_fair_prob": 0.0103,
       "my_fair_placeholder": false,
       "edge_dk": 0.039900000000000005,
-      "edge_kalshi": 0.06756700000000015
-    },
-    {
-      "player_name": "John Keefer",
-      "normalized_name": "john keefer",
-      "dg_id": 32457,
-      "dk_american_odds": 10000,
-      "dk_implied_prob": 0.009901,
-      "dk_devigged_prob": 0.007316509032759132,
-      "kalshi_ask": 0.009,
-      "kalshi_implied_prob": 0.009,
-      "dg_win_prob": 0.0068166666666666,
-      "my_fair_prob": 0.0062,
-      "my_fair_placeholder": false,
-      "edge_dk": -0.37010000000000004,
-      "edge_kalshi": -0.3424329999999999
-    },
-    {
-      "player_name": "Matt Wallace",
-      "normalized_name": "matthew wallace",
-      "dg_id": 20706,
-      "dk_american_odds": 10000,
-      "dk_implied_prob": 0.009901,
-      "dk_devigged_prob": 0.007316509032759132,
-      "kalshi_ask": 0.008,
-      "kalshi_implied_prob": 0.008,
-      "dg_win_prob": 0.0075833333333333,
-      "my_fair_prob": 0.00825,
-      "my_fair_placeholder": false,
-      "edge_dk": -0.16509999999999997,
-      "edge_kalshi": -0.03055200000000001
-    },
-    {
-      "player_name": "Andrew Novak",
-      "normalized_name": "andrew novak",
-      "dg_id": 23475,
-      "dk_american_odds": 10000,
-      "dk_implied_prob": 0.009901,
-      "dk_devigged_prob": 0.007316509032759132,
-      "kalshi_ask": 0.008,
-      "kalshi_implied_prob": 0.008,
-      "dg_win_prob": 0.0076166666666666,
-      "my_fair_prob": 0.0094,
-      "my_fair_placeholder": false,
-      "edge_dk": -0.05009999999999997,
-      "edge_kalshi": 0.084448
+      "edge_kalshi": null
     },
     {
       "player_name": "Pierceson Coody",
@@ -639,13 +640,13 @@
       "dk_american_odds": 10000,
       "dk_implied_prob": 0.009901,
       "dk_devigged_prob": 0.007316509032759132,
-      "kalshi_ask": 0.007,
-      "kalshi_implied_prob": 0.007,
+      "kalshi_ask": null,
+      "kalshi_implied_prob": null,
       "dg_win_prob": 0.00575,
       "my_fair_prob": 0.0057,
       "my_fair_placeholder": false,
       "edge_dk": -0.4201,
-      "edge_kalshi": -0.17865700000000004
+      "edge_kalshi": null
     },
     {
       "player_name": "Christiaan Bezuidenhout",
@@ -654,13 +655,13 @@
       "dk_american_odds": 10500,
       "dk_implied_prob": 0.009434,
       "dk_devigged_prob": 0.006971411596308418,
-      "kalshi_ask": 0.007,
-      "kalshi_implied_prob": 0.007,
+      "kalshi_ask": null,
+      "kalshi_implied_prob": null,
       "dg_win_prob": 0.0061333333333333,
       "my_fair_prob": 0.0081,
       "my_fair_placeholder": false,
       "edge_dk": -0.13340000000000002,
-      "edge_kalshi": 0.0613429999999999
+      "edge_kalshi": null
     },
     {
       "player_name": "Aldrich Potgieter",
@@ -669,13 +670,13 @@
       "dk_american_odds": 11000,
       "dk_implied_prob": 0.009009,
       "dk_devigged_prob": 0.006657350760138069,
-      "kalshi_ask": 0.008,
-      "kalshi_implied_prob": 0.008,
+      "kalshi_ask": null,
+      "kalshi_implied_prob": null,
       "dg_win_prob": 0.0062666666666666,
       "my_fair_prob": 0.00445,
       "my_fair_placeholder": false,
       "edge_dk": -0.45589999999999997,
-      "edge_kalshi": -0.41055200000000003
+      "edge_kalshi": null
     },
     {
       "player_name": "Denny McCarthy",
@@ -684,13 +685,13 @@
       "dk_american_odds": 11000,
       "dk_implied_prob": 0.009009,
       "dk_devigged_prob": 0.006657350760138069,
-      "kalshi_ask": 0.006,
-      "kalshi_implied_prob": 0.006,
+      "kalshi_ask": null,
+      "kalshi_implied_prob": null,
       "dg_win_prob": 0.0060666666666666,
       "my_fair_prob": 0.0071,
       "my_fair_placeholder": false,
       "edge_dk": -0.19089999999999993,
-      "edge_kalshi": 0.06825199999999998
+      "edge_kalshi": null
     },
     {
       "player_name": "Beau Hossler",
@@ -699,13 +700,13 @@
       "dk_american_odds": 11500,
       "dk_implied_prob": 0.008621,
       "dk_devigged_prob": 0.006370631690881374,
-      "kalshi_ask": 0.005,
-      "kalshi_implied_prob": 0.005,
+      "kalshi_ask": null,
+      "kalshi_implied_prob": null,
       "dg_win_prob": 0.0059333333333333,
       "my_fair_prob": 0.0047,
       "my_fair_placeholder": false,
       "edge_dk": -0.3921,
-      "edge_kalshi": -0.06482500000000004
+      "edge_kalshi": null
     },
     {
       "player_name": "Nick Taylor",
@@ -714,28 +715,13 @@
       "dk_american_odds": 11500,
       "dk_implied_prob": 0.008621,
       "dk_devigged_prob": 0.006370631690881374,
-      "kalshi_ask": 0.004,
-      "kalshi_implied_prob": 0.004,
+      "kalshi_ask": null,
+      "kalshi_implied_prob": null,
       "dg_win_prob": 0.0049166666666666,
       "my_fair_prob": 0.00755,
       "my_fair_placeholder": false,
       "edge_dk": -0.10709999999999999,
-      "edge_kalshi": 0.32711199999999996
-    },
-    {
-      "player_name": "Emiliano Grillo",
-      "normalized_name": "emiliano grillo",
-      "dg_id": 12808,
-      "dk_american_odds": 12000,
-      "dk_implied_prob": 0.008264,
-      "dk_devigged_prob": 0.00610682058849828,
-      "kalshi_ask": 0.006,
-      "kalshi_implied_prob": 0.006,
-      "dg_win_prob": 0.0059,
-      "my_fair_prob": 0.0052,
-      "my_fair_placeholder": false,
-      "edge_dk": -0.30640000000000006,
-      "edge_kalshi": -0.12174800000000008
+      "edge_kalshi": null
     },
     {
       "player_name": "Kevin Yu",
@@ -744,13 +730,28 @@
       "dk_american_odds": 12000,
       "dk_implied_prob": 0.008264,
       "dk_devigged_prob": 0.00610682058849828,
-      "kalshi_ask": 0.005,
-      "kalshi_implied_prob": 0.005,
+      "kalshi_ask": null,
+      "kalshi_implied_prob": null,
       "dg_win_prob": 0.0065,
       "my_fair_prob": 0.0059,
       "my_fair_placeholder": false,
       "edge_dk": -0.23640000000000005,
-      "edge_kalshi": 0.05517499999999993
+      "edge_kalshi": null
+    },
+    {
+      "player_name": "Emiliano Grillo",
+      "normalized_name": "emiliano grillo",
+      "dg_id": 12808,
+      "dk_american_odds": 12000,
+      "dk_implied_prob": 0.008264,
+      "dk_devigged_prob": 0.00610682058849828,
+      "kalshi_ask": null,
+      "kalshi_implied_prob": null,
+      "dg_win_prob": 0.0059,
+      "my_fair_prob": 0.0052,
+      "my_fair_placeholder": false,
+      "edge_dk": -0.30640000000000006,
+      "edge_kalshi": null
     },
     {
       "player_name": "Tony Finau",
@@ -759,13 +760,13 @@
       "dk_american_odds": 12500,
       "dk_implied_prob": 0.007937,
       "dk_devigged_prob": 0.005865178486315446,
-      "kalshi_ask": 0.006,
-      "kalshi_implied_prob": 0.006,
+      "kalshi_ask": null,
+      "kalshi_implied_prob": null,
       "dg_win_prob": 0.0075,
       "my_fair_prob": 0.0055,
       "my_fair_placeholder": false,
       "edge_dk": -0.2437,
-      "edge_kalshi": -0.0917480000000001
+      "edge_kalshi": null
     },
     {
       "player_name": "Mackenzie Hughes",
@@ -774,28 +775,13 @@
       "dk_american_odds": 12500,
       "dk_implied_prob": 0.007937,
       "dk_devigged_prob": 0.005865178486315446,
-      "kalshi_ask": 0.005,
-      "kalshi_implied_prob": 0.005,
+      "kalshi_ask": null,
+      "kalshi_implied_prob": null,
       "dg_win_prob": 0.0047666666666666,
       "my_fair_prob": 0.00495,
       "my_fair_placeholder": false,
       "edge_dk": -0.2986999999999999,
-      "edge_kalshi": -0.03982500000000001
-    },
-    {
-      "player_name": "Sam Stevens",
-      "normalized_name": "sam stevens",
-      "dg_id": 25569,
-      "dk_american_odds": 13000,
-      "dk_implied_prob": 0.007634,
-      "dk_devigged_prob": 0.0056412715842928205,
-      "kalshi_ask": 0.006,
-      "kalshi_implied_prob": 0.006,
-      "dg_win_prob": 0.0067166666666666,
-      "my_fair_prob": 0.00615,
-      "my_fair_placeholder": false,
-      "edge_dk": -0.1484,
-      "edge_kalshi": -0.02674800000000005
+      "edge_kalshi": null
     },
     {
       "player_name": "Steven Fisk",
@@ -804,13 +790,13 @@
       "dk_american_odds": 13000,
       "dk_implied_prob": 0.007634,
       "dk_devigged_prob": 0.0056412715842928205,
-      "kalshi_ask": 0.005,
-      "kalshi_implied_prob": 0.005,
+      "kalshi_ask": null,
+      "kalshi_implied_prob": null,
       "dg_win_prob": 0.0058333333333333,
       "my_fair_prob": 0.0055,
       "my_fair_placeholder": false,
       "edge_dk": -0.21340000000000003,
-      "edge_kalshi": 0.01517499999999991
+      "edge_kalshi": null
     },
     {
       "player_name": "Seamus Power",
@@ -819,43 +805,28 @@
       "dk_american_odds": 13000,
       "dk_implied_prob": 0.007634,
       "dk_devigged_prob": 0.0056412715842928205,
-      "kalshi_ask": 0.003,
-      "kalshi_implied_prob": 0.003,
+      "kalshi_ask": null,
+      "kalshi_implied_prob": null,
       "dg_win_prob": 0.0030166666666666,
       "my_fair_prob": 0.0027,
       "my_fair_placeholder": false,
       "edge_dk": -0.4934,
-      "edge_kalshi": -0.05093699999999999
+      "edge_kalshi": null
     },
     {
-      "player_name": "Sudarshan Yellamaraju",
-      "normalized_name": "sudarshan yellamaraju",
-      "dg_id": 29925,
-      "dk_american_odds": 13500,
-      "dk_implied_prob": 0.007353,
-      "dk_devigged_prob": 0.005433621949083718,
-      "kalshi_ask": 0.006,
-      "kalshi_implied_prob": 0.006,
-      "dg_win_prob": 0.00525,
-      "my_fair_prob": 0.00575,
+      "player_name": "Sam Stevens",
+      "normalized_name": "sam stevens",
+      "dg_id": 25569,
+      "dk_american_odds": 13000,
+      "dk_implied_prob": 0.007634,
+      "dk_devigged_prob": 0.0056412715842928205,
+      "kalshi_ask": null,
+      "kalshi_implied_prob": null,
+      "dg_win_prob": 0.0067166666666666,
+      "my_fair_prob": 0.00615,
       "my_fair_placeholder": false,
-      "edge_dk": -0.16030000000000003,
-      "edge_kalshi": -0.06674800000000007
-    },
-    {
-      "player_name": "William Mouw",
-      "normalized_name": "william mouw",
-      "dg_id": 29770,
-      "dk_american_odds": 13500,
-      "dk_implied_prob": 0.007353,
-      "dk_devigged_prob": 0.005433621949083718,
-      "kalshi_ask": 0.006,
-      "kalshi_implied_prob": 0.006,
-      "dg_win_prob": 0.0055166666666666,
-      "my_fair_prob": 0.00525,
-      "my_fair_placeholder": false,
-      "edge_dk": -0.2103,
-      "edge_kalshi": -0.11674800000000002
+      "edge_dk": -0.1484,
+      "edge_kalshi": null
     },
     {
       "player_name": "Jesper Svensson",
@@ -864,13 +835,13 @@
       "dk_american_odds": 13500,
       "dk_implied_prob": 0.007353,
       "dk_devigged_prob": 0.005433621949083718,
-      "kalshi_ask": 0.005,
-      "kalshi_implied_prob": 0.005,
+      "kalshi_ask": null,
+      "kalshi_implied_prob": null,
       "dg_win_prob": 0.0050166666666666,
       "my_fair_prob": 0.00335,
       "my_fair_placeholder": false,
       "edge_dk": -0.4003,
-      "edge_kalshi": -0.19982500000000006
+      "edge_kalshi": null
     },
     {
       "player_name": "Harry Hall",
@@ -879,43 +850,43 @@
       "dk_american_odds": 13500,
       "dk_implied_prob": 0.007353,
       "dk_devigged_prob": 0.005433621949083718,
-      "kalshi_ask": 0.004,
-      "kalshi_implied_prob": 0.004,
+      "kalshi_ask": null,
+      "kalshi_implied_prob": null,
       "dg_win_prob": 0.0041666666666666,
       "my_fair_prob": 0.00535,
       "my_fair_placeholder": false,
       "edge_dk": -0.20030000000000003,
-      "edge_kalshi": 0.10711199999999992
+      "edge_kalshi": null
     },
     {
-      "player_name": "Zecheng Dou",
-      "normalized_name": "zecheng dou",
-      "dg_id": 16757,
-      "dk_american_odds": 14000,
-      "dk_implied_prob": 0.007092,
-      "dk_devigged_prob": 0.0052407516473414574,
-      "kalshi_ask": 0.006,
-      "kalshi_implied_prob": 0.006,
-      "dg_win_prob": 0.0069833333333333,
-      "my_fair_prob": 0.00465,
+      "player_name": "William Mouw",
+      "normalized_name": "william mouw",
+      "dg_id": 29770,
+      "dk_american_odds": 13500,
+      "dk_implied_prob": 0.007353,
+      "dk_devigged_prob": 0.005433621949083718,
+      "kalshi_ask": null,
+      "kalshi_implied_prob": null,
+      "dg_win_prob": 0.0055166666666666,
+      "my_fair_prob": 0.00525,
       "my_fair_placeholder": false,
-      "edge_dk": -0.24420000000000006,
-      "edge_kalshi": -0.1767480000000001
+      "edge_dk": -0.2103,
+      "edge_kalshi": null
     },
     {
-      "player_name": "Stephan Jaeger",
-      "normalized_name": "stephan jaeger",
-      "dg_id": 16394,
-      "dk_american_odds": 14000,
-      "dk_implied_prob": 0.007092,
-      "dk_devigged_prob": 0.0052407516473414574,
-      "kalshi_ask": 0.005,
-      "kalshi_implied_prob": 0.005,
-      "dg_win_prob": 0.00375,
-      "my_fair_prob": 0.00315,
+      "player_name": "Sudarshan Yellamaraju",
+      "normalized_name": "sudarshan yellamaraju",
+      "dg_id": 29925,
+      "dk_american_odds": 13500,
+      "dk_implied_prob": 0.007353,
+      "dk_devigged_prob": 0.005433621949083718,
+      "kalshi_ask": null,
+      "kalshi_implied_prob": null,
+      "dg_win_prob": 0.00525,
+      "my_fair_prob": 0.00575,
       "my_fair_placeholder": false,
-      "edge_dk": -0.3942,
-      "edge_kalshi": -0.21982500000000005
+      "edge_dk": -0.16030000000000003,
+      "edge_kalshi": null
     },
     {
       "player_name": "Lee Hodges",
@@ -924,28 +895,13 @@
       "dk_american_odds": 14000,
       "dk_implied_prob": 0.007092,
       "dk_devigged_prob": 0.0052407516473414574,
-      "kalshi_ask": 0.005,
-      "kalshi_implied_prob": 0.005,
+      "kalshi_ask": null,
+      "kalshi_implied_prob": null,
       "dg_win_prob": 0.0049833333333333,
       "my_fair_prob": 0.00545,
       "my_fair_placeholder": false,
       "edge_dk": -0.1642,
-      "edge_kalshi": 0.010174999999999941
-    },
-    {
-      "player_name": "Taylor Moore",
-      "normalized_name": "taylor moore",
-      "dg_id": 21944,
-      "dk_american_odds": 14000,
-      "dk_implied_prob": 0.007092,
-      "dk_devigged_prob": 0.0052407516473414574,
-      "kalshi_ask": 0.005,
-      "kalshi_implied_prob": 0.005,
-      "dg_win_prob": 0.00485,
-      "my_fair_prob": 0.0038,
-      "my_fair_placeholder": false,
-      "edge_dk": -0.32920000000000005,
-      "edge_kalshi": -0.15482500000000005
+      "edge_kalshi": null
     },
     {
       "player_name": "Rasmus Hojgaard",
@@ -954,13 +910,58 @@
       "dk_american_odds": 14000,
       "dk_implied_prob": 0.007092,
       "dk_devigged_prob": 0.0052407516473414574,
-      "kalshi_ask": 0.005,
-      "kalshi_implied_prob": 0.005,
+      "kalshi_ask": null,
+      "kalshi_implied_prob": null,
       "dg_win_prob": 0.0047833333333333,
       "my_fair_prob": 0.0042,
       "my_fair_placeholder": false,
       "edge_dk": -0.28920000000000007,
-      "edge_kalshi": -0.11482500000000008
+      "edge_kalshi": null
+    },
+    {
+      "player_name": "Stephan Jaeger",
+      "normalized_name": "stephan jaeger",
+      "dg_id": 16394,
+      "dk_american_odds": 14000,
+      "dk_implied_prob": 0.007092,
+      "dk_devigged_prob": 0.0052407516473414574,
+      "kalshi_ask": null,
+      "kalshi_implied_prob": null,
+      "dg_win_prob": 0.00375,
+      "my_fair_prob": 0.00315,
+      "my_fair_placeholder": false,
+      "edge_dk": -0.3942,
+      "edge_kalshi": null
+    },
+    {
+      "player_name": "Zecheng Dou",
+      "normalized_name": "zecheng dou",
+      "dg_id": 16757,
+      "dk_american_odds": 14000,
+      "dk_implied_prob": 0.007092,
+      "dk_devigged_prob": 0.0052407516473414574,
+      "kalshi_ask": null,
+      "kalshi_implied_prob": null,
+      "dg_win_prob": 0.0069833333333333,
+      "my_fair_prob": 0.00465,
+      "my_fair_placeholder": false,
+      "edge_dk": -0.24420000000000006,
+      "edge_kalshi": null
+    },
+    {
+      "player_name": "Taylor Moore",
+      "normalized_name": "taylor moore",
+      "dg_id": 21944,
+      "dk_american_odds": 14000,
+      "dk_implied_prob": 0.007092,
+      "dk_devigged_prob": 0.0052407516473414574,
+      "kalshi_ask": null,
+      "kalshi_implied_prob": null,
+      "dg_win_prob": 0.00485,
+      "my_fair_prob": 0.0038,
+      "my_fair_placeholder": false,
+      "edge_dk": -0.32920000000000005,
+      "edge_kalshi": null
     },
     {
       "player_name": "Ricky Castillo",
@@ -969,28 +970,13 @@
       "dk_american_odds": 14500,
       "dk_implied_prob": 0.006849,
       "dk_devigged_prob": 0.005061182745719351,
-      "kalshi_ask": 0.005,
-      "kalshi_implied_prob": 0.005,
+      "kalshi_ask": null,
+      "kalshi_implied_prob": null,
       "dg_win_prob": 0.00575,
       "my_fair_prob": 0.0058,
       "my_fair_placeholder": false,
       "edge_dk": -0.10490000000000005,
-      "edge_kalshi": 0.0451749999999999
-    },
-    {
-      "player_name": "Chris Kirk",
-      "normalized_name": "chris kirk",
-      "dg_id": 12423,
-      "dk_american_odds": 15500,
-      "dk_implied_prob": 0.00641,
-      "dk_devigged_prob": 0.004736776376122213,
-      "kalshi_ask": 0.006,
-      "kalshi_implied_prob": 0.006,
-      "dg_win_prob": 0.0030333333333333,
-      "my_fair_prob": 0.00275,
-      "my_fair_placeholder": false,
-      "edge_dk": -0.366,
-      "edge_kalshi": -0.3667480000000001
+      "edge_kalshi": null
     },
     {
       "player_name": "Keita Nakajima",
@@ -999,13 +985,28 @@
       "dk_american_odds": 15500,
       "dk_implied_prob": 0.00641,
       "dk_devigged_prob": 0.004736776376122213,
-      "kalshi_ask": 0.004,
-      "kalshi_implied_prob": 0.004,
+      "kalshi_ask": null,
+      "kalshi_implied_prob": null,
       "dg_win_prob": 0.00435,
       "my_fair_prob": 0.0043,
       "my_fair_placeholder": false,
       "edge_dk": -0.211,
-      "edge_kalshi": 0.0021119999999999473
+      "edge_kalshi": null
+    },
+    {
+      "player_name": "Chris Kirk",
+      "normalized_name": "chris kirk",
+      "dg_id": 12423,
+      "dk_american_odds": 15500,
+      "dk_implied_prob": 0.00641,
+      "dk_devigged_prob": 0.004736776376122213,
+      "kalshi_ask": null,
+      "kalshi_implied_prob": null,
+      "dg_win_prob": 0.0030333333333333,
+      "my_fair_prob": 0.00275,
+      "my_fair_placeholder": false,
+      "edge_dk": -0.366,
+      "edge_kalshi": null
     },
     {
       "player_name": "Taylor Pendrith",
@@ -1014,13 +1015,13 @@
       "dk_american_odds": 16500,
       "dk_implied_prob": 0.006024,
       "dk_devigged_prob": 0.004451535240212202,
-      "kalshi_ask": 0.005,
-      "kalshi_implied_prob": 0.005,
+      "kalshi_ask": null,
+      "kalshi_implied_prob": null,
       "dg_win_prob": 0.0039333333333333,
       "my_fair_prob": 0.00325,
       "my_fair_placeholder": false,
       "edge_dk": -0.2774,
-      "edge_kalshi": -0.20982500000000007
+      "edge_kalshi": null
     },
     {
       "player_name": "Billy Horschel",
@@ -1029,28 +1030,13 @@
       "dk_american_odds": 17000,
       "dk_implied_prob": 0.005848,
       "dk_devigged_prob": 0.00432147710570401,
-      "kalshi_ask": 0.005,
-      "kalshi_implied_prob": 0.005,
+      "kalshi_ask": null,
+      "kalshi_implied_prob": null,
       "dg_win_prob": 0.0033,
       "my_fair_prob": 0.00295,
       "my_fair_placeholder": false,
       "edge_dk": -0.2898,
-      "edge_kalshi": -0.23982500000000007
-    },
-    {
-      "player_name": "Kevin Roy",
-      "normalized_name": "kevin roy",
-      "dg_id": 18424,
-      "dk_american_odds": 17000,
-      "dk_implied_prob": 0.005848,
-      "dk_devigged_prob": 0.00432147710570401,
-      "kalshi_ask": 0.004,
-      "kalshi_implied_prob": 0.004,
-      "dg_win_prob": 0.0043333333333333,
-      "my_fair_prob": 0.0036,
-      "my_fair_placeholder": false,
-      "edge_dk": -0.2248,
-      "edge_kalshi": -0.06788800000000006
+      "edge_kalshi": null
     },
     {
       "player_name": "Rico Hoey",
@@ -1059,13 +1045,43 @@
       "dk_american_odds": 17000,
       "dk_implied_prob": 0.005848,
       "dk_devigged_prob": 0.00432147710570401,
-      "kalshi_ask": 0.004,
-      "kalshi_implied_prob": 0.004,
+      "kalshi_ask": null,
+      "kalshi_implied_prob": null,
       "dg_win_prob": 0.0036666666666666,
       "my_fair_prob": 0.0029,
       "my_fair_placeholder": false,
       "edge_dk": -0.2948,
-      "edge_kalshi": -0.13788800000000007
+      "edge_kalshi": null
+    },
+    {
+      "player_name": "Kevin Roy",
+      "normalized_name": "kevin roy",
+      "dg_id": 18424,
+      "dk_american_odds": 17000,
+      "dk_implied_prob": 0.005848,
+      "dk_devigged_prob": 0.00432147710570401,
+      "kalshi_ask": null,
+      "kalshi_implied_prob": null,
+      "dg_win_prob": 0.0043333333333333,
+      "my_fair_prob": 0.0036,
+      "my_fair_placeholder": false,
+      "edge_dk": -0.2248,
+      "edge_kalshi": null
+    },
+    {
+      "player_name": "Zach Bauchou",
+      "normalized_name": "zachary bauchou",
+      "dg_id": 19846,
+      "dk_american_odds": 17500,
+      "dk_implied_prob": 0.005682,
+      "dk_devigged_prob": 0.004198808637929239,
+      "kalshi_ask": null,
+      "kalshi_implied_prob": null,
+      "dg_win_prob": 0.00405,
+      "my_fair_prob": 0.0042,
+      "my_fair_placeholder": false,
+      "edge_dk": -0.14820000000000005,
+      "edge_kalshi": null
     },
     {
       "player_name": "Matt McCarty",
@@ -1074,28 +1090,13 @@
       "dk_american_odds": 17500,
       "dk_implied_prob": 0.005682,
       "dk_devigged_prob": 0.004198808637929239,
-      "kalshi_ask": 0.005,
-      "kalshi_implied_prob": 0.005,
+      "kalshi_ask": null,
+      "kalshi_implied_prob": null,
       "dg_win_prob": 0.0038,
       "my_fair_prob": 0.00545,
       "my_fair_placeholder": false,
       "edge_dk": -0.023200000000000044,
-      "edge_kalshi": 0.010174999999999941
-    },
-    {
-      "player_name": "William Jennings",
-      "normalized_name": "william jennings",
-      "dg_id": 35417,
-      "dk_american_odds": 17500,
-      "dk_implied_prob": 0.005682,
-      "dk_devigged_prob": 0.004198808637929239,
-      "kalshi_ask": 0.005,
-      "kalshi_implied_prob": 0.005,
-      "dg_win_prob": 0.0008166666666666,
-      "my_fair_prob": 0.0003,
-      "my_fair_placeholder": true,
-      "edge_dk": -0.5382,
-      "edge_kalshi": -0.5048250000000001
+      "edge_kalshi": null
     },
     {
       "player_name": "Nicolas Echavarria",
@@ -1104,8 +1105,8 @@
       "dk_american_odds": 17500,
       "dk_implied_prob": 0.005682,
       "dk_devigged_prob": 0.004198808637929239,
-      "kalshi_ask": 0.005,
-      "kalshi_implied_prob": 0.005,
+      "kalshi_ask": null,
+      "kalshi_implied_prob": null,
       "dg_win_prob": null,
       "my_fair_prob": null,
       "my_fair_placeholder": false,
@@ -1119,8 +1120,8 @@
       "dk_american_odds": 17500,
       "dk_implied_prob": 0.005682,
       "dk_devigged_prob": 0.004198808637929239,
-      "kalshi_ask": 0.004,
-      "kalshi_implied_prob": 0.004,
+      "kalshi_ask": null,
+      "kalshi_implied_prob": null,
       "dg_win_prob": null,
       "my_fair_prob": null,
       "my_fair_placeholder": false,
@@ -1128,49 +1129,19 @@
       "edge_kalshi": null
     },
     {
-      "player_name": "Zach Bauchou",
-      "normalized_name": "zachary bauchou",
-      "dg_id": 19846,
+      "player_name": "William Jennings",
+      "normalized_name": "william jennings",
+      "dg_id": 35417,
       "dk_american_odds": 17500,
       "dk_implied_prob": 0.005682,
       "dk_devigged_prob": 0.004198808637929239,
-      "kalshi_ask": 0.004,
-      "kalshi_implied_prob": 0.004,
-      "dg_win_prob": 0.00405,
-      "my_fair_prob": 0.0042,
-      "my_fair_placeholder": false,
-      "edge_dk": -0.14820000000000005,
-      "edge_kalshi": -0.007888000000000079
-    },
-    {
-      "player_name": "Matthias Schmid",
-      "normalized_name": "matthew schmid",
-      "dg_id": 20722,
-      "dk_american_odds": 18500,
-      "dk_implied_prob": 0.005376,
-      "dk_devigged_prob": 0.003972684835886586,
-      "kalshi_ask": 0.005,
-      "kalshi_implied_prob": 0.005,
-      "dg_win_prob": 0.0045666666666666,
-      "my_fair_prob": 0.00365,
-      "my_fair_placeholder": false,
-      "edge_dk": -0.17259999999999998,
-      "edge_kalshi": -0.16982500000000006
-    },
-    {
-      "player_name": "Lucas Glover",
-      "normalized_name": "lucas glover",
-      "dg_id": 7399,
-      "dk_american_odds": 18500,
-      "dk_implied_prob": 0.005376,
-      "dk_devigged_prob": 0.003972684835886586,
-      "kalshi_ask": 0.004,
-      "kalshi_implied_prob": 0.004,
-      "dg_win_prob": 0.0022666666666666,
-      "my_fair_prob": 0.0015,
-      "my_fair_placeholder": false,
-      "edge_dk": -0.38759999999999994,
-      "edge_kalshi": -0.277888
+      "kalshi_ask": null,
+      "kalshi_implied_prob": null,
+      "dg_win_prob": 0.0008166666666666,
+      "my_fair_prob": 0.0003,
+      "my_fair_placeholder": true,
+      "edge_dk": -0.5382,
+      "edge_kalshi": null
     },
     {
       "player_name": "Max McGreevy",
@@ -1179,13 +1150,43 @@
       "dk_american_odds": 18500,
       "dk_implied_prob": 0.005376,
       "dk_devigged_prob": 0.003972684835886586,
-      "kalshi_ask": 0.004,
-      "kalshi_implied_prob": 0.004,
+      "kalshi_ask": null,
+      "kalshi_implied_prob": null,
       "dg_win_prob": 0.0044833333333333,
       "my_fair_prob": 0.00435,
       "my_fair_placeholder": false,
       "edge_dk": -0.1026,
-      "edge_kalshi": 0.007111999999999917
+      "edge_kalshi": null
+    },
+    {
+      "player_name": "Lucas Glover",
+      "normalized_name": "lucas glover",
+      "dg_id": 7399,
+      "dk_american_odds": 18500,
+      "dk_implied_prob": 0.005376,
+      "dk_devigged_prob": 0.003972684835886586,
+      "kalshi_ask": null,
+      "kalshi_implied_prob": null,
+      "dg_win_prob": 0.0022666666666666,
+      "my_fair_prob": 0.0015,
+      "my_fair_placeholder": false,
+      "edge_dk": -0.38759999999999994,
+      "edge_kalshi": null
+    },
+    {
+      "player_name": "Matthias Schmid",
+      "normalized_name": "matthew schmid",
+      "dg_id": 20722,
+      "dk_american_odds": 18500,
+      "dk_implied_prob": 0.005376,
+      "dk_devigged_prob": 0.003972684835886586,
+      "kalshi_ask": null,
+      "kalshi_implied_prob": null,
+      "dg_win_prob": 0.0045666666666666,
+      "my_fair_prob": 0.00365,
+      "my_fair_placeholder": false,
+      "edge_dk": -0.17259999999999998,
+      "edge_kalshi": null
     },
     {
       "player_name": "Austin Smotherman",
@@ -1194,13 +1195,13 @@
       "dk_american_odds": 19000,
       "dk_implied_prob": 0.005236,
       "dk_devigged_prob": 0.0038692295016187067,
-      "kalshi_ask": 0.004,
-      "kalshi_implied_prob": 0.004,
+      "kalshi_ask": null,
+      "kalshi_implied_prob": null,
       "dg_win_prob": 0.0034166666666666,
       "my_fair_prob": 0.00305,
       "my_fair_placeholder": false,
       "edge_dk": -0.2186,
-      "edge_kalshi": -0.12288800000000004
+      "edge_kalshi": null
     },
     {
       "player_name": "John Parry",
@@ -1209,13 +1210,13 @@
       "dk_american_odds": 21000,
       "dk_implied_prob": 0.004739,
       "dk_devigged_prob": 0.0035019630649677333,
-      "kalshi_ask": 0.004,
-      "kalshi_implied_prob": 0.004,
+      "kalshi_ask": null,
+      "kalshi_implied_prob": null,
       "dg_win_prob": 0.0034166666666666,
       "my_fair_prob": 0.0038,
       "my_fair_placeholder": false,
       "edge_dk": -0.09390000000000001,
-      "edge_kalshi": -0.047888000000000056
+      "edge_kalshi": null
     },
     {
       "player_name": "Haotong Li",
@@ -1224,13 +1225,13 @@
       "dk_american_odds": 23000,
       "dk_implied_prob": 0.004329,
       "dk_devigged_prob": 0.003198986728897514,
-      "kalshi_ask": 0.004,
-      "kalshi_implied_prob": 0.004,
+      "kalshi_ask": null,
+      "kalshi_implied_prob": null,
       "dg_win_prob": 0.0024,
       "my_fair_prob": 0.00205,
       "my_fair_placeholder": false,
       "edge_dk": -0.22790000000000002,
-      "edge_kalshi": -0.22288800000000003
+      "edge_kalshi": null
     },
     {
       "player_name": "Adrien Dumont De Chassart",
@@ -1239,13 +1240,13 @@
       "dk_american_odds": 23000,
       "dk_implied_prob": 0.004329,
       "dk_devigged_prob": 0.003198986728897514,
-      "kalshi_ask": 0.002,
-      "kalshi_implied_prob": 0.002,
+      "kalshi_ask": null,
+      "kalshi_implied_prob": null,
       "dg_win_prob": 0.0030333333333333,
       "my_fair_prob": 0.00245,
       "my_fair_placeholder": false,
       "edge_dk": -0.18790000000000004,
-      "edge_kalshi": 0.031028
+      "edge_kalshi": null
     },
     {
       "player_name": "Neal Shipley",
@@ -1254,13 +1255,13 @@
       "dk_american_odds": 24000,
       "dk_implied_prob": 0.004149,
       "dk_devigged_prob": 0.0030659727276959536,
-      "kalshi_ask": 0.003,
-      "kalshi_implied_prob": 0.003,
+      "kalshi_ask": null,
+      "kalshi_implied_prob": null,
       "dg_win_prob": 0.0021166666666666,
       "my_fair_prob": 0.0019,
       "my_fair_placeholder": false,
       "edge_dk": -0.22490000000000002,
-      "edge_kalshi": -0.130937
+      "edge_kalshi": null
     },
     {
       "player_name": "Chandler Phillips",
@@ -1269,13 +1270,13 @@
       "dk_american_odds": 25000,
       "dk_implied_prob": 0.003984,
       "dk_devigged_prob": 0.002944043226594524,
-      "kalshi_ask": 0.004,
-      "kalshi_implied_prob": 0.004,
+      "kalshi_ask": null,
+      "kalshi_implied_prob": null,
       "dg_win_prob": 0.0028166666666666,
       "my_fair_prob": 0.00215,
       "my_fair_placeholder": false,
       "edge_dk": -0.18339999999999998,
-      "edge_kalshi": -0.21288800000000005
+      "edge_kalshi": null
     },
     {
       "player_name": "Zac Blair",
@@ -1284,13 +1285,13 @@
       "dk_american_odds": 26000,
       "dk_implied_prob": 0.003831,
       "dk_devigged_prob": 0.0028309813255731984,
-      "kalshi_ask": 0.003,
-      "kalshi_implied_prob": 0.003,
+      "kalshi_ask": null,
+      "kalshi_implied_prob": null,
       "dg_win_prob": 0.0029666666666666,
       "my_fair_prob": 0.00435,
       "my_fair_placeholder": false,
       "edge_dk": 0.051899999999999946,
-      "edge_kalshi": 0.11406299999999997
+      "edge_kalshi": null
     },
     {
       "player_name": "Thorbjorn Olesen",
@@ -1299,13 +1300,13 @@
       "dk_american_odds": 26000,
       "dk_implied_prob": 0.003831,
       "dk_devigged_prob": 0.0028309813255731984,
-      "kalshi_ask": 0.003,
-      "kalshi_implied_prob": 0.003,
+      "kalshi_ask": null,
+      "kalshi_implied_prob": null,
       "dg_win_prob": 0.0026,
       "my_fair_prob": 0.0026,
       "my_fair_placeholder": false,
       "edge_dk": -0.12310000000000003,
-      "edge_kalshi": -0.06093700000000001
+      "edge_kalshi": null
     },
     {
       "player_name": "Patrick Fishburn",
@@ -1314,13 +1315,13 @@
       "dk_american_odds": 28000,
       "dk_implied_prob": 0.003559,
       "dk_devigged_prob": 0.0026299823904241747,
-      "kalshi_ask": 0.003,
-      "kalshi_implied_prob": 0.003,
+      "kalshi_ask": null,
+      "kalshi_implied_prob": null,
       "dg_win_prob": 0.0024666666666666,
       "my_fair_prob": 0.00195,
       "my_fair_placeholder": false,
       "edge_dk": -0.16090000000000002,
-      "edge_kalshi": -0.12593700000000002
+      "edge_kalshi": null
     },
     {
       "player_name": "Austin Eckroat",
@@ -1329,13 +1330,13 @@
       "dk_american_odds": 30000,
       "dk_implied_prob": 0.003322,
       "dk_devigged_prob": 0.0024548472888421204,
-      "kalshi_ask": 0.002,
-      "kalshi_implied_prob": 0.002,
+      "kalshi_ask": null,
+      "kalshi_implied_prob": null,
       "dg_win_prob": 0.0019333333333333,
       "my_fair_prob": 0.00165,
       "my_fair_placeholder": false,
       "edge_dk": -0.1672,
-      "edge_kalshi": -0.04897199999999999
+      "edge_kalshi": null
     },
     {
       "player_name": "Joel Dahmen",
@@ -1344,13 +1345,13 @@
       "dk_american_odds": 31000,
       "dk_implied_prob": 0.003215,
       "dk_devigged_prob": 0.0023757778547945268,
-      "kalshi_ask": 0.003,
-      "kalshi_implied_prob": 0.003,
+      "kalshi_ask": null,
+      "kalshi_implied_prob": null,
       "dg_win_prob": 0.0019833333333333,
       "my_fair_prob": 0.00185,
       "my_fair_placeholder": false,
       "edge_dk": -0.13649999999999998,
-      "edge_kalshi": -0.135937
+      "edge_kalshi": null
     },
     {
       "player_name": "Garrick Higgo",
@@ -1359,13 +1360,13 @@
       "dk_american_odds": 32000,
       "dk_implied_prob": 0.003115,
       "dk_devigged_prob": 0.002301881187460327,
-      "kalshi_ask": 0.003,
-      "kalshi_implied_prob": 0.003,
+      "kalshi_ask": null,
+      "kalshi_implied_prob": null,
       "dg_win_prob": 0.0018833333333333,
       "my_fair_prob": 0.0017,
       "my_fair_placeholder": false,
       "edge_dk": -0.14150000000000001,
-      "edge_kalshi": -0.15093700000000002
+      "edge_kalshi": null
     },
     {
       "player_name": "Andrew Putnam",
@@ -1374,13 +1375,13 @@
       "dk_american_odds": 32500,
       "dk_implied_prob": 0.003067,
       "dk_devigged_prob": 0.002266410787139911,
-      "kalshi_ask": 0.002,
-      "kalshi_implied_prob": 0.002,
+      "kalshi_ask": null,
+      "kalshi_implied_prob": null,
       "dg_win_prob": 0.0019833333333333,
       "my_fair_prob": 0.0033,
       "my_fair_placeholder": false,
       "edge_dk": 0.023300000000000015,
-      "edge_kalshi": 0.116028
+      "edge_kalshi": null
     },
     {
       "player_name": "A.J. Ewart",
@@ -1389,13 +1390,13 @@
       "dk_american_odds": 33000,
       "dk_implied_prob": 0.003021,
       "dk_devigged_prob": 0.0022324183201661786,
-      "kalshi_ask": 0.003,
-      "kalshi_implied_prob": 0.003,
+      "kalshi_ask": null,
+      "kalshi_implied_prob": null,
       "dg_win_prob": 0.0026166666666666,
       "my_fair_prob": 0.0021,
       "my_fair_placeholder": false,
       "edge_dk": -0.09209999999999999,
-      "edge_kalshi": -0.11093700000000001
+      "edge_kalshi": null
     },
     {
       "player_name": "Karl Vilips",
@@ -1404,28 +1405,13 @@
       "dk_american_odds": 33000,
       "dk_implied_prob": 0.003021,
       "dk_devigged_prob": 0.0022324183201661786,
-      "kalshi_ask": 0.002,
-      "kalshi_implied_prob": 0.002,
+      "kalshi_ask": null,
+      "kalshi_implied_prob": null,
       "dg_win_prob": 0.0018833333333333,
       "my_fair_prob": 0.00095,
       "my_fair_placeholder": false,
       "edge_dk": -0.2071,
-      "edge_kalshi": -0.118972
-    },
-    {
-      "player_name": "Mark Hubbard",
-      "normalized_name": "mark hubbard",
-      "dg_id": 16333,
-      "dk_american_odds": 34000,
-      "dk_implied_prob": 0.002933,
-      "dk_devigged_prob": 0.002167389252912083,
-      "kalshi_ask": 0.002,
-      "kalshi_implied_prob": 0.002,
-      "dg_win_prob": 0.0016666666666666,
-      "my_fair_prob": 0.00115,
-      "my_fair_placeholder": false,
-      "edge_dk": -0.1783,
-      "edge_kalshi": -0.09897199999999999
+      "edge_kalshi": null
     },
     {
       "player_name": "Patrick Rodgers",
@@ -1434,13 +1420,28 @@
       "dk_american_odds": 34000,
       "dk_implied_prob": 0.002933,
       "dk_devigged_prob": 0.002167389252912083,
-      "kalshi_ask": 0.002,
-      "kalshi_implied_prob": 0.002,
+      "kalshi_ask": null,
+      "kalshi_implied_prob": null,
       "dg_win_prob": 0.0021333333333333,
       "my_fair_prob": 0.00165,
       "my_fair_placeholder": false,
       "edge_dk": -0.1283,
-      "edge_kalshi": -0.04897199999999999
+      "edge_kalshi": null
+    },
+    {
+      "player_name": "Mark Hubbard",
+      "normalized_name": "mark hubbard",
+      "dg_id": 16333,
+      "dk_american_odds": 34000,
+      "dk_implied_prob": 0.002933,
+      "dk_devigged_prob": 0.002167389252912083,
+      "kalshi_ask": null,
+      "kalshi_implied_prob": null,
+      "dg_win_prob": 0.0016666666666666,
+      "my_fair_prob": 0.00115,
+      "my_fair_placeholder": false,
+      "edge_dk": -0.1783,
+      "edge_kalshi": null
     },
     {
       "player_name": "Ben Silverman",
@@ -1449,13 +1450,13 @@
       "dk_american_odds": 37500,
       "dk_implied_prob": 0.00266,
       "dk_devigged_prob": 0.0019656513510897173,
-      "kalshi_ask": 0.002,
-      "kalshi_implied_prob": 0.002,
+      "kalshi_ask": null,
+      "kalshi_implied_prob": null,
       "dg_win_prob": 0.0005166666666666,
       "my_fair_prob": 0.0009,
       "my_fair_placeholder": false,
       "edge_dk": -0.17600000000000002,
-      "edge_kalshi": -0.123972
+      "edge_kalshi": null
     },
     {
       "player_name": "Luke Clanton",
@@ -1464,13 +1465,13 @@
       "dk_american_odds": 39000,
       "dk_implied_prob": 0.002558,
       "dk_devigged_prob": 0.0018902767504088334,
-      "kalshi_ask": 0.002,
-      "kalshi_implied_prob": 0.002,
+      "kalshi_ask": null,
+      "kalshi_implied_prob": null,
       "dg_win_prob": 0.0014,
       "my_fair_prob": 0.00115,
       "my_fair_placeholder": false,
       "edge_dk": -0.1408,
-      "edge_kalshi": -0.09897199999999999
+      "edge_kalshi": null
     },
     {
       "player_name": "Trace Crowe",
@@ -1479,13 +1480,13 @@
       "dk_american_odds": 40000,
       "dk_implied_prob": 0.002494,
       "dk_devigged_prob": 0.0018429828833149457,
-      "kalshi_ask": 0.002,
-      "kalshi_implied_prob": 0.002,
+      "kalshi_ask": null,
+      "kalshi_implied_prob": null,
       "dg_win_prob": 0.0015166666666666,
       "my_fair_prob": 0.00105,
       "my_fair_placeholder": false,
       "edge_dk": -0.14440000000000003,
-      "edge_kalshi": -0.108972
+      "edge_kalshi": null
     },
     {
       "player_name": "Matthieu Pavon",
@@ -1494,13 +1495,13 @@
       "dk_american_odds": 41000,
       "dk_implied_prob": 0.002433,
       "dk_devigged_prob": 0.0017979059162410835,
-      "kalshi_ask": 0.002,
-      "kalshi_implied_prob": 0.002,
+      "kalshi_ask": null,
+      "kalshi_implied_prob": null,
       "dg_win_prob": 0.0018333333333333,
       "my_fair_prob": 0.0012,
       "my_fair_placeholder": false,
       "edge_dk": -0.12329999999999999,
-      "edge_kalshi": -0.093972
+      "edge_kalshi": null
     },
     {
       "player_name": "Hayden Springer",
@@ -1509,13 +1510,13 @@
       "dk_american_odds": 42000,
       "dk_implied_prob": 0.002375,
       "dk_devigged_prob": 0.0017550458491872476,
-      "kalshi_ask": 0.002,
-      "kalshi_implied_prob": 0.002,
+      "kalshi_ask": null,
+      "kalshi_implied_prob": null,
       "dg_win_prob": 0.0013833333333333,
       "my_fair_prob": 0.0006,
       "my_fair_placeholder": false,
       "edge_dk": -0.17750000000000002,
-      "edge_kalshi": -0.153972
+      "edge_kalshi": null
     },
     {
       "player_name": "Chad Ramey",
@@ -1524,13 +1525,13 @@
       "dk_american_odds": 43000,
       "dk_implied_prob": 0.00232,
       "dk_devigged_prob": 0.0017144026821534378,
-      "kalshi_ask": 0.002,
-      "kalshi_implied_prob": 0.002,
+      "kalshi_ask": null,
+      "kalshi_implied_prob": null,
       "dg_win_prob": 0.0012333333333333,
       "my_fair_prob": 0.0015,
       "my_fair_placeholder": false,
       "edge_dk": -0.082,
-      "edge_kalshi": -0.06397199999999999
+      "edge_kalshi": null
     },
     {
       "player_name": "Pontus Nyholm",
@@ -1539,13 +1540,13 @@
       "dk_american_odds": 44000,
       "dk_implied_prob": 0.002268,
       "dk_devigged_prob": 0.0016759764151396538,
-      "kalshi_ask": 0.003,
-      "kalshi_implied_prob": 0.003,
+      "kalshi_ask": null,
+      "kalshi_implied_prob": null,
       "dg_win_prob": 0.0017,
       "my_fair_prob": 0.0008,
       "my_fair_placeholder": false,
       "edge_dk": -0.1468,
-      "edge_kalshi": -0.240937
+      "edge_kalshi": null
     },
     {
       "player_name": "Adrien Saddier",
@@ -1554,13 +1555,13 @@
       "dk_american_odds": 45000,
       "dk_implied_prob": 0.002217,
       "dk_devigged_prob": 0.0016382891147992116,
-      "kalshi_ask": 0.002,
-      "kalshi_implied_prob": 0.002,
+      "kalshi_ask": null,
+      "kalshi_implied_prob": null,
       "dg_win_prob": 0.0015333333333333,
       "my_fair_prob": 0.0015,
       "my_fair_placeholder": false,
       "edge_dk": -0.07169999999999997,
-      "edge_kalshi": -0.06397199999999999
+      "edge_kalshi": null
     },
     {
       "player_name": "Vince Whaley",
@@ -1569,13 +1570,13 @@
       "dk_american_odds": 47000,
       "dk_implied_prob": 0.002123,
       "dk_devigged_prob": 0.0015688262475050637,
-      "kalshi_ask": 0.001,
-      "kalshi_implied_prob": 0.001,
+      "kalshi_ask": null,
+      "kalshi_implied_prob": null,
       "dg_win_prob": 0.0011,
       "my_fair_prob": 0.00085,
       "my_fair_placeholder": false,
       "edge_dk": -0.12729999999999997,
-      "edge_kalshi": -0.021993000000000002
+      "edge_kalshi": null
     },
     {
       "player_name": "Davis Chatfield",
@@ -1584,28 +1585,13 @@
       "dk_american_odds": 48000,
       "dk_implied_prob": 0.002079,
       "dk_devigged_prob": 0.001536311713878016,
-      "kalshi_ask": 0.002,
-      "kalshi_implied_prob": 0.002,
+      "kalshi_ask": null,
+      "kalshi_implied_prob": null,
       "dg_win_prob": 0.00085,
       "my_fair_prob": 0.00105,
       "my_fair_placeholder": false,
       "edge_dk": -0.10290000000000002,
-      "edge_kalshi": -0.108972
-    },
-    {
-      "player_name": "Erik Van Rooyen",
-      "normalized_name": "erik van rooyen",
-      "dg_id": 17550,
-      "dk_american_odds": 49000,
-      "dk_implied_prob": 0.002037,
-      "dk_devigged_prob": 0.001505275113597652,
-      "kalshi_ask": 0.002,
-      "kalshi_implied_prob": 0.002,
-      "dg_win_prob": 0.0014333333333333,
-      "my_fair_prob": 0.00135,
-      "my_fair_placeholder": false,
-      "edge_dk": -0.06870000000000001,
-      "edge_kalshi": -0.07897199999999999
+      "edge_kalshi": null
     },
     {
       "player_name": "Chandler Blanchet",
@@ -1614,13 +1600,28 @@
       "dk_american_odds": 49000,
       "dk_implied_prob": 0.002037,
       "dk_devigged_prob": 0.001505275113597652,
-      "kalshi_ask": 0.002,
-      "kalshi_implied_prob": 0.002,
+      "kalshi_ask": null,
+      "kalshi_implied_prob": null,
       "dg_win_prob": 0.0017333333333333,
       "my_fair_prob": 0.00085,
       "my_fair_placeholder": false,
       "edge_dk": -0.11870000000000001,
-      "edge_kalshi": -0.12897199999999998
+      "edge_kalshi": null
+    },
+    {
+      "player_name": "Erik Van Rooyen",
+      "normalized_name": "erik van rooyen",
+      "dg_id": 17550,
+      "dk_american_odds": 49000,
+      "dk_implied_prob": 0.002037,
+      "dk_devigged_prob": 0.001505275113597652,
+      "kalshi_ask": null,
+      "kalshi_implied_prob": null,
+      "dg_win_prob": 0.0014333333333333,
+      "my_fair_prob": 0.00135,
+      "my_fair_placeholder": false,
+      "edge_dk": -0.06870000000000001,
+      "edge_kalshi": null
     },
     {
       "player_name": "Takumi Kanaya",
@@ -1629,28 +1630,13 @@
       "dk_american_odds": 49000,
       "dk_implied_prob": 0.002037,
       "dk_devigged_prob": 0.001505275113597652,
-      "kalshi_ask": 0.001,
-      "kalshi_implied_prob": 0.001,
+      "kalshi_ask": null,
+      "kalshi_implied_prob": null,
       "dg_win_prob": 0.0015333333333333,
       "my_fair_prob": 0.0018,
       "my_fair_placeholder": false,
       "edge_dk": -0.023700000000000023,
-      "edge_kalshi": 0.073007
-    },
-    {
-      "player_name": "Tom Hoge",
-      "normalized_name": "tom hoge",
-      "dg_id": 15575,
-      "dk_american_odds": 50000,
-      "dk_implied_prob": 0.001996,
-      "dk_devigged_prob": 0.0014749774799906299,
-      "kalshi_ask": 0.003,
-      "kalshi_implied_prob": 0.003,
-      "dg_win_prob": 0.002,
-      "my_fair_prob": 0.00135,
-      "my_fair_placeholder": false,
-      "edge_dk": -0.06459999999999999,
-      "edge_kalshi": -0.185937
+      "edge_kalshi": null
     },
     {
       "player_name": "Nick Dunlap",
@@ -1659,13 +1645,28 @@
       "dk_american_odds": 50000,
       "dk_implied_prob": 0.001996,
       "dk_devigged_prob": 0.0014749774799906299,
-      "kalshi_ask": 0.003,
-      "kalshi_implied_prob": 0.003,
+      "kalshi_ask": null,
+      "kalshi_implied_prob": null,
       "dg_win_prob": 0.0014166666666666,
       "my_fair_prob": 0.0011,
       "my_fair_placeholder": false,
       "edge_dk": -0.08959999999999999,
-      "edge_kalshi": -0.210937
+      "edge_kalshi": null
+    },
+    {
+      "player_name": "Tom Hoge",
+      "normalized_name": "tom hoge",
+      "dg_id": 15575,
+      "dk_american_odds": 50000,
+      "dk_implied_prob": 0.001996,
+      "dk_devigged_prob": 0.0014749774799906299,
+      "kalshi_ask": null,
+      "kalshi_implied_prob": null,
+      "dg_win_prob": 0.002,
+      "my_fair_prob": 0.00135,
+      "my_fair_placeholder": false,
+      "edge_dk": -0.06459999999999999,
+      "edge_kalshi": null
     },
     {
       "player_name": "John Vanderlaan",
@@ -1674,28 +1675,13 @@
       "dk_american_odds": 50000,
       "dk_implied_prob": 0.001996,
       "dk_devigged_prob": 0.0014749774799906299,
-      "kalshi_ask": 0.001,
-      "kalshi_implied_prob": 0.001,
+      "kalshi_ask": null,
+      "kalshi_implied_prob": null,
       "dg_win_prob": 0.0012333333333333,
       "my_fair_prob": 0.00025,
       "my_fair_placeholder": false,
       "edge_dk": -0.1746,
-      "edge_kalshi": -0.081993
-    },
-    {
-      "player_name": "Matt Kuchar",
-      "normalized_name": "matthew kuchar",
-      "dg_id": 6169,
-      "dk_american_odds": 55000,
-      "dk_implied_prob": 0.001815,
-      "dk_devigged_prob": 0.001341224512115728,
-      "kalshi_ask": 0.002,
-      "kalshi_implied_prob": 0.002,
-      "dg_win_prob": 0.0009166666666666,
-      "my_fair_prob": 0.0013,
-      "my_fair_placeholder": false,
-      "edge_dk": -0.051500000000000004,
-      "edge_kalshi": -0.08397199999999999
+      "edge_kalshi": null
     },
     {
       "player_name": "David Lipsky",
@@ -1704,28 +1690,28 @@
       "dk_american_odds": 55000,
       "dk_implied_prob": 0.001815,
       "dk_devigged_prob": 0.001341224512115728,
-      "kalshi_ask": 0.002,
-      "kalshi_implied_prob": 0.002,
+      "kalshi_ask": null,
+      "kalshi_implied_prob": null,
       "dg_win_prob": 0.0008333333333333,
       "my_fair_prob": 0.00075,
       "my_fair_placeholder": false,
       "edge_dk": -0.1065,
-      "edge_kalshi": -0.13897199999999998
+      "edge_kalshi": null
     },
     {
-      "player_name": "Aaron Wise",
-      "normalized_name": "aaron wise",
-      "dg_id": 22051,
-      "dk_american_odds": 57500,
-      "dk_implied_prob": 0.001736,
-      "dk_devigged_prob": 0.0012828461449217103,
-      "kalshi_ask": 0.001,
-      "kalshi_implied_prob": 0.001,
-      "dg_win_prob": 0.0008,
-      "my_fair_prob": 0.0002,
+      "player_name": "Matt Kuchar",
+      "normalized_name": "matthew kuchar",
+      "dg_id": 6169,
+      "dk_american_odds": 55000,
+      "dk_implied_prob": 0.001815,
+      "dk_devigged_prob": 0.001341224512115728,
+      "kalshi_ask": null,
+      "kalshi_implied_prob": null,
+      "dg_win_prob": 0.0009166666666666,
+      "my_fair_prob": 0.0013,
       "my_fair_placeholder": false,
-      "edge_dk": -0.1536,
-      "edge_kalshi": -0.086993
+      "edge_dk": -0.051500000000000004,
+      "edge_kalshi": null
     },
     {
       "player_name": "Webb Simpson",
@@ -1734,13 +1720,28 @@
       "dk_american_odds": 57500,
       "dk_implied_prob": 0.001736,
       "dk_devigged_prob": 0.0012828461449217103,
-      "kalshi_ask": 0.001,
-      "kalshi_implied_prob": 0.001,
+      "kalshi_ask": null,
+      "kalshi_implied_prob": null,
       "dg_win_prob": 0.001,
       "my_fair_prob": 0.00075,
       "my_fair_placeholder": false,
       "edge_dk": -0.0986,
-      "edge_kalshi": -0.031992999999999994
+      "edge_kalshi": null
+    },
+    {
+      "player_name": "Aaron Wise",
+      "normalized_name": "aaron wise",
+      "dg_id": 22051,
+      "dk_american_odds": 57500,
+      "dk_implied_prob": 0.001736,
+      "dk_devigged_prob": 0.0012828461449217103,
+      "kalshi_ask": null,
+      "kalshi_implied_prob": null,
+      "dg_win_prob": 0.0008,
+      "my_fair_prob": 0.0002,
+      "my_fair_placeholder": false,
+      "edge_dk": -0.1536,
+      "edge_kalshi": null
     },
     {
       "player_name": "Cameron Davis",
@@ -1749,8 +1750,8 @@
       "dk_american_odds": 60000,
       "dk_implied_prob": 0.001664,
       "dk_devigged_prob": 0.0012296405444410863,
-      "kalshi_ask": 0.002,
-      "kalshi_implied_prob": 0.002,
+      "kalshi_ask": null,
+      "kalshi_implied_prob": null,
       "dg_win_prob": null,
       "my_fair_prob": null,
       "my_fair_placeholder": false,
@@ -1764,13 +1765,13 @@
       "dk_american_odds": 62500,
       "dk_implied_prob": 0.001597,
       "dk_devigged_prob": 0.0011801297773271723,
-      "kalshi_ask": 0.001,
-      "kalshi_implied_prob": 0.001,
+      "kalshi_ask": null,
+      "kalshi_implied_prob": null,
       "dg_win_prob": 0.00085,
       "my_fair_prob": 0.00055,
       "my_fair_placeholder": false,
       "edge_dk": -0.10469999999999997,
-      "edge_kalshi": -0.05199299999999999
+      "edge_kalshi": null
     },
     {
       "player_name": "Brad Dalke",
@@ -1779,13 +1780,13 @@
       "dk_american_odds": 65000,
       "dk_implied_prob": 0.001536,
       "dk_devigged_prob": 0.0011350528102533105,
-      "kalshi_ask": 0.005,
-      "kalshi_implied_prob": 0.005,
+      "kalshi_ask": null,
+      "kalshi_implied_prob": null,
       "dg_win_prob": 1.66666666666667e-05,
       "my_fair_prob": 0.0,
       "my_fair_placeholder": true,
       "edge_dk": -0.15360000000000001,
-      "edge_kalshi": -0.5348250000000001
+      "edge_kalshi": null
     },
     {
       "player_name": "Joe Highsmith",
@@ -1794,13 +1795,13 @@
       "dk_american_odds": 67500,
       "dk_implied_prob": 0.001479,
       "dk_devigged_prob": 0.0010929317098728165,
-      "kalshi_ask": 0.002,
-      "kalshi_implied_prob": 0.002,
+      "kalshi_ask": null,
+      "kalshi_implied_prob": null,
       "dg_win_prob": 0.00105,
       "my_fair_prob": 0.00055,
       "my_fair_placeholder": false,
       "edge_dk": -0.0929,
-      "edge_kalshi": -0.15897199999999997
+      "edge_kalshi": null
     },
     {
       "player_name": "Brandt Snedeker",
@@ -1809,13 +1810,13 @@
       "dk_american_odds": 70000,
       "dk_implied_prob": 0.001427,
       "dk_devigged_prob": 0.0010545054428590327,
-      "kalshi_ask": 0.001,
-      "kalshi_implied_prob": 0.001,
+      "kalshi_ask": null,
+      "kalshi_implied_prob": null,
       "dg_win_prob": 0.0005333333333333,
       "my_fair_prob": 0.0004,
       "my_fair_placeholder": false,
       "edge_dk": -0.10270000000000001,
-      "edge_kalshi": -0.066993
+      "edge_kalshi": null
     },
     {
       "player_name": "Hank Lebioda",
@@ -1824,28 +1825,13 @@
       "dk_american_odds": 75000,
       "dk_implied_prob": 0.001332,
       "dk_devigged_prob": 0.0009843036088915426,
-      "kalshi_ask": 0.002,
-      "kalshi_implied_prob": 0.002,
+      "kalshi_ask": null,
+      "kalshi_implied_prob": null,
       "dg_win_prob": 0.0008,
       "my_fair_prob": 0.00075,
       "my_fair_placeholder": false,
       "edge_dk": -0.0582,
-      "edge_kalshi": -0.13897199999999998
-    },
-    {
-      "player_name": "Alejandro Tosti",
-      "normalized_name": "alejandro tosti",
-      "dg_id": 17032,
-      "dk_american_odds": 77500,
-      "dk_implied_prob": 0.001289,
-      "dk_devigged_prob": 0.0009525280419378367,
-      "kalshi_ask": 0.001,
-      "kalshi_implied_prob": 0.001,
-      "dg_win_prob": 0.0009833333333333,
-      "my_fair_prob": 0.0003,
-      "my_fair_placeholder": false,
-      "edge_dk": -0.0989,
-      "edge_kalshi": -0.076993
+      "edge_kalshi": null
     },
     {
       "player_name": "Kevin Streelman",
@@ -1854,13 +1840,28 @@
       "dk_american_odds": 77500,
       "dk_implied_prob": 0.001289,
       "dk_devigged_prob": 0.0009525280419378367,
-      "kalshi_ask": 0.001,
-      "kalshi_implied_prob": 0.001,
+      "kalshi_ask": null,
+      "kalshi_implied_prob": null,
       "dg_win_prob": 0.00095,
       "my_fair_prob": 0.00055,
       "my_fair_placeholder": false,
       "edge_dk": -0.0739,
-      "edge_kalshi": -0.05199299999999999
+      "edge_kalshi": null
+    },
+    {
+      "player_name": "Alejandro Tosti",
+      "normalized_name": "alejandro tosti",
+      "dg_id": 17032,
+      "dk_american_odds": 77500,
+      "dk_implied_prob": 0.001289,
+      "dk_devigged_prob": 0.0009525280419378367,
+      "kalshi_ask": null,
+      "kalshi_implied_prob": null,
+      "dg_win_prob": 0.0009833333333333,
+      "my_fair_prob": 0.0003,
+      "my_fair_placeholder": false,
+      "edge_dk": -0.0989,
+      "edge_kalshi": null
     },
     {
       "player_name": "Davis Riley",
@@ -1869,13 +1870,13 @@
       "dk_american_odds": 87500,
       "dk_implied_prob": 0.001142,
       "dk_devigged_prob": 0.0008438999409565628,
-      "kalshi_ask": 0.002,
-      "kalshi_implied_prob": 0.002,
+      "kalshi_ask": null,
+      "kalshi_implied_prob": null,
       "dg_win_prob": 0.0005166666666666,
       "my_fair_prob": 0.0004,
       "my_fair_placeholder": false,
       "edge_dk": -0.0742,
-      "edge_kalshi": -0.173972
+      "edge_kalshi": null
     },
     {
       "player_name": "Gordon Sargent",
@@ -1884,13 +1885,13 @@
       "dk_american_odds": 87500,
       "dk_implied_prob": 0.001142,
       "dk_devigged_prob": 0.0008438999409565628,
-      "kalshi_ask": 0.001,
-      "kalshi_implied_prob": 0.001,
+      "kalshi_ask": null,
+      "kalshi_implied_prob": null,
       "dg_win_prob": 0.0009333333333333,
       "my_fair_prob": 0.00025,
       "my_fair_placeholder": false,
       "edge_dk": -0.0892,
-      "edge_kalshi": -0.081993
+      "edge_kalshi": null
     },
     {
       "player_name": "Adam Schenk",
@@ -1899,13 +1900,13 @@
       "dk_american_odds": 90000,
       "dk_implied_prob": 0.00111,
       "dk_devigged_prob": 0.000820253007409619,
-      "kalshi_ask": 0.001,
-      "kalshi_implied_prob": 0.001,
+      "kalshi_ask": null,
+      "kalshi_implied_prob": null,
       "dg_win_prob": 0.0006333333333333,
       "my_fair_prob": 0.00035,
       "my_fair_placeholder": false,
       "edge_dk": -0.076,
-      "edge_kalshi": -0.07199299999999999
+      "edge_kalshi": null
     },
     {
       "player_name": "Justin Lower",
@@ -1914,13 +1915,13 @@
       "dk_american_odds": 95000,
       "dk_implied_prob": 0.001052,
       "dk_devigged_prob": 0.000777392940355783,
-      "kalshi_ask": 0.001,
-      "kalshi_implied_prob": 0.001,
+      "kalshi_ask": null,
+      "kalshi_implied_prob": null,
       "dg_win_prob": 0.00045,
       "my_fair_prob": 0.0002,
       "my_fair_placeholder": false,
       "edge_dk": -0.0852,
-      "edge_kalshi": -0.086993
+      "edge_kalshi": null
     },
     {
       "player_name": "Dylan Wu",
@@ -1929,13 +1930,13 @@
       "dk_american_odds": 100000,
       "dk_implied_prob": 0.000999,
       "dk_devigged_prob": 0.0007382277066686571,
-      "kalshi_ask": 0.001,
-      "kalshi_implied_prob": 0.001,
+      "kalshi_ask": null,
+      "kalshi_implied_prob": null,
       "dg_win_prob": 0.0006333333333333,
       "my_fair_prob": 0.00065,
       "my_fair_placeholder": false,
       "edge_dk": -0.034900000000000014,
-      "edge_kalshi": -0.041993
+      "edge_kalshi": null
     },
     {
       "player_name": "Brice Garnett",
@@ -1944,13 +1945,13 @@
       "dk_american_odds": 105000,
       "dk_implied_prob": 0.000951,
       "dk_devigged_prob": 0.0007027573063482411,
-      "kalshi_ask": 0.001,
-      "kalshi_implied_prob": 0.001,
+      "kalshi_ask": null,
+      "kalshi_implied_prob": null,
       "dg_win_prob": 0.0006333333333333,
       "my_fair_prob": 0.00035,
       "my_fair_placeholder": false,
       "edge_dk": -0.0601,
-      "edge_kalshi": -0.07199299999999999
+      "edge_kalshi": null
     },
     {
       "player_name": "Danny Walker",
@@ -1959,28 +1960,13 @@
       "dk_american_odds": 110000,
       "dk_implied_prob": 0.000908,
       "dk_devigged_prob": 0.000670981739394535,
-      "kalshi_ask": 0.001,
-      "kalshi_implied_prob": 0.001,
+      "kalshi_ask": null,
+      "kalshi_implied_prob": null,
       "dg_win_prob": 0.0004,
       "my_fair_prob": 0.00025,
       "my_fair_placeholder": false,
       "edge_dk": -0.0658,
-      "edge_kalshi": -0.081993
-    },
-    {
-      "player_name": "Stefano Mazzoli",
-      "normalized_name": "stefano mazzoli",
-      "dg_id": 20844,
-      "dk_american_odds": 115000,
-      "dk_implied_prob": 0.000869,
-      "dk_devigged_prob": 0.0006421620391341971,
-      "kalshi_ask": 0.001,
-      "kalshi_implied_prob": 0.001,
-      "dg_win_prob": 0.0006,
-      "my_fair_prob": 0.0006,
-      "my_fair_placeholder": false,
-      "edge_dk": -0.026900000000000004,
-      "edge_kalshi": -0.046993
+      "edge_kalshi": null
     },
     {
       "player_name": "Adam Svensson",
@@ -1989,13 +1975,28 @@
       "dk_american_odds": 115000,
       "dk_implied_prob": 0.000869,
       "dk_devigged_prob": 0.0006421620391341971,
-      "kalshi_ask": 0.001,
-      "kalshi_implied_prob": 0.001,
+      "kalshi_ask": null,
+      "kalshi_implied_prob": null,
       "dg_win_prob": 0.0006,
       "my_fair_prob": 0.00045,
       "my_fair_placeholder": false,
       "edge_dk": -0.0419,
-      "edge_kalshi": -0.061993
+      "edge_kalshi": null
+    },
+    {
+      "player_name": "Stefano Mazzoli",
+      "normalized_name": "stefano mazzoli",
+      "dg_id": 20844,
+      "dk_american_odds": 115000,
+      "dk_implied_prob": 0.000869,
+      "dk_devigged_prob": 0.0006421620391341971,
+      "kalshi_ask": null,
+      "kalshi_implied_prob": null,
+      "dg_win_prob": 0.0006,
+      "my_fair_prob": 0.0006,
+      "my_fair_placeholder": false,
+      "edge_dk": -0.026900000000000004,
+      "edge_kalshi": null
     },
     {
       "player_name": "Jeffrey Kang",
@@ -2004,13 +2005,13 @@
       "dk_american_odds": 140000,
       "dk_implied_prob": 0.000714,
       "dk_devigged_prob": 0.0005276222047661872,
-      "kalshi_ask": 0.001,
-      "kalshi_implied_prob": 0.001,
+      "kalshi_ask": null,
+      "kalshi_implied_prob": null,
       "dg_win_prob": 0.0005166666666666,
       "my_fair_prob": 0.00055,
       "my_fair_placeholder": false,
       "edge_dk": -0.016399999999999998,
-      "edge_kalshi": -0.05199299999999999
+      "edge_kalshi": null
     },
     {
       "player_name": "Brian Campbell",
@@ -2019,13 +2020,13 @@
       "dk_american_odds": 160000,
       "dk_implied_prob": 0.000625,
       "dk_devigged_prob": 0.0004618541708387494,
-      "kalshi_ask": 0.001,
-      "kalshi_implied_prob": 0.001,
+      "kalshi_ask": null,
+      "kalshi_implied_prob": null,
       "dg_win_prob": 0.0005666666666666,
       "my_fair_prob": 0.00015,
       "my_fair_placeholder": false,
       "edge_dk": -0.04750000000000001,
-      "edge_kalshi": -0.091993
+      "edge_kalshi": null
     },
     {
       "player_name": "Ryan Ruffels",
@@ -2034,13 +2035,13 @@
       "dk_american_odds": 190000,
       "dk_implied_prob": 0.000526,
       "dk_devigged_prob": 0.0003886964701778915,
-      "kalshi_ask": 0.002,
-      "kalshi_implied_prob": 0.002,
+      "kalshi_ask": null,
+      "kalshi_implied_prob": null,
       "dg_win_prob": 6.66666666666667e-05,
       "my_fair_prob": 5e-05,
       "my_fair_placeholder": true,
       "edge_dk": -0.047599999999999996,
-      "edge_kalshi": -0.208972
+      "edge_kalshi": null
     },
     {
       "player_name": "Peter Malnati",
@@ -2049,13 +2050,13 @@
       "dk_american_odds": 200000,
       "dk_implied_prob": 0.0005,
       "dk_devigged_prob": 0.0003694833366709995,
-      "kalshi_ask": 0.001,
-      "kalshi_implied_prob": 0.001,
+      "kalshi_ask": null,
+      "kalshi_implied_prob": null,
       "dg_win_prob": 0.0002666666666666,
       "my_fair_prob": 0.00035,
       "my_fair_placeholder": false,
       "edge_dk": -0.015000000000000001,
-      "edge_kalshi": -0.07199299999999999
+      "edge_kalshi": null
     },
     {
       "player_name": "Kensei Hirata",
@@ -2064,13 +2065,13 @@
       "dk_american_odds": 200000,
       "dk_implied_prob": 0.0005,
       "dk_devigged_prob": 0.0003694833366709995,
-      "kalshi_ask": 0.001,
-      "kalshi_implied_prob": 0.001,
+      "kalshi_ask": null,
+      "kalshi_implied_prob": null,
       "dg_win_prob": 0.0003166666666666,
       "my_fair_prob": 0.00025,
       "my_fair_placeholder": false,
       "edge_dk": -0.025,
-      "edge_kalshi": -0.081993
+      "edge_kalshi": null
     },
     {
       "player_name": "Christo Lamprecht",
@@ -2079,13 +2080,13 @@
       "dk_american_odds": 250000,
       "dk_implied_prob": 0.0004,
       "dk_devigged_prob": 0.0002955866693367996,
-      "kalshi_ask": 0.001,
-      "kalshi_implied_prob": 0.001,
+      "kalshi_ask": null,
+      "kalshi_implied_prob": null,
       "dg_win_prob": 0.0001333333333333,
       "my_fair_prob": 5e-05,
       "my_fair_placeholder": false,
       "edge_dk": -0.034999999999999996,
-      "edge_kalshi": -0.101993
+      "edge_kalshi": null
     },
     {
       "player_name": "Rafael Campos",
@@ -2094,13 +2095,13 @@
       "dk_american_odds": 275000,
       "dk_implied_prob": 0.000364,
       "dk_devigged_prob": 0.00026898386909648763,
-      "kalshi_ask": 0.001,
-      "kalshi_implied_prob": 0.001,
+      "kalshi_ask": null,
+      "kalshi_implied_prob": null,
       "dg_win_prob": 0.0001333333333333,
       "my_fair_prob": 0.00025,
       "my_fair_placeholder": false,
       "edge_dk": -0.0114,
-      "edge_kalshi": -0.081993
+      "edge_kalshi": null
     },
     {
       "player_name": "Patton Kizzire",
@@ -2109,13 +2110,13 @@
       "dk_american_odds": 325000,
       "dk_implied_prob": 0.000308,
       "dk_devigged_prob": 0.00022760173538933568,
-      "kalshi_ask": 0.001,
-      "kalshi_implied_prob": 0.001,
+      "kalshi_ask": null,
+      "kalshi_implied_prob": null,
       "dg_win_prob": 0.0001666666666666,
       "my_fair_prob": 0.0,
       "my_fair_placeholder": false,
       "edge_dk": -0.0308,
-      "edge_kalshi": -0.10699299999999999
+      "edge_kalshi": null
     },
     {
       "player_name": "Marcelo Rozo",
@@ -2124,13 +2125,13 @@
       "dk_american_odds": 350000,
       "dk_implied_prob": 0.000286,
       "dk_devigged_prob": 0.00021134446857581173,
-      "kalshi_ask": 0.001,
-      "kalshi_implied_prob": 0.001,
+      "kalshi_ask": null,
+      "kalshi_implied_prob": null,
       "dg_win_prob": 0.0003,
       "my_fair_prob": 0.0001,
       "my_fair_placeholder": false,
       "edge_dk": -0.018600000000000002,
-      "edge_kalshi": -0.096993
+      "edge_kalshi": null
     },
     {
       "player_name": "Keenan Huskey",
@@ -2139,13 +2140,13 @@
       "dk_american_odds": 450000,
       "dk_implied_prob": 0.000222,
       "dk_devigged_prob": 0.0001640506014819238,
-      "kalshi_ask": 0.001,
-      "kalshi_implied_prob": 0.001,
+      "kalshi_ask": null,
+      "kalshi_implied_prob": null,
       "dg_win_prob": 8.33333333333333e-05,
       "my_fair_prob": 5e-05,
       "my_fair_placeholder": true,
       "edge_dk": -0.0172,
-      "edge_kalshi": -0.101993
+      "edge_kalshi": null
     },
     {
       "player_name": "Patrick Wilkes-Krier",
@@ -2154,53 +2155,23 @@
       "dk_american_odds": 450000,
       "dk_implied_prob": 0.000222,
       "dk_devigged_prob": 0.0001640506014819238,
-      "kalshi_ask": 0.001,
-      "kalshi_implied_prob": 0.001,
+      "kalshi_ask": null,
+      "kalshi_implied_prob": null,
       "dg_win_prob": 0.0001166666666666,
       "my_fair_prob": 0.0,
       "my_fair_placeholder": true,
       "edge_dk": -0.0222,
-      "edge_kalshi": -0.10699299999999999
-    },
-    {
-      "player_name": "Brendon Todd",
-      "normalized_name": "brendon todd",
-      "dg_id": 12425,
-      "dk_american_odds": 500000,
-      "dk_implied_prob": 0.0002,
-      "dk_devigged_prob": 0.0001477933346683998,
-      "kalshi_ask": 0.001,
-      "kalshi_implied_prob": 0.001,
-      "dg_win_prob": 0.0,
-      "my_fair_prob": null,
-      "my_fair_placeholder": false,
-      "edge_dk": null,
       "edge_kalshi": null
     },
     {
-      "player_name": "Ryan Celano",
-      "normalized_name": "ryan celano",
-      "dg_id": 29665,
+      "player_name": "Daniel Azallion",
+      "normalized_name": "daniel azallion",
+      "dg_id": 35071,
       "dk_american_odds": 500000,
       "dk_implied_prob": 0.0002,
       "dk_devigged_prob": 0.0001477933346683998,
-      "kalshi_ask": 0.001,
-      "kalshi_implied_prob": 0.001,
-      "dg_win_prob": 0.0,
-      "my_fair_prob": null,
-      "my_fair_placeholder": false,
-      "edge_dk": null,
-      "edge_kalshi": null
-    },
-    {
-      "player_name": "Joe Hooks",
-      "normalized_name": "joe hooks",
-      "dg_id": 33913,
-      "dk_american_odds": 500000,
-      "dk_implied_prob": 0.0002,
-      "dk_devigged_prob": 0.0001477933346683998,
-      "kalshi_ask": 0.001,
-      "kalshi_implied_prob": 0.001,
+      "kalshi_ask": null,
+      "kalshi_implied_prob": null,
       "dg_win_prob": 0.0,
       "my_fair_prob": null,
       "my_fair_placeholder": false,
@@ -2214,23 +2185,53 @@
       "dk_american_odds": 500000,
       "dk_implied_prob": 0.0002,
       "dk_devigged_prob": 0.0001477933346683998,
-      "kalshi_ask": 0.001,
-      "kalshi_implied_prob": 0.001,
+      "kalshi_ask": null,
+      "kalshi_implied_prob": null,
       "dg_win_prob": 1.66666666666667e-05,
       "my_fair_prob": 0.0,
       "my_fair_placeholder": true,
       "edge_dk": -0.02,
-      "edge_kalshi": -0.10699299999999999
+      "edge_kalshi": null
     },
     {
-      "player_name": "Daniel Azallion",
-      "normalized_name": "daniel azallion",
-      "dg_id": 35071,
+      "player_name": "Joe Hooks",
+      "normalized_name": "joe hooks",
+      "dg_id": 33913,
       "dk_american_odds": 500000,
       "dk_implied_prob": 0.0002,
       "dk_devigged_prob": 0.0001477933346683998,
-      "kalshi_ask": 0.001,
-      "kalshi_implied_prob": 0.001,
+      "kalshi_ask": null,
+      "kalshi_implied_prob": null,
+      "dg_win_prob": 0.0,
+      "my_fair_prob": null,
+      "my_fair_placeholder": false,
+      "edge_dk": null,
+      "edge_kalshi": null
+    },
+    {
+      "player_name": "Ryan Celano",
+      "normalized_name": "ryan celano",
+      "dg_id": 29665,
+      "dk_american_odds": 500000,
+      "dk_implied_prob": 0.0002,
+      "dk_devigged_prob": 0.0001477933346683998,
+      "kalshi_ask": null,
+      "kalshi_implied_prob": null,
+      "dg_win_prob": 0.0,
+      "my_fair_prob": null,
+      "my_fair_placeholder": false,
+      "edge_dk": null,
+      "edge_kalshi": null
+    },
+    {
+      "player_name": "Brendon Todd",
+      "normalized_name": "brendon todd",
+      "dg_id": 12425,
+      "dk_american_odds": 500000,
+      "dk_implied_prob": 0.0002,
+      "dk_devigged_prob": 0.0001477933346683998,
+      "kalshi_ask": null,
+      "kalshi_implied_prob": null,
       "dg_win_prob": 0.0,
       "my_fair_prob": null,
       "my_fair_placeholder": false,
@@ -2248,6 +2249,21 @@
       "kalshi_implied_prob": null,
       "dg_win_prob": 0.0035,
       "my_fair_prob": 0.00355,
+      "my_fair_placeholder": false,
+      "edge_dk": null,
+      "edge_kalshi": null
+    },
+    {
+      "player_name": "Ben James",
+      "normalized_name": "ben james",
+      "dg_id": 29827,
+      "dk_american_odds": null,
+      "dk_implied_prob": null,
+      "dk_devigged_prob": null,
+      "kalshi_ask": null,
+      "kalshi_implied_prob": null,
+      "dg_win_prob": 0.0090833333333333,
+      "my_fair_prob": 0.00565,
       "my_fair_placeholder": false,
       "edge_dk": null,
       "edge_kalshi": null
@@ -2278,21 +2294,6 @@
       "kalshi_implied_prob": null,
       "dg_win_prob": 0.0007,
       "my_fair_prob": 0.0005,
-      "my_fair_placeholder": false,
-      "edge_dk": null,
-      "edge_kalshi": null
-    },
-    {
-      "player_name": "Ben James",
-      "normalized_name": "ben james",
-      "dg_id": 29827,
-      "dk_american_odds": null,
-      "dk_implied_prob": null,
-      "dk_devigged_prob": null,
-      "kalshi_ask": null,
-      "kalshi_implied_prob": null,
-      "dg_win_prob": 0.0090833333333333,
-      "my_fair_prob": 0.00565,
       "my_fair_placeholder": false,
       "edge_dk": null,
       "edge_kalshi": null

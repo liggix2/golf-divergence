@@ -3,8 +3,12 @@
 Merge Kalshi and DraftKings odds into a single file for the site.
 
 Normalizes player names for matching and outputs a merged record per player.
+
+Usage:
+    python merge_odds.py [--event-slug SLUG] [--kalshi-ticker TICKER]
 """
 
+import argparse
 import json
 import re
 import sys
@@ -14,6 +18,11 @@ from pathlib import Path
 
 SCRIPT_DIR = Path(__file__).parent.parent
 DATA_DIR = SCRIPT_DIR / "data"
+OUTPUT_DIR = DATA_DIR / "merged"
+
+# Default event parameters
+DEFAULT_EVENT_SLUG = "wyndham-championship-2026"
+DEFAULT_KALSHI_TICKER = "KXPGATOUR-WYC26"
 
 # Active nickname mappings - only entries needed for current fields
 NICKNAME_MAP = {
@@ -63,18 +72,8 @@ NICKNAME_MAP = {
 #     'max': 'maxwell',
 # }
 
-# Input files
-KALSHI_FILE = DATA_DIR / "kalshi" / "KXPGATOUR-ROC26.json"
-DK_FILE = DATA_DIR / "draftkings" / "rocket-classic-2026.json"
-DG_FILE = DATA_DIR / "datagolf" / "rocket-classic-2026.json"
-MODEL_FILE = DATA_DIR / "model" / "rocket-classic-2026.json"
-
 # Kalshi taker fee: 7% * price * (1 - price)
 KALSHI_FEE_RATE = 0.07
-
-# Output file
-OUTPUT_DIR = DATA_DIR / "merged"
-OUTPUT_FILE = OUTPUT_DIR / "rocket-classic-2026.json"
 
 
 def kalshi_effective_price(raw_price: float) -> float:
@@ -206,7 +205,7 @@ def load_source(file_path: Path, source_name: str, get_markets: callable) -> tup
     return players, base_names, fetched_at, collisions
 
 
-def load_kalshi() -> tuple[dict, dict, str, list]:
+def load_kalshi(kalshi_file: Path) -> tuple[dict, dict, str, list]:
     """Load Kalshi data with collision detection."""
     def get_markets(data):
         for market in data.get("markets", []):
@@ -223,10 +222,10 @@ def load_kalshi() -> tuple[dict, dict, str, list]:
                 "kalshi_implied_prob": ask,
             }
 
-    return load_source(KALSHI_FILE, "Kalshi", get_markets)
+    return load_source(kalshi_file, "Kalshi", get_markets)
 
 
-def load_draftkings() -> tuple[dict, dict, str, list]:
+def load_draftkings(dk_file: Path) -> tuple[dict, dict, str, list]:
     """Load DraftKings data with collision detection."""
     def get_markets(data):
         for player in data.get("players", []):
@@ -237,10 +236,10 @@ def load_draftkings() -> tuple[dict, dict, str, list]:
                 "dk_implied_prob": player.get("implied_prob"),
             }
 
-    return load_source(DK_FILE, "DraftKings", get_markets)
+    return load_source(dk_file, "DraftKings", get_markets)
 
 
-def load_datagolf() -> tuple[dict, dict, str, list]:
+def load_datagolf(dg_file: Path) -> tuple[dict, dict, str, list]:
     """Load Data Golf data with collision detection."""
     def get_markets(data):
         for player in data.get("players", []):
@@ -254,17 +253,17 @@ def load_datagolf() -> tuple[dict, dict, str, list]:
                 "dg_id": player.get("dg_id"),
             }
 
-    return load_source(DG_FILE, "DataGolf", get_markets)
+    return load_source(dg_file, "DataGolf", get_markets)
 
 
-def load_model() -> tuple[dict, dict, str]:
+def load_model(model_file: Path) -> tuple[dict, dict, str]:
     """
     Load model output indexed by dg_id and normalized name.
 
     Returns:
         (by_dg_id dict, by_normalized_name dict, fetched_at)
     """
-    with open(MODEL_FILE) as f:
+    with open(model_file) as f:
         data = json.load(f)
 
     fetched_at = data.get("fetched_at", "")
@@ -398,36 +397,64 @@ def merge_data(kalshi: dict, dk: dict, dg: dict, model_by_id: dict, model_by_nam
 
 
 def main():
+    parser = argparse.ArgumentParser(description="Merge golf odds from multiple sources")
+    parser.add_argument(
+        "--event-slug",
+        type=str,
+        default=DEFAULT_EVENT_SLUG,
+        help=f"Event slug for input/output files (default: {DEFAULT_EVENT_SLUG})"
+    )
+    parser.add_argument(
+        "--kalshi-ticker",
+        type=str,
+        default=DEFAULT_KALSHI_TICKER,
+        help=f"Kalshi ticker for input file (default: {DEFAULT_KALSHI_TICKER})"
+    )
+    args = parser.parse_args()
+
+    event_slug = args.event_slug
+    kalshi_ticker = args.kalshi_ticker
+
+    kalshi_file = DATA_DIR / "kalshi" / f"{kalshi_ticker}.json"
+    dk_file = DATA_DIR / "draftkings" / f"{event_slug}.json"
+    dg_file = DATA_DIR / "datagolf" / f"{event_slug}.json"
+    model_file = DATA_DIR / "model" / f"{event_slug}.json"
+    output_file = OUTPUT_DIR / f"{event_slug}.json"
+
+    print(f"Event: {event_slug}")
+    print(f"Kalshi ticker: {kalshi_ticker}")
+    print()
+
     print("Loading Kalshi data...")
     try:
-        kalshi, kalshi_base, kalshi_fetched, kalshi_collisions = load_kalshi()
+        kalshi, kalshi_base, kalshi_fetched, kalshi_collisions = load_kalshi(kalshi_file)
         print(f"  Loaded {len(kalshi)} players from Kalshi")
     except FileNotFoundError:
-        print(f"Error: Kalshi file not found: {KALSHI_FILE}")
+        print(f"Error: Kalshi file not found: {kalshi_file}")
         sys.exit(1)
 
     print("Loading DraftKings data...")
     try:
-        dk, dk_base, dk_fetched, dk_collisions = load_draftkings()
+        dk, dk_base, dk_fetched, dk_collisions = load_draftkings(dk_file)
         print(f"  Loaded {len(dk)} players from DraftKings")
     except FileNotFoundError:
-        print(f"Error: DraftKings file not found: {DK_FILE}")
-        sys.exit(1)
+        print(f"  Warning: DraftKings file not found, proceeding without DK data")
+        dk, dk_base, dk_fetched, dk_collisions = {}, {}, "", []
 
     print("Loading Data Golf data...")
     try:
-        dg, dg_base, dg_fetched, dg_collisions = load_datagolf()
+        dg, dg_base, dg_fetched, dg_collisions = load_datagolf(dg_file)
         print(f"  Loaded {len(dg)} players from Data Golf")
     except FileNotFoundError:
-        print(f"Error: Data Golf file not found: {DG_FILE}")
+        print(f"Error: Data Golf file not found: {dg_file}")
         sys.exit(1)
 
     print("Loading model data...")
     try:
-        model_by_id, model_by_name, model_fetched = load_model()
+        model_by_id, model_by_name, model_fetched = load_model(model_file)
         print(f"  Loaded {len(model_by_id)} players from model")
     except FileNotFoundError:
-        print(f"Error: Model file not found: {MODEL_FILE}")
+        print(f"Error: Model file not found: {model_file}")
         sys.exit(1)
 
     # Report collisions
@@ -467,26 +494,27 @@ def main():
 
     # Build output
     output = {
-        "event_name": "Rocket Classic 2026",
+        "event_slug": event_slug,
+        "kalshi_ticker": kalshi_ticker,
         "merged_at": datetime.now(timezone.utc).isoformat(),
         "sources": {
             "kalshi": {
-                "file": str(KALSHI_FILE.name),
+                "file": str(kalshi_file.name),
                 "fetched_at": kalshi_fetched,
                 "player_count": len(kalshi),
             },
             "draftkings": {
-                "file": str(DK_FILE.name),
+                "file": str(dk_file.name),
                 "fetched_at": dk_fetched,
                 "player_count": len(dk),
             },
             "datagolf": {
-                "file": str(DG_FILE.name),
+                "file": str(dg_file.name),
                 "fetched_at": dg_fetched,
                 "player_count": len(dg),
             },
             "model": {
-                "file": str(MODEL_FILE.name),
+                "file": str(model_file.name),
                 "fetched_at": model_fetched,
                 "player_count": len(model_by_id),
             },
@@ -504,9 +532,9 @@ def main():
 
     # Save
     OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
-    with open(OUTPUT_FILE, "w") as f:
+    with open(output_file, "w") as f:
         json.dump(output, f, indent=2)
-    print(f"\nSaved to: {OUTPUT_FILE}")
+    print(f"\nSaved to: {output_file}")
 
     # Print match report
     print("\n" + "=" * 70)
