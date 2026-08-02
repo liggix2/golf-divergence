@@ -10,11 +10,11 @@ Usage:
 
 import argparse
 import json
-import re
 import sys
-import unicodedata
 from datetime import datetime, timezone
 from pathlib import Path
+
+from name_utils import normalize_name, normalize_name_base
 
 SCRIPT_DIR = Path(__file__).parent.parent
 DATA_DIR = SCRIPT_DIR / "data"
@@ -23,54 +23,6 @@ OUTPUT_DIR = DATA_DIR / "merged"
 # Default event parameters
 DEFAULT_EVENT_SLUG = "wyndham-championship-2026"
 DEFAULT_KALSHI_TICKER = "KXPGATOUR-WYC26"
-
-# Active nickname mappings - only entries needed for current fields
-NICKNAME_MAP = {
-    'johnny': 'john',
-    'matt': 'matthew',
-    'matthias': 'matthew',
-    'matti': 'matthew',
-    'zach': 'zachary',
-}
-
-# Reserve mappings - add back if future fields need them
-# NICKNAME_MAP_RESERVE = {
-#     'zack': 'zachary',
-#     'mike': 'michael',
-#     'chris': 'christopher',
-#     'rob': 'robert',
-#     'bob': 'robert',
-#     'will': 'william',
-#     'bill': 'william',
-#     'tom': 'thomas',
-#     'tommy': 'thomas',
-#     'jim': 'james',
-#     'jimmy': 'james',
-#     'dan': 'daniel',
-#     'danny': 'daniel',
-#     'tony': 'anthony',
-#     'nick': 'nicholas',
-#     'cam': 'cameron',
-#     'ben': 'benjamin',
-#     'alex': 'alexander',
-#     'sam': 'samuel',
-#     'ed': 'edward',
-#     'ted': 'theodore',
-#     'joe': 'joseph',
-#     'joey': 'joseph',
-#     'rick': 'richard',
-#     'rickie': 'richard',
-#     'dick': 'richard',
-#     'pat': 'patrick',
-#     'steve': 'steven',
-#     'dave': 'david',
-#     'andy': 'andrew',
-#     'drew': 'andrew',
-#     'charlie': 'charles',
-#     'chuck': 'charles',
-#     'larry': 'lawrence',
-#     'max': 'maxwell',
-# }
 
 # Kalshi taker fee: 7% * price * (1 - price)
 KALSHI_FEE_RATE = 0.07
@@ -82,75 +34,6 @@ def kalshi_effective_price(raw_price: float) -> float:
         return raw_price
     fee = KALSHI_FEE_RATE * raw_price * (1 - raw_price)
     return raw_price + fee
-
-
-def last_first_to_first_last(name: str) -> str:
-    """Convert 'Last, First' format to 'First Last'."""
-    if ',' in name:
-        parts = name.split(',', 1)
-        if len(parts) == 2:
-            return f"{parts[1].strip()} {parts[0].strip()}"
-    return name
-
-
-def normalize_name_base(name: str) -> str:
-    """
-    Normalize player name WITHOUT nickname mapping.
-    Used to detect if nickname mapping was needed for a match.
-    """
-    # Handle special Nordic characters before normalization
-    replacements = {
-        'ø': 'o', 'Ø': 'O',
-        'æ': 'ae', 'Æ': 'AE',
-        'å': 'a', 'Å': 'A',
-        'ö': 'o', 'Ö': 'O',
-        'ü': 'u', 'Ü': 'U',
-        'ñ': 'n', 'Ñ': 'N',
-    }
-    for old, new in replacements.items():
-        name = name.replace(old, new)
-
-    # Convert accented characters to ASCII
-    name = unicodedata.normalize('NFKD', name)
-    name = ''.join(c for c in name if not unicodedata.combining(c))
-
-    # Lowercase
-    name = name.lower()
-
-    # Strip periods, apostrophes, hyphens
-    name = name.replace('.', '').replace("'", '').replace("'", '').replace('-', '')
-
-    # Collapse whitespace
-    name = ' '.join(name.split())
-
-    # Strip common suffixes
-    suffixes = [' jr', ' sr', ' ii', ' iii', ' iv', ' v']
-    for suffix in suffixes:
-        if name.endswith(suffix):
-            name = name[:-len(suffix)]
-
-    # Strip single middle initials (e.g., "jordan l smith" -> "jordan smith")
-    name = re.sub(r'\b[a-z]\b', '', name)
-    name = ' '.join(name.split())
-
-    return name.strip()
-
-
-def normalize_name(name: str) -> str:
-    """
-    Normalize player name WITH nickname mapping.
-    """
-    name = normalize_name_base(name)
-
-    # Apply nickname mappings to first name
-    parts = name.split()
-    if parts:
-        first = parts[0]
-        if first in NICKNAME_MAP:
-            parts[0] = NICKNAME_MAP[first]
-        name = ' '.join(parts)
-
-    return name.strip()
 
 
 def devig_probabilities(probs: list[float]) -> list[float]:

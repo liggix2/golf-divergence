@@ -1,298 +1,370 @@
 {
   "source": "model",
-  "fetched_at": "2026-08-02T23:40:19.917780+00:00",
-  "model_version": "v1-tiered",
+  "fetched_at": "2026-08-02T23:59:10.210176+00:00",
+  "event_name": "Kalshi KXPGATOUR-WYC26",
+  "field_source": "kalshi",
+  "model_version": "v2-field-based",
   "parameters": {
     "num_simulations": 20000,
     "num_rounds": 4,
     "round_stddev": 2.75,
-    "curve_a": 1.8238961514995675,
-    "curve_b": -5.874267673102336
+    "fallback_offset": 0.5,
+    "fallback_skill": -2.051
   },
   "skill_sources": {
-    "skill_ratings": 134,
-    "rankings": 3,
-    "inferred_from_dg": 6,
-    "missing": 4
+    "skill_ratings": 128,
+    "rankings": 5,
+    "field_fallback": 7
   },
-  "player_count": 143,
+  "player_count": 140,
   "players": [
     {
       "dg_id": 26651,
       "player_name": "Cameron Young",
+      "matched_name": "Cameron Young",
       "sg_total": 1.929,
       "skill_source": "skill_ratings",
       "placeholder_rating": false,
-      "win_prob": 0.0746
-    },
-    {
-      "dg_id": 19895,
-      "player_name": "Xander Schauffele",
-      "sg_total": 1.677,
-      "skill_source": "skill_ratings",
-      "placeholder_rating": false,
-      "win_prob": 0.05265
-    },
-    {
-      "dg_id": 14609,
-      "player_name": "Si Woo Kim",
-      "sg_total": 1.657,
-      "skill_source": "skill_ratings",
-      "placeholder_rating": false,
-      "win_prob": 0.0526
-    },
-    {
-      "dg_id": 27774,
-      "player_name": "Chris Gotterup",
-      "sg_total": 1.644,
-      "skill_source": "skill_ratings",
-      "placeholder_rating": false,
-      "win_prob": 0.05
+      "win_prob": 0.0837
     },
     {
       "dg_id": 15466,
       "player_name": "Patrick Cantlay",
+      "matched_name": "Patrick Cantlay",
       "sg_total": 1.439,
       "skill_source": "skill_ratings",
       "placeholder_rating": false,
-      "win_prob": 0.0377
+      "win_prob": 0.0419
     },
     {
-      "dg_id": 23604,
-      "player_name": "Wyndham Clark",
-      "sg_total": 1.388,
+      "dg_id": 14139,
+      "player_name": "Justin Thomas",
+      "matched_name": "Justin Thomas",
+      "sg_total": 1.335,
       "skill_source": "skill_ratings",
       "placeholder_rating": false,
-      "win_prob": 0.0318
+      "win_prob": 0.03665
     },
     {
       "dg_id": 24968,
       "player_name": "Ben Griffin",
+      "matched_name": "Ben Griffin",
       "sg_total": 1.388,
       "skill_source": "skill_ratings",
       "placeholder_rating": false,
-      "win_prob": 0.03075
-    },
-    {
-      "dg_id": 14578,
-      "player_name": "Russell Henley",
-      "sg_total": 1.278,
-      "skill_source": "skill_ratings",
-      "placeholder_rating": false,
-      "win_prob": 0.02775
+      "win_prob": 0.03635
     },
     {
       "dg_id": 29767,
       "player_name": "Ryan Gerard",
+      "matched_name": "Ryan Gerard",
       "sg_total": 1.259,
       "skill_source": "skill_ratings",
       "placeholder_rating": false,
-      "win_prob": 0.0273
+      "win_prob": 0.03245
     },
     {
-      "dg_id": 17536,
-      "player_name": "J.J. Spaun",
-      "sg_total": 1.189,
+      "dg_id": 18634,
+      "player_name": "Maverick McNealy",
+      "matched_name": "Maverick McNealy",
+      "sg_total": 1.19,
       "skill_source": "skill_ratings",
       "placeholder_rating": false,
-      "win_prob": 0.02495
+      "win_prob": 0.02825
     },
     {
       "dg_id": 13562,
       "player_name": "Hideki Matsuyama",
+      "matched_name": "Hideki Matsuyama",
       "sg_total": 1.182,
       "skill_source": "skill_ratings",
       "placeholder_rating": false,
-      "win_prob": 0.0234
+      "win_prob": 0.0277
     },
     {
       "dg_id": 32319,
       "player_name": "Jackson Koivun",
+      "matched_name": "Jackson Koivun",
       "sg_total": 1.0860876118563,
       "skill_source": "rankings",
       "placeholder_rating": false,
-      "win_prob": 0.0208
+      "win_prob": 0.02445
     },
     {
       "dg_id": 14577,
       "player_name": "Harris English",
+      "matched_name": "Harris English",
       "sg_total": 1.036,
       "skill_source": "skill_ratings",
       "placeholder_rating": false,
-      "win_prob": 0.0188
+      "win_prob": 0.02395
     },
     {
-      "dg_id": 23602,
-      "player_name": "Nicolai Hojgaard",
-      "sg_total": 1.004,
+      "dg_id": 25362,
+      "player_name": "Alex Fitzpatrick",
+      "matched_name": "Alex Fitzpatrick",
+      "sg_total": 1.106,
       "skill_source": "skill_ratings",
       "placeholder_rating": false,
-      "win_prob": 0.0185
+      "win_prob": 0.0237
+    },
+    {
+      "dg_id": 24766,
+      "player_name": "Tom Kim",
+      "matched_name": "Tom Kim",
+      "sg_total": 1.062,
+      "skill_source": "skill_ratings",
+      "placeholder_rating": false,
+      "win_prob": 0.0236
     },
     {
       "dg_id": 26649,
       "player_name": "Michael Thorbjornsen",
+      "matched_name": "Michael Thorbjornsen",
       "sg_total": 0.987,
       "skill_source": "skill_ratings",
       "placeholder_rating": false,
-      "win_prob": 0.0173
+      "win_prob": 0.0203
     },
     {
-      "dg_id": 26096,
-      "player_name": "Akshay Bhatia",
-      "sg_total": 0.986,
+      "dg_id": 18554,
+      "player_name": "Aaron Rai",
+      "matched_name": "Aaron Rai",
+      "sg_total": 0.992,
       "skill_source": "skill_ratings",
       "placeholder_rating": false,
-      "win_prob": 0.0172
-    },
-    {
-      "dg_id": 19396,
-      "player_name": "Jake Knapp",
-      "sg_total": 0.885,
-      "skill_source": "skill_ratings",
-      "placeholder_rating": false,
-      "win_prob": 0.01615
+      "win_prob": 0.0196
     },
     {
       "dg_id": 13872,
       "player_name": "Keegan Bradley",
+      "matched_name": "Keegan Bradley",
       "sg_total": 0.89,
       "skill_source": "skill_ratings",
       "placeholder_rating": false,
-      "win_prob": 0.0151
+      "win_prob": 0.01665
     },
     {
-      "dg_id": 29433,
-      "player_name": "Jacob Bridgeman",
-      "sg_total": 0.92,
+      "dg_id": 14502,
+      "player_name": "Bud Cauley",
+      "matched_name": "Bud Cauley",
+      "sg_total": 0.871,
       "skill_source": "skill_ratings",
       "placeholder_rating": false,
-      "win_prob": 0.0146
+      "win_prob": 0.0165
+    },
+    {
+      "dg_id": 17365,
+      "player_name": "Keith Mitchell",
+      "matched_name": "Keith Mitchell",
+      "sg_total": 0.81,
+      "skill_source": "skill_ratings",
+      "placeholder_rating": false,
+      "win_prob": 0.0147
     },
     {
       "dg_id": 28159,
       "player_name": "Mac Meissner",
+      "matched_name": "Mac Meissner",
       "sg_total": 0.794,
       "skill_source": "skill_ratings",
       "placeholder_rating": false,
-      "win_prob": 0.01345
-    },
-    {
-      "dg_id": 18586,
-      "player_name": "Jordan Smith",
-      "sg_total": 0.746,
-      "skill_source": "skill_ratings",
-      "placeholder_rating": false,
-      "win_prob": 0.0121
-    },
-    {
-      "dg_id": 27364,
-      "player_name": "Davis Thompson",
-      "sg_total": 0.7,
-      "skill_source": "skill_ratings",
-      "placeholder_rating": false,
-      "win_prob": 0.0114
+      "win_prob": 0.01455
     },
     {
       "dg_id": 22760,
       "player_name": "Ryo Hisatsune",
+      "matched_name": "Ryo Hisatsune",
       "sg_total": 0.779,
       "skill_source": "skill_ratings",
       "placeholder_rating": false,
-      "win_prob": 0.0114
+      "win_prob": 0.0144
     },
     {
-      "dg_id": 12965,
-      "player_name": "Rickie Fowler",
-      "sg_total": 0.795,
+      "dg_id": 18586,
+      "player_name": "Jordan L. Smith",
+      "matched_name": "Jordan Smith",
+      "sg_total": 0.746,
       "skill_source": "skill_ratings",
       "placeholder_rating": false,
-      "win_prob": 0.01135
+      "win_prob": 0.0142
     },
     {
-      "dg_id": 17576,
-      "player_name": "Corey Conners",
-      "sg_total": 0.76,
+      "dg_id": 27364,
+      "player_name": "Davis Thompson",
+      "matched_name": "Davis Thompson",
+      "sg_total": 0.7,
       "skill_source": "skill_ratings",
       "placeholder_rating": false,
-      "win_prob": 0.011
+      "win_prob": 0.0125
     },
     {
-      "dg_id": 23841,
-      "player_name": "Rasmus Neergaard-Petersen",
-      "sg_total": 0.631,
+      "dg_id": 16243,
+      "player_name": "Brooks Koepka",
+      "matched_name": "Brooks Koepka",
+      "sg_total": 0.593,
+      "skill_source": "skill_ratings",
+      "placeholder_rating": false,
+      "win_prob": 0.0117
+    },
+    {
+      "dg_id": 18474,
+      "player_name": "Alex Smalley",
+      "matched_name": "Alex Smalley",
+      "sg_total": 0.757,
+      "skill_source": "skill_ratings",
+      "placeholder_rating": false,
+      "win_prob": 0.0117
+    },
+    {
+      "dg_id": 29197,
+      "player_name": "Michael Brennan",
+      "matched_name": "Michael Brennan",
+      "sg_total": 0.654,
+      "skill_source": "skill_ratings",
+      "placeholder_rating": false,
+      "win_prob": 0.01145
+    },
+    {
+      "dg_id": 24550,
+      "player_name": "Doug Ghim",
+      "matched_name": "Doug Ghim",
+      "sg_total": 0.676,
+      "skill_source": "skill_ratings",
+      "placeholder_rating": false,
+      "win_prob": 0.01125
+    },
+    {
+      "dg_id": 17488,
+      "player_name": "Sungjae Im",
+      "matched_name": "Sungjae Im",
+      "sg_total": 0.635,
+      "skill_source": "skill_ratings",
+      "placeholder_rating": false,
+      "win_prob": 0.0112
+    },
+    {
+      "dg_id": 8825,
+      "player_name": "Brian Harman",
+      "matched_name": "Brian Harman",
+      "sg_total": 0.611,
+      "skill_source": "skill_ratings",
+      "placeholder_rating": false,
+      "win_prob": 0.01085
+    },
+    {
+      "dg_id": 21756,
+      "player_name": "Eric Cole",
+      "matched_name": "Eric Cole",
+      "sg_total": 0.67,
+      "skill_source": "skill_ratings",
+      "placeholder_rating": false,
+      "win_prob": 0.0108
+    },
+    {
+      "dg_id": 13126,
+      "player_name": "Nick Taylor",
+      "matched_name": "Nick Taylor",
+      "sg_total": 0.532,
+      "skill_source": "skill_ratings",
+      "placeholder_rating": false,
+      "win_prob": 0.01045
+    },
+    {
+      "dg_id": 10419,
+      "player_name": "Alex Noren",
+      "matched_name": "Alex Noren",
+      "sg_total": 0.644,
       "skill_source": "skill_ratings",
       "placeholder_rating": false,
       "win_prob": 0.0103
     },
     {
-      "dg_id": 24550,
-      "player_name": "Doug Ghim",
-      "sg_total": 0.676,
-      "skill_source": "skill_ratings",
-      "placeholder_rating": false,
-      "win_prob": 0.01025
-    },
-    {
-      "dg_id": 17488,
-      "player_name": "Sungjae Im",
-      "sg_total": 0.635,
+      "dg_id": 21554,
+      "player_name": "J.T. Poston",
+      "matched_name": "J.T. Poston",
+      "sg_total": 0.592,
       "skill_source": "skill_ratings",
       "placeholder_rating": false,
       "win_prob": 0.00995
     },
     {
-      "dg_id": 29197,
-      "player_name": "Michael Brennan",
-      "sg_total": 0.654,
+      "dg_id": 23014,
+      "player_name": "Sahith Theegala",
+      "matched_name": "Sahith Theegala",
+      "sg_total": 0.581,
       "skill_source": "skill_ratings",
       "placeholder_rating": false,
-      "win_prob": 0.00985
+      "win_prob": 0.0097
     },
     {
-      "dg_id": 23475,
-      "player_name": "Andrew Novak",
-      "sg_total": 0.585,
+      "dg_id": 23841,
+      "player_name": "Rasmus Neergaard-Petersen",
+      "matched_name": "Rasmus Neergaard-Petersen",
+      "sg_total": 0.631,
       "skill_source": "skill_ratings",
       "placeholder_rating": false,
-      "win_prob": 0.0094
-    },
-    {
-      "dg_id": 21756,
-      "player_name": "Eric Cole",
-      "sg_total": 0.67,
-      "skill_source": "skill_ratings",
-      "placeholder_rating": false,
-      "win_prob": 0.009
-    },
-    {
-      "dg_id": 14636,
-      "player_name": "Jordan Spieth",
-      "sg_total": 0.554,
-      "skill_source": "skill_ratings",
-      "placeholder_rating": false,
-      "win_prob": 0.00895
-    },
-    {
-      "dg_id": 17543,
-      "player_name": "Michael Kim",
-      "sg_total": 0.558,
-      "skill_source": "skill_ratings",
-      "placeholder_rating": false,
-      "win_prob": 0.00845
+      "win_prob": 0.00955
     },
     {
       "dg_id": 20706,
       "player_name": "Matt Wallace",
+      "matched_name": "Matt Wallace",
       "sg_total": 0.592,
       "skill_source": "skill_ratings",
       "placeholder_rating": false,
-      "win_prob": 0.00825
+      "win_prob": 0.00945
+    },
+    {
+      "dg_id": 23475,
+      "player_name": "Andrew Novak",
+      "matched_name": "Andrew Novak",
+      "sg_total": 0.585,
+      "skill_source": "skill_ratings",
+      "placeholder_rating": false,
+      "win_prob": 0.00945
+    },
+    {
+      "dg_id": 17543,
+      "player_name": "Michael Kim",
+      "matched_name": "Michael Kim",
+      "sg_total": 0.558,
+      "skill_source": "skill_ratings",
+      "placeholder_rating": false,
+      "win_prob": 0.00915
+    },
+    {
+      "dg_id": 14636,
+      "player_name": "Jordan Spieth",
+      "matched_name": "Jordan Spieth",
+      "sg_total": 0.554,
+      "skill_source": "skill_ratings",
+      "placeholder_rating": false,
+      "win_prob": 0.00885
     },
     {
       "dg_id": 16395,
       "player_name": "Ben Kohles",
+      "matched_name": "Ben Kohles",
       "sg_total": 0.509,
+      "skill_source": "skill_ratings",
+      "placeholder_rating": false,
+      "win_prob": 0.00865
+    },
+    {
+      "dg_id": 25569,
+      "player_name": "Sam Stevens",
+      "matched_name": "Sam Stevens",
+      "sg_total": 0.421,
+      "skill_source": "skill_ratings",
+      "placeholder_rating": false,
+      "win_prob": 0.0084
+    },
+    {
+      "dg_id": 32457,
+      "player_name": "Johnny Keefer",
+      "matched_name": "Johnny Keefer",
+      "sg_total": 0.384,
       "skill_source": "skill_ratings",
       "placeholder_rating": false,
       "win_prob": 0.0082
@@ -300,255 +372,314 @@
     {
       "dg_id": 18103,
       "player_name": "Christiaan Bezuidenhout",
+      "matched_name": "Christiaan Bezuidenhout",
       "sg_total": 0.493,
       "skill_source": "skill_ratings",
       "placeholder_rating": false,
       "win_prob": 0.0081
     },
     {
-      "dg_id": 13126,
-      "player_name": "Nick Taylor",
-      "sg_total": 0.532,
-      "skill_source": "skill_ratings",
-      "placeholder_rating": false,
-      "win_prob": 0.00755
-    },
-    {
       "dg_id": 29279,
       "player_name": "Jackson Suber",
+      "matched_name": "Jackson Suber",
       "sg_total": 0.466,
       "skill_source": "skill_ratings",
       "placeholder_rating": false,
-      "win_prob": 0.00715
-    },
-    {
-      "dg_id": 19870,
-      "player_name": "Denny McCarthy",
-      "sg_total": 0.457,
-      "skill_source": "skill_ratings",
-      "placeholder_rating": false,
-      "win_prob": 0.0071
+      "win_prob": 0.00805
     },
     {
       "dg_id": 23465,
       "player_name": "Max Greyserman",
+      "matched_name": "Max Greyserman",
       "sg_total": 0.445,
       "skill_source": "skill_ratings",
       "placeholder_rating": false,
-      "win_prob": 0.0063
+      "win_prob": 0.0078
+    },
+    {
+      "dg_id": 9771,
+      "player_name": "Jason Day",
+      "matched_name": "Jason Day",
+      "sg_total": 0.396,
+      "skill_source": "skill_ratings",
+      "placeholder_rating": false,
+      "win_prob": 0.00745
     },
     {
       "dg_id": 22465,
       "player_name": "Marco Penge",
+      "matched_name": "Marco Penge",
       "sg_total": 0.464,
       "skill_source": "skill_ratings",
       "placeholder_rating": false,
-      "win_prob": 0.0063
+      "win_prob": 0.00745
     },
     {
-      "dg_id": 32457,
-      "player_name": "Johnny Keefer",
-      "sg_total": 0.384,
+      "dg_id": 27819,
+      "player_name": "Ricky Castillo",
+      "matched_name": "Ricky Castillo",
+      "sg_total": 0.342,
+      "skill_source": "skill_ratings",
+      "placeholder_rating": false,
+      "win_prob": 0.0073
+    },
+    {
+      "dg_id": 32152,
+      "player_name": "Blades Brown",
+      "matched_name": "Blades Brown",
+      "sg_total": 0.48570540822801,
+      "skill_source": "rankings",
+      "placeholder_rating": false,
+      "win_prob": 0.00705
+    },
+    {
+      "dg_id": 19870,
+      "player_name": "Denny McCarthy",
+      "matched_name": "Denny McCarthy",
+      "sg_total": 0.457,
+      "skill_source": "skill_ratings",
+      "placeholder_rating": false,
+      "win_prob": 0.007
+    },
+    {
+      "dg_id": 28635,
+      "player_name": "Matthew McCarty",
+      "matched_name": "Matt McCarty",
+      "sg_total": 0.31,
+      "skill_source": "skill_ratings",
+      "placeholder_rating": false,
+      "win_prob": 0.00685
+    },
+    {
+      "dg_id": 27194,
+      "player_name": "Harry Hall",
+      "matched_name": "Harry Hall",
+      "sg_total": 0.355,
+      "skill_source": "skill_ratings",
+      "placeholder_rating": false,
+      "win_prob": 0.00675
+    },
+    {
+      "dg_id": 17881,
+      "player_name": "Kevin Yu",
+      "matched_name": "Kevin Yu",
+      "sg_total": 0.387,
+      "skill_source": "skill_ratings",
+      "placeholder_rating": false,
+      "win_prob": 0.00645
+    },
+    {
+      "dg_id": 17606,
+      "player_name": "Daniel Berger",
+      "matched_name": "Daniel Berger",
+      "sg_total": 0.301,
+      "skill_source": "skill_ratings",
+      "placeholder_rating": false,
+      "win_prob": 0.00635
+    },
+    {
+      "dg_id": 12808,
+      "player_name": "Emiliano Grillo",
+      "matched_name": "Emiliano Grillo",
+      "sg_total": 0.317,
+      "skill_source": "skill_ratings",
+      "placeholder_rating": false,
+      "win_prob": 0.00625
+    },
+    {
+      "dg_id": 23505,
+      "player_name": "Max McGreevy",
+      "matched_name": "Max McGreevy",
+      "sg_total": 0.326,
       "skill_source": "skill_ratings",
       "placeholder_rating": false,
       "win_prob": 0.0062
     },
     {
-      "dg_id": 25569,
-      "player_name": "Sam Stevens",
-      "sg_total": 0.421,
+      "dg_id": 28309,
+      "player_name": "Pierceson Coody",
+      "matched_name": "Pierceson Coody",
+      "sg_total": 0.345,
       "skill_source": "skill_ratings",
       "placeholder_rating": false,
       "win_prob": 0.00615
     },
     {
-      "dg_id": 17881,
-      "player_name": "Kevin Yu",
-      "sg_total": 0.387,
+      "dg_id": 29770,
+      "player_name": "William Mouw",
+      "matched_name": "William Mouw",
+      "sg_total": 0.32,
       "skill_source": "skill_ratings",
       "placeholder_rating": false,
-      "win_prob": 0.0059
+      "win_prob": 0.00605
     },
     {
-      "dg_id": 27819,
-      "player_name": "Ricky Castillo",
-      "sg_total": 0.342,
+      "dg_id": 15556,
+      "player_name": "Mackenzie Hughes",
+      "matched_name": "Mackenzie Hughes",
+      "sg_total": 0.268,
+      "skill_source": "skill_ratings",
+      "placeholder_rating": false,
+      "win_prob": 0.00585
+    },
+    {
+      "dg_id": 13764,
+      "player_name": "John Parry",
+      "matched_name": "John Parry",
+      "sg_total": 0.245,
       "skill_source": "skill_ratings",
       "placeholder_rating": false,
       "win_prob": 0.0058
     },
     {
-      "dg_id": 29925,
-      "player_name": "Sudarshan Yellamaraju",
-      "sg_total": 0.307,
+      "dg_id": 26657,
+      "player_name": "Steven Fisk",
+      "matched_name": "Steven Fisk",
+      "sg_total": 0.331,
       "skill_source": "skill_ratings",
       "placeholder_rating": false,
-      "win_prob": 0.00575
-    },
-    {
-      "dg_id": 28309,
-      "player_name": "Pierceson Coody",
-      "sg_total": 0.345,
-      "skill_source": "skill_ratings",
-      "placeholder_rating": false,
-      "win_prob": 0.0057
-    },
-    {
-      "dg_id": 29827,
-      "player_name": "Ben James",
-      "sg_total": 0.297893708848504,
-      "skill_source": "rankings",
-      "placeholder_rating": false,
-      "win_prob": 0.00565
+      "win_prob": 0.0058
     },
     {
       "dg_id": 11676,
       "player_name": "Tony Finau",
+      "matched_name": "Tony Finau",
       "sg_total": 0.342,
       "skill_source": "skill_ratings",
       "placeholder_rating": false,
       "win_prob": 0.0055
     },
     {
-      "dg_id": 26657,
-      "player_name": "Steven Fisk",
-      "sg_total": 0.331,
-      "skill_source": "skill_ratings",
-      "placeholder_rating": false,
-      "win_prob": 0.0055
-    },
-    {
-      "dg_id": 25157,
-      "player_name": "Lee Hodges",
-      "sg_total": 0.261,
-      "skill_source": "skill_ratings",
-      "placeholder_rating": false,
-      "win_prob": 0.00545
-    },
-    {
-      "dg_id": 28635,
-      "player_name": "Matt McCarty",
-      "sg_total": 0.31,
-      "skill_source": "skill_ratings",
-      "placeholder_rating": false,
-      "win_prob": 0.00545
-    },
-    {
-      "dg_id": 27194,
-      "player_name": "Harry Hall",
-      "sg_total": 0.355,
+      "dg_id": 16757,
+      "player_name": "Zecheng Dou",
+      "matched_name": "Zecheng Dou",
+      "sg_total": 0.349,
       "skill_source": "skill_ratings",
       "placeholder_rating": false,
       "win_prob": 0.00535
     },
     {
-      "dg_id": 29770,
-      "player_name": "William Mouw",
-      "sg_total": 0.32,
+      "dg_id": 25157,
+      "player_name": "Lee Hodges",
+      "matched_name": "Lee Hodges",
+      "sg_total": 0.261,
+      "skill_source": "skill_ratings",
+      "placeholder_rating": false,
+      "win_prob": 0.00535
+    },
+    {
+      "dg_id": 27900,
+      "player_name": "Aldrich Potgieter",
+      "matched_name": "Aldrich Potgieter",
+      "sg_total": 0.223,
+      "skill_source": "skill_ratings",
+      "placeholder_rating": false,
+      "win_prob": 0.0053
+    },
+    {
+      "dg_id": 15470,
+      "player_name": "Beau Hossler",
+      "matched_name": "Beau Hossler",
+      "sg_total": 0.251,
+      "skill_source": "skill_ratings",
+      "placeholder_rating": false,
+      "win_prob": 0.0053
+    },
+    {
+      "dg_id": 19846,
+      "player_name": "Zachary Bauchou",
+      "matched_name": "Zach Bauchou",
+      "sg_total": 0.259,
       "skill_source": "skill_ratings",
       "placeholder_rating": false,
       "win_prob": 0.00525
     },
     {
-      "dg_id": 12808,
-      "player_name": "Emiliano Grillo",
-      "sg_total": 0.317,
+      "dg_id": 17511,
+      "player_name": "Sepp Straka",
+      "matched_name": "Sepp Straka",
+      "sg_total": 0.224,
       "skill_source": "skill_ratings",
       "placeholder_rating": false,
-      "win_prob": 0.0052
+      "win_prob": 0.00475
     },
     {
-      "dg_id": 15556,
-      "player_name": "Mackenzie Hughes",
-      "sg_total": 0.268,
+      "dg_id": 17780,
+      "player_name": "Taylor Pendrith",
+      "matched_name": "Taylor Pendrith",
+      "sg_total": 0.084,
       "skill_source": "skill_ratings",
       "placeholder_rating": false,
-      "win_prob": 0.00495
+      "win_prob": 0.0045
     },
     {
-      "dg_id": 15470,
-      "player_name": "Beau Hossler",
-      "sg_total": 0.251,
-      "skill_source": "skill_ratings",
-      "placeholder_rating": false,
-      "win_prob": 0.0047
-    },
-    {
-      "dg_id": 16757,
-      "player_name": "Zecheng Dou",
-      "sg_total": 0.349,
-      "skill_source": "skill_ratings",
-      "placeholder_rating": false,
-      "win_prob": 0.00465
-    },
-    {
-      "dg_id": 27900,
-      "player_name": "Aldrich Potgieter",
-      "sg_total": 0.223,
+      "dg_id": 20722,
+      "player_name": "Matti Schmid",
+      "matched_name": "Matti Schmid",
+      "sg_total": 0.128,
       "skill_source": "skill_ratings",
       "placeholder_rating": false,
       "win_prob": 0.00445
     },
     {
-      "dg_id": 23505,
-      "player_name": "Max McGreevy",
-      "sg_total": 0.326,
+      "dg_id": 22985,
+      "player_name": "Austin Smotherman",
+      "matched_name": "Austin Smotherman",
+      "sg_total": 0.066,
       "skill_source": "skill_ratings",
       "placeholder_rating": false,
-      "win_prob": 0.00435
-    },
-    {
-      "dg_id": 17639,
-      "player_name": "Zac Blair",
-      "sg_total": 0.145,
-      "skill_source": "skill_ratings",
-      "placeholder_rating": false,
-      "win_prob": 0.00435
-    },
-    {
-      "dg_id": 21074,
-      "player_name": "Keita Nakajima",
-      "sg_total": 0.208,
-      "skill_source": "skill_ratings",
-      "placeholder_rating": false,
-      "win_prob": 0.0043
+      "win_prob": 0.00415
     },
     {
       "dg_id": 23838,
-      "player_name": "Rasmus Hojgaard",
+      "player_name": "Rasmus H\u00f8jgaard",
+      "matched_name": "Rasmus Hojgaard",
       "sg_total": 0.113,
       "skill_source": "skill_ratings",
       "placeholder_rating": false,
-      "win_prob": 0.0042
+      "win_prob": 0.0041
     },
     {
-      "dg_id": 19846,
-      "player_name": "Zach Bauchou",
-      "sg_total": 0.259,
+      "dg_id": 26850,
+      "player_name": "Jesper Svensson",
+      "matched_name": "Jesper Svensson",
+      "sg_total": 0.09,
       "skill_source": "skill_ratings",
       "placeholder_rating": false,
-      "win_prob": 0.0042
+      "win_prob": 0.00405
     },
     {
       "dg_id": 21944,
       "player_name": "Taylor Moore",
+      "matched_name": "Taylor Moore",
       "sg_total": 0.161,
       "skill_source": "skill_ratings",
       "placeholder_rating": false,
       "win_prob": 0.0038
     },
     {
-      "dg_id": 13764,
-      "player_name": "John Parry",
-      "sg_total": 0.245,
+      "dg_id": 11276,
+      "player_name": "Billy Horschel",
+      "matched_name": "Billy Horschel",
+      "sg_total": 0.034,
       "skill_source": "skill_ratings",
       "placeholder_rating": false,
       "win_prob": 0.0038
     },
     {
-      "dg_id": 20722,
-      "player_name": "Matti Schmid",
-      "sg_total": 0.128,
+      "dg_id": 16394,
+      "player_name": "Stephan Jaeger",
+      "matched_name": "Stephan Jaeger",
+      "sg_total": 0.052,
+      "skill_source": "skill_ratings",
+      "placeholder_rating": false,
+      "win_prob": 0.0037
+    },
+    {
+      "dg_id": 14704,
+      "player_name": "Andrew Putnam",
+      "matched_name": "Andrew Putnam",
+      "sg_total": 0.09,
       "skill_source": "skill_ratings",
       "placeholder_rating": false,
       "win_prob": 0.00365
@@ -556,511 +687,485 @@
     {
       "dg_id": 18424,
       "player_name": "Kevin Roy",
+      "matched_name": "Kevin Roy",
       "sg_total": 0.139,
       "skill_source": "skill_ratings",
       "placeholder_rating": false,
-      "win_prob": 0.0036
+      "win_prob": 0.0035
     },
     {
-      "dg_id": 22833,
-      "player_name": "Nico Echavarria",
-      "sg_total": 0.214,
-      "skill_source": "skill_ratings",
-      "placeholder_rating": false,
-      "win_prob": 0.00355
-    },
-    {
-      "dg_id": 26850,
-      "player_name": "Jesper Svensson",
-      "sg_total": 0.09,
-      "skill_source": "skill_ratings",
-      "placeholder_rating": false,
-      "win_prob": 0.00335
-    },
-    {
-      "dg_id": 14704,
-      "player_name": "Andrew Putnam",
-      "sg_total": 0.09,
-      "skill_source": "skill_ratings",
-      "placeholder_rating": false,
-      "win_prob": 0.0033
-    },
-    {
-      "dg_id": 17780,
-      "player_name": "Taylor Pendrith",
-      "sg_total": 0.084,
+      "dg_id": 23504,
+      "player_name": "Rico Hoey",
+      "matched_name": "Rico Hoey",
+      "sg_total": 0.08,
       "skill_source": "skill_ratings",
       "placeholder_rating": false,
       "win_prob": 0.00325
     },
     {
-      "dg_id": 16394,
-      "player_name": "Stephan Jaeger",
-      "sg_total": 0.052,
+      "dg_id": 12423,
+      "player_name": "Chris Kirk",
+      "matched_name": "Chris Kirk",
+      "sg_total": 0.053,
       "skill_source": "skill_ratings",
       "placeholder_rating": false,
       "win_prob": 0.00315
     },
     {
-      "dg_id": 22985,
-      "player_name": "Austin Smotherman",
-      "sg_total": 0.066,
-      "skill_source": "skill_ratings",
-      "placeholder_rating": false,
-      "win_prob": 0.00305
-    },
-    {
-      "dg_id": 11276,
-      "player_name": "Billy Horschel",
-      "sg_total": 0.034,
-      "skill_source": "skill_ratings",
-      "placeholder_rating": false,
-      "win_prob": 0.00295
-    },
-    {
-      "dg_id": 23504,
-      "player_name": "Rico Hoey",
-      "sg_total": 0.08,
+      "dg_id": 10104,
+      "player_name": "Seamus Power",
+      "matched_name": "Seamus Power",
+      "sg_total": 0.015,
       "skill_source": "skill_ratings",
       "placeholder_rating": false,
       "win_prob": 0.0029
     },
     {
-      "dg_id": 12423,
-      "player_name": "Chris Kirk",
-      "sg_total": 0.053,
+      "dg_id": 27164,
+      "player_name": "Chandler Phillips",
+      "matched_name": "Chandler Phillips",
+      "sg_total": -0.023,
+      "skill_source": "skill_ratings",
+      "placeholder_rating": false,
+      "win_prob": 0.0028
+    },
+    {
+      "dg_id": 22002,
+      "player_name": "Adrien Dumont De Chassart",
+      "matched_name": "Adrien Dumont De Chassart",
+      "sg_total": -0.018,
       "skill_source": "skill_ratings",
       "placeholder_rating": false,
       "win_prob": 0.00275
     },
     {
-      "dg_id": 10104,
-      "player_name": "Seamus Power",
-      "sg_total": 0.015,
+      "dg_id": 16283,
+      "player_name": "Patrick Rodgers",
+      "matched_name": "Patrick Rodgers",
+      "sg_total": -0.202,
       "skill_source": "skill_ratings",
       "placeholder_rating": false,
       "win_prob": 0.0027
     },
     {
       "dg_id": 13412,
-      "player_name": "Thorbjorn Olesen",
+      "player_name": "Thorbj\u00f8rn Olesen",
+      "matched_name": "Thorbjorn Olesen",
       "sg_total": -0.033,
+      "skill_source": "skill_ratings",
+      "placeholder_rating": false,
+      "win_prob": 0.00265
+    },
+    {
+      "dg_id": 25094,
+      "player_name": "Patrick Fishburn",
+      "matched_name": "Patrick Fishburn",
+      "sg_total": -0.121,
       "skill_source": "skill_ratings",
       "placeholder_rating": false,
       "win_prob": 0.0026
     },
     {
-      "dg_id": 22002,
-      "player_name": "Adrien Dumont De Chassart",
-      "sg_total": -0.018,
+      "dg_id": 21883,
+      "player_name": "A.J. Ewart",
+      "matched_name": "A.J. Ewart",
+      "sg_total": -0.114,
       "skill_source": "skill_ratings",
       "placeholder_rating": false,
-      "win_prob": 0.00245
+      "win_prob": 0.0025
     },
     {
-      "dg_id": 15651,
-      "player_name": "Kristoffer Ventura",
-      "sg_total": -0.021,
+      "dg_id": 19729,
+      "player_name": "Takumi Kanaya",
+      "matched_name": "Takumi Kanaya",
+      "sg_total": -0.219,
       "skill_source": "skill_ratings",
       "placeholder_rating": false,
-      "win_prob": 0.0023
+      "win_prob": 0.0024
     },
     {
-      "dg_id": 27164,
-      "player_name": "Chandler Phillips",
-      "sg_total": -0.023,
+      "dg_id": 16333,
+      "player_name": "Mark Hubbard",
+      "matched_name": "Mark Hubbard",
+      "sg_total": -0.249,
+      "skill_source": "skill_ratings",
+      "placeholder_rating": false,
+      "win_prob": 0.00225
+    },
+    {
+      "dg_id": 19960,
+      "player_name": "Matthieu Pavon",
+      "matched_name": "Matthieu Pavon",
+      "sg_total": -0.254,
+      "skill_source": "skill_ratings",
+      "placeholder_rating": false,
+      "win_prob": 0.0022
+    },
+    {
+      "dg_id": 7399,
+      "player_name": "Lucas Glover",
+      "matched_name": "Lucas Glover",
+      "sg_total": -0.205,
+      "skill_source": "skill_ratings",
+      "placeholder_rating": false,
+      "win_prob": 0.0022
+    },
+    {
+      "dg_id": 15310,
+      "player_name": "Hao-Tong Li",
+      "matched_name": "Haotong Li",
+      "sg_total": -0.177,
       "skill_source": "skill_ratings",
       "placeholder_rating": false,
       "win_prob": 0.00215
     },
     {
-      "dg_id": 21883,
-      "player_name": "A.J. Ewart",
-      "sg_total": -0.114,
+      "dg_id": 15575,
+      "player_name": "Tom Hoge",
+      "matched_name": "Tom Hoge",
+      "sg_total": -0.22,
       "skill_source": "skill_ratings",
       "placeholder_rating": false,
-      "win_prob": 0.0021
+      "win_prob": 0.00215
     },
     {
-      "dg_id": 15310,
-      "player_name": "Haotong Li",
-      "sg_total": -0.177,
+      "dg_id": 26653,
+      "player_name": "Austin Eckroat",
+      "matched_name": "Austin Eckroat",
+      "sg_total": -0.209,
       "skill_source": "skill_ratings",
       "placeholder_rating": false,
       "win_prob": 0.00205
     },
     {
-      "dg_id": 25094,
-      "player_name": "Patrick Fishburn",
-      "sg_total": -0.121,
+      "dg_id": 24304,
+      "player_name": "Karl Vilips",
+      "matched_name": "Karl Vilips",
+      "sg_total": -0.282,
       "skill_source": "skill_ratings",
       "placeholder_rating": false,
-      "win_prob": 0.00195
-    },
-    {
-      "dg_id": 32055,
-      "player_name": "Neal Shipley",
-      "sg_total": -0.278,
-      "skill_source": "skill_ratings",
-      "placeholder_rating": false,
-      "win_prob": 0.0019
+      "win_prob": 0.00205
     },
     {
       "dg_id": 14509,
       "player_name": "Joel Dahmen",
+      "matched_name": "Joel Dahmen",
       "sg_total": -0.224,
+      "skill_source": "skill_ratings",
+      "placeholder_rating": false,
+      "win_prob": 0.002
+    },
+    {
+      "dg_id": 14792,
+      "player_name": "Adrien Saddier",
+      "matched_name": "Adrien Saddier",
+      "sg_total": -0.285,
       "skill_source": "skill_ratings",
       "placeholder_rating": false,
       "win_prob": 0.00185
     },
     {
-      "dg_id": 19729,
-      "player_name": "Takumi Kanaya",
-      "sg_total": -0.219,
+      "dg_id": 30620,
+      "player_name": "Davis Chatfield",
+      "matched_name": "Davis Chatfield",
+      "sg_total": -0.338,
       "skill_source": "skill_ratings",
       "placeholder_rating": false,
-      "win_prob": 0.0018
+      "win_prob": 0.00175
     },
     {
       "dg_id": 24342,
       "player_name": "Garrick Higgo",
+      "matched_name": "Garrick Higgo",
       "sg_total": -0.288,
       "skill_source": "skill_ratings",
       "placeholder_rating": false,
       "win_prob": 0.0017
     },
     {
-      "dg_id": 16283,
-      "player_name": "Patrick Rodgers",
-      "sg_total": -0.202,
+      "dg_id": 6169,
+      "player_name": "Matt Kuchar",
+      "matched_name": "Matt Kuchar",
+      "sg_total": -0.332,
       "skill_source": "skill_ratings",
       "placeholder_rating": false,
-      "win_prob": 0.00165
+      "win_prob": 0.0017
     },
     {
-      "dg_id": 26653,
-      "player_name": "Austin Eckroat",
-      "sg_total": -0.209,
+      "dg_id": 32055,
+      "player_name": "Neal Shipley",
+      "matched_name": "Neal Shipley",
+      "sg_total": -0.278,
       "skill_source": "skill_ratings",
       "placeholder_rating": false,
-      "win_prob": 0.00165
-    },
-    {
-      "dg_id": 7399,
-      "player_name": "Lucas Glover",
-      "sg_total": -0.205,
-      "skill_source": "skill_ratings",
-      "placeholder_rating": false,
-      "win_prob": 0.0015
-    },
-    {
-      "dg_id": 14792,
-      "player_name": "Adrien Saddier",
-      "sg_total": -0.285,
-      "skill_source": "skill_ratings",
-      "placeholder_rating": false,
-      "win_prob": 0.0015
+      "win_prob": 0.0014
     },
     {
       "dg_id": 19840,
       "player_name": "Chad Ramey",
+      "matched_name": "Chad Ramey",
       "sg_total": -0.334,
       "skill_source": "skill_ratings",
       "placeholder_rating": false,
-      "win_prob": 0.0015
-    },
-    {
-      "dg_id": 15575,
-      "player_name": "Tom Hoge",
-      "sg_total": -0.22,
-      "skill_source": "skill_ratings",
-      "placeholder_rating": false,
-      "win_prob": 0.00135
+      "win_prob": 0.0014
     },
     {
       "dg_id": 17550,
       "player_name": "Erik Van Rooyen",
+      "matched_name": "Erik Van Rooyen",
       "sg_total": -0.402,
+      "skill_source": "skill_ratings",
+      "placeholder_rating": false,
+      "win_prob": 0.0014
+    },
+    {
+      "dg_id": 25475,
+      "player_name": "Pontus Nyholm",
+      "matched_name": "Pontus Nyholm",
+      "sg_total": -0.435,
       "skill_source": "skill_ratings",
       "placeholder_rating": false,
       "win_prob": 0.00135
     },
     {
-      "dg_id": 6169,
-      "player_name": "Matt Kuchar",
-      "sg_total": -0.332,
+      "dg_id": 25908,
+      "player_name": "Vince Whaley",
+      "matched_name": "Vince Whaley",
+      "sg_total": -0.439,
       "skill_source": "skill_ratings",
       "placeholder_rating": false,
       "win_prob": 0.0013
     },
     {
-      "dg_id": 19960,
-      "player_name": "Matthieu Pavon",
-      "sg_total": -0.254,
+      "dg_id": 15980,
+      "player_name": "David Lipsky",
+      "matched_name": "David Lipsky",
+      "sg_total": -0.421,
+      "skill_source": "skill_ratings",
+      "placeholder_rating": false,
+      "win_prob": 0.0013
+    },
+    {
+      "dg_id": 27780,
+      "player_name": "Trace Crowe",
+      "matched_name": "Trace Crowe",
+      "sg_total": -0.461,
+      "skill_source": "skill_ratings",
+      "placeholder_rating": false,
+      "win_prob": 0.0013
+    },
+    {
+      "dg_id": 11049,
+      "player_name": "Webb Simpson",
+      "matched_name": "Webb Simpson",
+      "sg_total": -0.445,
       "skill_source": "skill_ratings",
       "placeholder_rating": false,
       "win_prob": 0.0012
     },
     {
-      "dg_id": 16333,
-      "player_name": "Mark Hubbard",
-      "sg_total": -0.249,
+      "dg_id": 24956,
+      "player_name": "Chandler Blanchet",
+      "matched_name": "Chandler Blanchet",
+      "sg_total": -0.361,
       "skill_source": "skill_ratings",
       "placeholder_rating": false,
-      "win_prob": 0.00115
-    },
-    {
-      "dg_id": 32330,
-      "player_name": "Luke Clanton",
-      "sg_total": -0.464,
-      "skill_source": "skill_ratings",
-      "placeholder_rating": false,
-      "win_prob": 0.00115
+      "win_prob": 0.00105
     },
     {
       "dg_id": 28270,
       "player_name": "Nick Dunlap",
+      "matched_name": "Nick Dunlap",
       "sg_total": -0.539,
       "skill_source": "skill_ratings",
       "placeholder_rating": false,
-      "win_prob": 0.0011
-    },
-    {
-      "dg_id": 27780,
-      "player_name": "Trace Crowe",
-      "sg_total": -0.461,
-      "skill_source": "skill_ratings",
-      "placeholder_rating": false,
       "win_prob": 0.00105
     },
     {
-      "dg_id": 30620,
-      "player_name": "Davis Chatfield",
-      "sg_total": -0.338,
+      "dg_id": 8820,
+      "player_name": "Brandt Snedeker",
+      "matched_name": "Brandt Snedeker",
+      "sg_total": -0.578,
       "skill_source": "skill_ratings",
       "placeholder_rating": false,
-      "win_prob": 0.00105
+      "win_prob": 0.001
     },
     {
-      "dg_id": 24304,
-      "player_name": "Karl Vilips",
-      "sg_total": -0.282,
+      "dg_id": 32330,
+      "player_name": "Luke Clanton",
+      "matched_name": "Luke Clanton",
+      "sg_total": -0.464,
       "skill_source": "skill_ratings",
       "placeholder_rating": false,
       "win_prob": 0.00095
     },
     {
-      "dg_id": 17381,
-      "player_name": "Ben Silverman",
-      "sg_total": -0.587,
+      "dg_id": 11451,
+      "player_name": "Brice Garnett",
+      "matched_name": "Brice Garnett",
+      "sg_total": -0.699,
       "skill_source": "skill_ratings",
       "placeholder_rating": false,
-      "win_prob": 0.0009
+      "win_prob": 0.00095
     },
     {
-      "dg_id": 24956,
-      "player_name": "Chandler Blanchet",
-      "sg_total": -0.361,
-      "skill_source": "skill_ratings",
-      "placeholder_rating": false,
-      "win_prob": 0.00085
-    },
-    {
-      "dg_id": 25908,
-      "player_name": "Vince Whaley",
-      "sg_total": -0.439,
+      "dg_id": 21943,
+      "player_name": "Hank Lebioda",
+      "matched_name": "Hank Lebioda",
+      "sg_total": -0.622,
       "skill_source": "skill_ratings",
       "placeholder_rating": false,
       "win_prob": 0.00085
     },
     {
-      "dg_id": 25475,
-      "player_name": "Pontus Nyholm",
-      "sg_total": -0.435,
+      "dg_id": 13997,
+      "player_name": "Adam Svensson",
+      "matched_name": "Adam Svensson",
+      "sg_total": -0.703,
       "skill_source": "skill_ratings",
       "placeholder_rating": false,
       "win_prob": 0.0008
     },
     {
-      "dg_id": 11049,
-      "player_name": "Webb Simpson",
-      "sg_total": -0.445,
+      "dg_id": 28469,
+      "player_name": "Joe Highsmith",
+      "matched_name": "Joe Highsmith",
+      "sg_total": -0.619,
+      "skill_source": "skill_ratings",
+      "placeholder_rating": false,
+      "win_prob": 0.0008
+    },
+    {
+      "dg_id": 25319,
+      "player_name": "John VanDerLaan",
+      "matched_name": "John VanDerLaan",
+      "sg_total": -0.582,
       "skill_source": "skill_ratings",
       "placeholder_rating": false,
       "win_prob": 0.00075
     },
     {
-      "dg_id": 15980,
-      "player_name": "David Lipsky",
-      "sg_total": -0.421,
-      "skill_source": "skill_ratings",
+      "dg_id": 32652,
+      "player_name": "Kihei Akina",
+      "matched_name": "Kihei Akina",
+      "sg_total": -0.733951423608629,
+      "skill_source": "rankings",
       "placeholder_rating": false,
-      "win_prob": 0.00075
+      "win_prob": 0.0007
     },
     {
-      "dg_id": 21943,
-      "player_name": "Hank Lebioda",
-      "sg_total": -0.622,
-      "skill_source": "skill_ratings",
-      "placeholder_rating": false,
-      "win_prob": 0.00075
-    },
-    {
-      "dg_id": 25002,
-      "player_name": "Dylan Wu",
-      "sg_total": -0.591,
+      "dg_id": 20844,
+      "player_name": "Stefano Mazzoli",
+      "matched_name": "Stefano Mazzoli",
+      "sg_total": -0.735,
       "skill_source": "skill_ratings",
       "placeholder_rating": false,
       "win_prob": 0.00065
     },
     {
-      "dg_id": 21995,
-      "player_name": "Hayden Springer",
-      "sg_total": -0.542,
-      "skill_source": "skill_ratings",
-      "placeholder_rating": false,
-      "win_prob": 0.0006
-    },
-    {
-      "dg_id": 20844,
-      "player_name": "Stefano Mazzoli",
-      "sg_total": -0.735,
-      "skill_source": "skill_ratings",
-      "placeholder_rating": false,
-      "win_prob": 0.0006
-    },
-    {
-      "dg_id": 28469,
-      "player_name": "Joe Highsmith",
-      "sg_total": -0.619,
-      "skill_source": "skill_ratings",
-      "placeholder_rating": false,
-      "win_prob": 0.00055
-    },
-    {
       "dg_id": 8480,
       "player_name": "Kevin Streelman",
+      "matched_name": "Kevin Streelman",
       "sg_total": -0.668,
       "skill_source": "skill_ratings",
       "placeholder_rating": false,
-      "win_prob": 0.00055
+      "win_prob": 0.00065
     },
     {
-      "dg_id": 15330,
-      "player_name": "Lanto Griffin",
-      "sg_total": -0.574,
+      "dg_id": 25002,
+      "player_name": "Dylan Wu",
+      "matched_name": "Dylan Wu",
+      "sg_total": -0.591,
       "skill_source": "skill_ratings",
       "placeholder_rating": false,
       "win_prob": 0.00055
     },
     {
-      "dg_id": 21889,
-      "player_name": "Jeffrey Kang",
-      "sg_total": -0.85,
+      "dg_id": 20954,
+      "player_name": "Kensei Hirata",
+      "matched_name": "Kensei Hirata",
+      "sg_total": -0.942,
       "skill_source": "skill_ratings",
       "placeholder_rating": false,
       "win_prob": 0.00055
     },
     {
-      "dg_id": 17786,
-      "player_name": "Cam Davis",
-      "sg_total": -0.878,
+      "dg_id": 17032,
+      "player_name": "Alejandro Tosti",
+      "matched_name": "Alejandro Tosti",
+      "sg_total": -0.821,
       "skill_source": "skill_ratings",
       "placeholder_rating": false,
       "win_prob": 0.0005
     },
     {
-      "dg_id": 13997,
-      "player_name": "Adam Svensson",
-      "sg_total": -0.703,
+      "dg_id": 21889,
+      "player_name": "Jeffrey Kang",
+      "matched_name": "Jeffrey Kang",
+      "sg_total": -0.85,
       "skill_source": "skill_ratings",
       "placeholder_rating": false,
-      "win_prob": 0.00045
+      "win_prob": 0.0005
     },
     {
-      "dg_id": 8820,
-      "player_name": "Brandt Snedeker",
-      "sg_total": -0.578,
-      "skill_source": "skill_ratings",
+      "dg_id": 15475,
+      "player_name": "C.T. Pan",
+      "matched_name": "C.T. Pan",
+      "sg_total": -0.774636096296413,
+      "skill_source": "rankings",
       "placeholder_rating": false,
-      "win_prob": 0.0004
+      "win_prob": 0.0005
     },
     {
-      "dg_id": 19872,
-      "player_name": "Davis Riley",
-      "sg_total": -0.994,
+      "dg_id": 16591,
+      "player_name": "Marcelo Rozo",
+      "matched_name": "Marcelo Rozo",
+      "sg_total": -1.202,
       "skill_source": "skill_ratings",
       "placeholder_rating": false,
-      "win_prob": 0.0004
+      "win_prob": 0.00035
     },
     {
       "dg_id": 19477,
       "player_name": "Adam Schenk",
+      "matched_name": "Adam Schenk",
       "sg_total": -0.971,
       "skill_source": "skill_ratings",
       "placeholder_rating": false,
-      "win_prob": 0.00035
-    },
-    {
-      "dg_id": 11451,
-      "player_name": "Brice Garnett",
-      "sg_total": -0.699,
-      "skill_source": "skill_ratings",
-      "placeholder_rating": false,
-      "win_prob": 0.00035
+      "win_prob": 0.0003
     },
     {
       "dg_id": 14926,
       "player_name": "Peter Malnati",
+      "matched_name": "Peter Malnati",
       "sg_total": -1.165,
       "skill_source": "skill_ratings",
       "placeholder_rating": false,
-      "win_prob": 0.00035
-    },
-    {
-      "dg_id": 17032,
-      "player_name": "Alejandro Tosti",
-      "sg_total": -0.821,
-      "skill_source": "skill_ratings",
-      "placeholder_rating": false,
       "win_prob": 0.0003
     },
     {
-      "dg_id": 35417,
-      "player_name": "William Jennings",
-      "sg_total": -0.6776766697901823,
-      "skill_source": "inferred_from_dg",
-      "placeholder_rating": true,
-      "win_prob": 0.0003
-    },
-    {
-      "dg_id": 25319,
-      "player_name": "John VanDerLaan",
-      "sg_total": -0.582,
+      "dg_id": 19872,
+      "player_name": "Davis Riley",
+      "matched_name": "Davis Riley",
+      "sg_total": -0.994,
       "skill_source": "skill_ratings",
       "placeholder_rating": false,
-      "win_prob": 0.00025
+      "win_prob": 0.0003
     },
     {
       "dg_id": 30814,
       "player_name": "Gordon Sargent",
+      "matched_name": "Gordon Sargent",
       "sg_total": -0.946,
       "skill_source": "skill_ratings",
       "placeholder_rating": false,
       "win_prob": 0.00025
     },
     {
-      "dg_id": 25003,
-      "player_name": "Danny Walker",
-      "sg_total": -1.118,
-      "skill_source": "skill_ratings",
-      "placeholder_rating": false,
-      "win_prob": 0.00025
-    },
-    {
-      "dg_id": 20954,
-      "player_name": "Kensei Hirata",
-      "sg_total": -0.942,
+      "dg_id": 18628,
+      "player_name": "Brian Campbell",
+      "matched_name": "Brian Campbell",
+      "sg_total": -0.922,
       "skill_source": "skill_ratings",
       "placeholder_rating": false,
       "win_prob": 0.00025
@@ -1068,97 +1173,102 @@
     {
       "dg_id": 12909,
       "player_name": "Rafael Campos",
+      "matched_name": "Rafael Campos",
       "sg_total": -1.296,
       "skill_source": "skill_ratings",
       "placeholder_rating": false,
       "win_prob": 0.00025
     },
     {
-      "dg_id": 22051,
-      "player_name": "Aaron Wise",
-      "sg_total": -1.02415989939239,
-      "skill_source": "rankings",
-      "placeholder_rating": false,
-      "win_prob": 0.0002
-    },
-    {
-      "dg_id": 17723,
-      "player_name": "Justin Lower",
-      "sg_total": -0.978,
-      "skill_source": "skill_ratings",
-      "placeholder_rating": false,
-      "win_prob": 0.0002
-    },
-    {
-      "dg_id": 18628,
-      "player_name": "Brian Campbell",
-      "sg_total": -0.922,
+      "dg_id": 25003,
+      "player_name": "Danny Walker",
+      "matched_name": "Danny Walker",
+      "sg_total": -1.118,
       "skill_source": "skill_ratings",
       "placeholder_rating": false,
       "win_prob": 0.00015
     },
     {
-      "dg_id": 16591,
-      "player_name": "Marcelo Rozo",
-      "sg_total": -1.202,
-      "skill_source": "skill_ratings",
+      "dg_id": 22051,
+      "player_name": "Aaron Wise",
+      "matched_name": "Aaron Wise",
+      "sg_total": -1.02415989939239,
+      "skill_source": "rankings",
       "placeholder_rating": false,
+      "win_prob": 0.00015
+    },
+    {
+      "dg_id": null,
+      "player_name": "Tyler Collet",
+      "sg_total": -2.051,
+      "skill_source": "field_fallback",
+      "placeholder_rating": true,
       "win_prob": 0.0001
+    },
+    {
+      "dg_id": null,
+      "player_name": "Daniel Brown",
+      "sg_total": -2.051,
+      "skill_source": "field_fallback",
+      "placeholder_rating": true,
+      "win_prob": 5e-05
+    },
+    {
+      "dg_id": null,
+      "player_name": "Cooper Hrabak",
+      "sg_total": -2.051,
+      "skill_source": "field_fallback",
+      "placeholder_rating": true,
+      "win_prob": 0.0
+    },
+    {
+      "dg_id": null,
+      "player_name": "Kris Ventura",
+      "sg_total": -2.051,
+      "skill_source": "field_fallback",
+      "placeholder_rating": true,
+      "win_prob": 0.0
+    },
+    {
+      "dg_id": null,
+      "player_name": "Benjamin James",
+      "sg_total": -2.051,
+      "skill_source": "field_fallback",
+      "placeholder_rating": true,
+      "win_prob": 0.0
+    },
+    {
+      "dg_id": null,
+      "player_name": "Cameron Davis",
+      "sg_total": -2.051,
+      "skill_source": "field_fallback",
+      "placeholder_rating": true,
+      "win_prob": 0.0
+    },
+    {
+      "dg_id": null,
+      "player_name": "Nicolas Echavarria",
+      "sg_total": -2.051,
+      "skill_source": "field_fallback",
+      "placeholder_rating": true,
+      "win_prob": 0.0
     },
     {
       "dg_id": 24343,
       "player_name": "Christo Lamprecht",
+      "matched_name": "Christo Lamprecht",
       "sg_total": -1.551,
       "skill_source": "skill_ratings",
       "placeholder_rating": false,
-      "win_prob": 5e-05
-    },
-    {
-      "dg_id": 26597,
-      "player_name": "Keenan Huskey",
-      "sg_total": -1.9290540488147065,
-      "skill_source": "inferred_from_dg",
-      "placeholder_rating": true,
-      "win_prob": 5e-05
-    },
-    {
-      "dg_id": 17169,
-      "player_name": "Ryan Ruffels",
-      "sg_total": -2.0513984877405442,
-      "skill_source": "inferred_from_dg",
-      "placeholder_rating": true,
-      "win_prob": 5e-05
+      "win_prob": 0.0
     },
     {
       "dg_id": 13470,
       "player_name": "Patton Kizzire",
+      "matched_name": "Patton Kizzire",
       "sg_total": -1.458,
       "skill_source": "skill_ratings",
       "placeholder_rating": false,
-      "win_prob": 0.0
-    },
-    {
-      "dg_id": 14001,
-      "player_name": "Patrick Wilkes-Krier",
-      "sg_total": -1.7445741175730065,
-      "skill_source": "inferred_from_dg",
-      "placeholder_rating": true,
-      "win_prob": 0.0
-    },
-    {
-      "dg_id": 15981,
-      "player_name": "Justin Quiban",
-      "sg_total": -2.811471565355247,
-      "skill_source": "inferred_from_dg",
-      "placeholder_rating": true,
-      "win_prob": 0.0
-    },
-    {
-      "dg_id": 21501,
-      "player_name": "Brad Dalke",
-      "sg_total": -2.811471565355247,
-      "skill_source": "inferred_from_dg",
-      "placeholder_rating": true,
       "win_prob": 0.0
     }
   ]
