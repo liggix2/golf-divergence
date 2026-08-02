@@ -1,0 +1,896 @@
+{
+  "source": "datagolf",
+  "endpoint": "pre-tournament",
+  "fetched_at": "2026-08-02T23:52:37.798569+00:00",
+  "event_name": "Rocket Classic",
+  "last_updated": "2026-07-28 19:07:20  UTC",
+  "models": [
+    "baseline",
+    "baseline_history_fit"
+  ],
+  "player_count": 147,
+  "players": [
+    {
+      "dg_id": 26651,
+      "player_name": "Cameron Young",
+      "win_baseline": 0.0729833333333333,
+      "win_baseline_history_fit": 0.08035
+    },
+    {
+      "dg_id": 19895,
+      "player_name": "Xander Schauffele",
+      "win_baseline": 0.04975,
+      "win_baseline_history_fit": 0.0446666666666667
+    },
+    {
+      "dg_id": 27774,
+      "player_name": "Chris Gotterup",
+      "win_baseline": 0.0480333333333333,
+      "win_baseline_history_fit": 0.0495666666666667
+    },
+    {
+      "dg_id": 14609,
+      "player_name": "Si Woo Kim",
+      "win_baseline": 0.0417,
+      "win_baseline_history_fit": 0.0376666666666667
+    },
+    {
+      "dg_id": 15466,
+      "player_name": "Patrick Cantlay",
+      "win_baseline": 0.0336833333333333,
+      "win_baseline_history_fit": 0.0339666666666667
+    },
+    {
+      "dg_id": 23604,
+      "player_name": "Wyndham Clark",
+      "win_baseline": 0.03035,
+      "win_baseline_history_fit": 0.03215
+    },
+    {
+      "dg_id": 32319,
+      "player_name": "Jackson Koivun",
+      "win_baseline": 0.0282833333333333,
+      "win_baseline_history_fit": 0.0258833333333333
+    },
+    {
+      "dg_id": 24968,
+      "player_name": "Ben Griffin",
+      "win_baseline": 0.0269333333333333,
+      "win_baseline_history_fit": 0.0267
+    },
+    {
+      "dg_id": 14578,
+      "player_name": "Russell Henley",
+      "win_baseline": 0.0255,
+      "win_baseline_history_fit": 0.02615
+    },
+    {
+      "dg_id": 13562,
+      "player_name": "Hideki Matsuyama",
+      "win_baseline": 0.02425,
+      "win_baseline_history_fit": 0.0255166666666667
+    },
+    {
+      "dg_id": 29767,
+      "player_name": "Ryan Gerard",
+      "win_baseline": 0.02305,
+      "win_baseline_history_fit": 0.0228
+    },
+    {
+      "dg_id": 19396,
+      "player_name": "Jake Knapp",
+      "win_baseline": 0.0221,
+      "win_baseline_history_fit": 0.0234833333333333
+    },
+    {
+      "dg_id": 17536,
+      "player_name": "J.J. Spaun",
+      "win_baseline": 0.02125,
+      "win_baseline_history_fit": 0.0303
+    },
+    {
+      "dg_id": 23602,
+      "player_name": "Nicolai Hojgaard",
+      "win_baseline": 0.0175666666666667,
+      "win_baseline_history_fit": 0.01885
+    },
+    {
+      "dg_id": 26649,
+      "player_name": "Michael Thorbjornsen",
+      "win_baseline": 0.0173666666666667,
+      "win_baseline_history_fit": 0.0176
+    },
+    {
+      "dg_id": 26096,
+      "player_name": "Akshay Bhatia",
+      "win_baseline": 0.0152333333333333,
+      "win_baseline_history_fit": 0.0151333333333333
+    },
+    {
+      "dg_id": 14577,
+      "player_name": "Harris English",
+      "win_baseline": 0.0147166666666667,
+      "win_baseline_history_fit": 0.0134166666666667
+    },
+    {
+      "dg_id": 29433,
+      "player_name": "Jacob Bridgeman",
+      "win_baseline": 0.0142,
+      "win_baseline_history_fit": 0.01385
+    },
+    {
+      "dg_id": 29197,
+      "player_name": "Michael Brennan",
+      "win_baseline": 0.0135666666666667,
+      "win_baseline_history_fit": 0.0124333333333333
+    },
+    {
+      "dg_id": 17576,
+      "player_name": "Corey Conners",
+      "win_baseline": 0.01305,
+      "win_baseline_history_fit": 0.01235
+    },
+    {
+      "dg_id": 18586,
+      "player_name": "Jordan Smith",
+      "win_baseline": 0.0130166666666667,
+      "win_baseline_history_fit": 0.0121166666666667
+    },
+    {
+      "dg_id": 13872,
+      "player_name": "Keegan Bradley",
+      "win_baseline": 0.01295,
+      "win_baseline_history_fit": 0.0157833333333333
+    },
+    {
+      "dg_id": 28159,
+      "player_name": "Mac Meissner",
+      "win_baseline": 0.0120666666666667,
+      "win_baseline_history_fit": 0.0097
+    },
+    {
+      "dg_id": 12965,
+      "player_name": "Rickie Fowler",
+      "win_baseline": 0.0115166666666667,
+      "win_baseline_history_fit": 0.0134333333333333
+    },
+    {
+      "dg_id": 27364,
+      "player_name": "Davis Thompson",
+      "win_baseline": 0.0111,
+      "win_baseline_history_fit": 0.0138833333333333
+    },
+    {
+      "dg_id": 22760,
+      "player_name": "Ryo Hisatsune",
+      "win_baseline": 0.0109666666666667,
+      "win_baseline_history_fit": 0.01155
+    },
+    {
+      "dg_id": 23841,
+      "player_name": "Rasmus Neergaard-Petersen",
+      "win_baseline": 0.0107333333333333,
+      "win_baseline_history_fit": 0.0099666666666666
+    },
+    {
+      "dg_id": 21756,
+      "player_name": "Eric Cole",
+      "win_baseline": 0.0101166666666667,
+      "win_baseline_history_fit": 0.0090166666666666
+    },
+    {
+      "dg_id": 17488,
+      "player_name": "Sungjae Im",
+      "win_baseline": 0.0095833333333333,
+      "win_baseline_history_fit": 0.0101666666666667
+    },
+    {
+      "dg_id": 24550,
+      "player_name": "Doug Ghim",
+      "win_baseline": 0.0091333333333333,
+      "win_baseline_history_fit": 0.0103
+    },
+    {
+      "dg_id": 29827,
+      "player_name": "Ben James",
+      "win_baseline": 0.0090833333333333,
+      "win_baseline_history_fit": 0.0078
+    },
+    {
+      "dg_id": 17543,
+      "player_name": "Michael Kim",
+      "win_baseline": 0.0088333333333333,
+      "win_baseline_history_fit": 0.0084333333333333
+    },
+    {
+      "dg_id": 29279,
+      "player_name": "Jackson Suber",
+      "win_baseline": 0.0087166666666666,
+      "win_baseline_history_fit": 0.0095166666666666
+    },
+    {
+      "dg_id": 23465,
+      "player_name": "Max Greyserman",
+      "win_baseline": 0.00805,
+      "win_baseline_history_fit": 0.00905
+    },
+    {
+      "dg_id": 14636,
+      "player_name": "Jordan Spieth",
+      "win_baseline": 0.0078166666666666,
+      "win_baseline_history_fit": 0.0062
+    },
+    {
+      "dg_id": 23475,
+      "player_name": "Andrew Novak",
+      "win_baseline": 0.0076166666666666,
+      "win_baseline_history_fit": 0.0079166666666666
+    },
+    {
+      "dg_id": 20706,
+      "player_name": "Matt Wallace",
+      "win_baseline": 0.0075833333333333,
+      "win_baseline_history_fit": 0.0083
+    },
+    {
+      "dg_id": 22465,
+      "player_name": "Marco Penge",
+      "win_baseline": 0.00755,
+      "win_baseline_history_fit": 0.0069
+    },
+    {
+      "dg_id": 11676,
+      "player_name": "Tony Finau",
+      "win_baseline": 0.0075,
+      "win_baseline_history_fit": 0.0071666666666666
+    },
+    {
+      "dg_id": 16757,
+      "player_name": "Zecheng Dou",
+      "win_baseline": 0.0069833333333333,
+      "win_baseline_history_fit": 0.0058833333333333
+    },
+    {
+      "dg_id": 32457,
+      "player_name": "Johnny Keefer",
+      "win_baseline": 0.0068166666666666,
+      "win_baseline_history_fit": 0.0055
+    },
+    {
+      "dg_id": 25569,
+      "player_name": "Sam Stevens",
+      "win_baseline": 0.0067166666666666,
+      "win_baseline_history_fit": 0.0066833333333333
+    },
+    {
+      "dg_id": 17881,
+      "player_name": "Kevin Yu",
+      "win_baseline": 0.0065,
+      "win_baseline_history_fit": 0.0055333333333333
+    },
+    {
+      "dg_id": 16395,
+      "player_name": "Ben Kohles",
+      "win_baseline": 0.0064,
+      "win_baseline_history_fit": 0.0066166666666666
+    },
+    {
+      "dg_id": 27900,
+      "player_name": "Aldrich Potgieter",
+      "win_baseline": 0.0062666666666666,
+      "win_baseline_history_fit": 0.0062333333333333
+    },
+    {
+      "dg_id": 18103,
+      "player_name": "Christiaan Bezuidenhout",
+      "win_baseline": 0.0061333333333333,
+      "win_baseline_history_fit": 0.0050166666666666
+    },
+    {
+      "dg_id": 19870,
+      "player_name": "Denny McCarthy",
+      "win_baseline": 0.0060666666666666,
+      "win_baseline_history_fit": 0.0051
+    },
+    {
+      "dg_id": 15470,
+      "player_name": "Beau Hossler",
+      "win_baseline": 0.0059333333333333,
+      "win_baseline_history_fit": 0.0055
+    },
+    {
+      "dg_id": 12808,
+      "player_name": "Emiliano Grillo",
+      "win_baseline": 0.0059,
+      "win_baseline_history_fit": 0.0056666666666666
+    },
+    {
+      "dg_id": 26657,
+      "player_name": "Steven Fisk",
+      "win_baseline": 0.0058333333333333,
+      "win_baseline_history_fit": 0.0051166666666666
+    },
+    {
+      "dg_id": 27819,
+      "player_name": "Ricky Castillo",
+      "win_baseline": 0.00575,
+      "win_baseline_history_fit": 0.00485
+    },
+    {
+      "dg_id": 28309,
+      "player_name": "Pierceson Coody",
+      "win_baseline": 0.00575,
+      "win_baseline_history_fit": 0.0052833333333333
+    },
+    {
+      "dg_id": 29770,
+      "player_name": "William Mouw",
+      "win_baseline": 0.0055166666666666,
+      "win_baseline_history_fit": 0.0057833333333333
+    },
+    {
+      "dg_id": 29925,
+      "player_name": "Sudarshan Yellamaraju",
+      "win_baseline": 0.00525,
+      "win_baseline_history_fit": 0.0046833333333333
+    },
+    {
+      "dg_id": 26850,
+      "player_name": "Jesper Svensson",
+      "win_baseline": 0.0050166666666666,
+      "win_baseline_history_fit": 0.0047333333333333
+    },
+    {
+      "dg_id": 25157,
+      "player_name": "Lee Hodges",
+      "win_baseline": 0.0049833333333333,
+      "win_baseline_history_fit": 0.00485
+    },
+    {
+      "dg_id": 13126,
+      "player_name": "Nick Taylor",
+      "win_baseline": 0.0049166666666666,
+      "win_baseline_history_fit": 0.0051333333333333
+    },
+    {
+      "dg_id": 21944,
+      "player_name": "Taylor Moore",
+      "win_baseline": 0.00485,
+      "win_baseline_history_fit": 0.0056166666666666
+    },
+    {
+      "dg_id": 23838,
+      "player_name": "Rasmus Hojgaard",
+      "win_baseline": 0.0047833333333333,
+      "win_baseline_history_fit": 0.00345
+    },
+    {
+      "dg_id": 15556,
+      "player_name": "Mackenzie Hughes",
+      "win_baseline": 0.0047666666666666,
+      "win_baseline_history_fit": 0.0048666666666666
+    },
+    {
+      "dg_id": 20722,
+      "player_name": "Matti Schmid",
+      "win_baseline": 0.0045666666666666,
+      "win_baseline_history_fit": 0.00385
+    },
+    {
+      "dg_id": 23505,
+      "player_name": "Max McGreevy",
+      "win_baseline": 0.0044833333333333,
+      "win_baseline_history_fit": 0.0040666666666666
+    },
+    {
+      "dg_id": 21074,
+      "player_name": "Keita Nakajima",
+      "win_baseline": 0.00435,
+      "win_baseline_history_fit": 0.00345
+    },
+    {
+      "dg_id": 18424,
+      "player_name": "Kevin Roy",
+      "win_baseline": 0.0043333333333333,
+      "win_baseline_history_fit": 0.00455
+    },
+    {
+      "dg_id": 27194,
+      "player_name": "Harry Hall",
+      "win_baseline": 0.0041666666666666,
+      "win_baseline_history_fit": 0.0033166666666666
+    },
+    {
+      "dg_id": 19846,
+      "player_name": "Zach Bauchou",
+      "win_baseline": 0.00405,
+      "win_baseline_history_fit": 0.0038833333333333
+    },
+    {
+      "dg_id": 17780,
+      "player_name": "Taylor Pendrith",
+      "win_baseline": 0.0039333333333333,
+      "win_baseline_history_fit": 0.0035666666666666
+    },
+    {
+      "dg_id": 28635,
+      "player_name": "Matt McCarty",
+      "win_baseline": 0.0038,
+      "win_baseline_history_fit": 0.0042333333333333
+    },
+    {
+      "dg_id": 16394,
+      "player_name": "Stephan Jaeger",
+      "win_baseline": 0.00375,
+      "win_baseline_history_fit": 0.00375
+    },
+    {
+      "dg_id": 23504,
+      "player_name": "Rico Hoey",
+      "win_baseline": 0.0036666666666666,
+      "win_baseline_history_fit": 0.0042833333333333
+    },
+    {
+      "dg_id": 22833,
+      "player_name": "Nico Echavarria",
+      "win_baseline": 0.0035,
+      "win_baseline_history_fit": 0.00385
+    },
+    {
+      "dg_id": 22985,
+      "player_name": "Austin Smotherman",
+      "win_baseline": 0.0034166666666666,
+      "win_baseline_history_fit": 0.0040333333333333
+    },
+    {
+      "dg_id": 13764,
+      "player_name": "John Parry",
+      "win_baseline": 0.0034166666666666,
+      "win_baseline_history_fit": 0.0031666666666666
+    },
+    {
+      "dg_id": 11276,
+      "player_name": "Billy Horschel",
+      "win_baseline": 0.0033,
+      "win_baseline_history_fit": 0.0033333333333333
+    },
+    {
+      "dg_id": 15651,
+      "player_name": "Kristoffer Ventura",
+      "win_baseline": 0.0030833333333333,
+      "win_baseline_history_fit": 0.0037166666666666
+    },
+    {
+      "dg_id": 22002,
+      "player_name": "Adrien Dumont De Chassart",
+      "win_baseline": 0.0030333333333333,
+      "win_baseline_history_fit": 0.00245
+    },
+    {
+      "dg_id": 12423,
+      "player_name": "Chris Kirk",
+      "win_baseline": 0.0030333333333333,
+      "win_baseline_history_fit": 0.0051333333333333
+    },
+    {
+      "dg_id": 10104,
+      "player_name": "Seamus Power",
+      "win_baseline": 0.0030166666666666,
+      "win_baseline_history_fit": 0.0024166666666666
+    },
+    {
+      "dg_id": 17639,
+      "player_name": "Zac Blair",
+      "win_baseline": 0.0029666666666666,
+      "win_baseline_history_fit": 0.0021166666666666
+    },
+    {
+      "dg_id": 27164,
+      "player_name": "Chandler Phillips",
+      "win_baseline": 0.0028166666666666,
+      "win_baseline_history_fit": 0.0028666666666666
+    },
+    {
+      "dg_id": 21883,
+      "player_name": "A.J. Ewart",
+      "win_baseline": 0.0026166666666666,
+      "win_baseline_history_fit": 0.0021166666666666
+    },
+    {
+      "dg_id": 13412,
+      "player_name": "Thorbjorn Olesen",
+      "win_baseline": 0.0026,
+      "win_baseline_history_fit": 0.0026666666666666
+    },
+    {
+      "dg_id": 25094,
+      "player_name": "Patrick Fishburn",
+      "win_baseline": 0.0024666666666666,
+      "win_baseline_history_fit": 0.00225
+    },
+    {
+      "dg_id": 15310,
+      "player_name": "Haotong Li",
+      "win_baseline": 0.0024,
+      "win_baseline_history_fit": 0.0018833333333333
+    },
+    {
+      "dg_id": 7399,
+      "player_name": "Lucas Glover",
+      "win_baseline": 0.0022666666666666,
+      "win_baseline_history_fit": 0.0022166666666666
+    },
+    {
+      "dg_id": 16283,
+      "player_name": "Patrick Rodgers",
+      "win_baseline": 0.0021333333333333,
+      "win_baseline_history_fit": 0.0022
+    },
+    {
+      "dg_id": 32055,
+      "player_name": "Neal Shipley",
+      "win_baseline": 0.0021166666666666,
+      "win_baseline_history_fit": 0.00245
+    },
+    {
+      "dg_id": 15575,
+      "player_name": "Tom Hoge",
+      "win_baseline": 0.002,
+      "win_baseline_history_fit": 0.00155
+    },
+    {
+      "dg_id": 14509,
+      "player_name": "Joel Dahmen",
+      "win_baseline": 0.0019833333333333,
+      "win_baseline_history_fit": 0.00185
+    },
+    {
+      "dg_id": 14704,
+      "player_name": "Andrew Putnam",
+      "win_baseline": 0.0019833333333333,
+      "win_baseline_history_fit": 0.0018333333333333
+    },
+    {
+      "dg_id": 26653,
+      "player_name": "Austin Eckroat",
+      "win_baseline": 0.0019333333333333,
+      "win_baseline_history_fit": 0.0018666666666666
+    },
+    {
+      "dg_id": 24304,
+      "player_name": "Karl Vilips",
+      "win_baseline": 0.0018833333333333,
+      "win_baseline_history_fit": 0.0012666666666666
+    },
+    {
+      "dg_id": 24342,
+      "player_name": "Garrick Higgo",
+      "win_baseline": 0.0018833333333333,
+      "win_baseline_history_fit": 0.00205
+    },
+    {
+      "dg_id": 19960,
+      "player_name": "Matthieu Pavon",
+      "win_baseline": 0.0018333333333333,
+      "win_baseline_history_fit": 0.0019166666666666
+    },
+    {
+      "dg_id": 24956,
+      "player_name": "Chandler Blanchet",
+      "win_baseline": 0.0017333333333333,
+      "win_baseline_history_fit": 0.0012666666666666
+    },
+    {
+      "dg_id": 25475,
+      "player_name": "Pontus Nyholm",
+      "win_baseline": 0.0017,
+      "win_baseline_history_fit": 0.0013333333333333
+    },
+    {
+      "dg_id": 16333,
+      "player_name": "Mark Hubbard",
+      "win_baseline": 0.0016666666666666,
+      "win_baseline_history_fit": 0.0019166666666666
+    },
+    {
+      "dg_id": 19729,
+      "player_name": "Takumi Kanaya",
+      "win_baseline": 0.0015333333333333,
+      "win_baseline_history_fit": 0.0013166666666666
+    },
+    {
+      "dg_id": 14792,
+      "player_name": "Adrien Saddier",
+      "win_baseline": 0.0015333333333333,
+      "win_baseline_history_fit": 0.0015166666666666
+    },
+    {
+      "dg_id": 27780,
+      "player_name": "Trace Crowe",
+      "win_baseline": 0.0015166666666666,
+      "win_baseline_history_fit": 0.0012833333333333
+    },
+    {
+      "dg_id": 17550,
+      "player_name": "Erik Van Rooyen",
+      "win_baseline": 0.0014333333333333,
+      "win_baseline_history_fit": 0.0011
+    },
+    {
+      "dg_id": 28270,
+      "player_name": "Nick Dunlap",
+      "win_baseline": 0.0014166666666666,
+      "win_baseline_history_fit": 0.00115
+    },
+    {
+      "dg_id": 32330,
+      "player_name": "Luke Clanton",
+      "win_baseline": 0.0014,
+      "win_baseline_history_fit": 0.0015
+    },
+    {
+      "dg_id": 21995,
+      "player_name": "Hayden Springer",
+      "win_baseline": 0.0013833333333333,
+      "win_baseline_history_fit": 0.0012666666666666
+    },
+    {
+      "dg_id": 25319,
+      "player_name": "John VanDerLaan",
+      "win_baseline": 0.0012333333333333,
+      "win_baseline_history_fit": 0.00115
+    },
+    {
+      "dg_id": 19840,
+      "player_name": "Chad Ramey",
+      "win_baseline": 0.0012333333333333,
+      "win_baseline_history_fit": 0.0014
+    },
+    {
+      "dg_id": 25908,
+      "player_name": "Vince Whaley",
+      "win_baseline": 0.0011,
+      "win_baseline_history_fit": 0.0011333333333333
+    },
+    {
+      "dg_id": 28469,
+      "player_name": "Joe Highsmith",
+      "win_baseline": 0.00105,
+      "win_baseline_history_fit": 0.00105
+    },
+    {
+      "dg_id": 11049,
+      "player_name": "Webb Simpson",
+      "win_baseline": 0.001,
+      "win_baseline_history_fit": 0.00095
+    },
+    {
+      "dg_id": 17032,
+      "player_name": "Alejandro Tosti",
+      "win_baseline": 0.0009833333333333,
+      "win_baseline_history_fit": 0.00125
+    },
+    {
+      "dg_id": 8480,
+      "player_name": "Kevin Streelman",
+      "win_baseline": 0.00095,
+      "win_baseline_history_fit": 0.0007166666666666
+    },
+    {
+      "dg_id": 30814,
+      "player_name": "Gordon Sargent",
+      "win_baseline": 0.0009333333333333,
+      "win_baseline_history_fit": 0.0008666666666666
+    },
+    {
+      "dg_id": 6169,
+      "player_name": "Matt Kuchar",
+      "win_baseline": 0.0009166666666666,
+      "win_baseline_history_fit": 0.0006833333333333
+    },
+    {
+      "dg_id": 15330,
+      "player_name": "Lanto Griffin",
+      "win_baseline": 0.00085,
+      "win_baseline_history_fit": 0.00105
+    },
+    {
+      "dg_id": 30620,
+      "player_name": "Davis Chatfield",
+      "win_baseline": 0.00085,
+      "win_baseline_history_fit": 0.0008333333333333
+    },
+    {
+      "dg_id": 15980,
+      "player_name": "David Lipsky",
+      "win_baseline": 0.0008333333333333,
+      "win_baseline_history_fit": 0.0007
+    },
+    {
+      "dg_id": 35417,
+      "player_name": "William Jennings",
+      "win_baseline": 0.0008166666666666,
+      "win_baseline_history_fit": 0.0007833333333333
+    },
+    {
+      "dg_id": 22051,
+      "player_name": "Aaron Wise",
+      "win_baseline": 0.0008,
+      "win_baseline_history_fit": 0.001
+    },
+    {
+      "dg_id": 21943,
+      "player_name": "Hank Lebioda",
+      "win_baseline": 0.0008,
+      "win_baseline_history_fit": 0.0010666666666666
+    },
+    {
+      "dg_id": 17786,
+      "player_name": "Cam Davis",
+      "win_baseline": 0.0007,
+      "win_baseline_history_fit": 0.0013
+    },
+    {
+      "dg_id": 19477,
+      "player_name": "Adam Schenk",
+      "win_baseline": 0.0006333333333333,
+      "win_baseline_history_fit": 0.00075
+    },
+    {
+      "dg_id": 25002,
+      "player_name": "Dylan Wu",
+      "win_baseline": 0.0006333333333333,
+      "win_baseline_history_fit": 0.0007
+    },
+    {
+      "dg_id": 11451,
+      "player_name": "Brice Garnett",
+      "win_baseline": 0.0006333333333333,
+      "win_baseline_history_fit": 0.0006166666666666
+    },
+    {
+      "dg_id": 20844,
+      "player_name": "Stefano Mazzoli",
+      "win_baseline": 0.0006,
+      "win_baseline_history_fit": 0.0005
+    },
+    {
+      "dg_id": 13997,
+      "player_name": "Adam Svensson",
+      "win_baseline": 0.0006,
+      "win_baseline_history_fit": 0.0006
+    },
+    {
+      "dg_id": 18628,
+      "player_name": "Brian Campbell",
+      "win_baseline": 0.0005666666666666,
+      "win_baseline_history_fit": 0.00025
+    },
+    {
+      "dg_id": 8820,
+      "player_name": "Brandt Snedeker",
+      "win_baseline": 0.0005333333333333,
+      "win_baseline_history_fit": 0.0005833333333333
+    },
+    {
+      "dg_id": 19872,
+      "player_name": "Davis Riley",
+      "win_baseline": 0.0005166666666666,
+      "win_baseline_history_fit": 0.0006
+    },
+    {
+      "dg_id": 21889,
+      "player_name": "Jeffrey Kang",
+      "win_baseline": 0.0005166666666666,
+      "win_baseline_history_fit": 0.00035
+    },
+    {
+      "dg_id": 17381,
+      "player_name": "Ben Silverman",
+      "win_baseline": 0.0005166666666666,
+      "win_baseline_history_fit": 0.0006666666666666
+    },
+    {
+      "dg_id": 17723,
+      "player_name": "Justin Lower",
+      "win_baseline": 0.00045,
+      "win_baseline_history_fit": 0.0006333333333333
+    },
+    {
+      "dg_id": 25003,
+      "player_name": "Danny Walker",
+      "win_baseline": 0.0004,
+      "win_baseline_history_fit": 0.0004833333333333
+    },
+    {
+      "dg_id": 20954,
+      "player_name": "Kensei Hirata",
+      "win_baseline": 0.0003166666666666,
+      "win_baseline_history_fit": 0.0003
+    },
+    {
+      "dg_id": 16591,
+      "player_name": "Marcelo Rozo",
+      "win_baseline": 0.0003,
+      "win_baseline_history_fit": 0.0003
+    },
+    {
+      "dg_id": 14926,
+      "player_name": "Peter Malnati",
+      "win_baseline": 0.0002666666666666,
+      "win_baseline_history_fit": 0.00025
+    },
+    {
+      "dg_id": 13470,
+      "player_name": "Patton Kizzire",
+      "win_baseline": 0.0001666666666666,
+      "win_baseline_history_fit": 0.0001
+    },
+    {
+      "dg_id": 24343,
+      "player_name": "Christo Lamprecht",
+      "win_baseline": 0.0001333333333333,
+      "win_baseline_history_fit": 0.0001666666666666
+    },
+    {
+      "dg_id": 12909,
+      "player_name": "Rafael Campos",
+      "win_baseline": 0.0001333333333333,
+      "win_baseline_history_fit": 0.0001
+    },
+    {
+      "dg_id": 14001,
+      "player_name": "Patrick Wilkes-Krier",
+      "win_baseline": 0.0001166666666666,
+      "win_baseline_history_fit": 8.33333333333333e-05
+    },
+    {
+      "dg_id": 26597,
+      "player_name": "Keenan Huskey",
+      "win_baseline": 8.33333333333333e-05,
+      "win_baseline_history_fit": 3.33333333333333e-05
+    },
+    {
+      "dg_id": 17169,
+      "player_name": "Ryan Ruffels",
+      "win_baseline": 6.66666666666667e-05,
+      "win_baseline_history_fit": 1.66666666666667e-05
+    },
+    {
+      "dg_id": 15981,
+      "player_name": "Justin Quiban",
+      "win_baseline": 1.66666666666667e-05,
+      "win_baseline_history_fit": 0.0
+    },
+    {
+      "dg_id": 21501,
+      "player_name": "Brad Dalke",
+      "win_baseline": 1.66666666666667e-05,
+      "win_baseline_history_fit": 3.33333333333333e-05
+    },
+    {
+      "dg_id": 12425,
+      "player_name": "Brendon Todd",
+      "win_baseline": 0.0,
+      "win_baseline_history_fit": 1.66666666666667e-05
+    },
+    {
+      "dg_id": 29665,
+      "player_name": "Ryan Celano",
+      "win_baseline": 0.0,
+      "win_baseline_history_fit": 0.0
+    },
+    {
+      "dg_id": 33913,
+      "player_name": "Joe Hooks",
+      "win_baseline": 0.0,
+      "win_baseline_history_fit": 0.0
+    },
+    {
+      "dg_id": 35071,
+      "player_name": "Daniel Azallion",
+      "win_baseline": 0.0,
+      "win_baseline_history_fit": 0.0
+    }
+  ]
+}

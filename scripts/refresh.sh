@@ -5,9 +5,9 @@ SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 PROJECT_DIR="$(dirname "$SCRIPT_DIR")"
 PYTHON="$PROJECT_DIR/venv/bin/python"
 
-# Defaults
-EVENT_SLUG="wyndham-championship-2026"
-KALSHI_TICKER="KXPGATOUR-WYC26"
+# Defaults (update when tournament changes)
+EVENT_SLUG="rocket-classic-2026"
+KALSHI_TICKER="KXPGATOUR-ROC26"
 PUSH=false
 
 # Parse arguments
@@ -65,9 +65,12 @@ fi
 # Fetch Data Golf (suppress verbose output, capture summary)
 echo "Fetching Data Golf..."
 DG_OUT=$("$PYTHON" "$SCRIPT_DIR/dg_fetch.py" --event-slug "$EVENT_SLUG" 2>&1)
-DG_FIELD=$(echo "$DG_OUT" | grep -m1 "Players: [0-9]*" | grep -o "[0-9]*")
-DG_SKILLS=$(echo "$DG_OUT" | grep "skill ratings" | grep -o "[0-9]*/[0-9]*")
-echo "  Data Golf: $DG_FIELD field, $DG_SKILLS with skills"
+DG_FIELD=$(echo "$DG_OUT" | grep -m1 "^Players: [0-9]*" | grep -o "[0-9]*")
+DG_EVENT=$(echo "$DG_OUT" | grep "^Field:" | sed 's/Field: //' | sed 's/ ([0-9]* players)//')
+DG_SKILLS=$(echo "$DG_OUT" | grep "Skill ratings coverage" | grep -o "[0-9]*/[0-9]*")
+DG_PREDS=$(echo "$DG_OUT" | grep "^Predictions:" | sed 's/Predictions: //')
+echo "  Data Golf: $DG_EVENT ($DG_FIELD field, $DG_SKILLS with skills)"
+echo "  Predictions: $DG_PREDS"
 
 # Run model (suppress verbose output, capture summary)
 echo "Running model..."

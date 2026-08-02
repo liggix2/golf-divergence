@@ -417,7 +417,7 @@ def main():
 
     kalshi_file = DATA_DIR / "kalshi" / f"{kalshi_ticker}.json"
     dk_file = DATA_DIR / "draftkings" / f"{event_slug}.json"
-    dg_file = DATA_DIR / "datagolf" / f"{event_slug}.json"
+    dg_file = DATA_DIR / "datagolf" / f"predictions-{event_slug}.json"
     model_file = DATA_DIR / "model" / f"{event_slug}.json"
     output_file = OUTPUT_DIR / f"{event_slug}.json"
 
@@ -441,13 +441,13 @@ def main():
         print(f"  Warning: DraftKings file not found, proceeding without DK data")
         dk, dk_base, dk_fetched, dk_collisions = {}, {}, "", []
 
-    print("Loading Data Golf data...")
+    print("Loading Data Golf predictions...")
     try:
         dg, dg_base, dg_fetched, dg_collisions = load_datagolf(dg_file)
-        print(f"  Loaded {len(dg)} players from Data Golf")
+        print(f"  Loaded {len(dg)} players from Data Golf predictions")
     except FileNotFoundError:
-        print(f"Error: Data Golf file not found: {dg_file}")
-        sys.exit(1)
+        print(f"  Warning: DG predictions not found, proceeding without DG odds")
+        dg, dg_base, dg_fetched, dg_collisions = {}, {}, "", []
 
     print("Loading model data...")
     try:

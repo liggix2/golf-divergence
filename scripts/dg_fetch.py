@@ -2,11 +2,11 @@
 """
 Data Golf API Fetcher
 
-Fetches pre-tournament predictions from Data Golf API.
-Parses player win probabilities from all available model variants.
+Fetches field and predictions from Data Golf API.
+Field from /field-updates is authoritative; predictions are optional.
 
 Usage:
-    python dg_fetch.py           # Fetch and parse pre-tournament predictions
+    python dg_fetch.py --event-slug EVENT_SLUG
     python dg_fetch.py --raw     # Dump raw responses for discovery
 """
 
@@ -28,6 +28,8 @@ DATA_DIR = SCRIPT_DIR / "data" / "datagolf"
 ENV_FILE = SCRIPT_DIR / ".env"
 
 BASE_URL = "https://feeds.datagolf.com"
+
+DEFAULT_EVENT_SLUG = "wyndham-championship-2026"
 
 
 def load_api_key() -> str:
@@ -69,6 +71,17 @@ def slugify(text: str) -> str:
     return text.strip('-')
 
 
+def fetch_field_updates(api_key: str) -> dict:
+    """Fetch current field from /field-updates endpoint."""
+    url = f"{BASE_URL}/field-updates"
+    params = {"key": api_key, "tour": "pga", "file_format": "json"}
+
+    print("Fetching field updates...")
+    response = requests.get(url, params=params, timeout=30)
+    response.raise_for_status()
+    return response.json()
+
+
 def fetch_pretournament(api_key: str) -> dict:
     """Fetch pre-tournament predictions."""
     url = f"{BASE_URL}/preds/pre-tournament"
@@ -102,18 +115,93 @@ def fetch_rankings(api_key: str) -> dict:
     return response.json()
 
 
-def parse_and_save(data: dict) -> None:
-    """Parse pre-tournament data and save structured output."""
+def parse_field(data: dict, event_slug: str) -> list:
+    """
+    Parse field data and save structured output.
+
+    Returns list of field players with dg_id and player_name.
+    """
     event_name = data.get("event_name", "Unknown Event")
     last_updated = data.get("last_updated", "")
-    models = data.get("models_available", [])
 
-    if not models:
-        print("Error: No models found in response")
+    # Guard: verify event name matches expected slug
+    api_slug = slugify(event_name)
+    expected_base = event_slug.rsplit("-", 1)[0]  # Remove year suffix
+
+    if not api_slug.startswith(expected_base) and expected_base not in api_slug:
+        print(f"\nERROR: Event mismatch!")
+        print(f"  Expected: {event_slug}")
+        print(f"  API returned: {event_name} (slug: {api_slug})")
+        print(f"\nThe field-updates endpoint is returning a different tournament.")
+        print("Check if the tournament has started or if the slug is correct.")
         sys.exit(1)
 
     print(f"Event: {event_name}")
-    print(f"Models: {', '.join(models)}")
+
+    # Parse field from the response
+    raw_field = data.get("field", [])
+
+    players = []
+    for player in raw_field:
+        dg_id = player.get("dg_id")
+        if dg_id is None:
+            continue
+
+        raw_name = player.get("player_name", "")
+        players.append({
+            "dg_id": dg_id,
+            "player_name": last_first_to_first_last(raw_name),
+        })
+
+    players.sort(key=lambda p: p["player_name"])
+
+    # Build output
+    output = {
+        "source": "datagolf",
+        "endpoint": "field-updates",
+        "fetched_at": datetime.now(timezone.utc).isoformat(),
+        "event_name": event_name,
+        "last_updated": last_updated,
+        "player_count": len(players),
+        "players": players,
+    }
+
+    # Save to file
+    DATA_DIR.mkdir(parents=True, exist_ok=True)
+    filename = f"field-{event_slug}.json"
+    output_path = DATA_DIR / filename
+    with open(output_path, "w") as f:
+        json.dump(output, f, indent=2)
+
+    print(f"Saved to: {output_path}")
+    print(f"Players: {len(players)}")
+
+    return players, event_name
+
+
+def parse_predictions(data: dict, event_slug: str, field_event_name: str) -> bool:
+    """
+    Parse pre-tournament predictions and save structured output.
+
+    Returns True if predictions were saved, False if skipped due to event mismatch.
+    """
+    pred_event_name = data.get("event_name", "Unknown Event")
+    last_updated = data.get("last_updated", "")
+    models = data.get("models_available", [])
+
+    # Check if predictions are for the same event as the field
+    if pred_event_name != field_event_name:
+        print(f"\n  Predictions event: {pred_event_name}")
+        print(f"  Field event: {field_event_name}")
+        print(f"  -> Skipping predictions (not yet available for {field_event_name})")
+        return False
+
+    if not models:
+        print("  Warning: No models found in response")
+        return False
+
+    print(f"  Event: {pred_event_name}")
+    print(f"  Models: {', '.join(models)}")
 
     # Build player records by dg_id
     players_by_id = {}
@@ -142,8 +230,9 @@ def parse_and_save(data: dict) -> None:
     # Build output
     output = {
         "source": "datagolf",
+        "endpoint": "pre-tournament",
         "fetched_at": datetime.now(timezone.utc).isoformat(),
-        "event_name": event_name,
+        "event_name": pred_event_name,
         "last_updated": last_updated,
         "models": models,
         "player_count": len(players),
@@ -152,25 +241,24 @@ def parse_and_save(data: dict) -> None:
 
     # Save to file
     DATA_DIR.mkdir(parents=True, exist_ok=True)
-    filename = f"{slugify(event_name)}-2026.json"
+    filename = f"predictions-{event_slug}.json"
     output_path = DATA_DIR / filename
     with open(output_path, "w") as f:
         json.dump(output, f, indent=2)
 
-    print(f"Saved to: {output_path}")
-    print(f"Players: {len(players)}")
+    print(f"  Saved to: {output_path}")
+    print(f"  Players: {len(players)}")
 
     # Print win probability sums per model
-    print()
     for model in models:
         key = f"win_{model}"
         total = sum(p.get(key, 0) for p in players)
-        print(f"  {model} win prob sum: {total * 100:.1f}%")
+        print(f"    {model} win prob sum: {total * 100:.1f}%")
 
-    return players
+    return True
 
 
-def parse_skill_ratings(data: dict, field_players: list) -> None:
+def parse_skill_ratings(data: dict, field_players: list) -> tuple:
     """Parse skill ratings and save structured output."""
     last_updated = data.get("last_updated", "")
     raw_players = data.get("players", [])
@@ -231,15 +319,9 @@ def parse_skill_ratings(data: dict, field_players: list) -> None:
 
 
 def parse_rankings(data: dict, field_players: list, skill_ids: set, missing_from_skills: set) -> None:
-    """Parse rankings and save structured output. Validate scale against skill ratings."""
+    """Parse rankings and save structured output."""
     last_updated = data.get("last_updated", "")
     raw_rankings = data.get("rankings", [])
-
-    print(f"\nRankings endpoint fields (sample):")
-    if raw_rankings:
-        sample = raw_rankings[0]
-        for key in sorted(sample.keys()):
-            print(f"  {key}: {type(sample[key]).__name__} = {repr(sample[key])[:40]}")
 
     players = []
     for player in raw_rankings:
@@ -275,45 +357,8 @@ def parse_rankings(data: dict, field_players: list, skill_ids: set, missing_from
     print(f"\nSaved to: {output_path}")
     print(f"Players: {len(players)}")
 
-    # Load skill ratings for comparison
-    skill_ratings_file = DATA_DIR / "skill-ratings.json"
-    if skill_ratings_file.exists():
-        with open(skill_ratings_file) as f:
-            skill_data = json.load(f)
-        skill_by_id = {p["dg_id"]: p["sg_total"] for p in skill_data["players"] if p.get("sg_total") is not None}
-
-        # Find players in both
-        rankings_by_id = {p["dg_id"]: p["dg_skill_estimate"] for p in players if p.get("dg_skill_estimate") is not None}
-        common_ids = set(skill_by_id.keys()) & set(rankings_by_id.keys())
-
-        if common_ids:
-            sg_totals = [skill_by_id[i] for i in common_ids]
-            skill_estimates = [rankings_by_id[i] for i in common_ids]
-
-            # Compute correlation and mean difference
-            n = len(common_ids)
-            mean_sg = sum(sg_totals) / n
-            mean_est = sum(skill_estimates) / n
-
-            # Pearson correlation
-            num = sum((sg_totals[i] - mean_sg) * (skill_estimates[i] - mean_est) for i in range(n))
-            denom_sg = sum((x - mean_sg) ** 2 for x in sg_totals) ** 0.5
-            denom_est = sum((x - mean_est) ** 2 for x in skill_estimates) ** 0.5
-            corr = num / (denom_sg * denom_est) if denom_sg * denom_est > 0 else 0
-
-            # Mean difference
-            diffs = [skill_estimates[i] - sg_totals[i] for i in range(n)]
-            mean_diff = sum(diffs) / n
-
-            print(f"\nScale validation ({n} players in both):")
-            print(f"  Correlation (dg_skill_estimate vs sg_total): {corr:.4f}")
-            print(f"  Mean difference (estimate - sg_total): {mean_diff:+.4f}")
-            print(f"  sg_total range: {min(sg_totals):.3f} to {max(sg_totals):.3f}")
-            print(f"  dg_skill_estimate range: {min(skill_estimates):.3f} to {max(skill_estimates):.3f}")
-
     # Check coverage of missing field players
     ranking_ids = {p["dg_id"] for p in players}
-    field_ids = {p["dg_id"] for p in field_players}
     covered_by_rankings = missing_from_skills & ranking_ids
 
     print(f"\nMissing from skills but covered by rankings: {len(covered_by_rankings)}/{len(missing_from_skills)}")
@@ -335,15 +380,42 @@ def dump_raw(api_key: str) -> None:
     print("Data Golf API Discovery")
     print("=" * 60)
 
+    DATA_DIR.mkdir(parents=True, exist_ok=True)
+
+    # Field updates
+    print("Fetching /field-updates...")
+    url = f"{BASE_URL}/field-updates"
+    params = {"key": api_key, "tour": "pga", "file_format": "json"}
+    response = requests.get(url, params=params, timeout=30)
+    response.raise_for_status()
+    data = response.json()
+
+    output_path = DATA_DIR / "raw_field_updates.json"
+    with open(output_path, "w") as f:
+        json.dump(data, f, indent=2)
+    print(f"  Saved to: {output_path}")
+
+    print("\nTop-level keys:")
+    for key, value in data.items():
+        if isinstance(value, list):
+            print(f"  {key}: list ({len(value)} items)")
+        else:
+            print(f"  {key}: {repr(value)[:50]}")
+
+    if data.get("field"):
+        print("\nSample field entry:")
+        sample = data["field"][0]
+        for key in sorted(sample.keys()):
+            print(f"  {key}: {repr(sample[key])[:50]}")
+
     # Pre-tournament predictions
-    print("Fetching /preds/pre-tournament...")
+    print("\nFetching /preds/pre-tournament...")
     url = f"{BASE_URL}/preds/pre-tournament"
     params = {"key": api_key, "tour": "pga", "file_format": "json"}
     response = requests.get(url, params=params, timeout=30)
     response.raise_for_status()
     data = response.json()
 
-    DATA_DIR.mkdir(parents=True, exist_ok=True)
     output_path = DATA_DIR / "raw_pretournament.json"
     with open(output_path, "w") as f:
         json.dump(data, f, indent=2)
@@ -356,29 +428,22 @@ def dump_raw(api_key: str) -> None:
         else:
             print(f"  {key}: {repr(value)[:50]}")
 
-    # Skill ratings
-    print("\nFetching /preds/skill-ratings...")
-    url = f"{BASE_URL}/preds/skill-ratings"
-    params = {"key": api_key, "file_format": "json"}
-    response = requests.get(url, params=params, timeout=30)
-    response.raise_for_status()
-    data = response.json()
-
-    output_path = DATA_DIR / "raw_skillratings.json"
-    with open(output_path, "w") as f:
-        json.dump(data, f, indent=2)
-    print(f"  Saved to: {output_path}")
-
     print("\n" + "=" * 60)
     print("Discovery complete.")
 
 
 def main():
-    parser = argparse.ArgumentParser(description="Fetch Data Golf predictions")
+    parser = argparse.ArgumentParser(description="Fetch Data Golf field and predictions")
     parser.add_argument(
         "--raw",
         action="store_true",
         help="Dump raw responses for discovery instead of parsing"
+    )
+    parser.add_argument(
+        "--event-slug",
+        type=str,
+        default=DEFAULT_EVENT_SLUG,
+        help=f"Event slug for output filename (default: {DEFAULT_EVENT_SLUG})"
     )
     args = parser.parse_args()
 
@@ -387,19 +452,37 @@ def main():
     if args.raw:
         dump_raw(api_key)
     else:
-        # Fetch and parse pre-tournament predictions
-        pretournament_data = fetch_pretournament(api_key)
-        field_players = parse_and_save(pretournament_data)
+        event_slug = args.event_slug
+        print(f"Event slug: {event_slug}")
+        print()
+
+        # Step 1: Fetch field (authoritative source)
+        field_data = fetch_field_updates(api_key)
+        field_players, field_event_name = parse_field(field_data, event_slug)
 
         print()
 
-        # Fetch and parse skill ratings
+        # Step 2: Fetch predictions (optional - may be for different event)
+        pretournament_data = fetch_pretournament(api_key)
+        predictions_available = parse_predictions(pretournament_data, event_slug, field_event_name)
+
+        print()
+
+        # Step 3: Fetch skill ratings (always needed for model)
         skills_data = fetch_skill_ratings(api_key)
         skill_ids, missing_from_skills = parse_skill_ratings(skills_data, field_players)
 
-        # Fetch and parse rankings (fallback skill source)
+        # Step 4: Fetch rankings (fallback skill source)
         rankings_data = fetch_rankings(api_key)
         parse_rankings(rankings_data, field_players, skill_ids, missing_from_skills)
+
+        # Summary
+        print("\n" + "=" * 60)
+        print("SUMMARY")
+        print("=" * 60)
+        print(f"Field: {field_event_name} ({len(field_players)} players)")
+        print(f"Predictions: {'available' if predictions_available else 'not yet available'}")
+        print(f"Skill ratings coverage: {len(skill_ids & {p['dg_id'] for p in field_players})}/{len(field_players)}")
 
 
 if __name__ == "__main__":

@@ -150,7 +150,7 @@ def find_outright_market(markets: list) -> dict:
     return {}
 
 
-def parse_and_save(data: dict) -> None:
+def parse_and_save(data: dict, event_slug: str = None) -> None:
     """Parse selections and save to JSON file."""
     # Extract event info
     events = data.get("events", [])
@@ -161,6 +161,10 @@ def parse_and_save(data: dict) -> None:
     event = events[0]
     event_id = event.get("id", "")
     event_name = event.get("name", "Unknown Event")
+
+    # Use provided slug or derive from event name
+    if event_slug is None:
+        event_slug = slugify(event_name)
 
     # Find the outright winner market
     markets = data.get("markets", [])
@@ -233,7 +237,7 @@ def parse_and_save(data: dict) -> None:
 
     # Save to file
     DATA_DIR.mkdir(parents=True, exist_ok=True)
-    filename = f"{slugify(event_name)}.json"
+    filename = f"{event_slug}.json"
     output_path = DATA_DIR / filename
     with open(output_path, "w") as f:
         json.dump(output, f, indent=2)
@@ -265,6 +269,12 @@ def main():
         action="store_true",
         help="Dump raw JSON response instead of parsing"
     )
+    parser.add_argument(
+        "--event-slug",
+        type=str,
+        default=None,
+        help="Event slug for output filename (default: derived from API response)"
+    )
     args = parser.parse_args()
 
     print("Fetching DraftKings golf odds...")
@@ -279,7 +289,7 @@ def main():
     if args.raw:
         dump_raw(data)
     else:
-        parse_and_save(data)
+        parse_and_save(data, event_slug=args.event_slug)
 
 
 if __name__ == "__main__":
