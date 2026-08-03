@@ -375,11 +375,16 @@ def main():
     print(f"  Unmatched from DraftKings: {len(unmatched_dk)}")
     print(f"  Unmatched from Data Golf: {len(unmatched_dg)}")
 
+    # Calculate Kalshi ask sum
+    kalshi_ask_sum = sum(p.get("kalshi_ask", 0) or 0 for p in merged)
+    print(f"  Kalshi ask sum: {kalshi_ask_sum * 100:.1f}%")
+
     # Build output
     output = {
         "event_slug": event_slug,
         "kalshi_ticker": kalshi_ticker,
         "merged_at": datetime.now(timezone.utc).isoformat(),
+        "kalshi_ask_sum": kalshi_ask_sum,
         "sources": {
             "kalshi": {
                 "file": str(kalshi_file.name),

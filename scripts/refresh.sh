@@ -83,7 +83,9 @@ echo "Merging..."
 MERGE_OUT=$("$PYTHON" "$SCRIPT_DIR/merge_odds.py" --event-slug "$EVENT_SLUG" --kalshi-ticker "$KALSHI_TICKER" 2>&1)
 DK_KA_MATCHED=$(echo "$MERGE_OUT" | grep "DK-Kalshi matched:" | head -1 | grep -o "[0-9]*")
 TOTAL=$(echo "$MERGE_OUT" | grep "Total merged records:" | grep -o "[0-9]*")
+KALSHI_SUM=$(echo "$MERGE_OUT" | grep "Kalshi ask sum:" | grep -o "[0-9.]*%")
 echo "  Merged: $DK_KA_MATCHED DK-Kalshi matched of $TOTAL total"
+echo "  Kalshi ask sum: $KALSHI_SUM"
 
 # Copy to current.json for site
 MERGED_FILE="$PROJECT_DIR/data/merged/$EVENT_SLUG.json"
