@@ -7,6 +7,14 @@ Used by merge_odds.py and model.py to match player names across sources.
 import re
 import unicodedata
 
+# Explicit alias map for full normalized names where Kalshi differs from Data Golf
+# Applied before nickname mapping
+ALIAS_MAP = {
+    'nicolas echavarria': 'nico echavarria',
+    'daniel brown': 'dan brown',
+    'kris ventura': 'kristoffer ventura',
+}
+
 # Active nickname mappings - only entries needed for current fields
 NICKNAME_MAP = {
     'johnny': 'john',
@@ -71,9 +79,13 @@ def normalize_name_base(name: str) -> str:
 
 def normalize_name(name: str) -> str:
     """
-    Normalize player name WITH nickname mapping.
+    Normalize player name WITH alias and nickname mapping.
     """
     name = normalize_name_base(name)
+
+    # Apply full-name alias map first (Kalshi -> Data Golf)
+    if name in ALIAS_MAP:
+        name = ALIAS_MAP[name]
 
     # Apply nickname mappings to first name
     parts = name.split()
