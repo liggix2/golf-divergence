@@ -1,3008 +1,3008 @@
 {
   "source": "datagolf",
-  "fetched_at": "2026-08-02T23:52:38.169908+00:00",
-  "last_updated": "2026-07-27 13:13:42 UTC",
+  "fetched_at": "2026-08-03T17:12:43.356588+00:00",
+  "last_updated": "2026-08-03 12:25:26 UTC",
   "player_count": 500,
   "players": [
     {
       "dg_id": 18417,
       "player_name": "Scottie Scheffler",
       "dg_rank": 1,
-      "dg_skill_estimate": 2.74110240822412
+      "dg_skill_estimate": 2.72360249818897
     },
     {
       "dg_id": 10091,
       "player_name": "Rory McIlroy",
       "dg_rank": 2,
-      "dg_skill_estimate": 1.97588676884386
+      "dg_skill_estimate": 1.95934140437737
     },
     {
       "dg_id": 12294,
       "player_name": "Tommy Fleetwood",
       "dg_rank": 3,
-      "dg_skill_estimate": 1.91296754868009
+      "dg_skill_estimate": 1.89517401764909
     },
     {
       "dg_id": 17646,
       "player_name": "Matt Fitzpatrick",
       "dg_rank": 4,
-      "dg_skill_estimate": 1.842782210907
+      "dg_skill_estimate": 1.82567463806024
     },
     {
       "dg_id": 19483,
       "player_name": "Sam Burns",
       "dg_rank": 5,
-      "dg_skill_estimate": 1.83900679795586
+      "dg_skill_estimate": 1.82100769129297
     },
     {
       "dg_id": 26651,
       "player_name": "Cameron Young",
       "dg_rank": 6,
-      "dg_skill_estimate": 1.71717260016998
+      "dg_skill_estimate": 1.74044749477424
     },
     {
-      "dg_id": 14609,
-      "player_name": "Si Woo Kim",
+      "dg_id": 19895,
+      "player_name": "Xander Schauffele",
       "dg_rank": 7,
-      "dg_skill_estimate": 1.6417207266546
+      "dg_skill_estimate": 1.59261108564489
     },
     {
       "dg_id": 22085,
       "player_name": "Collin Morikawa",
       "dg_rank": 8,
-      "dg_skill_estimate": 1.60214689620682
+      "dg_skill_estimate": 1.58617005269776
     },
     {
       "dg_id": 14578,
       "player_name": "Russell Henley",
       "dg_rank": 9,
-      "dg_skill_estimate": 1.57496863371637
+      "dg_skill_estimate": 1.56948276078052
     },
     {
       "dg_id": 19195,
       "player_name": "Jon Rahm",
       "dg_rank": 10,
-      "dg_skill_estimate": 1.55796754273136
+      "dg_skill_estimate": 1.54245808571012
     },
     {
-      "dg_id": 23604,
-      "player_name": "Wyndham Clark",
+      "dg_id": 14609,
+      "player_name": "Si Woo Kim",
       "dg_rank": 11,
-      "dg_skill_estimate": 1.54709200358092
+      "dg_skill_estimate": 1.54053417958725
     },
     {
       "dg_id": 23950,
       "player_name": "Ludvig Aberg",
       "dg_rank": 12,
-      "dg_skill_estimate": 1.53723213598649
+      "dg_skill_estimate": 1.52004438290877
     },
     {
-      "dg_id": 27774,
-      "player_name": "Chris Gotterup",
+      "dg_id": 15466,
+      "player_name": "Patrick Cantlay",
       "dg_rank": 13,
-      "dg_skill_estimate": 1.51763233881893
+      "dg_skill_estimate": 1.47569065062896
     },
     {
       "dg_id": 19841,
       "player_name": "Bryson DeChambeau",
       "dg_rank": 14,
-      "dg_skill_estimate": 1.46913887902698
+      "dg_skill_estimate": 1.45374449661738
     },
     {
-      "dg_id": 19895,
-      "player_name": "Xander Schauffele",
+      "dg_id": 27774,
+      "player_name": "Chris Gotterup",
       "dg_rank": 15,
-      "dg_skill_estimate": 1.45361930235329
-    },
-    {
-      "dg_id": 15466,
-      "player_name": "Patrick Cantlay",
-      "dg_rank": 16,
-      "dg_skill_estimate": 1.42558917570207
+      "dg_skill_estimate": 1.36256485929588
     },
     {
       "dg_id": 23323,
       "player_name": "Robert MacIntyre",
-      "dg_rank": 17,
-      "dg_skill_estimate": 1.37678094614023
+      "dg_rank": 16,
+      "dg_skill_estimate": 1.35954781019088
     },
     {
       "dg_id": 14796,
       "player_name": "Tyrrell Hatton",
-      "dg_rank": 18,
-      "dg_skill_estimate": 1.3687226891765
+      "dg_rank": 17,
+      "dg_skill_estimate": 1.35232640308096
     },
     {
-      "dg_id": 17536,
-      "player_name": "J.J. Spaun",
+      "dg_id": 13562,
+      "player_name": "Hideki Matsuyama",
+      "dg_rank": 18,
+      "dg_skill_estimate": 1.31571052931509
+    },
+    {
+      "dg_id": 23604,
+      "player_name": "Wyndham Clark",
       "dg_rank": 19,
-      "dg_skill_estimate": 1.33371381428049
+      "dg_skill_estimate": 1.30171496695574
     },
     {
       "dg_id": 18841,
       "player_name": "Viktor Hovland",
       "dg_rank": 20,
-      "dg_skill_estimate": 1.3134738088701
-    },
-    {
-      "dg_id": 24968,
-      "player_name": "Ben Griffin",
-      "dg_rank": 21,
-      "dg_skill_estimate": 1.24218590501553
-    },
-    {
-      "dg_id": 13562,
-      "player_name": "Hideki Matsuyama",
-      "dg_rank": 22,
-      "dg_skill_estimate": 1.21644430231377
+      "dg_skill_estimate": 1.29580499950255
     },
     {
       "dg_id": 29767,
       "player_name": "Ryan Gerard",
+      "dg_rank": 21,
+      "dg_skill_estimate": 1.24691490046017
+    },
+    {
+      "dg_id": 17536,
+      "player_name": "J.J. Spaun",
+      "dg_rank": 22,
+      "dg_skill_estimate": 1.21529528012458
+    },
+    {
+      "dg_id": 24968,
+      "player_name": "Ben Griffin",
       "dg_rank": 23,
-      "dg_skill_estimate": 1.17205134036001
+      "dg_skill_estimate": 1.16994475586825
     },
     {
       "dg_id": 14139,
       "player_name": "Justin Thomas",
       "dg_rank": 24,
-      "dg_skill_estimate": 1.15899036937028
+      "dg_skill_estimate": 1.14350981286095
     },
     {
       "dg_id": 18634,
       "player_name": "Maverick McNealy",
       "dg_rank": 25,
-      "dg_skill_estimate": 1.12159482368022
+      "dg_skill_estimate": 1.10357453212158
+    },
+    {
+      "dg_id": 32319,
+      "player_name": "Jackson Koivun",
+      "dg_rank": 26,
+      "dg_skill_estimate": 1.08524773493585
     },
     {
       "dg_id": 6093,
       "player_name": "Justin Rose",
-      "dg_rank": 26,
-      "dg_skill_estimate": 1.10318493436796
+      "dg_rank": 27,
+      "dg_skill_estimate": 1.08514974856127
     },
     {
       "dg_id": 21891,
       "player_name": "Kurt Kitayama",
-      "dg_rank": 27,
-      "dg_skill_estimate": 1.09358078334731
-    },
-    {
-      "dg_id": 14577,
-      "player_name": "Harris English",
       "dg_rank": 28,
-      "dg_skill_estimate": 1.09341309807568
+      "dg_skill_estimate": 1.07599726791806
     },
     {
       "dg_id": 13900,
       "player_name": "Shane Lowry",
       "dg_rank": 29,
-      "dg_skill_estimate": 1.09225396784889
-    },
-    {
-      "dg_id": 32319,
-      "player_name": "Jackson Koivun",
-      "dg_rank": 30,
-      "dg_skill_estimate": 1.0860876118563
-    },
-    {
-      "dg_id": 26096,
-      "player_name": "Akshay Bhatia",
-      "dg_rank": 31,
-      "dg_skill_estimate": 1.06640585664265
+      "dg_skill_estimate": 1.07509881711907
     },
     {
       "dg_id": 16841,
       "player_name": "Min Woo Lee",
+      "dg_rank": 30,
+      "dg_skill_estimate": 1.02652186118297
+    },
+    {
+      "dg_id": 12965,
+      "player_name": "Rickie Fowler",
+      "dg_rank": 31,
+      "dg_skill_estimate": 1.01943349848977
+    },
+    {
+      "dg_id": 26096,
+      "player_name": "Akshay Bhatia",
       "dg_rank": 32,
-      "dg_skill_estimate": 1.04431566116196
-    },
-    {
-      "dg_id": 17064,
-      "player_name": "Lucas Herbert",
-      "dg_rank": 33,
-      "dg_skill_estimate": 0.964300946669326
-    },
-    {
-      "dg_id": 25362,
-      "player_name": "Alex Fitzpatrick",
-      "dg_rank": 34,
-      "dg_skill_estimate": 0.94557739009993
+      "dg_skill_estimate": 0.977916404112917
     },
     {
       "dg_id": 29433,
       "player_name": "Jacob Bridgeman",
-      "dg_rank": 35,
-      "dg_skill_estimate": 0.942708111269479
+      "dg_rank": 33,
+      "dg_skill_estimate": 0.97285055339192
     },
     {
-      "dg_id": 19396,
-      "player_name": "Jake Knapp",
+      "dg_id": 13872,
+      "player_name": "Keegan Bradley",
+      "dg_rank": 34,
+      "dg_skill_estimate": 0.970445167236904
+    },
+    {
+      "dg_id": 26649,
+      "player_name": "Michael Thorbjornsen",
+      "dg_rank": 35,
+      "dg_skill_estimate": 0.95813959817308
+    },
+    {
+      "dg_id": 17064,
+      "player_name": "Lucas Herbert",
       "dg_rank": 36,
-      "dg_skill_estimate": 0.941459297366159
+      "dg_skill_estimate": 0.946055275790469
+    },
+    {
+      "dg_id": 25362,
+      "player_name": "Alex Fitzpatrick",
+      "dg_rank": 37,
+      "dg_skill_estimate": 0.928695389802292
     },
     {
       "dg_id": 21407,
       "player_name": "Kristoffer Reitan",
-      "dg_rank": 37,
-      "dg_skill_estimate": 0.938983836694548
+      "dg_rank": 38,
+      "dg_skill_estimate": 0.92288980110489
     },
     {
       "dg_id": 11889,
       "player_name": "Ryan Fox",
-      "dg_rank": 38,
-      "dg_skill_estimate": 0.936766228182982
-    },
-    {
-      "dg_id": 6430,
-      "player_name": "Adam Scott",
       "dg_rank": 39,
-      "dg_skill_estimate": 0.924483770149957
+      "dg_skill_estimate": 0.918959357812414
     },
     {
       "dg_id": 18554,
       "player_name": "Aaron Rai",
       "dg_rank": 40,
-      "dg_skill_estimate": 0.923458620282823
+      "dg_skill_estimate": 0.907347143620008
     },
     {
-      "dg_id": 12965,
-      "player_name": "Rickie Fowler",
+      "dg_id": 6430,
+      "player_name": "Adam Scott",
       "dg_rank": 41,
-      "dg_skill_estimate": 0.922158159443488
+      "dg_skill_estimate": 0.906283830456528
     },
     {
       "dg_id": 14838,
       "player_name": "Patrick Reed",
       "dg_rank": 42,
-      "dg_skill_estimate": 0.909916979136567
+      "dg_skill_estimate": 0.896079996563155
     },
     {
-      "dg_id": 23602,
-      "player_name": "Nicolai Hojgaard",
+      "dg_id": 19396,
+      "player_name": "Jake Knapp",
       "dg_rank": 43,
-      "dg_skill_estimate": 0.89884108471026
+      "dg_skill_estimate": 0.884726013395198
     },
     {
-      "dg_id": 13872,
-      "player_name": "Keegan Bradley",
+      "dg_id": 14577,
+      "player_name": "Harris English",
       "dg_rank": 44,
-      "dg_skill_estimate": 0.890986522706269
+      "dg_skill_estimate": 0.864673677332492
     },
     {
       "dg_id": 10419,
       "player_name": "Alex Noren",
       "dg_rank": 45,
-      "dg_skill_estimate": 0.882904851480258
+      "dg_skill_estimate": 0.864256289231562
     },
     {
       "dg_id": 24766,
       "player_name": "Tom Kim",
       "dg_rank": 46,
-      "dg_skill_estimate": 0.849479679609037
+      "dg_skill_estimate": 0.836218572963168
     },
     {
       "dg_id": 18079,
       "player_name": "Joaquin Niemann",
       "dg_rank": 47,
-      "dg_skill_estimate": 0.83722644881986
-    },
-    {
-      "dg_id": 14502,
-      "player_name": "Bud Cauley",
-      "dg_rank": 48,
-      "dg_skill_estimate": 0.820555856764277
-    },
-    {
-      "dg_id": 13126,
-      "player_name": "Nick Taylor",
-      "dg_rank": 49,
-      "dg_skill_estimate": 0.797096236369159
-    },
-    {
-      "dg_id": 17365,
-      "player_name": "Keith Mitchell",
-      "dg_rank": 50,
-      "dg_skill_estimate": 0.7785019620985
-    },
-    {
-      "dg_id": 18474,
-      "player_name": "Alex Smalley",
-      "dg_rank": 51,
-      "dg_skill_estimate": 0.769496102517956
-    },
-    {
-      "dg_id": 26745,
-      "player_name": "Eugenio Chacarra",
-      "dg_rank": 52,
-      "dg_skill_estimate": 0.753865051519546
-    },
-    {
-      "dg_id": 8825,
-      "player_name": "Brian Harman",
-      "dg_rank": 53,
-      "dg_skill_estimate": 0.741397823276016
-    },
-    {
-      "dg_id": 28159,
-      "player_name": "Mac Meissner",
-      "dg_rank": 54,
-      "dg_skill_estimate": 0.730337085466918
+      "dg_skill_estimate": 0.820553161802044
     },
     {
       "dg_id": 17576,
       "player_name": "Corey Conners",
-      "dg_rank": 55,
-      "dg_skill_estimate": 0.726480410710509
+      "dg_rank": 48,
+      "dg_skill_estimate": 0.803781190879709
     },
     {
-      "dg_id": 26649,
-      "player_name": "Michael Thorbjornsen",
-      "dg_rank": 56,
-      "dg_skill_estimate": 0.690466293265286
+      "dg_id": 14502,
+      "player_name": "Bud Cauley",
+      "dg_rank": 49,
+      "dg_skill_estimate": 0.803090109455642
     },
     {
-      "dg_id": 20085,
-      "player_name": "Oliver Lindell",
-      "dg_rank": 57,
-      "dg_skill_estimate": 0.673185699423856
+      "dg_id": 28159,
+      "player_name": "Mac Meissner",
+      "dg_rank": 50,
+      "dg_skill_estimate": 0.788738497145775
     },
     {
-      "dg_id": 21756,
-      "player_name": "Eric Cole",
-      "dg_rank": 58,
-      "dg_skill_estimate": 0.673008912608058
-    },
-    {
-      "dg_id": 21554,
-      "player_name": "J.T. Poston",
-      "dg_rank": 59,
-      "dg_skill_estimate": 0.669267097330929
-    },
-    {
-      "dg_id": 16395,
-      "player_name": "Ben Kohles",
-      "dg_rank": 60,
-      "dg_skill_estimate": 0.629032916415565
-    },
-    {
-      "dg_id": 19870,
-      "player_name": "Denny McCarthy",
-      "dg_rank": 61,
-      "dg_skill_estimate": 0.621528439584821
+      "dg_id": 23602,
+      "player_name": "Nicolai Hojgaard",
+      "dg_rank": 51,
+      "dg_skill_estimate": 0.781514300914449
     },
     {
       "dg_id": 20706,
       "player_name": "Matt Wallace",
-      "dg_rank": 62,
-      "dg_skill_estimate": 0.617090852732548
+      "dg_rank": 52,
+      "dg_skill_estimate": 0.779320247351513
     },
     {
-      "dg_id": 12577,
-      "player_name": "Gary Woodland",
-      "dg_rank": 63,
-      "dg_skill_estimate": 0.595176675384442
+      "dg_id": 17365,
+      "player_name": "Keith Mitchell",
+      "dg_rank": 53,
+      "dg_skill_estimate": 0.762594720454739
     },
     {
-      "dg_id": 20730,
-      "player_name": "Victor Perez",
-      "dg_rank": 64,
-      "dg_skill_estimate": 0.576957758289544
+      "dg_id": 18474,
+      "player_name": "Alex Smalley",
+      "dg_rank": 54,
+      "dg_skill_estimate": 0.753005919844407
     },
     {
-      "dg_id": 16243,
-      "player_name": "Brooks Koepka",
-      "dg_rank": 65,
-      "dg_skill_estimate": 0.566393567587356
+      "dg_id": 26745,
+      "player_name": "Eugenio Chacarra",
+      "dg_rank": 55,
+      "dg_skill_estimate": 0.740697287625662
     },
     {
-      "dg_id": 15856,
-      "player_name": "Cameron Smith",
-      "dg_rank": 66,
-      "dg_skill_estimate": 0.564023871783284
+      "dg_id": 8825,
+      "player_name": "Brian Harman",
+      "dg_rank": 56,
+      "dg_skill_estimate": 0.723414102261041
     },
     {
-      "dg_id": 23014,
-      "player_name": "Sahith Theegala",
-      "dg_rank": 67,
-      "dg_skill_estimate": 0.556290015710318
+      "dg_id": 16395,
+      "player_name": "Ben Kohles",
+      "dg_rank": 57,
+      "dg_skill_estimate": 0.694709517873009
     },
     {
-      "dg_id": 18103,
-      "player_name": "Christiaan Bezuidenhout",
-      "dg_rank": 68,
-      "dg_skill_estimate": 0.555790318256359
+      "dg_id": 13126,
+      "player_name": "Nick Taylor",
+      "dg_rank": 58,
+      "dg_skill_estimate": 0.688982619378857
     },
     {
       "dg_id": 17543,
       "player_name": "Michael Kim",
-      "dg_rank": 69,
-      "dg_skill_estimate": 0.551727795772711
-    },
-    {
-      "dg_id": 22760,
-      "player_name": "Ryo Hisatsune",
-      "dg_rank": 70,
-      "dg_skill_estimate": 0.543544427726402
-    },
-    {
-      "dg_id": 18586,
-      "player_name": "Jordan Smith",
-      "dg_rank": 71,
-      "dg_skill_estimate": 0.540273558462726
+      "dg_rank": 59,
+      "dg_skill_estimate": 0.687097359760528
     },
     {
       "dg_id": 27364,
       "player_name": "Davis Thompson",
-      "dg_rank": 72,
-      "dg_skill_estimate": 0.513098981630494
+      "dg_rank": 60,
+      "dg_skill_estimate": 0.661549935988729
     },
     {
-      "dg_id": 7649,
-      "player_name": "Marc Leishman",
-      "dg_rank": 73,
-      "dg_skill_estimate": 0.507380751884477
+      "dg_id": 20085,
+      "player_name": "Oliver Lindell",
+      "dg_rank": 61,
+      "dg_skill_estimate": 0.660151764525903
     },
     {
-      "dg_id": 23841,
-      "player_name": "Rasmus Neergaard-Petersen",
-      "dg_rank": 74,
-      "dg_skill_estimate": 0.492511936815854
+      "dg_id": 21554,
+      "player_name": "J.T. Poston",
+      "dg_rank": 62,
+      "dg_skill_estimate": 0.651760430726514
     },
     {
-      "dg_id": 32152,
-      "player_name": "Blades Brown",
-      "dg_rank": 75,
-      "dg_skill_estimate": 0.48570540822801
+      "dg_id": 21756,
+      "player_name": "Eric Cole",
+      "dg_rank": 63,
+      "dg_skill_estimate": 0.632032078206964
     },
     {
       "dg_id": 24550,
       "player_name": "Doug Ghim",
+      "dg_rank": 64,
+      "dg_skill_estimate": 0.610095638605467
+    },
+    {
+      "dg_id": 18586,
+      "player_name": "Jordan Smith",
+      "dg_rank": 65,
+      "dg_skill_estimate": 0.594364461475046
+    },
+    {
+      "dg_id": 12577,
+      "player_name": "Gary Woodland",
+      "dg_rank": 66,
+      "dg_skill_estimate": 0.578676115877246
+    },
+    {
+      "dg_id": 29197,
+      "player_name": "Michael Brennan",
+      "dg_rank": 67,
+      "dg_skill_estimate": 0.562379148657219
+    },
+    {
+      "dg_id": 20730,
+      "player_name": "Victor Perez",
+      "dg_rank": 68,
+      "dg_skill_estimate": 0.560614102172038
+    },
+    {
+      "dg_id": 16243,
+      "player_name": "Brooks Koepka",
+      "dg_rank": 69,
+      "dg_skill_estimate": 0.555068978920376
+    },
+    {
+      "dg_id": 15856,
+      "player_name": "Cameron Smith",
+      "dg_rank": 70,
+      "dg_skill_estimate": 0.547113845811868
+    },
+    {
+      "dg_id": 18103,
+      "player_name": "Christiaan Bezuidenhout",
+      "dg_rank": 71,
+      "dg_skill_estimate": 0.543580073479008
+    },
+    {
+      "dg_id": 23014,
+      "player_name": "Sahith Theegala",
+      "dg_rank": 72,
+      "dg_skill_estimate": 0.538379969933993
+    },
+    {
+      "dg_id": 32152,
+      "player_name": "Blades Brown",
+      "dg_rank": 73,
+      "dg_skill_estimate": 0.527623740951935
+    },
+    {
+      "dg_id": 22760,
+      "player_name": "Ryo Hisatsune",
+      "dg_rank": 74,
+      "dg_skill_estimate": 0.502760275414722
+    },
+    {
+      "dg_id": 7649,
+      "player_name": "Marc Leishman",
+      "dg_rank": 75,
+      "dg_skill_estimate": 0.488297854144305
+    },
+    {
+      "dg_id": 19870,
+      "player_name": "Denny McCarthy",
       "dg_rank": 76,
-      "dg_skill_estimate": 0.482101087687188
+      "dg_skill_estimate": 0.487332014011504
     },
     {
       "dg_id": 9771,
       "player_name": "Jason Day",
       "dg_rank": 77,
-      "dg_skill_estimate": 0.477639245912248
-    },
-    {
-      "dg_id": 27194,
-      "player_name": "Harry Hall",
-      "dg_rank": 78,
-      "dg_skill_estimate": 0.476188698540516
+      "dg_skill_estimate": 0.460332737738146
     },
     {
       "dg_id": 26947,
       "player_name": "Casey Jarvis",
+      "dg_rank": 78,
+      "dg_skill_estimate": 0.460254773087825
+    },
+    {
+      "dg_id": 12808,
+      "player_name": "Emiliano Grillo",
       "dg_rank": 79,
-      "dg_skill_estimate": 0.473713841427118
+      "dg_skill_estimate": 0.458285807872591
     },
     {
       "dg_id": 18238,
       "player_name": "Abraham Ancer",
       "dg_rank": 80,
-      "dg_skill_estimate": 0.472681671139025
+      "dg_skill_estimate": 0.455830893952095
     },
     {
       "dg_id": 28984,
       "player_name": "David Puig",
       "dg_rank": 81,
-      "dg_skill_estimate": 0.466209139717015
+      "dg_skill_estimate": 0.448756326527071
     },
     {
-      "dg_id": 17639,
-      "player_name": "Zac Blair",
+      "dg_id": 14636,
+      "player_name": "Jordan Spieth",
       "dg_rank": 82,
-      "dg_skill_estimate": 0.452054977689482
-    },
-    {
-      "dg_id": 28635,
-      "player_name": "Matt McCarty",
-      "dg_rank": 83,
-      "dg_skill_estimate": 0.448711496519248
+      "dg_skill_estimate": 0.43761677601652
     },
     {
       "dg_id": 14181,
       "player_name": "Thomas Detry",
+      "dg_rank": 83,
+      "dg_skill_estimate": 0.429485913385244
+    },
+    {
+      "dg_id": 30445,
+      "player_name": "Angel Ayora",
       "dg_rank": 84,
-      "dg_skill_estimate": 0.445783959620788
+      "dg_skill_estimate": 0.428392572472054
     },
     {
       "dg_id": 17538,
       "player_name": "Max Homa",
       "dg_rank": 85,
-      "dg_skill_estimate": 0.443594922672372
+      "dg_skill_estimate": 0.427478729033372
     },
     {
-      "dg_id": 30445,
-      "player_name": "Angel Ayora",
+      "dg_id": 17639,
+      "player_name": "Zac Blair",
       "dg_rank": 86,
-      "dg_skill_estimate": 0.441757691737842
+      "dg_skill_estimate": 0.422930086602553
     },
     {
-      "dg_id": 29197,
-      "player_name": "Michael Brennan",
+      "dg_id": 28635,
+      "player_name": "Matt McCarty",
       "dg_rank": 87,
-      "dg_skill_estimate": 0.438435437919821
+      "dg_skill_estimate": 0.419507695918733
     },
     {
-      "dg_id": 14424,
-      "player_name": "Dean Burmester",
+      "dg_id": 23841,
+      "player_name": "Rasmus Neergaard-Petersen",
       "dg_rank": 88,
-      "dg_skill_estimate": 0.398900810949179
+      "dg_skill_estimate": 0.415167159398183
     },
     {
-      "dg_id": 12808,
-      "player_name": "Emiliano Grillo",
+      "dg_id": 17488,
+      "player_name": "Sungjae Im",
       "dg_rank": 89,
-      "dg_skill_estimate": 0.386964585784073
-    },
-    {
-      "dg_id": 6892,
-      "player_name": "Charles Howell III",
-      "dg_rank": 90,
-      "dg_skill_estimate": 0.383664049756392
-    },
-    {
-      "dg_id": 14636,
-      "player_name": "Jordan Spieth",
-      "dg_rank": 91,
-      "dg_skill_estimate": 0.371150058606721
-    },
-    {
-      "dg_id": 11952,
-      "player_name": "Branden Grace",
-      "dg_rank": 92,
-      "dg_skill_estimate": 0.368297943048626
-    },
-    {
-      "dg_id": 32457,
-      "player_name": "Johnny Keefer",
-      "dg_rank": 93,
-      "dg_skill_estimate": 0.365149312726196
-    },
-    {
-      "dg_id": 28309,
-      "player_name": "Pierceson Coody",
-      "dg_rank": 94,
-      "dg_skill_estimate": 0.36473111624785
-    },
-    {
-      "dg_id": 14735,
-      "player_name": "Carlos Ortiz",
-      "dg_rank": 95,
-      "dg_skill_estimate": 0.356628173586333
-    },
-    {
-      "dg_id": 23505,
-      "player_name": "Max McGreevy",
-      "dg_rank": 96,
-      "dg_skill_estimate": 0.344331210195253
-    },
-    {
-      "dg_id": 29279,
-      "player_name": "Jackson Suber",
-      "dg_rank": 97,
-      "dg_skill_estimate": 0.340971712326238
-    },
-    {
-      "dg_id": 23465,
-      "player_name": "Max Greyserman",
-      "dg_rank": 98,
-      "dg_skill_estimate": 0.333105031751636
-    },
-    {
-      "dg_id": 17606,
-      "player_name": "Daniel Berger",
-      "dg_rank": 99,
-      "dg_skill_estimate": 0.322741486805308
-    },
-    {
-      "dg_id": 19846,
-      "player_name": "Zach Bauchou",
-      "dg_rank": 100,
-      "dg_skill_estimate": 0.309547905898541
-    },
-    {
-      "dg_id": 22833,
-      "player_name": "Nico Echavarria",
-      "dg_rank": 101,
-      "dg_skill_estimate": 0.307683549995318
-    },
-    {
-      "dg_id": 29827,
-      "player_name": "Ben James",
-      "dg_rank": 102,
-      "dg_skill_estimate": 0.297893708848504
-    },
-    {
-      "dg_id": 17881,
-      "player_name": "Kevin Yu",
-      "dg_rank": 103,
-      "dg_skill_estimate": 0.273567462752741
-    },
-    {
-      "dg_id": 13764,
-      "player_name": "John Parry",
-      "dg_rank": 104,
-      "dg_skill_estimate": 0.273320148375557
+      "dg_skill_estimate": 0.399878146460315
     },
     {
       "dg_id": 27819,
       "player_name": "Ricky Castillo",
+      "dg_rank": 90,
+      "dg_skill_estimate": 0.3962831708017
+    },
+    {
+      "dg_id": 14424,
+      "player_name": "Dean Burmester",
+      "dg_rank": 91,
+      "dg_skill_estimate": 0.381479048080578
+    },
+    {
+      "dg_id": 27194,
+      "player_name": "Harry Hall",
+      "dg_rank": 92,
+      "dg_skill_estimate": 0.375508858110638
+    },
+    {
+      "dg_id": 23838,
+      "player_name": "Rasmus Hojgaard",
+      "dg_rank": 93,
+      "dg_skill_estimate": 0.3693414462634
+    },
+    {
+      "dg_id": 6892,
+      "player_name": "Charles Howell III",
+      "dg_rank": 94,
+      "dg_skill_estimate": 0.367459669392828
+    },
+    {
+      "dg_id": 21074,
+      "player_name": "Keita Nakajima",
+      "dg_rank": 95,
+      "dg_skill_estimate": 0.356598077648548
+    },
+    {
+      "dg_id": 17881,
+      "player_name": "Kevin Yu",
+      "dg_rank": 96,
+      "dg_skill_estimate": 0.356466110848192
+    },
+    {
+      "dg_id": 11952,
+      "player_name": "Branden Grace",
+      "dg_rank": 97,
+      "dg_skill_estimate": 0.351933262443516
+    },
+    {
+      "dg_id": 29827,
+      "player_name": "Ben James",
+      "dg_rank": 98,
+      "dg_skill_estimate": 0.349836659564173
+    },
+    {
+      "dg_id": 14735,
+      "player_name": "Carlos Ortiz",
+      "dg_rank": 99,
+      "dg_skill_estimate": 0.339059926148292
+    },
+    {
+      "dg_id": 29279,
+      "player_name": "Jackson Suber",
+      "dg_rank": 100,
+      "dg_skill_estimate": 0.324973546107695
+    },
+    {
+      "dg_id": 32457,
+      "player_name": "Johnny Keefer",
+      "dg_rank": 101,
+      "dg_skill_estimate": 0.32274613442061
+    },
+    {
+      "dg_id": 12423,
+      "player_name": "Chris Kirk",
+      "dg_rank": 102,
+      "dg_skill_estimate": 0.316853856724835
+    },
+    {
+      "dg_id": 23465,
+      "player_name": "Max Greyserman",
+      "dg_rank": 103,
+      "dg_skill_estimate": 0.31573413832705
+    },
+    {
+      "dg_id": 32593,
+      "player_name": "Tommy Morrison",
+      "dg_rank": 104,
+      "dg_skill_estimate": 0.313537105200269
+    },
+    {
+      "dg_id": 17606,
+      "player_name": "Daniel Berger",
       "dg_rank": 105,
-      "dg_skill_estimate": 0.270951489758956
+      "dg_skill_estimate": 0.304367360420022
     },
     {
       "dg_id": 22465,
       "player_name": "Marco Penge",
       "dg_rank": 106,
-      "dg_skill_estimate": 0.268233709577521
+      "dg_skill_estimate": 0.278713254158371
     },
     {
-      "dg_id": 23475,
-      "player_name": "Andrew Novak",
+      "dg_id": 6986,
+      "player_name": "Zach Johnson",
       "dg_rank": 107,
-      "dg_skill_estimate": 0.263339011596797
+      "dg_skill_estimate": 0.26115094580198
     },
     {
-      "dg_id": 29925,
-      "player_name": "Sudarshan Yellamaraju",
+      "dg_id": 28309,
+      "player_name": "Pierceson Coody",
       "dg_rank": 108,
-      "dg_skill_estimate": 0.262845763216579
+      "dg_skill_estimate": 0.245942744405933
     },
     {
       "dg_id": 17511,
       "player_name": "Sepp Straka",
       "dg_rank": 109,
-      "dg_skill_estimate": 0.262335343669589
+      "dg_skill_estimate": 0.24379227505361
+    },
+    {
+      "dg_id": 19846,
+      "player_name": "Zach Bauchou",
+      "dg_rank": 110,
+      "dg_skill_estimate": 0.240143147686555
+    },
+    {
+      "dg_id": 22833,
+      "player_name": "Nico Echavarria",
+      "dg_rank": 111,
+      "dg_skill_estimate": 0.237602927779925
+    },
+    {
+      "dg_id": 29925,
+      "player_name": "Sudarshan Yellamaraju",
+      "dg_rank": 112,
+      "dg_skill_estimate": 0.237274954708332
     },
     {
       "dg_id": 14704,
       "player_name": "Andrew Putnam",
-      "dg_rank": 110,
-      "dg_skill_estimate": 0.258031479018512
-    },
-    {
-      "dg_id": 17488,
-      "player_name": "Sungjae Im",
-      "dg_rank": 111,
-      "dg_skill_estimate": 0.251800277942877
-    },
-    {
-      "dg_id": 12422,
-      "player_name": "Dustin Johnson",
-      "dg_rank": 112,
-      "dg_skill_estimate": 0.246339170955524
+      "dg_rank": 113,
+      "dg_skill_estimate": 0.235681926319083
     },
     {
       "dg_id": 21362,
       "player_name": "Daniel Hillier",
-      "dg_rank": 113,
-      "dg_skill_estimate": 0.246034114428633
-    },
-    {
-      "dg_id": 22322,
-      "player_name": "Tom McKibbin",
       "dg_rank": 114,
-      "dg_skill_estimate": 0.226580243348293
+      "dg_skill_estimate": 0.232982393408063
     },
     {
-      "dg_id": 21074,
-      "player_name": "Keita Nakajima",
+      "dg_id": 13764,
+      "player_name": "John Parry",
       "dg_rank": 115,
-      "dg_skill_estimate": 0.224387408746286
+      "dg_skill_estimate": 0.230502268123781
     },
     {
-      "dg_id": 32593,
-      "player_name": "Tommy Morrison",
+      "dg_id": 12422,
+      "player_name": "Dustin Johnson",
       "dg_rank": 116,
-      "dg_skill_estimate": 0.22395401965099
+      "dg_skill_estimate": 0.229374843450472
     },
     {
       "dg_id": 26991,
       "player_name": "Jayden Schaper",
       "dg_rank": 117,
-      "dg_skill_estimate": 0.223473408646232
+      "dg_skill_estimate": 0.210149040013931
+    },
+    {
+      "dg_id": 22322,
+      "player_name": "Tom McKibbin",
+      "dg_rank": 118,
+      "dg_skill_estimate": 0.209562346444081
+    },
+    {
+      "dg_id": 15651,
+      "player_name": "Kristoffer Ventura",
+      "dg_rank": 119,
+      "dg_skill_estimate": 0.204863499436796
     },
     {
       "dg_id": 25157,
       "player_name": "Lee Hodges",
-      "dg_rank": 118,
-      "dg_skill_estimate": 0.22044570770313
+      "dg_rank": 120,
+      "dg_skill_estimate": 0.204712542549283
     },
     {
       "dg_id": 25611,
       "player_name": "Jacob Skov Olesen",
-      "dg_rank": 119,
-      "dg_skill_estimate": 0.21371324754387
-    },
-    {
-      "dg_id": 29770,
-      "player_name": "William Mouw",
-      "dg_rank": 120,
-      "dg_skill_estimate": 0.213691124705094
+      "dg_rank": 121,
+      "dg_skill_estimate": 0.199635883293733
     },
     {
       "dg_id": 15556,
       "player_name": "Mackenzie Hughes",
-      "dg_rank": 121,
-      "dg_skill_estimate": 0.213552789991018
-    },
-    {
-      "dg_id": 11276,
-      "player_name": "Billy Horschel",
       "dg_rank": 122,
-      "dg_skill_estimate": 0.208192732005807
+      "dg_skill_estimate": 0.195276143101253
     },
     {
       "dg_id": 23816,
       "player_name": "Sami Valimaki",
       "dg_rank": 123,
-      "dg_skill_estimate": 0.194941304679918
+      "dg_skill_estimate": 0.181853011723669
     },
     {
-      "dg_id": 10104,
-      "player_name": "Seamus Power",
+      "dg_id": 23505,
+      "player_name": "Max McGreevy",
       "dg_rank": 124,
-      "dg_skill_estimate": 0.19475013941482
-    },
-    {
-      "dg_id": 14559,
-      "player_name": "Scott Vincent",
-      "dg_rank": 125,
-      "dg_skill_estimate": 0.178520353835845
-    },
-    {
-      "dg_id": 25569,
-      "player_name": "Sam Stevens",
-      "dg_rank": 126,
-      "dg_skill_estimate": 0.177639403503877
-    },
-    {
-      "dg_id": 6986,
-      "player_name": "Zach Johnson",
-      "dg_rank": 127,
-      "dg_skill_estimate": 0.176326020886762
-    },
-    {
-      "dg_id": 26657,
-      "player_name": "Steven Fisk",
-      "dg_rank": 128,
-      "dg_skill_estimate": 0.175000322030992
-    },
-    {
-      "dg_id": 25131,
-      "player_name": "Calum Hill",
-      "dg_rank": 129,
-      "dg_skill_estimate": 0.157745569931733
-    },
-    {
-      "dg_id": 19421,
-      "player_name": "Hennie Du Plessis",
-      "dg_rank": 130,
-      "dg_skill_estimate": 0.155413016435397
-    },
-    {
-      "dg_id": 20722,
-      "player_name": "Matti Schmid",
-      "dg_rank": 131,
-      "dg_skill_estimate": 0.144555310415572
-    },
-    {
-      "dg_id": 12423,
-      "player_name": "Chris Kirk",
-      "dg_rank": 132,
-      "dg_skill_estimate": 0.136184220518869
-    },
-    {
-      "dg_id": 23838,
-      "player_name": "Rasmus Hojgaard",
-      "dg_rank": 133,
-      "dg_skill_estimate": 0.136095618159604
-    },
-    {
-      "dg_id": 21646,
-      "player_name": "Ewen Ferguson",
-      "dg_rank": 134,
-      "dg_skill_estimate": 0.132519598376033
-    },
-    {
-      "dg_id": 19428,
-      "player_name": "Will Zalatoris",
-      "dg_rank": 135,
-      "dg_skill_estimate": 0.130743110692543
-    },
-    {
-      "dg_id": 16757,
-      "player_name": "Zecheng Dou",
-      "dg_rank": 136,
-      "dg_skill_estimate": 0.129219801046099
-    },
-    {
-      "dg_id": 11676,
-      "player_name": "Tony Finau",
-      "dg_rank": 137,
-      "dg_skill_estimate": 0.122401811790725
-    },
-    {
-      "dg_id": 17780,
-      "player_name": "Taylor Pendrith",
-      "dg_rank": 138,
-      "dg_skill_estimate": 0.110525595063957
-    },
-    {
-      "dg_id": 6169,
-      "player_name": "Matt Kuchar",
-      "dg_rank": 139,
-      "dg_skill_estimate": 0.110214750277873
-    },
-    {
-      "dg_id": 29347,
-      "player_name": "Cooper Dossey",
-      "dg_rank": 140,
-      "dg_skill_estimate": 0.0960115668890341
-    },
-    {
-      "dg_id": 27900,
-      "player_name": "Aldrich Potgieter",
-      "dg_rank": 141,
-      "dg_skill_estimate": 0.0828579253918593
-    },
-    {
-      "dg_id": 9531,
-      "player_name": "Bernd Wiesberger",
-      "dg_rank": 142,
-      "dg_skill_estimate": 0.0730491354400038
-    },
-    {
-      "dg_id": 17813,
-      "player_name": "Marcus Armitage",
-      "dg_rank": 143,
-      "dg_skill_estimate": 0.0718990407204222
-    },
-    {
-      "dg_id": 22002,
-      "player_name": "Adrien Dumont De Chassart",
-      "dg_rank": 144,
-      "dg_skill_estimate": 0.0676146073936671
-    },
-    {
-      "dg_id": 27164,
-      "player_name": "Chandler Phillips",
-      "dg_rank": 145,
-      "dg_skill_estimate": 0.0553939708738927
+      "dg_skill_estimate": 0.179414722976832
     },
     {
       "dg_id": 16394,
       "player_name": "Stephan Jaeger",
-      "dg_rank": 146,
-      "dg_skill_estimate": 0.0480599056198865
+      "dg_rank": 125,
+      "dg_skill_estimate": 0.168012883606229
     },
     {
-      "dg_id": 7399,
-      "player_name": "Lucas Glover",
-      "dg_rank": 147,
-      "dg_skill_estimate": 0.04586605391834
+      "dg_id": 11276,
+      "player_name": "Billy Horschel",
+      "dg_rank": 126,
+      "dg_skill_estimate": 0.16619428100028
     },
     {
-      "dg_id": 16715,
-      "player_name": "Sam Ryder",
-      "dg_rank": 148,
-      "dg_skill_estimate": 0.0395019051726528
+      "dg_id": 14559,
+      "player_name": "Scott Vincent",
+      "dg_rank": 127,
+      "dg_skill_estimate": 0.162678542750979
     },
     {
-      "dg_id": 15120,
-      "player_name": "Michael Johnson",
-      "dg_rank": 149,
-      "dg_skill_estimate": 0.0368554935467642
+      "dg_id": 25131,
+      "player_name": "Calum Hill",
+      "dg_rank": 128,
+      "dg_skill_estimate": 0.144997000694129
     },
     {
-      "dg_id": 21688,
-      "player_name": "S.H. Kim",
-      "dg_rank": 150,
-      "dg_skill_estimate": 0.0304854230791687
+      "dg_id": 19421,
+      "player_name": "Hennie Du Plessis",
+      "dg_rank": 129,
+      "dg_skill_estimate": 0.140753843423107
+    },
+    {
+      "dg_id": 19428,
+      "player_name": "Will Zalatoris",
+      "dg_rank": 130,
+      "dg_skill_estimate": 0.123431326244652
+    },
+    {
+      "dg_id": 21646,
+      "player_name": "Ewen Ferguson",
+      "dg_rank": 131,
+      "dg_skill_estimate": 0.120541730121058
+    },
+    {
+      "dg_id": 29770,
+      "player_name": "William Mouw",
+      "dg_rank": 132,
+      "dg_skill_estimate": 0.119277094372687
+    },
+    {
+      "dg_id": 6169,
+      "player_name": "Matt Kuchar",
+      "dg_rank": 133,
+      "dg_skill_estimate": 0.116821872622705
+    },
+    {
+      "dg_id": 23504,
+      "player_name": "Rico Hoey",
+      "dg_rank": 134,
+      "dg_skill_estimate": 0.113598179909774
+    },
+    {
+      "dg_id": 25569,
+      "player_name": "Sam Stevens",
+      "dg_rank": 135,
+      "dg_skill_estimate": 0.112192977870117
+    },
+    {
+      "dg_id": 18424,
+      "player_name": "Kevin Roy",
+      "dg_rank": 136,
+      "dg_skill_estimate": 0.0917045044757638
     },
     {
       "dg_id": 15470,
       "player_name": "Beau Hossler",
-      "dg_rank": 151,
-      "dg_skill_estimate": 0.0300522286624415
+      "dg_rank": 137,
+      "dg_skill_estimate": 0.0713013823072538
+    },
+    {
+      "dg_id": 16757,
+      "player_name": "Zecheng Dou",
+      "dg_rank": 138,
+      "dg_skill_estimate": 0.0611921931495178
+    },
+    {
+      "dg_id": 9531,
+      "player_name": "Bernd Wiesberger",
+      "dg_rank": 139,
+      "dg_skill_estimate": 0.0602694320547075
+    },
+    {
+      "dg_id": 17813,
+      "player_name": "Marcus Armitage",
+      "dg_rank": 140,
+      "dg_skill_estimate": 0.0587562894691411
+    },
+    {
+      "dg_id": 23475,
+      "player_name": "Andrew Novak",
+      "dg_rank": 141,
+      "dg_skill_estimate": 0.0582316743346182
+    },
+    {
+      "dg_id": 10104,
+      "player_name": "Seamus Power",
+      "dg_rank": 142,
+      "dg_skill_estimate": 0.0432796026508517
+    },
+    {
+      "dg_id": 16715,
+      "player_name": "Sam Ryder",
+      "dg_rank": 143,
+      "dg_skill_estimate": 0.0291719553807175
+    },
+    {
+      "dg_id": 13412,
+      "player_name": "Thorbjorn Olesen",
+      "dg_rank": 144,
+      "dg_skill_estimate": 0.0264235603228397
+    },
+    {
+      "dg_id": 29347,
+      "player_name": "Cooper Dossey",
+      "dg_rank": 145,
+      "dg_skill_estimate": 0.0209553973571815
+    },
+    {
+      "dg_id": 21688,
+      "player_name": "S.H. Kim",
+      "dg_rank": 146,
+      "dg_skill_estimate": 0.0172502740650664
+    },
+    {
+      "dg_id": 20722,
+      "player_name": "Matti Schmid",
+      "dg_rank": 147,
+      "dg_skill_estimate": 0.0157310540028071
     },
     {
       "dg_id": 14016,
       "player_name": "Jorge Campillo",
+      "dg_rank": 148,
+      "dg_skill_estimate": 0.0126278693825883
+    },
+    {
+      "dg_id": 22002,
+      "player_name": "Adrien Dumont De Chassart",
+      "dg_rank": 149,
+      "dg_skill_estimate": 0.0095557895587001
+    },
+    {
+      "dg_id": 26653,
+      "player_name": "Austin Eckroat",
+      "dg_rank": 150,
+      "dg_skill_estimate": 0.0087361142669829
+    },
+    {
+      "dg_id": 17780,
+      "player_name": "Taylor Pendrith",
+      "dg_rank": 151,
+      "dg_skill_estimate": 0.0062676230065171
+    },
+    {
+      "dg_id": 31192,
+      "player_name": "Ross Steelman",
       "dg_rank": 152,
-      "dg_skill_estimate": 0.0257326406204368
+      "dg_skill_estimate": 0.0042179159729465
     },
     {
       "dg_id": 32312,
       "player_name": "Cole Sherwood",
       "dg_rank": 153,
-      "dg_skill_estimate": 0.0209681138423764
+      "dg_skill_estimate": 0.0011079741400675
+    },
+    {
+      "dg_id": 11676,
+      "player_name": "Tony Finau",
+      "dg_rank": 154,
+      "dg_skill_estimate": -0.0152606451067483
     },
     {
       "dg_id": 20084,
       "player_name": "Mikael Lindberg",
-      "dg_rank": 154,
-      "dg_skill_estimate": -0.0071485488131932
-    },
-    {
-      "dg_id": 15651,
-      "player_name": "Kristoffer Ventura",
       "dg_rank": 155,
-      "dg_skill_estimate": -0.0150432591558905
+      "dg_skill_estimate": -0.0189024171320114
     },
     {
-      "dg_id": 22985,
-      "player_name": "Austin Smotherman",
+      "dg_id": 27164,
+      "player_name": "Chandler Phillips",
       "dg_rank": 156,
-      "dg_skill_estimate": -0.0181216225278887
+      "dg_skill_estimate": -0.0218322429734477
     },
     {
-      "dg_id": 21883,
-      "player_name": "A.J. Ewart",
+      "dg_id": 27900,
+      "player_name": "Aldrich Potgieter",
       "dg_rank": 157,
-      "dg_skill_estimate": -0.0184525344694552
+      "dg_skill_estimate": -0.0394272653613815
     },
     {
-      "dg_id": 28471,
-      "player_name": "Davis Shore",
+      "dg_id": 26657,
+      "player_name": "Steven Fisk",
       "dg_rank": 158,
-      "dg_skill_estimate": -0.0204304637808981
+      "dg_skill_estimate": -0.0438689973248216
     },
     {
       "dg_id": 32089,
       "player_name": "Preston Stout",
       "dg_rank": 159,
-      "dg_skill_estimate": -0.0273355552269452
+      "dg_skill_estimate": -0.0487145224484825
     },
     {
       "dg_id": 14795,
       "player_name": "Laurie Canter",
       "dg_rank": 160,
-      "dg_skill_estimate": -0.0327666377222296
+      "dg_skill_estimate": -0.049383895126144
     },
     {
       "dg_id": 20766,
       "player_name": "Dan Brown",
       "dg_rank": 161,
-      "dg_skill_estimate": -0.0420924577874307
-    },
-    {
-      "dg_id": 18424,
-      "player_name": "Kevin Roy",
-      "dg_rank": 162,
-      "dg_skill_estimate": -0.0435816646702317
+      "dg_skill_estimate": -0.0533736888733552
     },
     {
       "dg_id": 28473,
       "player_name": "Jose Luis Ballester",
+      "dg_rank": 162,
+      "dg_skill_estimate": -0.0686365567609651
+    },
+    {
+      "dg_id": 21883,
+      "player_name": "A.J. Ewart",
       "dg_rank": 163,
-      "dg_skill_estimate": -0.0516367048008763
+      "dg_skill_estimate": -0.0722452000303928
+    },
+    {
+      "dg_id": 15980,
+      "player_name": "David Lipsky",
+      "dg_rank": 164,
+      "dg_skill_estimate": -0.0743178613111761
     },
     {
       "dg_id": 18580,
       "player_name": "Talor Gooch",
-      "dg_rank": 164,
-      "dg_skill_estimate": -0.0600721505333928
-    },
-    {
-      "dg_id": 13412,
-      "player_name": "Thorbjorn Olesen",
       "dg_rank": 165,
-      "dg_skill_estimate": -0.0643611216169206
+      "dg_skill_estimate": -0.0767302278590871
     },
     {
       "dg_id": 21944,
       "player_name": "Taylor Moore",
       "dg_rank": 166,
-      "dg_skill_estimate": -0.0670015390379848
+      "dg_skill_estimate": -0.0798495753656323
     },
     {
       "dg_id": 18770,
       "player_name": "Antoine Rozner",
       "dg_rank": 167,
-      "dg_skill_estimate": -0.0687721357823145
+      "dg_skill_estimate": -0.0812736650006854
     },
     {
-      "dg_id": 23504,
-      "player_name": "Rico Hoey",
+      "dg_id": 32456,
+      "player_name": "Thomas Ponder",
       "dg_rank": 168,
-      "dg_skill_estimate": -0.0695465563297589
+      "dg_skill_estimate": -0.0894024916581504
     },
     {
       "dg_id": 14459,
       "player_name": "Byeong Hun An",
       "dg_rank": 169,
-      "dg_skill_estimate": -0.0743211476835894
-    },
-    {
-      "dg_id": 32456,
-      "player_name": "Thomas Ponder",
-      "dg_rank": 170,
-      "dg_skill_estimate": -0.0770992477335176
-    },
-    {
-      "dg_id": 26653,
-      "player_name": "Austin Eckroat",
-      "dg_rank": 171,
-      "dg_skill_estimate": -0.0794325817439509
-    },
-    {
-      "dg_id": 7672,
-      "player_name": "Louis Oosthuizen",
-      "dg_rank": 172,
-      "dg_skill_estimate": -0.0859471392854452
-    },
-    {
-      "dg_id": 20770,
-      "player_name": "Sebastian Munoz",
-      "dg_rank": 173,
-      "dg_skill_estimate": -0.0894391691955041
-    },
-    {
-      "dg_id": 7334,
-      "player_name": "Bubba Watson",
-      "dg_rank": 174,
-      "dg_skill_estimate": -0.0898608143369738
-    },
-    {
-      "dg_id": 31192,
-      "player_name": "Ross Steelman",
-      "dg_rank": 175,
-      "dg_skill_estimate": -0.0918128808807633
-    },
-    {
-      "dg_id": 27947,
-      "player_name": "Christiaan Maas",
-      "dg_rank": 176,
-      "dg_skill_estimate": -0.093019077995144
-    },
-    {
-      "dg_id": 13944,
-      "player_name": "Thomas Pieters",
-      "dg_rank": 177,
-      "dg_skill_estimate": -0.094809716605507
-    },
-    {
-      "dg_id": 31392,
-      "player_name": "Caleb VanArragon",
-      "dg_rank": 178,
-      "dg_skill_estimate": -0.100879583949186
-    },
-    {
-      "dg_id": 15575,
-      "player_name": "Tom Hoge",
-      "dg_rank": 179,
-      "dg_skill_estimate": -0.114449373129354
-    },
-    {
-      "dg_id": 30856,
-      "player_name": "Hunter Eichhorn",
-      "dg_rank": 180,
-      "dg_skill_estimate": -0.116781468437269
-    },
-    {
-      "dg_id": 19729,
-      "player_name": "Takumi Kanaya",
-      "dg_rank": 181,
-      "dg_skill_estimate": -0.120787297334712
+      "dg_skill_estimate": -0.089888004585899
     },
     {
       "dg_id": 25094,
       "player_name": "Patrick Fishburn",
+      "dg_rank": 170,
+      "dg_skill_estimate": -0.0966394624728442
+    },
+    {
+      "dg_id": 7672,
+      "player_name": "Louis Oosthuizen",
+      "dg_rank": 171,
+      "dg_skill_estimate": -0.102288953841996
+    },
+    {
+      "dg_id": 7399,
+      "player_name": "Lucas Glover",
+      "dg_rank": 172,
+      "dg_skill_estimate": -0.10281009554321
+    },
+    {
+      "dg_id": 7334,
+      "player_name": "Bubba Watson",
+      "dg_rank": 173,
+      "dg_skill_estimate": -0.105101472893521
+    },
+    {
+      "dg_id": 20770,
+      "player_name": "Sebastian Munoz",
+      "dg_rank": 174,
+      "dg_skill_estimate": -0.106355173105615
+    },
+    {
+      "dg_id": 13944,
+      "player_name": "Thomas Pieters",
+      "dg_rank": 175,
+      "dg_skill_estimate": -0.111651533722055
+    },
+    {
+      "dg_id": 31392,
+      "player_name": "Caleb VanArragon",
+      "dg_rank": 176,
+      "dg_skill_estimate": -0.112532954301281
+    },
+    {
+      "dg_id": 5665,
+      "player_name": "Stewart Cink",
+      "dg_rank": 177,
+      "dg_skill_estimate": -0.11451862030298
+    },
+    {
+      "dg_id": 15120,
+      "player_name": "Michael Johnson",
+      "dg_rank": 178,
+      "dg_skill_estimate": -0.124730236983816
+    },
+    {
+      "dg_id": 8820,
+      "player_name": "Brandt Snedeker",
+      "dg_rank": 179,
+      "dg_skill_estimate": -0.127242529210491
+    },
+    {
+      "dg_id": 28471,
+      "player_name": "Davis Shore",
+      "dg_rank": 180,
+      "dg_skill_estimate": -0.135164670985233
+    },
+    {
+      "dg_id": 7655,
+      "player_name": "Francesco Molinari",
+      "dg_rank": 181,
+      "dg_skill_estimate": -0.137516688155499
+    },
+    {
+      "dg_id": 28268,
+      "player_name": "Kota Kaneko",
       "dg_rank": 182,
-      "dg_skill_estimate": -0.122036588036092
+      "dg_skill_estimate": -0.138347696444184
     },
     {
       "dg_id": 16602,
       "player_name": "Harold Varner III",
       "dg_rank": 183,
-      "dg_skill_estimate": -0.123329267526383
-    },
-    {
-      "dg_id": 28268,
-      "player_name": "Kota Kaneko",
-      "dg_rank": 184,
-      "dg_skill_estimate": -0.123990110709173
-    },
-    {
-      "dg_id": 7655,
-      "player_name": "Francesco Molinari",
-      "dg_rank": 185,
-      "dg_skill_estimate": -0.12675647178491
-    },
-    {
-      "dg_id": 26850,
-      "player_name": "Jesper Svensson",
-      "dg_rank": 186,
-      "dg_skill_estimate": -0.133404609699919
-    },
-    {
-      "dg_id": 14509,
-      "player_name": "Joel Dahmen",
-      "dg_rank": 187,
-      "dg_skill_estimate": -0.141857956824858
-    },
-    {
-      "dg_id": 29970,
-      "player_name": "Dylan Menante",
-      "dg_rank": 188,
-      "dg_skill_estimate": -0.144904166455278
-    },
-    {
-      "dg_id": 16283,
-      "player_name": "Patrick Rodgers",
-      "dg_rank": 189,
-      "dg_skill_estimate": -0.153168296012224
-    },
-    {
-      "dg_id": 11082,
-      "player_name": "Bronson Burgoon",
-      "dg_rank": 190,
-      "dg_skill_estimate": -0.169160381885815
-    },
-    {
-      "dg_id": 12232,
-      "player_name": "Ryo Ishikawa",
-      "dg_rank": 191,
-      "dg_skill_estimate": -0.170936981108718
-    },
-    {
-      "dg_id": 17550,
-      "player_name": "Erik Van Rooyen",
-      "dg_rank": 192,
-      "dg_skill_estimate": -0.172173346932108
-    },
-    {
-      "dg_id": 5665,
-      "player_name": "Stewart Cink",
-      "dg_rank": 193,
-      "dg_skill_estimate": -0.172306062505193
-    },
-    {
-      "dg_id": 24481,
-      "player_name": "Doc Redman",
-      "dg_rank": 194,
-      "dg_skill_estimate": -0.173502886898113
-    },
-    {
-      "dg_id": 22736,
-      "player_name": "Thomas Rosenmueller",
-      "dg_rank": 195,
-      "dg_skill_estimate": -0.182333654178943
-    },
-    {
-      "dg_id": 22259,
-      "player_name": "Alejandro Del Rey",
-      "dg_rank": 196,
-      "dg_skill_estimate": -0.184184828032103
-    },
-    {
-      "dg_id": 7108,
-      "player_name": "Paul Casey",
-      "dg_rank": 197,
-      "dg_skill_estimate": -0.188039023101893
-    },
-    {
-      "dg_id": 18027,
-      "player_name": "Nathan Kimsey",
-      "dg_rank": 198,
-      "dg_skill_estimate": -0.192831450685052
-    },
-    {
-      "dg_id": 30620,
-      "player_name": "Davis Chatfield",
-      "dg_rank": 199,
-      "dg_skill_estimate": -0.193650328020212
-    },
-    {
-      "dg_id": 15980,
-      "player_name": "David Lipsky",
-      "dg_rank": 200,
-      "dg_skill_estimate": -0.195655493333641
-    },
-    {
-      "dg_id": 10201,
-      "player_name": "Julien Guerrier",
-      "dg_rank": 201,
-      "dg_skill_estimate": -0.201020080550387
-    },
-    {
-      "dg_id": 5689,
-      "player_name": "Sergio Garcia",
-      "dg_rank": 202,
-      "dg_skill_estimate": -0.203835409026392
+      "dg_skill_estimate": -0.139604969198946
     },
     {
       "dg_id": 23708,
       "player_name": "Sandy Scott",
-      "dg_rank": 203,
-      "dg_skill_estimate": -0.204892302714414
+      "dg_rank": 184,
+      "dg_skill_estimate": -0.140066411926355
     },
     {
-      "dg_id": 15310,
-      "player_name": "Haotong Li",
-      "dg_rank": 204,
-      "dg_skill_estimate": -0.22366421257068
+      "dg_id": 15575,
+      "player_name": "Tom Hoge",
+      "dg_rank": 185,
+      "dg_skill_estimate": -0.143942926508008
+    },
+    {
+      "dg_id": 29970,
+      "player_name": "Dylan Menante",
+      "dg_rank": 186,
+      "dg_skill_estimate": -0.152592762983909
     },
     {
       "dg_id": 23656,
       "player_name": "Carson Young",
-      "dg_rank": 205,
-      "dg_skill_estimate": -0.227274936606578
+      "dg_rank": 187,
+      "dg_skill_estimate": -0.154616755107814
+    },
+    {
+      "dg_id": 14509,
+      "player_name": "Joel Dahmen",
+      "dg_rank": 188,
+      "dg_skill_estimate": -0.162660297971453
+    },
+    {
+      "dg_id": 19729,
+      "player_name": "Takumi Kanaya",
+      "dg_rank": 189,
+      "dg_skill_estimate": -0.1664499664612
+    },
+    {
+      "dg_id": 17550,
+      "player_name": "Erik Van Rooyen",
+      "dg_rank": 190,
+      "dg_skill_estimate": -0.168341617822106
+    },
+    {
+      "dg_id": 11082,
+      "player_name": "Bronson Burgoon",
+      "dg_rank": 191,
+      "dg_skill_estimate": -0.184198260144009
+    },
+    {
+      "dg_id": 24481,
+      "player_name": "Doc Redman",
+      "dg_rank": 192,
+      "dg_skill_estimate": -0.192717144302593
+    },
+    {
+      "dg_id": 22259,
+      "player_name": "Alejandro Del Rey",
+      "dg_rank": 193,
+      "dg_skill_estimate": -0.197634949878431
+    },
+    {
+      "dg_id": 26850,
+      "player_name": "Jesper Svensson",
+      "dg_rank": 194,
+      "dg_skill_estimate": -0.198624353326877
+    },
+    {
+      "dg_id": 12232,
+      "player_name": "Ryo Ishikawa",
+      "dg_rank": 195,
+      "dg_skill_estimate": -0.199439722941893
+    },
+    {
+      "dg_id": 7108,
+      "player_name": "Paul Casey",
+      "dg_rank": 196,
+      "dg_skill_estimate": -0.203658186764334
+    },
+    {
+      "dg_id": 18027,
+      "player_name": "Nathan Kimsey",
+      "dg_rank": 197,
+      "dg_skill_estimate": -0.205575839019057
+    },
+    {
+      "dg_id": 30856,
+      "player_name": "Hunter Eichhorn",
+      "dg_rank": 198,
+      "dg_skill_estimate": -0.205867489024336
+    },
+    {
+      "dg_id": 10201,
+      "player_name": "Julien Guerrier",
+      "dg_rank": 199,
+      "dg_skill_estimate": -0.212614974173166
+    },
+    {
+      "dg_id": 5689,
+      "player_name": "Sergio Garcia",
+      "dg_rank": 200,
+      "dg_skill_estimate": -0.21975656888269
+    },
+    {
+      "dg_id": 24956,
+      "player_name": "Chandler Blanchet",
+      "dg_rank": 201,
+      "dg_skill_estimate": -0.232986287204992
     },
     {
       "dg_id": 24369,
       "player_name": "Kazuma Kobori",
-      "dg_rank": 206,
-      "dg_skill_estimate": -0.229152319710148
+      "dg_rank": 202,
+      "dg_skill_estimate": -0.242342481956609
     },
     {
       "dg_id": 16333,
       "player_name": "Mark Hubbard",
-      "dg_rank": 207,
-      "dg_skill_estimate": -0.241014013366211
-    },
-    {
-      "dg_id": 15326,
-      "player_name": "Andy Sullivan",
-      "dg_rank": 208,
-      "dg_skill_estimate": -0.245643014133122
+      "dg_rank": 203,
+      "dg_skill_estimate": -0.24682929318624
     },
     {
       "dg_id": 31343,
       "player_name": "David Ford",
-      "dg_rank": 209,
-      "dg_skill_estimate": -0.245648454387059
+      "dg_rank": 204,
+      "dg_skill_estimate": -0.254382887144789
     },
     {
-      "dg_id": 24304,
-      "player_name": "Karl Vilips",
-      "dg_rank": 210,
-      "dg_skill_estimate": -0.259749903981065
+      "dg_id": 15326,
+      "player_name": "Andy Sullivan",
+      "dg_rank": 205,
+      "dg_skill_estimate": -0.258744300899155
     },
     {
-      "dg_id": 8820,
-      "player_name": "Brandt Snedeker",
-      "dg_rank": 211,
-      "dg_skill_estimate": -0.262293219043153
+      "dg_id": 30620,
+      "player_name": "Davis Chatfield",
+      "dg_rank": 206,
+      "dg_skill_estimate": -0.261902084231954
     },
     {
-      "dg_id": 11049,
-      "player_name": "Webb Simpson",
-      "dg_rank": 212,
-      "dg_skill_estimate": -0.262666511529651
+      "dg_id": 15310,
+      "player_name": "Haotong Li",
+      "dg_rank": 207,
+      "dg_skill_estimate": -0.263446294663464
     },
     {
-      "dg_id": 22608,
-      "player_name": "Todd Clements",
-      "dg_rank": 213,
-      "dg_skill_estimate": -0.262691759937591
-    },
-    {
-      "dg_id": 20727,
-      "player_name": "Ugo Coussaud",
-      "dg_rank": 214,
-      "dg_skill_estimate": -0.263620106469978
-    },
-    {
-      "dg_id": 18174,
-      "player_name": "JC Ritchie",
-      "dg_rank": 215,
-      "dg_skill_estimate": -0.271059252704299
+      "dg_id": 22736,
+      "player_name": "Thomas Rosenmueller",
+      "dg_rank": 208,
+      "dg_skill_estimate": -0.267316908774276
     },
     {
       "dg_id": 25908,
       "player_name": "Vince Whaley",
-      "dg_rank": 216,
-      "dg_skill_estimate": -0.280278359290131
+      "dg_rank": 209,
+      "dg_skill_estimate": -0.272444776296554
     },
     {
-      "dg_id": 30463,
-      "player_name": "Caleb Surratt",
-      "dg_rank": 217,
-      "dg_skill_estimate": -0.29417653607089
+      "dg_id": 22608,
+      "player_name": "Todd Clements",
+      "dg_rank": 210,
+      "dg_skill_estimate": -0.274786641533358
+    },
+    {
+      "dg_id": 20727,
+      "player_name": "Ugo Coussaud",
+      "dg_rank": 211,
+      "dg_skill_estimate": -0.278476346280421
+    },
+    {
+      "dg_id": 18174,
+      "player_name": "JC Ritchie",
+      "dg_rank": 212,
+      "dg_skill_estimate": -0.283633840860182
+    },
+    {
+      "dg_id": 24304,
+      "player_name": "Karl Vilips",
+      "dg_rank": 213,
+      "dg_skill_estimate": -0.28468664876673
     },
     {
       "dg_id": 32550,
       "player_name": "Davis Bryant",
-      "dg_rank": 218,
-      "dg_skill_estimate": -0.294958033618784
+      "dg_rank": 214,
+      "dg_skill_estimate": -0.309295120478841
     },
     {
       "dg_id": 26193,
       "player_name": "Wenyi Ding",
-      "dg_rank": 219,
-      "dg_skill_estimate": -0.296508179303517
+      "dg_rank": 215,
+      "dg_skill_estimate": -0.310451620702805
     },
     {
-      "dg_id": 7677,
-      "player_name": "Shaun Norris",
-      "dg_rank": 220,
-      "dg_skill_estimate": -0.298251757832634
+      "dg_id": 30463,
+      "player_name": "Caleb Surratt",
+      "dg_rank": 216,
+      "dg_skill_estimate": -0.312409673160025
     },
     {
       "dg_id": 15113,
       "player_name": "Eddie Pepperell",
-      "dg_rank": 221,
-      "dg_skill_estimate": -0.301466616570642
+      "dg_rank": 217,
+      "dg_skill_estimate": -0.312418115509928
+    },
+    {
+      "dg_id": 7677,
+      "player_name": "Shaun Norris",
+      "dg_rank": 218,
+      "dg_skill_estimate": -0.313947571189491
     },
     {
       "dg_id": 26008,
       "player_name": "Manuel Elvira",
+      "dg_rank": 219,
+      "dg_skill_estimate": -0.317214284187455
+    },
+    {
+      "dg_id": 27947,
+      "player_name": "Christiaan Maas",
+      "dg_rank": 220,
+      "dg_skill_estimate": -0.339222278040706
+    },
+    {
+      "dg_id": 11049,
+      "player_name": "Webb Simpson",
+      "dg_rank": 221,
+      "dg_skill_estimate": -0.344722641126632
+    },
+    {
+      "dg_id": 12988,
+      "player_name": "Ignacio Elvira Mijares",
       "dg_rank": 222,
-      "dg_skill_estimate": -0.303135036919032
+      "dg_skill_estimate": -0.345234049785508
     },
     {
-      "dg_id": 19840,
-      "player_name": "Chad Ramey",
+      "dg_id": 28239,
+      "player_name": "Oihan Guillamoundeguy",
       "dg_rank": 223,
-      "dg_skill_estimate": -0.312849431625113
+      "dg_skill_estimate": -0.345301344968751
     },
     {
-      "dg_id": 26953,
-      "player_name": "Ian Gilligan",
+      "dg_id": 16283,
+      "player_name": "Patrick Rodgers",
       "dg_rank": 224,
-      "dg_skill_estimate": -0.327056918587065
+      "dg_skill_estimate": -0.345624269090343
     },
     {
-      "dg_id": 19960,
-      "player_name": "Matthieu Pavon",
+      "dg_id": 22985,
+      "player_name": "Austin Smotherman",
       "dg_rank": 225,
-      "dg_skill_estimate": -0.330776521038681
+      "dg_skill_estimate": -0.347664283823748
     },
     {
       "dg_id": 11357,
       "player_name": "Peter Uihlein",
       "dg_rank": 226,
-      "dg_skill_estimate": -0.33291523633705
+      "dg_skill_estimate": -0.350364712699694
     },
     {
-      "dg_id": 12988,
-      "player_name": "Ignacio Elvira Mijares",
+      "dg_id": 14792,
+      "player_name": "Adrien Saddier",
       "dg_rank": 227,
-      "dg_skill_estimate": -0.332923973336993
-    },
-    {
-      "dg_id": 15004,
-      "player_name": "Chan Kim",
-      "dg_rank": 228,
-      "dg_skill_estimate": -0.333292157399869
-    },
-    {
-      "dg_id": 28239,
-      "player_name": "Oihan Guillamoundeguy",
-      "dg_rank": 229,
-      "dg_skill_estimate": -0.334495708298366
+      "dg_skill_estimate": -0.350926331359285
     },
     {
       "dg_id": 24200,
       "player_name": "Elvis Smylie",
-      "dg_rank": 230,
-      "dg_skill_estimate": -0.34495164069028
+      "dg_rank": 228,
+      "dg_skill_estimate": -0.360980399413913
+    },
+    {
+      "dg_id": 14698,
+      "player_name": "Joseph Bramlett",
+      "dg_rank": 229,
+      "dg_skill_estimate": -0.362317647650642
     },
     {
       "dg_id": 13508,
       "player_name": "Jhonattan Vegas",
-      "dg_rank": 231,
-      "dg_skill_estimate": -0.346411223737644
-    },
-    {
-      "dg_id": 24342,
-      "player_name": "Garrick Higgo",
-      "dg_rank": 232,
-      "dg_skill_estimate": -0.347402608993393
+      "dg_rank": 230,
+      "dg_skill_estimate": -0.362559843866656
     },
     {
       "dg_id": 29971,
       "player_name": "Dan Bradbury",
+      "dg_rank": 231,
+      "dg_skill_estimate": -0.364659648233425
+    },
+    {
+      "dg_id": 19960,
+      "player_name": "Matthieu Pavon",
+      "dg_rank": 232,
+      "dg_skill_estimate": -0.367608165417361
+    },
+    {
+      "dg_id": 32055,
+      "player_name": "Neal Shipley",
       "dg_rank": 233,
-      "dg_skill_estimate": -0.352796195870969
+      "dg_skill_estimate": -0.368656509686971
     },
     {
       "dg_id": 7398,
       "player_name": "Charl Schwartzel",
       "dg_rank": 234,
-      "dg_skill_estimate": -0.356635004752535
+      "dg_skill_estimate": -0.373391884498716
+    },
+    {
+      "dg_id": 32330,
+      "player_name": "Luke Clanton",
+      "dg_rank": 235,
+      "dg_skill_estimate": -0.375419629173244
     },
     {
       "dg_id": 12177,
       "player_name": "Andrea Pavan",
-      "dg_rank": 235,
-      "dg_skill_estimate": -0.376334769049713
-    },
-    {
-      "dg_id": 14698,
-      "player_name": "Joseph Bramlett",
       "dg_rank": 236,
-      "dg_skill_estimate": -0.376570090969291
+      "dg_skill_estimate": -0.384126657073399
     },
     {
-      "dg_id": 27820,
-      "player_name": "John Pak",
+      "dg_id": 15004,
+      "player_name": "Chan Kim",
       "dg_rank": 237,
-      "dg_skill_estimate": -0.380800241117832
-    },
-    {
-      "dg_id": 16497,
-      "player_name": "Joe Dean",
-      "dg_rank": 238,
-      "dg_skill_estimate": -0.381939336460013
-    },
-    {
-      "dg_id": 19948,
-      "player_name": "Ben Taylor",
-      "dg_rank": 239,
-      "dg_skill_estimate": -0.390827081347
-    },
-    {
-      "dg_id": 14987,
-      "player_name": "Francesco Laporta",
-      "dg_rank": 240,
-      "dg_skill_estimate": -0.39722061624288
-    },
-    {
-      "dg_id": 28157,
-      "player_name": "Tom Vaillant",
-      "dg_rank": 241,
-      "dg_skill_estimate": -0.40305268573558
-    },
-    {
-      "dg_id": 24837,
-      "player_name": "Noah Goodwin",
-      "dg_rank": 242,
-      "dg_skill_estimate": -0.405244013069596
-    },
-    {
-      "dg_id": 27780,
-      "player_name": "Trace Crowe",
-      "dg_rank": 243,
-      "dg_skill_estimate": -0.407721939959774
-    },
-    {
-      "dg_id": 10158,
-      "player_name": "Joost Luiten",
-      "dg_rank": 244,
-      "dg_skill_estimate": -0.408504999296519
-    },
-    {
-      "dg_id": 15330,
-      "player_name": "Lanto Griffin",
-      "dg_rank": 245,
-      "dg_skill_estimate": -0.414426665406851
-    },
-    {
-      "dg_id": 32055,
-      "player_name": "Neal Shipley",
-      "dg_rank": 246,
-      "dg_skill_estimate": -0.421809436868191
-    },
-    {
-      "dg_id": 24956,
-      "player_name": "Chandler Blanchet",
-      "dg_rank": 247,
-      "dg_skill_estimate": -0.426910273522892
-    },
-    {
-      "dg_id": 14792,
-      "player_name": "Adrien Saddier",
-      "dg_rank": 248,
-      "dg_skill_estimate": -0.430759754377493
-    },
-    {
-      "dg_id": 14013,
-      "player_name": "Cameron Tringale",
-      "dg_rank": 249,
-      "dg_skill_estimate": -0.432842475176977
-    },
-    {
-      "dg_id": 25601,
-      "player_name": "Matthew Jordan",
-      "dg_rank": 250,
-      "dg_skill_estimate": -0.438996625990315
-    },
-    {
-      "dg_id": 10873,
-      "player_name": "David Skinns",
-      "dg_rank": 251,
-      "dg_skill_estimate": -0.442744578383556
+      "dg_skill_estimate": -0.387195862001575
     },
     {
       "dg_id": 32064,
       "player_name": "Miles Russell",
-      "dg_rank": 252,
-      "dg_skill_estimate": -0.446626888534644
+      "dg_rank": 238,
+      "dg_skill_estimate": -0.387713018988294
     },
     {
-      "dg_id": 16475,
-      "player_name": "Grant Forrest",
-      "dg_rank": 253,
-      "dg_skill_estimate": -0.457385296967743
+      "dg_id": 16497,
+      "player_name": "Joe Dean",
+      "dg_rank": 239,
+      "dg_skill_estimate": -0.394467017019389
     },
     {
-      "dg_id": 8480,
-      "player_name": "Kevin Streelman",
-      "dg_rank": 254,
-      "dg_skill_estimate": -0.461837036569703
+      "dg_id": 19948,
+      "player_name": "Ben Taylor",
+      "dg_rank": 240,
+      "dg_skill_estimate": -0.395616635314127
     },
     {
-      "dg_id": 16652,
-      "player_name": "Romain Langasque",
-      "dg_rank": 255,
-      "dg_skill_estimate": -0.463138615504292
+      "dg_id": 14987,
+      "player_name": "Francesco Laporta",
+      "dg_rank": 241,
+      "dg_skill_estimate": -0.408251339052333
     },
     {
-      "dg_id": 15193,
-      "player_name": "Daniel Van Tonder",
-      "dg_rank": 256,
-      "dg_skill_estimate": -0.466248027559102
+      "dg_id": 25036,
+      "player_name": "Ian Holt",
+      "dg_rank": 242,
+      "dg_skill_estimate": -0.414764630782676
+    },
+    {
+      "dg_id": 28157,
+      "player_name": "Tom Vaillant",
+      "dg_rank": 243,
+      "dg_skill_estimate": -0.415990413406575
+    },
+    {
+      "dg_id": 21943,
+      "player_name": "Hank Lebioda",
+      "dg_rank": 244,
+      "dg_skill_estimate": -0.418671600039596
+    },
+    {
+      "dg_id": 10158,
+      "player_name": "Joost Luiten",
+      "dg_rank": 245,
+      "dg_skill_estimate": -0.420434058507131
+    },
+    {
+      "dg_id": 24837,
+      "player_name": "Noah Goodwin",
+      "dg_rank": 246,
+      "dg_skill_estimate": -0.421817758434756
+    },
+    {
+      "dg_id": 26953,
+      "player_name": "Ian Gilligan",
+      "dg_rank": 247,
+      "dg_skill_estimate": -0.432379185942216
+    },
+    {
+      "dg_id": 14013,
+      "player_name": "Cameron Tringale",
+      "dg_rank": 248,
+      "dg_skill_estimate": -0.448178552830619
+    },
+    {
+      "dg_id": 25601,
+      "player_name": "Matthew Jordan",
+      "dg_rank": 249,
+      "dg_skill_estimate": -0.450850526547877
     },
     {
       "dg_id": 17381,
       "player_name": "Ben Silverman",
-      "dg_rank": 257,
-      "dg_skill_estimate": -0.467058975916122
+      "dg_rank": 250,
+      "dg_skill_estimate": -0.450882592576307
     },
     {
-      "dg_id": 28542,
-      "player_name": "Austin Hitt",
+      "dg_id": 24342,
+      "player_name": "Garrick Higgo",
+      "dg_rank": 251,
+      "dg_skill_estimate": -0.451472262749691
+    },
+    {
+      "dg_id": 10873,
+      "player_name": "David Skinns",
+      "dg_rank": 252,
+      "dg_skill_estimate": -0.455499833990439
+    },
+    {
+      "dg_id": 19864,
+      "player_name": "Cole Hammer",
+      "dg_rank": 253,
+      "dg_skill_estimate": -0.463496494831461
+    },
+    {
+      "dg_id": 19840,
+      "player_name": "Chad Ramey",
+      "dg_rank": 254,
+      "dg_skill_estimate": -0.464567052279626
+    },
+    {
+      "dg_id": 16475,
+      "player_name": "Grant Forrest",
+      "dg_rank": 255,
+      "dg_skill_estimate": -0.468468551243961
+    },
+    {
+      "dg_id": 24962,
+      "player_name": "Alistair Docherty",
+      "dg_rank": 256,
+      "dg_skill_estimate": -0.473350228407533
+    },
+    {
+      "dg_id": 16652,
+      "player_name": "Romain Langasque",
+      "dg_rank": 257,
+      "dg_skill_estimate": -0.477531472529566
+    },
+    {
+      "dg_id": 15193,
+      "player_name": "Daniel Van Tonder",
       "dg_rank": 258,
-      "dg_skill_estimate": -0.474951011005233
+      "dg_skill_estimate": -0.480018907277094
     },
     {
       "dg_id": 13374,
       "player_name": "Darius Van Driel",
       "dg_rank": 259,
-      "dg_skill_estimate": -0.480178087875829
-    },
-    {
-      "dg_id": 21995,
-      "player_name": "Hayden Springer",
-      "dg_rank": 260,
-      "dg_skill_estimate": -0.482047435350065
+      "dg_skill_estimate": -0.493259562748348
     },
     {
       "dg_id": 17357,
       "player_name": "Guido Migliozzi",
-      "dg_rank": 261,
-      "dg_skill_estimate": -0.482857236613863
+      "dg_rank": 260,
+      "dg_skill_estimate": -0.493669086820882
     },
     {
-      "dg_id": 28016,
-      "player_name": "Emilio Gonzalez",
-      "dg_rank": 262,
-      "dg_skill_estimate": -0.485925064134179
+      "dg_id": 18933,
+      "player_name": "Jeremy Gandon",
+      "dg_rank": 261,
+      "dg_skill_estimate": -0.494595078908498
     },
     {
       "dg_id": 16341,
       "player_name": "Paul Peterson",
-      "dg_rank": 263,
-      "dg_skill_estimate": -0.487767807849363
+      "dg_rank": 262,
+      "dg_skill_estimate": -0.503053930996007
     },
     {
-      "dg_id": 35308,
-      "player_name": "William Sides",
-      "dg_rank": 264,
-      "dg_skill_estimate": -0.491119238488901
+      "dg_id": 28016,
+      "player_name": "Emilio Gonzalez",
+      "dg_rank": 263,
+      "dg_skill_estimate": -0.503501357317369
     },
     {
       "dg_id": 27811,
       "player_name": "Martin Couvra",
+      "dg_rank": 264,
+      "dg_skill_estimate": -0.505170608425472
+    },
+    {
+      "dg_id": 23540,
+      "player_name": "Mason Andersen",
       "dg_rank": 265,
-      "dg_skill_estimate": -0.492263418707122
+      "dg_skill_estimate": -0.507686110868937
+    },
+    {
+      "dg_id": 27780,
+      "player_name": "Trace Crowe",
+      "dg_rank": 266,
+      "dg_skill_estimate": -0.509743360510117
     },
     {
       "dg_id": 26000,
       "player_name": "Ian Snyman",
-      "dg_rank": 266,
-      "dg_skill_estimate": -0.496989421279039
+      "dg_rank": 267,
+      "dg_skill_estimate": -0.512345355596815
     },
     {
-      "dg_id": 24962,
-      "player_name": "Alistair Docherty",
-      "dg_rank": 267,
-      "dg_skill_estimate": -0.499669005104973
+      "dg_id": 21995,
+      "player_name": "Hayden Springer",
+      "dg_rank": 268,
+      "dg_skill_estimate": -0.514448307687451
     },
     {
       "dg_id": 23482,
       "player_name": "Greyson Sigg",
-      "dg_rank": 268,
-      "dg_skill_estimate": -0.505028708651676
-    },
-    {
-      "dg_id": 25475,
-      "player_name": "Pontus Nyholm",
       "dg_rank": 269,
-      "dg_skill_estimate": -0.508152757761353
+      "dg_skill_estimate": -0.516261209529779
     },
     {
       "dg_id": 19681,
       "player_name": "Taiga Semikawa",
       "dg_rank": 270,
-      "dg_skill_estimate": -0.514294445768169
+      "dg_skill_estimate": -0.530203219047893
     },
     {
       "dg_id": 17068,
       "player_name": "MJ Daffue",
       "dg_rank": 271,
-      "dg_skill_estimate": -0.522333664545436
+      "dg_skill_estimate": -0.534627342940902
     },
     {
-      "dg_id": 25036,
-      "player_name": "Ian Holt",
+      "dg_id": 35308,
+      "player_name": "William Sides",
       "dg_rank": 272,
-      "dg_skill_estimate": -0.52896226350115
+      "dg_skill_estimate": -0.538897913840962
+    },
+    {
+      "dg_id": 28542,
+      "player_name": "Austin Hitt",
+      "dg_rank": 273,
+      "dg_skill_estimate": -0.548071688892768
     },
     {
       "dg_id": 12413,
       "player_name": "Richard Lee",
-      "dg_rank": 273,
-      "dg_skill_estimate": -0.53114403562009
-    },
-    {
-      "dg_id": 21943,
-      "player_name": "Hank Lebioda",
       "dg_rank": 274,
-      "dg_skill_estimate": -0.531268570116945
+      "dg_skill_estimate": -0.548257603247306
     },
     {
       "dg_id": 15676,
       "player_name": "Niklas Norgaard",
       "dg_rank": 275,
-      "dg_skill_estimate": -0.543405786080418
+      "dg_skill_estimate": -0.557244974027278
+    },
+    {
+      "dg_id": 8480,
+      "player_name": "Kevin Streelman",
+      "dg_rank": 276,
+      "dg_skill_estimate": -0.560188817002557
+    },
+    {
+      "dg_id": 15330,
+      "player_name": "Lanto Griffin",
+      "dg_rank": 277,
+      "dg_skill_estimate": -0.560874179226749
     },
     {
       "dg_id": 12669,
       "player_name": "Anirban Lahiri",
-      "dg_rank": 276,
-      "dg_skill_estimate": -0.546222052373789
+      "dg_rank": 278,
+      "dg_skill_estimate": -0.562915977754833
+    },
+    {
+      "dg_id": 27820,
+      "player_name": "John Pak",
+      "dg_rank": 279,
+      "dg_skill_estimate": -0.568016386587025
     },
     {
       "dg_id": 14904,
       "player_name": "Ryosuke Kinoshita",
-      "dg_rank": 277,
-      "dg_skill_estimate": -0.549696431654897
-    },
-    {
-      "dg_id": 16160,
-      "player_name": "Younghan Song",
-      "dg_rank": 278,
-      "dg_skill_estimate": -0.55523511342565
-    },
-    {
-      "dg_id": 26190,
-      "player_name": "Alvaro Ortiz",
-      "dg_rank": 279,
-      "dg_skill_estimate": -0.555815052158757
+      "dg_rank": 280,
+      "dg_skill_estimate": -0.568195425093403
     },
     {
       "dg_id": 26506,
       "player_name": "Gregorio De Leo",
-      "dg_rank": 280,
-      "dg_skill_estimate": -0.557491169091718
-    },
-    {
-      "dg_id": 12426,
-      "player_name": "Paul Waring",
       "dg_rank": 281,
-      "dg_skill_estimate": -0.561530873801512
-    },
-    {
-      "dg_id": 21677,
-      "player_name": "Maximilian Steinlechner",
-      "dg_rank": 282,
-      "dg_skill_estimate": -0.562266446385035
-    },
-    {
-      "dg_id": 22919,
-      "player_name": "Will Cannon",
-      "dg_rank": 283,
-      "dg_skill_estimate": -0.564976739868267
-    },
-    {
-      "dg_id": 15680,
-      "player_name": "Jeff Winther",
-      "dg_rank": 284,
-      "dg_skill_estimate": -0.571161643187134
-    },
-    {
-      "dg_id": 11019,
-      "player_name": "Brendan Steele",
-      "dg_rank": 285,
-      "dg_skill_estimate": -0.57612403150146
-    },
-    {
-      "dg_id": 11641,
-      "player_name": "Anthony Kim",
-      "dg_rank": 286,
-      "dg_skill_estimate": -0.582114788648086
-    },
-    {
-      "dg_id": 25002,
-      "player_name": "Dylan Wu",
-      "dg_rank": 287,
-      "dg_skill_estimate": -0.58237299847447
-    },
-    {
-      "dg_id": 32330,
-      "player_name": "Luke Clanton",
-      "dg_rank": 288,
-      "dg_skill_estimate": -0.584661794328821
-    },
-    {
-      "dg_id": 1435,
-      "player_name": "Ian Poulter",
-      "dg_rank": 289,
-      "dg_skill_estimate": -0.586940315843211
-    },
-    {
-      "dg_id": 12321,
-      "player_name": "Kiradech Aphibarnrat",
-      "dg_rank": 290,
-      "dg_skill_estimate": -0.588393751295182
-    },
-    {
-      "dg_id": 18722,
-      "player_name": "Ricardo Gouveia",
-      "dg_rank": 291,
-      "dg_skill_estimate": -0.594704741239781
-    },
-    {
-      "dg_id": 14666,
-      "player_name": "Andrew Johnston",
-      "dg_rank": 292,
-      "dg_skill_estimate": -0.598780998205136
-    },
-    {
-      "dg_id": 26913,
-      "player_name": "Trent Phillips",
-      "dg_rank": 293,
-      "dg_skill_estimate": -0.599324994910443
-    },
-    {
-      "dg_id": 11460,
-      "player_name": "Matteo Manassero",
-      "dg_rank": 294,
-      "dg_skill_estimate": -0.600810944423083
-    },
-    {
-      "dg_id": 11451,
-      "player_name": "Brice Garnett",
-      "dg_rank": 295,
-      "dg_skill_estimate": -0.608263900791501
-    },
-    {
-      "dg_id": 12734,
-      "player_name": "Jason Scrivener",
-      "dg_rank": 296,
-      "dg_skill_estimate": -0.61517635194135
-    },
-    {
-      "dg_id": 28270,
-      "player_name": "Nick Dunlap",
-      "dg_rank": 297,
-      "dg_skill_estimate": -0.622469800670146
-    },
-    {
-      "dg_id": 18933,
-      "player_name": "Jeremy Gandon",
-      "dg_rank": 298,
-      "dg_skill_estimate": -0.622528127457597
-    },
-    {
-      "dg_id": 29324,
-      "player_name": "Davis Lamb",
-      "dg_rank": 299,
-      "dg_skill_estimate": -0.626227388669871
-    },
-    {
-      "dg_id": 18869,
-      "player_name": "Rick Lamb",
-      "dg_rank": 300,
-      "dg_skill_estimate": -0.628304438557574
-    },
-    {
-      "dg_id": 24497,
-      "player_name": "Brandon Robinson Thompson",
-      "dg_rank": 301,
-      "dg_skill_estimate": -0.628822256449121
-    },
-    {
-      "dg_id": 14140,
-      "player_name": "Harry Higgs",
-      "dg_rank": 302,
-      "dg_skill_estimate": -0.630106984666189
-    },
-    {
-      "dg_id": 23733,
-      "player_name": "Frederic LaCroix",
-      "dg_rank": 303,
-      "dg_skill_estimate": -0.634076236395771
-    },
-    {
-      "dg_id": 19864,
-      "player_name": "Cole Hammer",
-      "dg_rank": 304,
-      "dg_skill_estimate": -0.636670549100632
+      "dg_skill_estimate": -0.569951197739735
     },
     {
       "dg_id": 33839,
       "player_name": "Pablo Ereno Perez",
-      "dg_rank": 305,
-      "dg_skill_estimate": -0.640431463984189
+      "dg_rank": 282,
+      "dg_skill_estimate": -0.572983270309064
     },
     {
-      "dg_id": 29119,
-      "player_name": "Yanhan Zhou",
-      "dg_rank": 306,
-      "dg_skill_estimate": -0.647314434895567
+      "dg_id": 12426,
+      "player_name": "Paul Waring",
+      "dg_rank": 283,
+      "dg_skill_estimate": -0.573437663687885
+    },
+    {
+      "dg_id": 16160,
+      "player_name": "Younghan Song",
+      "dg_rank": 284,
+      "dg_skill_estimate": -0.573994734780333
+    },
+    {
+      "dg_id": 21677,
+      "player_name": "Maximilian Steinlechner",
+      "dg_rank": 285,
+      "dg_skill_estimate": -0.574039559144971
+    },
+    {
+      "dg_id": 25002,
+      "player_name": "Dylan Wu",
+      "dg_rank": 286,
+      "dg_skill_estimate": -0.575962419152429
+    },
+    {
+      "dg_id": 26482,
+      "player_name": "Filip Jakubcik",
+      "dg_rank": 287,
+      "dg_skill_estimate": -0.576659868457179
+    },
+    {
+      "dg_id": 15680,
+      "player_name": "Jeff Winther",
+      "dg_rank": 288,
+      "dg_skill_estimate": -0.582155623143869
     },
     {
       "dg_id": 24490,
       "player_name": "Nicolo Galletti",
-      "dg_rank": 307,
-      "dg_skill_estimate": -0.656330511632104
+      "dg_rank": 289,
+      "dg_skill_estimate": -0.590249467308293
     },
     {
-      "dg_id": 17747,
-      "player_name": "Andreas Halvorsen",
-      "dg_rank": 308,
-      "dg_skill_estimate": -0.663379073515641
+      "dg_id": 11019,
+      "player_name": "Brendan Steele",
+      "dg_rank": 290,
+      "dg_skill_estimate": -0.591514265730334
     },
     {
-      "dg_id": 11955,
-      "player_name": "Dylan Frittelli",
-      "dg_rank": 309,
-      "dg_skill_estimate": -0.666690510602669
-    },
-    {
-      "dg_id": 30767,
-      "player_name": "Nick Gabrelcik",
-      "dg_rank": 310,
-      "dg_skill_estimate": -0.669574786769678
-    },
-    {
-      "dg_id": 25319,
-      "player_name": "John VanDerLaan",
-      "dg_rank": 311,
-      "dg_skill_estimate": -0.675465193596712
-    },
-    {
-      "dg_id": 23540,
-      "player_name": "Mason Andersen",
-      "dg_rank": 312,
-      "dg_skill_estimate": -0.67994594747077
-    },
-    {
-      "dg_id": 30732,
-      "player_name": "Ben Carr",
-      "dg_rank": 313,
-      "dg_skill_estimate": -0.684436774820677
-    },
-    {
-      "dg_id": 14780,
-      "player_name": "Joakim Lagergren",
-      "dg_rank": 314,
-      "dg_skill_estimate": -0.688957039631134
-    },
-    {
-      "dg_id": 11117,
-      "player_name": "S.Y. Noh",
-      "dg_rank": 315,
-      "dg_skill_estimate": -0.689838395496299
-    },
-    {
-      "dg_id": 35481,
-      "player_name": "Ryder Cowan",
-      "dg_rank": 316,
-      "dg_skill_estimate": -0.690516979715679
-    },
-    {
-      "dg_id": 34445,
-      "player_name": "Tyler Watts",
-      "dg_rank": 317,
-      "dg_skill_estimate": -0.697883734381916
-    },
-    {
-      "dg_id": 35424,
-      "player_name": "Luke Potter",
-      "dg_rank": 318,
-      "dg_skill_estimate": -0.701517785406711
-    },
-    {
-      "dg_id": 18204,
-      "player_name": "Jaco Prinsloo",
-      "dg_rank": 319,
-      "dg_skill_estimate": -0.705177316164439
-    },
-    {
-      "dg_id": 22050,
-      "player_name": "Justin Suh",
-      "dg_rank": 320,
-      "dg_skill_estimate": -0.71193458667025
-    },
-    {
-      "dg_id": 27183,
-      "player_name": "Isaiah Salinda",
-      "dg_rank": 321,
-      "dg_skill_estimate": -0.711968805800939
+      "dg_id": 11641,
+      "player_name": "Anthony Kim",
+      "dg_rank": 291,
+      "dg_skill_estimate": -0.600542688081639
     },
     {
       "dg_id": 32473,
       "player_name": "Barend Botha",
+      "dg_rank": 292,
+      "dg_skill_estimate": -0.602742888563
+    },
+    {
+      "dg_id": 12321,
+      "player_name": "Kiradech Aphibarnrat",
+      "dg_rank": 293,
+      "dg_skill_estimate": -0.603195619852329
+    },
+    {
+      "dg_id": 1435,
+      "player_name": "Ian Poulter",
+      "dg_rank": 294,
+      "dg_skill_estimate": -0.6065225114085
+    },
+    {
+      "dg_id": 18722,
+      "player_name": "Ricardo Gouveia",
+      "dg_rank": 295,
+      "dg_skill_estimate": -0.606571377168036
+    },
+    {
+      "dg_id": 26913,
+      "player_name": "Trent Phillips",
+      "dg_rank": 296,
+      "dg_skill_estimate": -0.610966839949446
+    },
+    {
+      "dg_id": 14666,
+      "player_name": "Andrew Johnston",
+      "dg_rank": 297,
+      "dg_skill_estimate": -0.612458853790851
+    },
+    {
+      "dg_id": 11460,
+      "player_name": "Matteo Manassero",
+      "dg_rank": 298,
+      "dg_skill_estimate": -0.613096189801779
+    },
+    {
+      "dg_id": 13367,
+      "player_name": "Troy Merritt",
+      "dg_rank": 299,
+      "dg_skill_estimate": -0.613710397366565
+    },
+    {
+      "dg_id": 30767,
+      "player_name": "Nick Gabrelcik",
+      "dg_rank": 300,
+      "dg_skill_estimate": -0.626226842278406
+    },
+    {
+      "dg_id": 12734,
+      "player_name": "Jason Scrivener",
+      "dg_rank": 301,
+      "dg_skill_estimate": -0.627393087029888
+    },
+    {
+      "dg_id": 22919,
+      "player_name": "Will Cannon",
+      "dg_rank": 302,
+      "dg_skill_estimate": -0.629248713878251
+    },
+    {
+      "dg_id": 11451,
+      "player_name": "Brice Garnett",
+      "dg_rank": 303,
+      "dg_skill_estimate": -0.629335783581518
+    },
+    {
+      "dg_id": 14050,
+      "player_name": "Roger Sloan",
+      "dg_rank": 304,
+      "dg_skill_estimate": -0.632501332458668
+    },
+    {
+      "dg_id": 26190,
+      "player_name": "Alvaro Ortiz",
+      "dg_rank": 305,
+      "dg_skill_estimate": -0.637934537359332
+    },
+    {
+      "dg_id": 24497,
+      "player_name": "Brandon Robinson Thompson",
+      "dg_rank": 306,
+      "dg_skill_estimate": -0.641018348282527
+    },
+    {
+      "dg_id": 23733,
+      "player_name": "Frederic LaCroix",
+      "dg_rank": 307,
+      "dg_skill_estimate": -0.646704192036383
+    },
+    {
+      "dg_id": 25475,
+      "player_name": "Pontus Nyholm",
+      "dg_rank": 308,
+      "dg_skill_estimate": -0.649156509655649
+    },
+    {
+      "dg_id": 29119,
+      "player_name": "Yanhan Zhou",
+      "dg_rank": 309,
+      "dg_skill_estimate": -0.658613631520052
+    },
+    {
+      "dg_id": 25442,
+      "player_name": "Taylor Montgomery",
+      "dg_rank": 310,
+      "dg_skill_estimate": -0.658958136965503
+    },
+    {
+      "dg_id": 26710,
+      "player_name": "Petr Hruby",
+      "dg_rank": 311,
+      "dg_skill_estimate": -0.667987433200663
+    },
+    {
+      "dg_id": 17747,
+      "player_name": "Andreas Halvorsen",
+      "dg_rank": 312,
+      "dg_skill_estimate": -0.67276221014788
+    },
+    {
+      "dg_id": 19872,
+      "player_name": "Davis Riley",
+      "dg_rank": 313,
+      "dg_skill_estimate": -0.67628359923378
+    },
+    {
+      "dg_id": 11955,
+      "player_name": "Dylan Frittelli",
+      "dg_rank": 314,
+      "dg_skill_estimate": -0.679774148910985
+    },
+    {
+      "dg_id": 14140,
+      "player_name": "Harry Higgs",
+      "dg_rank": 315,
+      "dg_skill_estimate": -0.691246356299029
+    },
+    {
+      "dg_id": 14780,
+      "player_name": "Joakim Lagergren",
+      "dg_rank": 316,
+      "dg_skill_estimate": -0.700805820148479
+    },
+    {
+      "dg_id": 35424,
+      "player_name": "Luke Potter",
+      "dg_rank": 317,
+      "dg_skill_estimate": -0.701276942464127
+    },
+    {
+      "dg_id": 26126,
+      "player_name": "Mitchell Meissner",
+      "dg_rank": 318,
+      "dg_skill_estimate": -0.702520049553719
+    },
+    {
+      "dg_id": 11117,
+      "player_name": "S.Y. Noh",
+      "dg_rank": 319,
+      "dg_skill_estimate": -0.708380085159592
+    },
+    {
+      "dg_id": 35481,
+      "player_name": "Ryder Cowan",
+      "dg_rank": 320,
+      "dg_skill_estimate": -0.708985481226515
+    },
+    {
+      "dg_id": 17723,
+      "player_name": "Justin Lower",
+      "dg_rank": 321,
+      "dg_skill_estimate": -0.710996503042885
+    },
+    {
+      "dg_id": 25319,
+      "player_name": "John VanDerLaan",
       "dg_rank": 322,
-      "dg_skill_estimate": -0.712777596290557
+      "dg_skill_estimate": -0.714048911543274
     },
     {
       "dg_id": 22168,
       "player_name": "Hamish Brown",
       "dg_rank": 323,
-      "dg_skill_estimate": -0.712990883244786
+      "dg_skill_estimate": -0.716372695903052
     },
     {
-      "dg_id": 20844,
-      "player_name": "Stefano Mazzoli",
+      "dg_id": 34445,
+      "player_name": "Tyler Watts",
       "dg_rank": 324,
-      "dg_skill_estimate": -0.715163207578532
+      "dg_skill_estimate": -0.716549433258108
     },
     {
-      "dg_id": 25363,
-      "player_name": "Hayden Buckley",
+      "dg_id": 18635,
+      "player_name": "Robby Shelton",
       "dg_rank": 325,
-      "dg_skill_estimate": -0.715250745364058
+      "dg_skill_estimate": -0.717490483339309
     },
     {
-      "dg_id": 26710,
-      "player_name": "Petr Hruby",
+      "dg_id": 18204,
+      "player_name": "Jaco Prinsloo",
       "dg_rank": 326,
-      "dg_skill_estimate": -0.715326669197534
+      "dg_skill_estimate": -0.718921075897323
     },
     {
       "dg_id": 24185,
       "player_name": "Richard Mansell",
       "dg_rank": 327,
-      "dg_skill_estimate": -0.715365988576363
+      "dg_skill_estimate": -0.7204419669475
     },
     {
-      "dg_id": 26482,
-      "player_name": "Filip Jakubcik",
+      "dg_id": 27183,
+      "player_name": "Isaiah Salinda",
       "dg_rank": 328,
-      "dg_skill_estimate": -0.715585796181743
-    },
-    {
-      "dg_id": 13997,
-      "player_name": "Adam Svensson",
-      "dg_rank": 329,
-      "dg_skill_estimate": -0.718369136169171
+      "dg_skill_estimate": -0.721475979369932
     },
     {
       "dg_id": 15366,
       "player_name": "Jeunghun Wang",
+      "dg_rank": 329,
+      "dg_skill_estimate": -0.735513204741938
+    },
+    {
+      "dg_id": 13997,
+      "player_name": "Adam Svensson",
       "dg_rank": 330,
-      "dg_skill_estimate": -0.722825752720098
+      "dg_skill_estimate": -0.738567428585823
     },
     {
-      "dg_id": 14371,
-      "player_name": "Taihei Sato",
+      "dg_id": 28469,
+      "player_name": "Joe Highsmith",
       "dg_rank": 331,
-      "dg_skill_estimate": -0.723830308199208
+      "dg_skill_estimate": -0.741885380755971
     },
     {
-      "dg_id": 26126,
-      "player_name": "Mitchell Meissner",
+      "dg_id": 19738,
+      "player_name": "Kevin Dougherty",
       "dg_rank": 332,
-      "dg_skill_estimate": -0.726567450313952
+      "dg_skill_estimate": -0.74277901447835
     },
     {
-      "dg_id": 14050,
-      "player_name": "Roger Sloan",
+      "dg_id": 26602,
+      "player_name": "Travis Trace",
       "dg_rank": 333,
-      "dg_skill_estimate": -0.730599540842578
-    },
-    {
-      "dg_id": 13367,
-      "player_name": "Troy Merritt",
-      "dg_rank": 334,
-      "dg_skill_estimate": -0.731702925148508
+      "dg_skill_estimate": -0.743503048849278
     },
     {
       "dg_id": 11763,
       "player_name": "Ashun Wu",
+      "dg_rank": 334,
+      "dg_skill_estimate": -0.744932696129378
+    },
+    {
+      "dg_id": 14371,
+      "player_name": "Taihei Sato",
       "dg_rank": 335,
-      "dg_skill_estimate": -0.733085105364969
+      "dg_skill_estimate": -0.745092631833692
     },
     {
       "dg_id": 12522,
       "player_name": "Marcel Schneider",
       "dg_rank": 336,
-      "dg_skill_estimate": -0.733568400275723
+      "dg_skill_estimate": -0.746380188699371
     },
     {
-      "dg_id": 32652,
-      "player_name": "Kihei Akina",
+      "dg_id": 25363,
+      "player_name": "Hayden Buckley",
       "dg_rank": 337,
-      "dg_skill_estimate": -0.733951423608629
-    },
-    {
-      "dg_id": 18187,
-      "player_name": "Tyler Duncan",
-      "dg_rank": 338,
-      "dg_skill_estimate": -0.735400879852451
+      "dg_skill_estimate": -0.748485189157717
     },
     {
       "dg_id": 22231,
       "player_name": "Nicolai Von Dellingshausen",
+      "dg_rank": 338,
+      "dg_skill_estimate": -0.751284110480516
+    },
+    {
+      "dg_id": 18187,
+      "player_name": "Tyler Duncan",
       "dg_rank": 339,
-      "dg_skill_estimate": -0.73912840561496
+      "dg_skill_estimate": -0.752111537013331
     },
     {
       "dg_id": 16896,
       "player_name": "Jacques Kruyswijk",
       "dg_rank": 340,
-      "dg_skill_estimate": -0.742961433290729
+      "dg_skill_estimate": -0.754956568006118
     },
     {
-      "dg_id": 7961,
-      "player_name": "Chez Reavie",
+      "dg_id": 28270,
+      "player_name": "Nick Dunlap",
       "dg_rank": 341,
-      "dg_skill_estimate": -0.745781156650964
+      "dg_skill_estimate": -0.756297526697188
+    },
+    {
+      "dg_id": 32652,
+      "player_name": "Kihei Akina",
+      "dg_rank": 342,
+      "dg_skill_estimate": -0.758583375926513
+    },
+    {
+      "dg_id": 18869,
+      "player_name": "Rick Lamb",
+      "dg_rank": 343,
+      "dg_skill_estimate": -0.758689363292364
     },
     {
       "dg_id": 15229,
       "player_name": "Brandon Stone",
-      "dg_rank": 342,
-      "dg_skill_estimate": -0.746647040843724
+      "dg_rank": 344,
+      "dg_skill_estimate": -0.758830862169451
     },
     {
       "dg_id": 19232,
       "player_name": "Trav Smyth",
-      "dg_rank": 343,
-      "dg_skill_estimate": -0.750948392146726
-    },
-    {
-      "dg_id": 13965,
-      "player_name": "Adam Hadwin",
-      "dg_rank": 344,
-      "dg_skill_estimate": -0.751146097901027
+      "dg_rank": 345,
+      "dg_skill_estimate": -0.770623565357403
     },
     {
       "dg_id": 7457,
       "player_name": "Rafa Cabrera Bello",
-      "dg_rank": 345,
-      "dg_skill_estimate": -0.763209271019233
+      "dg_rank": 346,
+      "dg_skill_estimate": -0.77609153931274
     },
     {
       "dg_id": 23416,
       "player_name": "David Ravetto",
-      "dg_rank": 346,
-      "dg_skill_estimate": -0.767625901716003
-    },
-    {
-      "dg_id": 15993,
-      "player_name": "Michael Hollick",
       "dg_rank": 347,
-      "dg_skill_estimate": -0.768928388395612
-    },
-    {
-      "dg_id": 18635,
-      "player_name": "Robby Shelton",
-      "dg_rank": 348,
-      "dg_skill_estimate": -0.770555769034861
-    },
-    {
-      "dg_id": 18105,
-      "player_name": "Thriston Lawrence",
-      "dg_rank": 349,
-      "dg_skill_estimate": -0.771605246079833
-    },
-    {
-      "dg_id": 27149,
-      "player_name": "Daniel Rodrigues",
-      "dg_rank": 350,
-      "dg_skill_estimate": -0.773054064682869
+      "dg_skill_estimate": -0.780193881956734
     },
     {
       "dg_id": 15475,
       "player_name": "C.T. Pan",
-      "dg_rank": 351,
-      "dg_skill_estimate": -0.774636096296413
+      "dg_rank": 348,
+      "dg_skill_estimate": -0.780290894533785
     },
     {
-      "dg_id": 25797,
-      "player_name": "Yusaku Hosono",
+      "dg_id": 15993,
+      "player_name": "Michael Hollick",
+      "dg_rank": 349,
+      "dg_skill_estimate": -0.782805965370386
+    },
+    {
+      "dg_id": 18059,
+      "player_name": "Julian Suri",
+      "dg_rank": 350,
+      "dg_skill_estimate": -0.783750768196732
+    },
+    {
+      "dg_id": 18105,
+      "player_name": "Thriston Lawrence",
+      "dg_rank": 351,
+      "dg_skill_estimate": -0.784330909154603
+    },
+    {
+      "dg_id": 27149,
+      "player_name": "Daniel Rodrigues",
       "dg_rank": 352,
-      "dg_skill_estimate": -0.775886888966651
+      "dg_skill_estimate": -0.784854709177458
+    },
+    {
+      "dg_id": 29163,
+      "player_name": "Jay Card III",
+      "dg_rank": 353,
+      "dg_skill_estimate": -0.785934200313529
+    },
+    {
+      "dg_id": 18628,
+      "player_name": "Brian Campbell",
+      "dg_rank": 354,
+      "dg_skill_estimate": -0.788602126973166
     },
     {
       "dg_id": 13485,
       "player_name": "Shugo Imahira",
-      "dg_rank": 353,
-      "dg_skill_estimate": -0.77783622848961
-    },
-    {
-      "dg_id": 15756,
-      "player_name": "Kazuki Higa",
-      "dg_rank": 354,
-      "dg_skill_estimate": -0.779968908127979
-    },
-    {
-      "dg_id": 25442,
-      "player_name": "Taylor Montgomery",
       "dg_rank": 355,
-      "dg_skill_estimate": -0.780981483953572
+      "dg_skill_estimate": -0.793650906825735
     },
     {
-      "dg_id": 10033,
-      "player_name": "Pedro Figueiredo",
+      "dg_id": 23599,
+      "player_name": "Kyle Westmoreland",
       "dg_rank": 356,
-      "dg_skill_estimate": -0.781476986871733
+      "dg_skill_estimate": -0.794289616003543
     },
     {
       "dg_id": 33914,
       "player_name": "Drew Goodman",
       "dg_rank": 357,
-      "dg_skill_estimate": -0.785780761249718
+      "dg_skill_estimate": -0.794568257419728
     },
     {
-      "dg_id": 6516,
-      "player_name": "Richard Bland",
+      "dg_id": 25797,
+      "player_name": "Yusaku Hosono",
       "dg_rank": 358,
-      "dg_skill_estimate": -0.787749499425218
+      "dg_skill_estimate": -0.795915829588002
     },
     {
-      "dg_id": 14973,
-      "player_name": "Alexander Levy",
+      "dg_id": 20844,
+      "player_name": "Stefano Mazzoli",
       "dg_rank": 359,
-      "dg_skill_estimate": -0.795304948750576
+      "dg_skill_estimate": -0.800078142392564
     },
     {
-      "dg_id": 18517,
-      "player_name": "Sebastian Soderberg",
+      "dg_id": 13965,
+      "player_name": "Adam Hadwin",
       "dg_rank": 360,
-      "dg_skill_estimate": -0.798387597989724
+      "dg_skill_estimate": -0.800126826701526
     },
     {
-      "dg_id": 16162,
-      "player_name": "S.T. Lee",
+      "dg_id": 15756,
+      "player_name": "Kazuki Higa",
       "dg_rank": 361,
-      "dg_skill_estimate": -0.801296374370169
-    },
-    {
-      "dg_id": 33760,
-      "player_name": "Lance Simpson",
-      "dg_rank": 362,
-      "dg_skill_estimate": -0.805945145756599
-    },
-    {
-      "dg_id": 19360,
-      "player_name": "Matt Atkins",
-      "dg_rank": 363,
-      "dg_skill_estimate": -0.808318119072548
-    },
-    {
-      "dg_id": 31165,
-      "player_name": "Hugo Townsend",
-      "dg_rank": 364,
-      "dg_skill_estimate": -0.812101851430252
-    },
-    {
-      "dg_id": 21921,
-      "player_name": "Tatsunori Shogenji",
-      "dg_rank": 365,
-      "dg_skill_estimate": -0.814912991040173
-    },
-    {
-      "dg_id": 8571,
-      "player_name": "Fabian Gomez",
-      "dg_rank": 366,
-      "dg_skill_estimate": -0.814957365535088
-    },
-    {
-      "dg_id": 19538,
-      "player_name": "Kieran Vincent",
-      "dg_rank": 367,
-      "dg_skill_estimate": -0.815118051766733
-    },
-    {
-      "dg_id": 14196,
-      "player_name": "Adrian Meronk",
-      "dg_rank": 368,
-      "dg_skill_estimate": -0.815428273550129
-    },
-    {
-      "dg_id": 7049,
-      "player_name": "Richard Sterne",
-      "dg_rank": 369,
-      "dg_skill_estimate": -0.818963246825374
-    },
-    {
-      "dg_id": 21889,
-      "player_name": "Jeffrey Kang",
-      "dg_rank": 370,
-      "dg_skill_estimate": -0.8190153553425
-    },
-    {
-      "dg_id": 27598,
-      "player_name": "James Nicholas",
-      "dg_rank": 371,
-      "dg_skill_estimate": -0.833115000722973
-    },
-    {
-      "dg_id": 19844,
-      "player_name": "Sadom Kaewkanjana",
-      "dg_rank": 372,
-      "dg_skill_estimate": -0.833306951125911
-    },
-    {
-      "dg_id": 18628,
-      "player_name": "Brian Campbell",
-      "dg_rank": 373,
-      "dg_skill_estimate": -0.839165838414831
-    },
-    {
-      "dg_id": 18059,
-      "player_name": "Julian Suri",
-      "dg_rank": 374,
-      "dg_skill_estimate": -0.840471305143254
-    },
-    {
-      "dg_id": 28465,
-      "player_name": "Julien Sale",
-      "dg_rank": 375,
-      "dg_skill_estimate": -0.842316409174278
-    },
-    {
-      "dg_id": 19738,
-      "player_name": "Kevin Dougherty",
-      "dg_rank": 376,
-      "dg_skill_estimate": -0.842491058792834
-    },
-    {
-      "dg_id": 8117,
-      "player_name": "Martin Kaymer",
-      "dg_rank": 377,
-      "dg_skill_estimate": -0.844565044569162
-    },
-    {
-      "dg_id": 14975,
-      "player_name": "Adrian Otaegui",
-      "dg_rank": 378,
-      "dg_skill_estimate": -0.846807736970586
-    },
-    {
-      "dg_id": 32333,
-      "player_name": "Jackson Buchanan",
-      "dg_rank": 379,
-      "dg_skill_estimate": -0.847297378677989
-    },
-    {
-      "dg_id": 28276,
-      "player_name": "Yubin Jang",
-      "dg_rank": 380,
-      "dg_skill_estimate": -0.85153398478666
-    },
-    {
-      "dg_id": 27258,
-      "player_name": "Ben Schmidt",
-      "dg_rank": 381,
-      "dg_skill_estimate": -0.851536373004707
-    },
-    {
-      "dg_id": 25739,
-      "player_name": "Ren Yonezawa",
-      "dg_rank": 382,
-      "dg_skill_estimate": -0.853455571986055
-    },
-    {
-      "dg_id": 10523,
-      "player_name": "Ryutaro Nagano",
-      "dg_rank": 383,
-      "dg_skill_estimate": -0.853798076521275
-    },
-    {
-      "dg_id": 27588,
-      "player_name": "Freddy Schott",
-      "dg_rank": 384,
-      "dg_skill_estimate": -0.856095748611327
-    },
-    {
-      "dg_id": 28615,
-      "player_name": "Sam Bairstow",
-      "dg_rank": 385,
-      "dg_skill_estimate": -0.859228708277032
-    },
-    {
-      "dg_id": 23048,
-      "player_name": "Jimmy Stanger",
-      "dg_rank": 386,
-      "dg_skill_estimate": -0.859723362407247
-    },
-    {
-      "dg_id": 6931,
-      "player_name": "Jonathan Byrd",
-      "dg_rank": 387,
-      "dg_skill_estimate": -0.861079532399839
-    },
-    {
-      "dg_id": 9171,
-      "player_name": "Camilo Villegas",
-      "dg_rank": 388,
-      "dg_skill_estimate": -0.861117303053199
+      "dg_skill_estimate": -0.800972165567955
     },
     {
       "dg_id": 27420,
       "player_name": "Taylor Dickson",
-      "dg_rank": 389,
-      "dg_skill_estimate": -0.864633557915494
+      "dg_rank": 362,
+      "dg_skill_estimate": -0.802282408107344
     },
     {
-      "dg_id": 29163,
-      "player_name": "Jay Card III",
-      "dg_rank": 390,
-      "dg_skill_estimate": -0.865715243327771
+      "dg_id": 29324,
+      "player_name": "Davis Lamb",
+      "dg_rank": 363,
+      "dg_skill_estimate": -0.802694200955744
     },
     {
-      "dg_id": 12337,
-      "player_name": "Jason Kokrak",
-      "dg_rank": 391,
-      "dg_skill_estimate": -0.865906681174782
+      "dg_id": 14973,
+      "player_name": "Alexander Levy",
+      "dg_rank": 364,
+      "dg_skill_estimate": -0.804366810054742
+    },
+    {
+      "dg_id": 6516,
+      "player_name": "Richard Bland",
+      "dg_rank": 365,
+      "dg_skill_estimate": -0.805152894514213
+    },
+    {
+      "dg_id": 18517,
+      "player_name": "Sebastian Soderberg",
+      "dg_rank": 366,
+      "dg_skill_estimate": -0.809061157879703
+    },
+    {
+      "dg_id": 16162,
+      "player_name": "S.T. Lee",
+      "dg_rank": 367,
+      "dg_skill_estimate": -0.818468443295557
+    },
+    {
+      "dg_id": 22050,
+      "player_name": "Justin Suh",
+      "dg_rank": 368,
+      "dg_skill_estimate": -0.819592665488332
+    },
+    {
+      "dg_id": 33760,
+      "player_name": "Lance Simpson",
+      "dg_rank": 369,
+      "dg_skill_estimate": -0.821007144839854
+    },
+    {
+      "dg_id": 31165,
+      "player_name": "Hugo Townsend",
+      "dg_rank": 370,
+      "dg_skill_estimate": -0.824836305530694
+    },
+    {
+      "dg_id": 19538,
+      "player_name": "Kieran Vincent",
+      "dg_rank": 371,
+      "dg_skill_estimate": -0.828387359958507
+    },
+    {
+      "dg_id": 7049,
+      "player_name": "Richard Sterne",
+      "dg_rank": 372,
+      "dg_skill_estimate": -0.829563259593354
+    },
+    {
+      "dg_id": 14196,
+      "player_name": "Adrian Meronk",
+      "dg_rank": 373,
+      "dg_skill_estimate": -0.83220644663399
+    },
+    {
+      "dg_id": 31955,
+      "player_name": "Jackson Van Paris",
+      "dg_rank": 374,
+      "dg_skill_estimate": -0.837278596556095
+    },
+    {
+      "dg_id": 30732,
+      "player_name": "Ben Carr",
+      "dg_rank": 375,
+      "dg_skill_estimate": -0.838451949960984
+    },
+    {
+      "dg_id": 23048,
+      "player_name": "Jimmy Stanger",
+      "dg_rank": 376,
+      "dg_skill_estimate": -0.843532217550289
     },
     {
       "dg_id": 34995,
       "player_name": "Mahanth Chirravuri",
-      "dg_rank": 392,
-      "dg_skill_estimate": -0.867355315493163
+      "dg_rank": 377,
+      "dg_skill_estimate": -0.8503310569653
     },
     {
-      "dg_id": 24223,
-      "player_name": "Yuta Sugiura",
-      "dg_rank": 393,
-      "dg_skill_estimate": -0.868790433253797
+      "dg_id": 27598,
+      "player_name": "James Nicholas",
+      "dg_rank": 378,
+      "dg_skill_estimate": -0.852352976221945
     },
     {
-      "dg_id": 19865,
-      "player_name": "Nick Hardy",
-      "dg_rank": 394,
-      "dg_skill_estimate": -0.879478597899472
+      "dg_id": 31214,
+      "player_name": "Chris Francoeur",
+      "dg_rank": 379,
+      "dg_skill_estimate": -0.853477995723118
     },
     {
-      "dg_id": 17723,
-      "player_name": "Justin Lower",
-      "dg_rank": 395,
-      "dg_skill_estimate": -0.880410871647354
+      "dg_id": 21889,
+      "player_name": "Jeffrey Kang",
+      "dg_rank": 380,
+      "dg_skill_estimate": -0.857174484597883
     },
     {
-      "dg_id": 20413,
-      "player_name": "Charlie Lindh",
-      "dg_rank": 396,
-      "dg_skill_estimate": -0.886495735244235
+      "dg_id": 14975,
+      "player_name": "Adrian Otaegui",
+      "dg_rank": 381,
+      "dg_skill_estimate": -0.858124150913031
     },
     {
-      "dg_id": 28469,
-      "player_name": "Joe Highsmith",
-      "dg_rank": 397,
-      "dg_skill_estimate": -0.886666001481849
+      "dg_id": 8117,
+      "player_name": "Martin Kaymer",
+      "dg_rank": 382,
+      "dg_skill_estimate": -0.859890140988917
     },
     {
-      "dg_id": 14209,
-      "player_name": "Jinichiro Kozuma",
-      "dg_rank": 398,
-      "dg_skill_estimate": -0.886829144921204
+      "dg_id": 28276,
+      "player_name": "Yubin Jang",
+      "dg_rank": 383,
+      "dg_skill_estimate": -0.860789425926861
     },
     {
-      "dg_id": 18514,
-      "player_name": "Marcus Kinhult",
-      "dg_rank": 399,
-      "dg_skill_estimate": -0.88683071982306
+      "dg_id": 27258,
+      "player_name": "Ben Schmidt",
+      "dg_rank": 384,
+      "dg_skill_estimate": -0.864139325217501
     },
     {
-      "dg_id": 33106,
-      "player_name": "Josiah Gilbert",
-      "dg_rank": 400,
-      "dg_skill_estimate": -0.89224514591944
+      "dg_id": 27588,
+      "player_name": "Freddy Schott",
+      "dg_rank": 385,
+      "dg_skill_estimate": -0.867936425613711
     },
     {
-      "dg_id": 11396,
-      "player_name": "Richie Ramsay",
-      "dg_rank": 401,
-      "dg_skill_estimate": -0.89930191038594
+      "dg_id": 10523,
+      "player_name": "Ryutaro Nagano",
+      "dg_rank": 386,
+      "dg_skill_estimate": -0.871223084999416
     },
     {
-      "dg_id": 11657,
-      "player_name": "Henrik Norlander",
-      "dg_rank": 402,
-      "dg_skill_estimate": -0.901362010457591
+      "dg_id": 28615,
+      "player_name": "Sam Bairstow",
+      "dg_rank": 387,
+      "dg_skill_estimate": -0.872293049844548
     },
     {
-      "dg_id": 14784,
-      "player_name": "David Law",
-      "dg_rank": 403,
-      "dg_skill_estimate": -0.902442833229971
+      "dg_id": 25739,
+      "player_name": "Ren Yonezawa",
+      "dg_rank": 388,
+      "dg_skill_estimate": -0.873962813295561
     },
     {
-      "dg_id": 18761,
-      "player_name": "Trey Mullinax",
-      "dg_rank": 404,
-      "dg_skill_estimate": -0.90299303983754
+      "dg_id": 9171,
+      "player_name": "Camilo Villegas",
+      "dg_rank": 389,
+      "dg_skill_estimate": -0.874891971844727
     },
     {
-      "dg_id": 22986,
-      "player_name": "Shad Tuten",
-      "dg_rank": 405,
-      "dg_skill_estimate": -0.905814648156478
-    },
-    {
-      "dg_id": 16421,
-      "player_name": "Kristian K. Johannessen",
-      "dg_rank": 406,
-      "dg_skill_estimate": -0.90590583198001
-    },
-    {
-      "dg_id": 24298,
-      "player_name": "Taichi Kho",
-      "dg_rank": 407,
-      "dg_skill_estimate": -0.907911232228608
-    },
-    {
-      "dg_id": 21880,
-      "player_name": "Trevor Cone",
-      "dg_rank": 408,
-      "dg_skill_estimate": -0.910983984042764
-    },
-    {
-      "dg_id": 26660,
-      "player_name": "Will Gordon",
-      "dg_rank": 409,
-      "dg_skill_estimate": -0.918349742194316
+      "dg_id": 6931,
+      "player_name": "Jonathan Byrd",
+      "dg_rank": 390,
+      "dg_skill_estimate": -0.876527157010492
     },
     {
       "dg_id": 17422,
       "player_name": "Cristobal Del Solar",
-      "dg_rank": 410,
-      "dg_skill_estimate": -0.923061128764355
+      "dg_rank": 391,
+      "dg_skill_estimate": -0.877618019162495
     },
     {
-      "dg_id": 23599,
-      "player_name": "Kyle Westmoreland",
-      "dg_rank": 411,
-      "dg_skill_estimate": -0.927544779193994
+      "dg_id": 12337,
+      "player_name": "Jason Kokrak",
+      "dg_rank": 392,
+      "dg_skill_estimate": -0.882110044957193
     },
     {
-      "dg_id": 1547,
-      "player_name": "Phil Mickelson",
-      "dg_rank": 412,
-      "dg_skill_estimate": -0.930816315117028
+      "dg_id": 32462,
+      "player_name": "John Marshall Butler",
+      "dg_rank": 393,
+      "dg_skill_estimate": -0.882715307137535
     },
     {
-      "dg_id": 16786,
-      "player_name": "Jorge Fernandez Valdes",
-      "dg_rank": 413,
-      "dg_skill_estimate": -0.931819368408275
+      "dg_id": 19360,
+      "player_name": "Matt Atkins",
+      "dg_rank": 394,
+      "dg_skill_estimate": -0.887019875970549
     },
     {
-      "dg_id": 14018,
-      "player_name": "Jens Dantorp",
-      "dg_rank": 414,
-      "dg_skill_estimate": -0.934078441772327
-    },
-    {
-      "dg_id": 24127,
-      "player_name": "Angel Hidalgo",
-      "dg_rank": 415,
-      "dg_skill_estimate": -0.934286230205751
-    },
-    {
-      "dg_id": 16842,
-      "player_name": "Curtis Luck",
-      "dg_rank": 416,
-      "dg_skill_estimate": -0.9361160728628
-    },
-    {
-      "dg_id": 4052,
-      "player_name": "Lee Westwood",
-      "dg_rank": 417,
-      "dg_skill_estimate": -0.937169860462345
-    },
-    {
-      "dg_id": 26602,
-      "player_name": "Travis Trace",
-      "dg_rank": 418,
-      "dg_skill_estimate": -0.93929759511351
-    },
-    {
-      "dg_id": 12920,
-      "player_name": "Danny Willett",
-      "dg_rank": 419,
-      "dg_skill_estimate": -0.942331465720797
-    },
-    {
-      "dg_id": 7960,
-      "player_name": "Luke List",
-      "dg_rank": 420,
-      "dg_skill_estimate": -0.942666789445551
+      "dg_id": 21921,
+      "player_name": "Tatsunori Shogenji",
+      "dg_rank": 395,
+      "dg_skill_estimate": -0.892152619570305
     },
     {
       "dg_id": 19000,
       "player_name": "Ricardo Celia",
-      "dg_rank": 421,
-      "dg_skill_estimate": -0.943326937369812
+      "dg_rank": 396,
+      "dg_skill_estimate": -0.89295958893846
     },
     {
-      "dg_id": 17386,
-      "player_name": "Doyeob Mun",
+      "dg_id": 24223,
+      "player_name": "Yuta Sugiura",
+      "dg_rank": 397,
+      "dg_skill_estimate": -0.893425787878631
+    },
+    {
+      "dg_id": 19865,
+      "player_name": "Nick Hardy",
+      "dg_rank": 398,
+      "dg_skill_estimate": -0.894155187418294
+    },
+    {
+      "dg_id": 20413,
+      "player_name": "Charlie Lindh",
+      "dg_rank": 399,
+      "dg_skill_estimate": -0.898536221931768
+    },
+    {
+      "dg_id": 18514,
+      "player_name": "Marcus Kinhult",
+      "dg_rank": 400,
+      "dg_skill_estimate": -0.899187577721664
+    },
+    {
+      "dg_id": 19844,
+      "player_name": "Sadom Kaewkanjana",
+      "dg_rank": 401,
+      "dg_skill_estimate": -0.90490044684766
+    },
+    {
+      "dg_id": 28465,
+      "player_name": "Julien Sale",
+      "dg_rank": 402,
+      "dg_skill_estimate": -0.907391372952118
+    },
+    {
+      "dg_id": 31257,
+      "player_name": "Derek Hitchner",
+      "dg_rank": 403,
+      "dg_skill_estimate": -0.908139777153678
+    },
+    {
+      "dg_id": 14209,
+      "player_name": "Jinichiro Kozuma",
+      "dg_rank": 404,
+      "dg_skill_estimate": -0.90897770594443
+    },
+    {
+      "dg_id": 11396,
+      "player_name": "Richie Ramsay",
+      "dg_rank": 405,
+      "dg_skill_estimate": -0.909071940899497
+    },
+    {
+      "dg_id": 33106,
+      "player_name": "Josiah Gilbert",
+      "dg_rank": 406,
+      "dg_skill_estimate": -0.91083320625312
+    },
+    {
+      "dg_id": 18761,
+      "player_name": "Trey Mullinax",
+      "dg_rank": 407,
+      "dg_skill_estimate": -0.912244754810682
+    },
+    {
+      "dg_id": 14784,
+      "player_name": "David Law",
+      "dg_rank": 408,
+      "dg_skill_estimate": -0.913356210844173
+    },
+    {
+      "dg_id": 11657,
+      "player_name": "Henrik Norlander",
+      "dg_rank": 409,
+      "dg_skill_estimate": -0.914029185193631
+    },
+    {
+      "dg_id": 32333,
+      "player_name": "Jackson Buchanan",
+      "dg_rank": 410,
+      "dg_skill_estimate": -0.921026549080866
+    },
+    {
+      "dg_id": 24298,
+      "player_name": "Taichi Kho",
+      "dg_rank": 411,
+      "dg_skill_estimate": -0.923311194649541
+    },
+    {
+      "dg_id": 10033,
+      "player_name": "Pedro Figueiredo",
+      "dg_rank": 412,
+      "dg_skill_estimate": -0.92355739884416
+    },
+    {
+      "dg_id": 22986,
+      "player_name": "Shad Tuten",
+      "dg_rank": 413,
+      "dg_skill_estimate": -0.925200765193485
+    },
+    {
+      "dg_id": 16786,
+      "player_name": "Jorge Fernandez Valdes",
+      "dg_rank": 414,
+      "dg_skill_estimate": -0.927264715392777
+    },
+    {
+      "dg_id": 1547,
+      "player_name": "Phil Mickelson",
+      "dg_rank": 415,
+      "dg_skill_estimate": -0.934408816153898
+    },
+    {
+      "dg_id": 7961,
+      "player_name": "Chez Reavie",
+      "dg_rank": 416,
+      "dg_skill_estimate": -0.936495369005118
+    },
+    {
+      "dg_id": 8571,
+      "player_name": "Fabian Gomez",
+      "dg_rank": 417,
+      "dg_skill_estimate": -0.937384456979399
+    },
+    {
+      "dg_id": 14018,
+      "player_name": "Jens Dantorp",
+      "dg_rank": 418,
+      "dg_skill_estimate": -0.945797755289803
+    },
+    {
+      "dg_id": 24127,
+      "player_name": "Angel Hidalgo",
+      "dg_rank": 419,
+      "dg_skill_estimate": -0.946922850529808
+    },
+    {
+      "dg_id": 4052,
+      "player_name": "Lee Westwood",
+      "dg_rank": 420,
+      "dg_skill_estimate": -0.950917002606932
+    },
+    {
+      "dg_id": 12920,
+      "player_name": "Danny Willett",
+      "dg_rank": 421,
+      "dg_skill_estimate": -0.952501966160671
+    },
+    {
+      "dg_id": 23549,
+      "player_name": "Filippo Celli",
       "dg_rank": 422,
-      "dg_skill_estimate": -0.943632088339109
+      "dg_skill_estimate": -0.9542142490884
     },
     {
       "dg_id": 20448,
       "player_name": "Yuto Katsuragawa",
       "dg_rank": 423,
-      "dg_skill_estimate": -0.943772243314206
+      "dg_skill_estimate": -0.956842997215307
     },
     {
-      "dg_id": 23549,
-      "player_name": "Filippo Celli",
+      "dg_id": 7960,
+      "player_name": "Luke List",
       "dg_rank": 424,
-      "dg_skill_estimate": -0.943824622547856
+      "dg_skill_estimate": -0.956879826987637
     },
     {
-      "dg_id": 30428,
-      "player_name": "Luis Masaveu",
+      "dg_id": 17386,
+      "player_name": "Doyeob Mun",
       "dg_rank": 425,
-      "dg_skill_estimate": -0.94978229754717
+      "dg_skill_estimate": -0.95739905600358
+    },
+    {
+      "dg_id": 16842,
+      "player_name": "Curtis Luck",
+      "dg_rank": 426,
+      "dg_skill_estimate": -0.960519353892494
     },
     {
       "dg_id": 27147,
       "player_name": "Euan Walker",
-      "dg_rank": 426,
-      "dg_skill_estimate": -0.952915408976213
-    },
-    {
-      "dg_id": 24091,
-      "player_name": "Nick Voke",
       "dg_rank": 427,
-      "dg_skill_estimate": -0.953294340968292
+      "dg_skill_estimate": -0.963138610025465
     },
     {
-      "dg_id": 33758,
-      "player_name": "Frankie Harris",
+      "dg_id": 30428,
+      "player_name": "Luis Masaveu",
       "dg_rank": 428,
-      "dg_skill_estimate": -0.957946472827935
-    },
-    {
-      "dg_id": 5994,
-      "player_name": "Henrik Stenson",
-      "dg_rank": 429,
-      "dg_skill_estimate": -0.965418673145985
-    },
-    {
-      "dg_id": 19068,
-      "player_name": "Haydn Barron",
-      "dg_rank": 430,
-      "dg_skill_estimate": -0.967262995013
-    },
-    {
-      "dg_id": 18239,
-      "player_name": "Austen Truslow",
-      "dg_rank": 431,
-      "dg_skill_estimate": -0.969157539228506
-    },
-    {
-      "dg_id": 33003,
-      "player_name": "Caden Fioroni",
-      "dg_rank": 432,
-      "dg_skill_estimate": -0.975063855236394
-    },
-    {
-      "dg_id": 22777,
-      "player_name": "Ryo Katsumata",
-      "dg_rank": 433,
-      "dg_skill_estimate": -0.976282584163441
-    },
-    {
-      "dg_id": 15592,
-      "player_name": "Joel Girrbach",
-      "dg_rank": 434,
-      "dg_skill_estimate": -0.98055166083818
-    },
-    {
-      "dg_id": 25628,
-      "player_name": "Yongjun Bae",
-      "dg_rank": 435,
-      "dg_skill_estimate": -0.98076097117647
-    },
-    {
-      "dg_id": 32682,
-      "player_name": "Jack Lundin",
-      "dg_rank": 436,
-      "dg_skill_estimate": -0.981620045516706
-    },
-    {
-      "dg_id": 19190,
-      "player_name": "Rikuya Hoshino",
-      "dg_rank": 437,
-      "dg_skill_estimate": -0.981643515174218
+      "dg_skill_estimate": -0.963624195609208
     },
     {
       "dg_id": 14926,
       "player_name": "Peter Malnati",
-      "dg_rank": 438,
-      "dg_skill_estimate": -0.984731335614891
+      "dg_rank": 429,
+      "dg_skill_estimate": -0.966322726424774
     },
     {
-      "dg_id": 29318,
-      "player_name": "Logan McAllister",
-      "dg_rank": 439,
-      "dg_skill_estimate": -0.984850934053041
-    },
-    {
-      "dg_id": 35423,
-      "player_name": "Jase Summy",
-      "dg_rank": 440,
-      "dg_skill_estimate": -0.986823358204052
+      "dg_id": 24091,
+      "player_name": "Nick Voke",
+      "dg_rank": 430,
+      "dg_skill_estimate": -0.973771556742803
     },
     {
       "dg_id": 17266,
       "player_name": "Carl Yuan",
-      "dg_rank": 441,
-      "dg_skill_estimate": -1.00315248345117
-    },
-    {
-      "dg_id": 18524,
-      "player_name": "John Catlin",
-      "dg_rank": 442,
-      "dg_skill_estimate": -1.00491025813496
-    },
-    {
-      "dg_id": 20522,
-      "player_name": "Johannes Veerman",
-      "dg_rank": 443,
-      "dg_skill_estimate": -1.00816627535838
-    },
-    {
-      "dg_id": 23163,
-      "player_name": "Will Enefer",
-      "dg_rank": 444,
-      "dg_skill_estimate": -1.01037658785669
-    },
-    {
-      "dg_id": 31214,
-      "player_name": "Chris Francoeur",
-      "dg_rank": 445,
-      "dg_skill_estimate": -1.01208750960523
-    },
-    {
-      "dg_id": 13139,
-      "player_name": "Tapio Pulkkanen",
-      "dg_rank": 446,
-      "dg_skill_estimate": -1.01314424304027
-    },
-    {
-      "dg_id": 27143,
-      "player_name": "Mason Williams",
-      "dg_rank": 447,
-      "dg_skill_estimate": -1.01483113654915
+      "dg_rank": 431,
+      "dg_skill_estimate": -0.974204872389747
     },
     {
       "dg_id": 22051,
       "player_name": "Aaron Wise",
+      "dg_rank": 432,
+      "dg_skill_estimate": -0.981488706375738
+    },
+    {
+      "dg_id": 33758,
+      "player_name": "Frankie Harris",
+      "dg_rank": 433,
+      "dg_skill_estimate": -0.981624139806631
+    },
+    {
+      "dg_id": 5994,
+      "player_name": "Henrik Stenson",
+      "dg_rank": 434,
+      "dg_skill_estimate": -0.983093677051581
+    },
+    {
+      "dg_id": 33003,
+      "player_name": "Caden Fioroni",
+      "dg_rank": 435,
+      "dg_skill_estimate": -0.983332500705091
+    },
+    {
+      "dg_id": 18239,
+      "player_name": "Austen Truslow",
+      "dg_rank": 436,
+      "dg_skill_estimate": -0.985484318519071
+    },
+    {
+      "dg_id": 25628,
+      "player_name": "Yongjun Bae",
+      "dg_rank": 437,
+      "dg_skill_estimate": -0.990779369754271
+    },
+    {
+      "dg_id": 26660,
+      "player_name": "Will Gordon",
+      "dg_rank": 438,
+      "dg_skill_estimate": -0.991804727281715
+    },
+    {
+      "dg_id": 32682,
+      "player_name": "Jack Lundin",
+      "dg_rank": 439,
+      "dg_skill_estimate": -0.991818860066457
+    },
+    {
+      "dg_id": 26617,
+      "player_name": "Matthew Anderson",
+      "dg_rank": 440,
+      "dg_skill_estimate": -0.992178160221807
+    },
+    {
+      "dg_id": 15592,
+      "player_name": "Joel Girrbach",
+      "dg_rank": 441,
+      "dg_skill_estimate": -0.994571187979382
+    },
+    {
+      "dg_id": 19190,
+      "player_name": "Rikuya Hoshino",
+      "dg_rank": 442,
+      "dg_skill_estimate": -0.994661643273314
+    },
+    {
+      "dg_id": 22777,
+      "player_name": "Ryo Katsumata",
+      "dg_rank": 443,
+      "dg_skill_estimate": -0.995760101145149
+    },
+    {
+      "dg_id": 19477,
+      "player_name": "Adam Schenk",
+      "dg_rank": 444,
+      "dg_skill_estimate": -1.00205579088492
+    },
+    {
+      "dg_id": 21880,
+      "player_name": "Trevor Cone",
+      "dg_rank": 445,
+      "dg_skill_estimate": -1.00404398291052
+    },
+    {
+      "dg_id": 16421,
+      "player_name": "Kristian K. Johannessen",
+      "dg_rank": 446,
+      "dg_skill_estimate": -1.016796651292
+    },
+    {
+      "dg_id": 18524,
+      "player_name": "John Catlin",
+      "dg_rank": 447,
+      "dg_skill_estimate": -1.01897282424671
+    },
+    {
+      "dg_id": 20522,
+      "player_name": "Johannes Veerman",
       "dg_rank": 448,
-      "dg_skill_estimate": -1.02415989939239
+      "dg_skill_estimate": -1.01971943554793
+    },
+    {
+      "dg_id": 5716,
+      "player_name": "Padraig Harrington",
+      "dg_rank": 449,
+      "dg_skill_estimate": -1.01995617989205
+    },
+    {
+      "dg_id": 27143,
+      "player_name": "Mason Williams",
+      "dg_rank": 450,
+      "dg_skill_estimate": -1.02684176871663
+    },
+    {
+      "dg_id": 30814,
+      "player_name": "Gordon Sargent",
+      "dg_rank": 451,
+      "dg_skill_estimate": -1.03057438094513
+    },
+    {
+      "dg_id": 29318,
+      "player_name": "Logan McAllister",
+      "dg_rank": 452,
+      "dg_skill_estimate": -1.03096523625813
     },
     {
       "dg_id": 13127,
       "player_name": "Kevin Tway",
-      "dg_rank": 449,
-      "dg_skill_estimate": -1.02848001103921
-    },
-    {
-      "dg_id": 31955,
-      "player_name": "Jackson Van Paris",
-      "dg_rank": 450,
-      "dg_skill_estimate": -1.03194703015492
+      "dg_rank": 453,
+      "dg_skill_estimate": -1.03900636934155
     },
     {
       "dg_id": 14368,
       "player_name": "Jazz Janewattananond",
-      "dg_rank": 451,
-      "dg_skill_estimate": -1.03523747193735
-    },
-    {
-      "dg_id": 32462,
-      "player_name": "John Marshall Butler",
-      "dg_rank": 452,
-      "dg_skill_estimate": -1.03687495253449
+      "dg_rank": 454,
+      "dg_skill_estimate": -1.04782234933864
     },
     {
       "dg_id": 19697,
       "player_name": "Wei-Hsuan Wang",
-      "dg_rank": 453,
-      "dg_skill_estimate": -1.0377789285743
-    },
-    {
-      "dg_id": 21152,
-      "player_name": "Austin Bautista",
-      "dg_rank": 454,
-      "dg_skill_estimate": -1.04184574587125
+      "dg_rank": 455,
+      "dg_skill_estimate": -1.05461710825124
     },
     {
       "dg_id": 23610,
       "player_name": "Sean Crocker",
-      "dg_rank": 455,
-      "dg_skill_estimate": -1.04477286181836
+      "dg_rank": 456,
+      "dg_skill_estimate": -1.05636123322467
+    },
+    {
+      "dg_id": 21152,
+      "player_name": "Austin Bautista",
+      "dg_rank": 457,
+      "dg_skill_estimate": -1.05728709350952
     },
     {
       "dg_id": 15911,
       "player_name": "Graham Van Der Merwe",
-      "dg_rank": 456,
-      "dg_skill_estimate": -1.04485928392319
-    },
-    {
-      "dg_id": 19872,
-      "player_name": "Davis Riley",
-      "dg_rank": 457,
-      "dg_skill_estimate": -1.04553111654333
-    },
-    {
-      "dg_id": 23542,
-      "player_name": "Cameron Champ",
       "dg_rank": 458,
-      "dg_skill_estimate": -1.04812166412961
+      "dg_skill_estimate": -1.05874611343361
     },
     {
       "dg_id": 27640,
       "player_name": "Minhyuk Song",
       "dg_rank": 459,
-      "dg_skill_estimate": -1.04991344747324
+      "dg_skill_estimate": -1.05910003045005
+    },
+    {
+      "dg_id": 26124,
+      "player_name": "Chris Korte",
+      "dg_rank": 460,
+      "dg_skill_estimate": -1.05946159297698
     },
     {
       "dg_id": 10418,
       "player_name": "Niklas Lemke",
-      "dg_rank": 460,
-      "dg_skill_estimate": -1.0499294160662
+      "dg_rank": 461,
+      "dg_skill_estimate": -1.05985576509707
     },
     {
-      "dg_id": 18571,
-      "player_name": "Stuart Macdonald",
-      "dg_rank": 461,
-      "dg_skill_estimate": -1.06151074855916
+      "dg_id": 23542,
+      "player_name": "Cameron Champ",
+      "dg_rank": 462,
+      "dg_skill_estimate": -1.06345967048385
+    },
+    {
+      "dg_id": 11230,
+      "player_name": "David Horsey",
+      "dg_rank": 463,
+      "dg_skill_estimate": -1.06911350568317
     },
     {
       "dg_id": 7024,
       "player_name": "Jinho Choi",
-      "dg_rank": 462,
-      "dg_skill_estimate": -1.06440842805938
+      "dg_rank": 464,
+      "dg_skill_estimate": -1.07301745716203
+    },
+    {
+      "dg_id": 13139,
+      "player_name": "Tapio Pulkkanen",
+      "dg_rank": 465,
+      "dg_skill_estimate": -1.07618324881219
+    },
+    {
+      "dg_id": 19430,
+      "player_name": "Andrew Kozan",
+      "dg_rank": 466,
+      "dg_skill_estimate": -1.07908945221864
     },
     {
       "dg_id": 16549,
       "player_name": "Renato Paratore",
-      "dg_rank": 463,
-      "dg_skill_estimate": -1.06992041591055
+      "dg_rank": 467,
+      "dg_skill_estimate": -1.08120744888146
     },
     {
-      "dg_id": 26617,
-      "player_name": "Matthew Anderson",
-      "dg_rank": 464,
-      "dg_skill_estimate": -1.07684093839962
+      "dg_id": 34924,
+      "player_name": "Charlie Forster",
+      "dg_rank": 468,
+      "dg_skill_estimate": -1.09061642128145
     },
     {
       "dg_id": 9396,
       "player_name": "Ross Fisher",
-      "dg_rank": 465,
-      "dg_skill_estimate": -1.08107248300709
+      "dg_rank": 469,
+      "dg_skill_estimate": -1.09250673080959
     },
     {
       "dg_id": 32521,
       "player_name": "Riley Lewis",
-      "dg_rank": 466,
-      "dg_skill_estimate": -1.08559395843526
+      "dg_rank": 470,
+      "dg_skill_estimate": -1.09652619355243
     },
     {
       "dg_id": 22844,
       "player_name": "Riki Kawamoto",
-      "dg_rank": 467,
-      "dg_skill_estimate": -1.08640812772622
+      "dg_rank": 471,
+      "dg_skill_estimate": -1.10495712322637
     },
     {
       "dg_id": 13923,
       "player_name": "Sang-hee Lee",
-      "dg_rank": 468,
-      "dg_skill_estimate": -1.09187379722747
+      "dg_rank": 472,
+      "dg_skill_estimate": -1.10727426107685
     },
     {
-      "dg_id": 29769,
-      "player_name": "Maxwell Moldovan",
-      "dg_rank": 469,
-      "dg_skill_estimate": -1.09377862109819
+      "dg_id": 20353,
+      "player_name": "Tom Whitney",
+      "dg_rank": 473,
+      "dg_skill_estimate": -1.11129736342681
     },
     {
-      "dg_id": 23638,
-      "player_name": "Sarit Suwannarut",
-      "dg_rank": 470,
-      "dg_skill_estimate": -1.09405067558132
-    },
-    {
-      "dg_id": 17032,
-      "player_name": "Alejandro Tosti",
-      "dg_rank": 471,
-      "dg_skill_estimate": -1.09720899980509
+      "dg_id": 34966,
+      "player_name": "Carson Bertagnole",
+      "dg_rank": 474,
+      "dg_skill_estimate": -1.11533674548788
     },
     {
       "dg_id": 26764,
       "player_name": "Sampson Zheng",
-      "dg_rank": 472,
-      "dg_skill_estimate": -1.10405168275602
-    },
-    {
-      "dg_id": 5716,
-      "player_name": "Padraig Harrington",
-      "dg_rank": 473,
-      "dg_skill_estimate": -1.10436478665996
-    },
-    {
-      "dg_id": 18809,
-      "player_name": "Tomoyo Ikemura",
-      "dg_rank": 474,
-      "dg_skill_estimate": -1.1074404710446
-    },
-    {
-      "dg_id": 30033515,
-      "player_name": "Jack Turner",
       "dg_rank": 475,
-      "dg_skill_estimate": -1.11272567284967
-    },
-    {
-      "dg_id": 35546,
-      "player_name": "Paul Chang",
-      "dg_rank": 476,
-      "dg_skill_estimate": -1.1155055835698
-    },
-    {
-      "dg_id": 15056,
-      "player_name": "Mikumu Horikawa",
-      "dg_rank": 477,
-      "dg_skill_estimate": -1.11681229776913
+      "dg_skill_estimate": -1.12051970694886
     },
     {
       "dg_id": 15181,
       "player_name": "Bryce Easton",
-      "dg_rank": 478,
-      "dg_skill_estimate": -1.11761415249494
+      "dg_rank": 476,
+      "dg_skill_estimate": -1.12422927822673
+    },
+    {
+      "dg_id": 35546,
+      "player_name": "Paul Chang",
+      "dg_rank": 477,
+      "dg_skill_estimate": -1.12791621284015
     },
     {
       "dg_id": 27597,
       "player_name": "Andy Ogletree",
-      "dg_rank": 479,
-      "dg_skill_estimate": -1.1218412045063
+      "dg_rank": 478,
+      "dg_skill_estimate": -1.12890306032473
     },
     {
-      "dg_id": 19477,
-      "player_name": "Adam Schenk",
+      "dg_id": 18809,
+      "player_name": "Tomoyo Ikemura",
+      "dg_rank": 479,
+      "dg_skill_estimate": -1.12909761487442
+    },
+    {
+      "dg_id": 30033515,
+      "player_name": "Jack Turner",
       "dg_rank": 480,
-      "dg_skill_estimate": -1.12480845777566
+      "dg_skill_estimate": -1.1299450427497
+    },
+    {
+      "dg_id": 15056,
+      "player_name": "Mikumu Horikawa",
+      "dg_rank": 481,
+      "dg_skill_estimate": -1.13544617910479
     },
     {
       "dg_id": 25389,
       "player_name": "Grant Booth",
-      "dg_rank": 481,
-      "dg_skill_estimate": -1.12629351710786
-    },
-    {
-      "dg_id": 32554,
-      "player_name": "Alex Goff",
       "dg_rank": 482,
-      "dg_skill_estimate": -1.12987648175265
-    },
-    {
-      "dg_id": 31257,
-      "player_name": "Derek Hitchner",
-      "dg_rank": 483,
-      "dg_skill_estimate": -1.13193221670602
+      "dg_skill_estimate": -1.13836291098284
     },
     {
       "dg_id": 15596,
       "player_name": "Aaron Cockerill",
+      "dg_rank": 483,
+      "dg_skill_estimate": -1.14456685776788
+    },
+    {
+      "dg_id": 18571,
+      "player_name": "Stuart Macdonald",
       "dg_rank": 484,
-      "dg_skill_estimate": -1.13466387669433
+      "dg_skill_estimate": -1.15094434230411
     },
     {
       "dg_id": 33761,
       "player_name": "Tyler Weaver",
       "dg_rank": 485,
-      "dg_skill_estimate": -1.1376093373701
-    },
-    {
-      "dg_id": 874,
-      "player_name": "Ernie Els",
-      "dg_rank": 486,
-      "dg_skill_estimate": -1.14314643169155
+      "dg_skill_estimate": -1.1510089197973
     },
     {
       "dg_id": 25089,
       "player_name": "Felix Mory",
-      "dg_rank": 487,
-      "dg_skill_estimate": -1.14404267153196
+      "dg_rank": 486,
+      "dg_skill_estimate": -1.1525857595304
     },
     {
       "dg_id": 19635,
       "player_name": "Ivan Cantero Gutierrez",
-      "dg_rank": 488,
-      "dg_skill_estimate": -1.14418782926093
+      "dg_rank": 487,
+      "dg_skill_estimate": -1.15623132994028
     },
     {
       "dg_id": 15995,
       "player_name": "Pieter Moolman",
-      "dg_rank": 489,
-      "dg_skill_estimate": -1.14563364915691
+      "dg_rank": 488,
+      "dg_skill_estimate": -1.15891105035475
     },
     {
       "dg_id": 18382,
       "player_name": "Takashi Ogiso",
+      "dg_rank": 489,
+      "dg_skill_estimate": -1.16037033090171
+    },
+    {
+      "dg_id": 20954,
+      "player_name": "Kensei Hirata",
       "dg_rank": 490,
-      "dg_skill_estimate": -1.14569335674843
+      "dg_skill_estimate": -1.16182554926404
     },
     {
-      "dg_id": 26124,
-      "player_name": "Chris Korte",
+      "dg_id": 19955,
+      "player_name": "Corey Pereira",
       "dg_rank": 491,
-      "dg_skill_estimate": -1.14632266182361
+      "dg_skill_estimate": -1.16351609250237
     },
     {
-      "dg_id": 14951,
-      "player_name": "Poom Saksansin",
+      "dg_id": 14007,
+      "player_name": "Ben Martin",
       "dg_rank": 492,
-      "dg_skill_estimate": -1.14791101225681
+      "dg_skill_estimate": -1.16354629849088
     },
     {
       "dg_id": 25538,
       "player_name": "Tomohiro Ishizaka",
       "dg_rank": 493,
-      "dg_skill_estimate": -1.14837516214886
-    },
-    {
-      "dg_id": 14007,
-      "player_name": "Ben Martin",
-      "dg_rank": 494,
-      "dg_skill_estimate": -1.14849952129435
-    },
-    {
-      "dg_id": 9586,
-      "player_name": "Martin Laird",
-      "dg_rank": 495,
-      "dg_skill_estimate": -1.14901846602074
-    },
-    {
-      "dg_id": 19955,
-      "player_name": "Corey Pereira",
-      "dg_rank": 496,
-      "dg_skill_estimate": -1.1529551461863
+      "dg_skill_estimate": -1.16599503853142
     },
     {
       "dg_id": 9099,
       "player_name": "Hiroshi Iwata",
+      "dg_rank": 494,
+      "dg_skill_estimate": -1.17156733161489
+    },
+    {
+      "dg_id": 23112,
+      "player_name": "Jannik De Bruyn",
+      "dg_rank": 495,
+      "dg_skill_estimate": -1.17401219384433
+    },
+    {
+      "dg_id": 11061,
+      "player_name": "James Morrison",
+      "dg_rank": 496,
+      "dg_skill_estimate": -1.17882496669451
+    },
+    {
+      "dg_id": 23719,
+      "player_name": "Sanghun Shin",
       "dg_rank": 497,
-      "dg_skill_estimate": -1.15481497297882
+      "dg_skill_estimate": -1.18020054859462
     },
     {
-      "dg_id": 20353,
-      "player_name": "Tom Whitney",
+      "dg_id": 23620,
+      "player_name": "Albin Bergstrom",
       "dg_rank": 498,
-      "dg_skill_estimate": -1.15982070717575
-    },
-    {
-      "dg_id": 17786,
-      "player_name": "Cam Davis",
-      "dg_rank": 499,
-      "dg_skill_estimate": -1.16033400923838
+      "dg_skill_estimate": -1.18166590217024
     },
     {
       "dg_id": 21076,
       "player_name": "Taiki Yoshida",
+      "dg_rank": 499,
+      "dg_skill_estimate": -1.18226910249375
+    },
+    {
+      "dg_id": 8605,
+      "player_name": "Matt Jones",
       "dg_rank": 500,
-      "dg_skill_estimate": -1.16232662277144
+      "dg_skill_estimate": -1.18730771802336
     }
   ]
 }

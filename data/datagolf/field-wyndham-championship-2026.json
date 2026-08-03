@@ -1,0 +1,582 @@
+{
+  "source": "datagolf",
+  "endpoint": "field-updates",
+  "fetched_at": "2026-08-03T17:12:42.761198+00:00",
+  "event_name": "Wyndham Championship",
+  "last_updated": "2026-08-03 17:10:47 UTC",
+  "player_count": 143,
+  "players": [
+    {
+      "dg_id": 21883,
+      "player_name": "A.J. Ewart"
+    },
+    {
+      "dg_id": 18554,
+      "player_name": "Aaron Rai"
+    },
+    {
+      "dg_id": 22051,
+      "player_name": "Aaron Wise"
+    },
+    {
+      "dg_id": 19477,
+      "player_name": "Adam Schenk"
+    },
+    {
+      "dg_id": 13997,
+      "player_name": "Adam Svensson"
+    },
+    {
+      "dg_id": 22002,
+      "player_name": "Adrien Dumont De Chassart"
+    },
+    {
+      "dg_id": 14792,
+      "player_name": "Adrien Saddier"
+    },
+    {
+      "dg_id": 27900,
+      "player_name": "Aldrich Potgieter"
+    },
+    {
+      "dg_id": 17032,
+      "player_name": "Alejandro Tosti"
+    },
+    {
+      "dg_id": 25362,
+      "player_name": "Alex Fitzpatrick"
+    },
+    {
+      "dg_id": 10419,
+      "player_name": "Alex Noren"
+    },
+    {
+      "dg_id": 18474,
+      "player_name": "Alex Smalley"
+    },
+    {
+      "dg_id": 23475,
+      "player_name": "Andrew Novak"
+    },
+    {
+      "dg_id": 14704,
+      "player_name": "Andrew Putnam"
+    },
+    {
+      "dg_id": 26653,
+      "player_name": "Austin Eckroat"
+    },
+    {
+      "dg_id": 22985,
+      "player_name": "Austin Smotherman"
+    },
+    {
+      "dg_id": 15470,
+      "player_name": "Beau Hossler"
+    },
+    {
+      "dg_id": 24968,
+      "player_name": "Ben Griffin"
+    },
+    {
+      "dg_id": 29827,
+      "player_name": "Ben James"
+    },
+    {
+      "dg_id": 16395,
+      "player_name": "Ben Kohles"
+    },
+    {
+      "dg_id": 11276,
+      "player_name": "Billy Horschel"
+    },
+    {
+      "dg_id": 32152,
+      "player_name": "Blades Brown"
+    },
+    {
+      "dg_id": 8820,
+      "player_name": "Brandt Snedeker"
+    },
+    {
+      "dg_id": 18628,
+      "player_name": "Brian Campbell"
+    },
+    {
+      "dg_id": 8825,
+      "player_name": "Brian Harman"
+    },
+    {
+      "dg_id": 11451,
+      "player_name": "Brice Garnett"
+    },
+    {
+      "dg_id": 16243,
+      "player_name": "Brooks Koepka"
+    },
+    {
+      "dg_id": 14502,
+      "player_name": "Bud Cauley"
+    },
+    {
+      "dg_id": 15475,
+      "player_name": "C.T. Pan"
+    },
+    {
+      "dg_id": 17786,
+      "player_name": "Cam Davis"
+    },
+    {
+      "dg_id": 26651,
+      "player_name": "Cameron Young"
+    },
+    {
+      "dg_id": 9171,
+      "player_name": "Camilo Villegas"
+    },
+    {
+      "dg_id": 19840,
+      "player_name": "Chad Ramey"
+    },
+    {
+      "dg_id": 24956,
+      "player_name": "Chandler Blanchet"
+    },
+    {
+      "dg_id": 27164,
+      "player_name": "Chandler Phillips"
+    },
+    {
+      "dg_id": 12423,
+      "player_name": "Chris Kirk"
+    },
+    {
+      "dg_id": 18103,
+      "player_name": "Christiaan Bezuidenhout"
+    },
+    {
+      "dg_id": 24343,
+      "player_name": "Christo Lamprecht"
+    },
+    {
+      "dg_id": 35195,
+      "player_name": "Cooper Hrabak"
+    },
+    {
+      "dg_id": 17606,
+      "player_name": "Daniel Berger"
+    },
+    {
+      "dg_id": 25003,
+      "player_name": "Danny Walker"
+    },
+    {
+      "dg_id": 15980,
+      "player_name": "David Lipsky"
+    },
+    {
+      "dg_id": 30620,
+      "player_name": "Davis Chatfield"
+    },
+    {
+      "dg_id": 19872,
+      "player_name": "Davis Riley"
+    },
+    {
+      "dg_id": 27364,
+      "player_name": "Davis Thompson"
+    },
+    {
+      "dg_id": 19870,
+      "player_name": "Denny McCarthy"
+    },
+    {
+      "dg_id": 24550,
+      "player_name": "Doug Ghim"
+    },
+    {
+      "dg_id": 25002,
+      "player_name": "Dylan Wu"
+    },
+    {
+      "dg_id": 12808,
+      "player_name": "Emiliano Grillo"
+    },
+    {
+      "dg_id": 21756,
+      "player_name": "Eric Cole"
+    },
+    {
+      "dg_id": 17550,
+      "player_name": "Erik Van Rooyen"
+    },
+    {
+      "dg_id": 24342,
+      "player_name": "Garrick Higgo"
+    },
+    {
+      "dg_id": 30814,
+      "player_name": "Gordon Sargent"
+    },
+    {
+      "dg_id": 21943,
+      "player_name": "Hank Lebioda"
+    },
+    {
+      "dg_id": 15310,
+      "player_name": "Haotong Li"
+    },
+    {
+      "dg_id": 14577,
+      "player_name": "Harris English"
+    },
+    {
+      "dg_id": 27194,
+      "player_name": "Harry Hall"
+    },
+    {
+      "dg_id": 21995,
+      "player_name": "Hayden Springer"
+    },
+    {
+      "dg_id": 13562,
+      "player_name": "Hideki Matsuyama"
+    },
+    {
+      "dg_id": 21554,
+      "player_name": "J.T. Poston"
+    },
+    {
+      "dg_id": 32319,
+      "player_name": "Jackson Koivun"
+    },
+    {
+      "dg_id": 29279,
+      "player_name": "Jackson Suber"
+    },
+    {
+      "dg_id": 9771,
+      "player_name": "Jason Day"
+    },
+    {
+      "dg_id": 21889,
+      "player_name": "Jeffrey Kang"
+    },
+    {
+      "dg_id": 26850,
+      "player_name": "Jesper Svensson"
+    },
+    {
+      "dg_id": 28469,
+      "player_name": "Joe Highsmith"
+    },
+    {
+      "dg_id": 14509,
+      "player_name": "Joel Dahmen"
+    },
+    {
+      "dg_id": 13764,
+      "player_name": "John Parry"
+    },
+    {
+      "dg_id": 25319,
+      "player_name": "John VanDerLaan"
+    },
+    {
+      "dg_id": 32457,
+      "player_name": "Johnny Keefer"
+    },
+    {
+      "dg_id": 18586,
+      "player_name": "Jordan Smith"
+    },
+    {
+      "dg_id": 14636,
+      "player_name": "Jordan Spieth"
+    },
+    {
+      "dg_id": 17723,
+      "player_name": "Justin Lower"
+    },
+    {
+      "dg_id": 14139,
+      "player_name": "Justin Thomas"
+    },
+    {
+      "dg_id": 24304,
+      "player_name": "Karl Vilips"
+    },
+    {
+      "dg_id": 13872,
+      "player_name": "Keegan Bradley"
+    },
+    {
+      "dg_id": 17365,
+      "player_name": "Keith Mitchell"
+    },
+    {
+      "dg_id": 20954,
+      "player_name": "Kensei Hirata"
+    },
+    {
+      "dg_id": 18424,
+      "player_name": "Kevin Roy"
+    },
+    {
+      "dg_id": 8480,
+      "player_name": "Kevin Streelman"
+    },
+    {
+      "dg_id": 17881,
+      "player_name": "Kevin Yu"
+    },
+    {
+      "dg_id": 32652,
+      "player_name": "Kihei Akina"
+    },
+    {
+      "dg_id": 15651,
+      "player_name": "Kristoffer Ventura"
+    },
+    {
+      "dg_id": 15330,
+      "player_name": "Lanto Griffin"
+    },
+    {
+      "dg_id": 25157,
+      "player_name": "Lee Hodges"
+    },
+    {
+      "dg_id": 7399,
+      "player_name": "Lucas Glover"
+    },
+    {
+      "dg_id": 32330,
+      "player_name": "Luke Clanton"
+    },
+    {
+      "dg_id": 28159,
+      "player_name": "Mac Meissner"
+    },
+    {
+      "dg_id": 15556,
+      "player_name": "Mackenzie Hughes"
+    },
+    {
+      "dg_id": 16591,
+      "player_name": "Marcelo Rozo"
+    },
+    {
+      "dg_id": 22465,
+      "player_name": "Marco Penge"
+    },
+    {
+      "dg_id": 16333,
+      "player_name": "Mark Hubbard"
+    },
+    {
+      "dg_id": 6169,
+      "player_name": "Matt Kuchar"
+    },
+    {
+      "dg_id": 28635,
+      "player_name": "Matt McCarty"
+    },
+    {
+      "dg_id": 20706,
+      "player_name": "Matt Wallace"
+    },
+    {
+      "dg_id": 19960,
+      "player_name": "Matthieu Pavon"
+    },
+    {
+      "dg_id": 20722,
+      "player_name": "Matti Schmid"
+    },
+    {
+      "dg_id": 18634,
+      "player_name": "Maverick McNealy"
+    },
+    {
+      "dg_id": 23465,
+      "player_name": "Max Greyserman"
+    },
+    {
+      "dg_id": 23505,
+      "player_name": "Max McGreevy"
+    },
+    {
+      "dg_id": 29197,
+      "player_name": "Michael Brennan"
+    },
+    {
+      "dg_id": 17543,
+      "player_name": "Michael Kim"
+    },
+    {
+      "dg_id": 32055,
+      "player_name": "Neal Shipley"
+    },
+    {
+      "dg_id": 28270,
+      "player_name": "Nick Dunlap"
+    },
+    {
+      "dg_id": 13126,
+      "player_name": "Nick Taylor"
+    },
+    {
+      "dg_id": 22833,
+      "player_name": "Nico Echavarria"
+    },
+    {
+      "dg_id": 15466,
+      "player_name": "Patrick Cantlay"
+    },
+    {
+      "dg_id": 25094,
+      "player_name": "Patrick Fishburn"
+    },
+    {
+      "dg_id": 16283,
+      "player_name": "Patrick Rodgers"
+    },
+    {
+      "dg_id": 13470,
+      "player_name": "Patton Kizzire"
+    },
+    {
+      "dg_id": 14926,
+      "player_name": "Peter Malnati"
+    },
+    {
+      "dg_id": 28309,
+      "player_name": "Pierceson Coody"
+    },
+    {
+      "dg_id": 25475,
+      "player_name": "Pontus Nyholm"
+    },
+    {
+      "dg_id": 12909,
+      "player_name": "Rafael Campos"
+    },
+    {
+      "dg_id": 23838,
+      "player_name": "Rasmus Hojgaard"
+    },
+    {
+      "dg_id": 23841,
+      "player_name": "Rasmus Neergaard-Petersen"
+    },
+    {
+      "dg_id": 27819,
+      "player_name": "Ricky Castillo"
+    },
+    {
+      "dg_id": 23504,
+      "player_name": "Rico Hoey"
+    },
+    {
+      "dg_id": 29767,
+      "player_name": "Ryan Gerard"
+    },
+    {
+      "dg_id": 22760,
+      "player_name": "Ryo Hisatsune"
+    },
+    {
+      "dg_id": 23014,
+      "player_name": "Sahith Theegala"
+    },
+    {
+      "dg_id": 25569,
+      "player_name": "Sam Stevens"
+    },
+    {
+      "dg_id": 10104,
+      "player_name": "Seamus Power"
+    },
+    {
+      "dg_id": 17511,
+      "player_name": "Sepp Straka"
+    },
+    {
+      "dg_id": 20844,
+      "player_name": "Stefano Mazzoli"
+    },
+    {
+      "dg_id": 16394,
+      "player_name": "Stephan Jaeger"
+    },
+    {
+      "dg_id": 26657,
+      "player_name": "Steven Fisk"
+    },
+    {
+      "dg_id": 17488,
+      "player_name": "Sungjae Im"
+    },
+    {
+      "dg_id": 19729,
+      "player_name": "Takumi Kanaya"
+    },
+    {
+      "dg_id": 21944,
+      "player_name": "Taylor Moore"
+    },
+    {
+      "dg_id": 17780,
+      "player_name": "Taylor Pendrith"
+    },
+    {
+      "dg_id": 13412,
+      "player_name": "Thorbjorn Olesen"
+    },
+    {
+      "dg_id": 15575,
+      "player_name": "Tom Hoge"
+    },
+    {
+      "dg_id": 24766,
+      "player_name": "Tom Kim"
+    },
+    {
+      "dg_id": 11676,
+      "player_name": "Tony Finau"
+    },
+    {
+      "dg_id": 27780,
+      "player_name": "Trace Crowe"
+    },
+    {
+      "dg_id": 28077,
+      "player_name": "Tyler Collet"
+    },
+    {
+      "dg_id": 25908,
+      "player_name": "Vince Whaley"
+    },
+    {
+      "dg_id": 11049,
+      "player_name": "Webb Simpson"
+    },
+    {
+      "dg_id": 29770,
+      "player_name": "William Mouw"
+    },
+    {
+      "dg_id": 17639,
+      "player_name": "Zac Blair"
+    },
+    {
+      "dg_id": 19846,
+      "player_name": "Zach Bauchou"
+    },
+    {
+      "dg_id": 16757,
+      "player_name": "Zecheng Dou"
+    }
+  ]
+}
