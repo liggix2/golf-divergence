@@ -25,38 +25,15 @@ except ImportError:
 
 
 # =============================================================================
-# DRAFTKINGS LEAGUE CONFIGURATION
-# =============================================================================
-# These IDs change when the tournament changes. To find the current values:
-#   1. Go to https://sportsbook.draftkings.com/leagues/golf
-#   2. Click on the tournament (e.g., "Wyndham Championship")
-#   3. Open browser DevTools > Network tab
-#   4. Look for requests to .../leagueSubcategory/v1/markets
-#   5. Extract leagueId from the URL query params
-#
-# Common IDs:
-#   - Subcategory 4508 = "Tournament Winner" (outright market)
-#   - League IDs vary per tournament
-#
-# If the API returns empty events/markets, the league ID is likely stale.
+# DRAFTKINGS CONFIGURATION
 # =============================================================================
 
-LEAGUE_ID = "189706"  # UPDATE THIS when tournament changes
-SUBCATEGORY_ID = "4508"  # Tournament Winner market (usually stable)
-
-# Build the API URL from config
+SUBCATEGORY_ID = "4508"  # Tournament Winner market (stable across events)
 API_BASE = "https://sportsbook-nash.draftkings.com/sites/US-NJ-SB/api/sportscontent"
-URL = (
-    f"{API_BASE}/controldata/league/leagueSubcategory/v1/markets"
-    f"?isBatchable=false"
-    f"&templateVars={LEAGUE_ID}%2C{SUBCATEGORY_ID}"
-    f"&eventsQuery=%24filter%3DleagueId%20eq%20%27{LEAGUE_ID}%27%20AND%20"
-    f"clientMetadata%2FSubcategories%2Fany%28s%3A%20s%2FId%20eq%20%27{SUBCATEGORY_ID}%27%29"
-    f"&marketsQuery=%24filter%3DclientMetadata%2FsubCategoryId%20eq%20%27{SUBCATEGORY_ID}%27%20AND%20"
-    f"tags%2Fall%28t%3A%20t%20ne%20%27SportcastBetBuilder%27%29"
-    f"&include=Events"
-    f"&entity=events"
-)
+GOLF_PAGE_URL = "https://sportsbook.draftkings.com/leagues/golf"
+
+# Golf sport display group ID (stable)
+GOLF_DISPLAY_GROUP_ID = 12
 
 # Essential headers only - dropped datadog/traceparent telemetry
 HEADERS = {
@@ -134,9 +111,94 @@ def slugify(text: str) -> str:
     return text.strip('-')
 
 
-def fetch_data() -> dict:
-    """Fetch data from DraftKings API."""
-    response = requests.get(URL, headers=HEADERS, timeout=30)
+def fetch_golf_leagues() -> dict:
+    """
+    Fetch golf leagues from DraftKings site's __INITIAL_STATE__.
+
+    Returns dict mapping nameIdentifier -> eventGroupId
+    """
+    response = requests.get(GOLF_PAGE_URL, headers=HEADERS, timeout=30)
+    response.raise_for_status()
+
+    # Extract __INITIAL_STATE__ JSON from the page
+    match = re.search(r'window\.__INITIAL_STATE__\s*=\s*(\{.*?\});', response.text, re.DOTALL)
+    if not match:
+        return {}
+
+    try:
+        state = json.loads(match.group(1))
+    except json.JSONDecodeError:
+        return {}
+
+    # Find golf sport and extract event groups
+    leagues = {}
+    sports_data = state.get("sports", {}).get("data", [])
+
+    for sport in sports_data:
+        if sport.get("displayGroupId") == str(GOLF_DISPLAY_GROUP_ID):
+            for event_group in sport.get("eventGroupInfos", []):
+                name_id = event_group.get("nameIdentifier", "")
+                group_id = event_group.get("eventGroupId")
+                if name_id and group_id:
+                    leagues[name_id] = str(group_id)
+            break
+
+    return leagues
+
+
+def resolve_league_id(event_slug: str) -> str:
+    """
+    Resolve event slug to DraftKings league ID.
+
+    Strips year suffix (e.g., "wyndham-championship-2026" -> "wyndham-championship")
+    and looks up the league ID from DraftKings.
+    """
+    # Strip year suffix if present
+    base_slug = re.sub(r'-\d{4}$', '', event_slug)
+
+    print(f"Looking up DraftKings league ID for '{base_slug}'...")
+    leagues = fetch_golf_leagues()
+
+    if not leagues:
+        print("Warning: Could not fetch golf leagues from DraftKings")
+        return None
+
+    if base_slug in leagues:
+        league_id = leagues[base_slug]
+        print(f"  Found: {base_slug} -> {league_id}")
+        return league_id
+
+    # Try partial match
+    for name_id, league_id in leagues.items():
+        if base_slug in name_id or name_id in base_slug:
+            print(f"  Partial match: {base_slug} -> {name_id} -> {league_id}")
+            return league_id
+
+    print(f"  Not found. Available leagues:")
+    for name_id, league_id in sorted(leagues.items()):
+        print(f"    {name_id}: {league_id}")
+    return None
+
+
+def build_api_url(league_id: str) -> str:
+    """Build the DraftKings API URL for a given league ID."""
+    return (
+        f"{API_BASE}/controldata/league/leagueSubcategory/v1/markets"
+        f"?isBatchable=false"
+        f"&templateVars={league_id}%2C{SUBCATEGORY_ID}"
+        f"&eventsQuery=%24filter%3DleagueId%20eq%20%27{league_id}%27%20AND%20"
+        f"clientMetadata%2FSubcategories%2Fany%28s%3A%20s%2FId%20eq%20%27{SUBCATEGORY_ID}%27%29"
+        f"&marketsQuery=%24filter%3DclientMetadata%2FsubCategoryId%20eq%20%27{SUBCATEGORY_ID}%27%20AND%20"
+        f"tags%2Fall%28t%3A%20t%20ne%20%27SportcastBetBuilder%27%29"
+        f"&include=Events"
+        f"&entity=events"
+    )
+
+
+def fetch_data(league_id: str) -> dict:
+    """Fetch data from DraftKings API for a given league ID."""
+    url = build_api_url(league_id)
+    response = requests.get(url, headers=HEADERS, timeout=30)
     response.raise_for_status()
     return response.json()
 
@@ -179,17 +241,12 @@ def parse_and_save(data: dict, event_slug: str = None) -> None:
         print("!" * 70)
         print("ERROR: No events found in DraftKings response!")
         print()
-        print("The LEAGUE_ID is likely stale. Current config:")
-        print(f"  LEAGUE_ID = {LEAGUE_ID}")
-        print(f"  SUBCATEGORY_ID = {SUBCATEGORY_ID}")
+        print("The resolved league ID returned no data.")
+        print("This could mean:")
+        print("  - The tournament is not yet available for betting")
+        print("  - The league ID mapping has changed")
         print()
-        print("To fix:")
-        print("  1. Go to https://sportsbook.draftkings.com/leagues/golf")
-        print("  2. Click on the current tournament")
-        print("  3. Open DevTools > Network, look for leagueSubcategory requests")
-        print("  4. Update LEAGUE_ID in scripts/dk_fetch.py")
-        print()
-        print("Or use --raw to inspect the API response.")
+        print("Try --list-leagues to see available tournaments.")
         print("!" * 70)
         sys.exit(1)
 
@@ -308,15 +365,48 @@ def main():
         "--event-slug",
         type=str,
         default=None,
-        help="Event slug for output filename (default: derived from API response)"
+        help="Event slug to look up (e.g., wyndham-championship-2026)"
+    )
+    parser.add_argument(
+        "--list-leagues",
+        action="store_true",
+        help="List available golf leagues and exit"
     )
     args = parser.parse_args()
 
     print("Fetching DraftKings golf odds...")
     print()
 
+    # List leagues mode
+    if args.list_leagues:
+        leagues = fetch_golf_leagues()
+        if leagues:
+            print("Available golf leagues:")
+            for name_id, league_id in sorted(leagues.items()):
+                print(f"  {name_id}: {league_id}")
+        else:
+            print("Could not fetch golf leagues")
+        return
+
+    # Resolve league ID from event slug
+    if args.event_slug:
+        league_id = resolve_league_id(args.event_slug)
+        if not league_id:
+            print("Error: Could not resolve league ID")
+            sys.exit(1)
+    else:
+        # Try to find any active golf tournament
+        print("No --event-slug provided, looking for active tournaments...")
+        leagues = fetch_golf_leagues()
+        if not leagues:
+            print("Error: Could not fetch golf leagues")
+            sys.exit(1)
+        # Use first available league
+        name_id, league_id = next(iter(leagues.items()))
+        print(f"  Using: {name_id} ({league_id})")
+
     try:
-        data = fetch_data()
+        data = fetch_data(league_id)
     except requests.RequestException as e:
         print(f"Error fetching data: {e}")
         sys.exit(1)
