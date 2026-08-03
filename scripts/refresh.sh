@@ -8,6 +8,7 @@ PYTHON="$PROJECT_DIR/venv/bin/python"
 # Defaults (update when tournament changes)
 EVENT_SLUG="rocket-classic-2026"
 KALSHI_TICKER="KXPGATOUR-ROC26"
+FIELD_SOURCE="datagolf"
 PUSH=false
 
 # Parse arguments
@@ -21,18 +22,22 @@ while [[ $# -gt 0 ]]; do
             KALSHI_TICKER="$2"
             shift 2
             ;;
+        --field-source)
+            FIELD_SOURCE="$2"
+            shift 2
+            ;;
         --push)
             PUSH=true
             shift
             ;;
         -*)
             echo "Unknown option: $1" >&2
-            echo "Usage: refresh.sh [--event-slug SLUG] [--kalshi-ticker TICKER] [--push]" >&2
+            echo "Usage: refresh.sh [--event-slug SLUG] [--kalshi-ticker TICKER] [--field-source {datagolf,kalshi}] [--push]" >&2
             exit 1
             ;;
         *)
             echo "Unknown argument: $1" >&2
-            echo "Usage: refresh.sh [--event-slug SLUG] [--kalshi-ticker TICKER] [--push]" >&2
+            echo "Usage: refresh.sh [--event-slug SLUG] [--kalshi-ticker TICKER] [--field-source {datagolf,kalshi}] [--push]" >&2
             exit 1
             ;;
     esac
@@ -41,6 +46,7 @@ done
 echo "Refreshing data"
 echo "  Event slug: $EVENT_SLUG"
 echo "  Kalshi ticker: $KALSHI_TICKER"
+echo "  Field source: $FIELD_SOURCE"
 echo "========================================"
 
 # Fetch Kalshi (suppress table, capture summary)
@@ -63,20 +69,29 @@ else
 fi
 
 # Fetch Data Golf (suppress verbose output, capture summary)
-echo "Fetching Data Golf..."
-DG_OUT=$("$PYTHON" "$SCRIPT_DIR/dg_fetch.py" --event-slug "$EVENT_SLUG" 2>&1)
-DG_FIELD=$(echo "$DG_OUT" | grep -m1 "^Players: [0-9]*" | grep -o "[0-9]*")
-DG_EVENT=$(echo "$DG_OUT" | grep "^Field:" | sed 's/Field: //' | sed 's/ ([0-9]* players)//')
-DG_SKILLS=$(echo "$DG_OUT" | grep "Skill ratings coverage" | grep -o "[0-9]*/[0-9]*")
-DG_PREDS=$(echo "$DG_OUT" | grep "^Predictions:" | sed 's/Predictions: //')
-echo "  Data Golf: $DG_EVENT ($DG_FIELD field, $DG_SKILLS with skills)"
-echo "  Predictions: $DG_PREDS"
+# Skip if using Kalshi field source (DG field not needed)
+if [ "$FIELD_SOURCE" = "datagolf" ]; then
+    echo "Fetching Data Golf..."
+    DG_OUT=$("$PYTHON" "$SCRIPT_DIR/dg_fetch.py" --event-slug "$EVENT_SLUG" 2>&1)
+    DG_FIELD=$(echo "$DG_OUT" | grep -m1 "^Players: [0-9]*" | grep -o "[0-9]*")
+    DG_EVENT=$(echo "$DG_OUT" | grep "^Field:" | sed 's/Field: //' | sed 's/ ([0-9]* players)//')
+    DG_SKILLS=$(echo "$DG_OUT" | grep "Skill ratings coverage" | grep -o "[0-9]*/[0-9]*")
+    DG_PREDS=$(echo "$DG_OUT" | grep "^Predictions:" | sed 's/Predictions: //')
+    echo "  Data Golf: $DG_EVENT ($DG_FIELD field, $DG_SKILLS with skills)"
+    echo "  Predictions: $DG_PREDS"
+else
+    echo "Skipping Data Golf fetch (using Kalshi field)"
+fi
 
 # Run model (suppress verbose output, capture summary)
 echo "Running model..."
-MODEL_OUT=$("$PYTHON" "$SCRIPT_DIR/model.py" --event-slug "$EVENT_SLUG" 2>&1)
+MODEL_OUT=$("$PYTHON" "$SCRIPT_DIR/model.py" --event-slug "$EVENT_SLUG" --kalshi-ticker "$KALSHI_TICKER" --field-source "$FIELD_SOURCE" 2>&1)
 MODEL_PROB=$(echo "$MODEL_OUT" | grep "Total win probability sum:" | grep -o "[0-9.]*%")
+MODEL_MATCHED=$(echo "$MODEL_OUT" | grep "^Matched:" | sed 's/Matched: //')
 echo "  Model: win prob sum $MODEL_PROB"
+if [ -n "$MODEL_MATCHED" ]; then
+    echo "  Field matched: $MODEL_MATCHED"
+fi
 
 # Merge (suppress verbose output, capture match stats)
 echo "Merging..."

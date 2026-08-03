@@ -24,18 +24,38 @@ except ImportError:
     sys.exit(1)
 
 
-# DraftKings API endpoint for golf tournament winner markets
+# =============================================================================
+# DRAFTKINGS LEAGUE CONFIGURATION
+# =============================================================================
+# These IDs change when the tournament changes. To find the current values:
+#   1. Go to https://sportsbook.draftkings.com/leagues/golf
+#   2. Click on the tournament (e.g., "Wyndham Championship")
+#   3. Open browser DevTools > Network tab
+#   4. Look for requests to .../leagueSubcategory/v1/markets
+#   5. Extract leagueId from the URL query params
+#
+# Common IDs:
+#   - Subcategory 4508 = "Tournament Winner" (outright market)
+#   - League IDs vary per tournament
+#
+# If the API returns empty events/markets, the league ID is likely stale.
+# =============================================================================
+
+LEAGUE_ID = "189706"  # UPDATE THIS when tournament changes
+SUBCATEGORY_ID = "4508"  # Tournament Winner market (usually stable)
+
+# Build the API URL from config
+API_BASE = "https://sportsbook-nash.draftkings.com/sites/US-NJ-SB/api/sportscontent"
 URL = (
-    "https://sportsbook-nash.draftkings.com/sites/US-NJ-SB/api/sportscontent/"
-    "controldata/league/leagueSubcategory/v1/markets"
-    "?isBatchable=false"
-    "&templateVars=189706%2C4508"
-    "&eventsQuery=%24filter%3DleagueId%20eq%20%27189706%27%20AND%20"
-    "clientMetadata%2FSubcategories%2Fany%28s%3A%20s%2FId%20eq%20%274508%27%29"
-    "&marketsQuery=%24filter%3DclientMetadata%2FsubCategoryId%20eq%20%274508%27%20AND%20"
-    "tags%2Fall%28t%3A%20t%20ne%20%27SportcastBetBuilder%27%29"
-    "&include=Events"
-    "&entity=events"
+    f"{API_BASE}/controldata/league/leagueSubcategory/v1/markets"
+    f"?isBatchable=false"
+    f"&templateVars={LEAGUE_ID}%2C{SUBCATEGORY_ID}"
+    f"&eventsQuery=%24filter%3DleagueId%20eq%20%27{LEAGUE_ID}%27%20AND%20"
+    f"clientMetadata%2FSubcategories%2Fany%28s%3A%20s%2FId%20eq%20%27{SUBCATEGORY_ID}%27%29"
+    f"&marketsQuery=%24filter%3DclientMetadata%2FsubCategoryId%20eq%20%27{SUBCATEGORY_ID}%27%20AND%20"
+    f"tags%2Fall%28t%3A%20t%20ne%20%27SportcastBetBuilder%27%29"
+    f"&include=Events"
+    f"&entity=events"
 )
 
 # Essential headers only - dropped datadog/traceparent telemetry
@@ -155,7 +175,22 @@ def parse_and_save(data: dict, event_slug: str = None) -> None:
     # Extract event info
     events = data.get("events", [])
     if not events:
-        print("Error: No events found in response")
+        print()
+        print("!" * 70)
+        print("ERROR: No events found in DraftKings response!")
+        print()
+        print("The LEAGUE_ID is likely stale. Current config:")
+        print(f"  LEAGUE_ID = {LEAGUE_ID}")
+        print(f"  SUBCATEGORY_ID = {SUBCATEGORY_ID}")
+        print()
+        print("To fix:")
+        print("  1. Go to https://sportsbook.draftkings.com/leagues/golf")
+        print("  2. Click on the current tournament")
+        print("  3. Open DevTools > Network, look for leagueSubcategory requests")
+        print("  4. Update LEAGUE_ID in scripts/dk_fetch.py")
+        print()
+        print("Or use --raw to inspect the API response.")
+        print("!" * 70)
         sys.exit(1)
 
     event = events[0]
